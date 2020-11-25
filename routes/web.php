@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CPController;
+use App\Http\Controllers\EditorController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -19,9 +20,14 @@ Route::get('/', function () {
 
 
 Route::get('/cp/{soap}/{problem?}', [CPController::class, 'generate']);
-Route::post('/cp/post', [CPController::class, 'post'])->name('cp.post');
+Route::post('/cp/create', [CPController::class, 'create'])->name('cp.create');
+Route::post('/cp/remove', [CPController::class, 'remove'])->name('cp.remove');
 
 Route::resource('consultations', 'ConsultationController');
 Route::post('/consultation/search{id?}', 'ConsultationController@search');
 Route::get('/consultation/search/{id?}', 'ConsultationController@search');
 Route::get('/consultation/delete/{id}', 'ConsultationController@delete');
+
+Route::get('/editor', [EditorController::class, 'generate']);
+Route::post('/editor/add', [EditorController::class, 'add'])->name('editor.add');
+

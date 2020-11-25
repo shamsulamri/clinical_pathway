@@ -8,8 +8,12 @@
 <script type="text/javascript" src="/js/jquery-3.5.1.min.js"></script>
 	</head>
 <body>
-<h1>Clinical Pathways</h1>
+<h1>
+<a href="/editor">Editor</a>
+</h1>
+<h1><a href="/cp/{{ $soap }}">Clinical Pathways</a></h1>
 
+{{ $soap }}
 <?php
 	$form = null;
 	$group_style = null;
@@ -21,12 +25,19 @@
 @foreach ($pathways as $index=>$path)
 
 	@if ($helper->stringStartsWith($path, "<form>"))
+		@if (!empty($group_id))
+			<!-- end of group -->
+			{{ $helper->compileText($soap, $problem, $group) }}
+		</div>
+		@endif
 		<?php
 			$group_style = null;
 			$position = 0;
 			$detail = null;
 			$detail_flag = false;
 			$detail_submenu = null;
+			$group_id = null;
+			$radio_id = null;
 		?>
 	@endif
 
@@ -38,52 +49,138 @@
 			<?php
 				$position = 0;
 				$group = $helper->removeFromString("<group>", $path);
+				$group_id = $helper->toId($group);
 			?>
-	<div id="{{ $group }}">
+	<div id="{{ $group_id }}">
+			<!-- start of group -->
 			<h2>{{ $group }}</h2>
 	@endif
 
 	@if ($helper->stringStartsWith($path, "<detail>") or empty($helper->removeBreakLine($path)))
 			@if ($detail_flag && $detail != $helper->removeFromString("<detail>", $path)) 
+<?php
+	if ($parent) {
+				$child_kvs = $kvs;
+				$roots = explode("---",$parent);
+				foreach($roots as $index=>$root) {
+						$branch[$index] = $helper->getPGD($root);
+				}
+
+				switch (count($roots)-1) {
+						case 0:
+								$root_pgd = $branch[0];
+								$child_kvs = $child_kvs[$soap][$root_pgd[0]][$root_pgd[1]][$root_pgd[2]]['child'];
+								$detail_value = $child_kvs[$problem_id][$group_id][$detail_id]['value']??null;
+								break;
+						case 1:
+								$root_pgd = $branch[0];
+								$child_kvs = $child_kvs[$soap][$root_pgd[0]][$root_pgd[1]][$root_pgd[2]]['child'];
+								$detail_value = $child_kvs[$problem_id][$group_id][$detail_id]['value']??null;
+								if (!empty($branch[1])) {
+										$root_pgd = $branch[1];
+										$child_kvs = $child_kvs[$root_pgd[0]][$root_pgd[1]][$root_pgd[2]]['child'];
+										$detail_value = $child_kvs[$problem_id][$group_id][$detail_id]['value']??null;
+								}
+								break;
+						case 2:
+								$root_pgd = $branch[0];
+								$child_kvs = $child_kvs[$soap][$root_pgd[0]][$root_pgd[1]][$root_pgd[2]]['child'];
+								if (!empty($branch[1])) {
+										$root_pgd = $branch[1];
+										$child_kvs = $child_kvs[$root_pgd[0]][$root_pgd[1]][$root_pgd[2]]['child'];
+								}
+								if (!empty($branch[2])) {
+										$root_pgd = $branch[2];
+										$child_kvs = $child_kvs[$root_pgd[0]][$root_pgd[1]][$root_pgd[2]]['child'];
+								}
+								$detail_value = $child_kvs[$problem_id][$group_id][$detail_id]['value']??null;
+								break;
+				}
+	} else {
+
+				$detail_value = $kvs[$soap][$problem_id][$group_id][$detail_id]['value']??null;
+	}
+?>
 			<table>
 				<tr>
 					<td>
 					@if ($group_style==1)
-						<input type="checkbox" name="{{ $id }}" id="{{ $id }}" value="1" @if (array_key_exists($id, $kvs)) checked @endif>
+						<input type="checkbox" 
+								name="{{ $id }}" 
+								id="{{ $id }}" 
+								value="1" 
+								group-style=1 
+								@if ($detail_value)) checked @endif
 					@endif
 
 					@if ($group_style==2)
 						<?php
+						$checkFlag = false;
 						$radio_id = $helper->toId($problem."-".$group);
-						if ($parent) $id = $parent."-".$id;
+						if (!empty($inputbox_type)) {
+							if ($detail_value) $checkFlag=true;
+						} else {
+								//if (array_key_exists($radio_id, $kvs)) {
+								if ($detail_value) {
+										if ($detail_value==$position) $checkFlag=true;
+								}
+						}
 						?>
-						<input type="radio" name="{{ $radio_id }}" id="{{ $radio_id }}" value="{{ $position }}" @if (array_key_exists($id, $kvs)) checked @endif> 
+						<input type="radio" 
+								name="{{ $radio_id }}" 
+								id="{{ $id }}" 
+								input-id="{{ $id }}"
+								group-style="2"
+								group-id="{{ $group_id }}"
+								value="{{ $position }}" @if ($detail_value) checked @endif> 
 					@endif
 
 					@if ($group_style==3)
-						<input type="radio" name="{{ $id }}" id="{{ $id }}" value="1"> Yes
-						<input type="radio" name="{{ $id }}" id="{{ $id }}" value="0"> No
+						<?php
+						$yes = "";
+						$no = "";
+						if (!empty($detail_value)) {
+								if ($detail_value==1) $yes = "checked";
+								if ($detail_value==2) $no = "checked";
+						}
+						?>
+						<input type="radio" name="{{ $id }}" id="{{ $id }}" value="1" group-style="3" {{ $yes }}> Yes
+						<input type="radio" name="{{ $id }}" id="{{ $id }}" value="2" group-style="3" {{ $no }}> No
+						{{ $detail_value }}
 					@endif
 
 					@if ($group_style==4)
 						@if ($position==1) 
-						<input type="radio" name="{{ $id }}" id="{{ $id }}" value="1">
+						<?php
+							$checkFlag = false;
+							if ($detail_value) $checkFlag=true;
+						?>
+						<input type="radio" name="{{ $id }}" id="{{ $id }}" value="1" group-style="4" group-id="{{ $group_id }}" @if ($checkFlag) checked @endif>
 						@else
-						<input type="checkbox" name="{{ $id }}" id="{{ $id }}" value="1" @if (array_key_exists($id, $kvs)) checked @endif>
+						<input type="checkbox" 
+								name="{{ $id }}" 
+								id="{{ $id }}" 
+								value="1" 
+								group-style="4"
+								group-id="{{ $group_id }}"
+								@if ($detail_value) checked @endif>
 						@endif
 					@endif
 					</td>
 					<td>
-						@if ($detail_submenu)
-								<a href='/cp/{{ $soap }}/{{ urldecode($detail_submenu) }}?parent={{ $id }}'>
-						@endif
-						{!! $helper->inputBox($inputbox_type, $inputbox_side, $detail, $id, $kvs[$id]??null, $position, $group_style) !!}
-						@if ($detail_submenu)
-								...</a>
-						@endif
+						{!! $helper->inputBox($inputbox_type, $inputbox_side, $detail, $id, 
+								$detail_value,
+								$position, 
+								$group_style, 
+								$group_id,
+								$soap,
+								$detail_submenu??null) 
+						!!}
+						
 					</td>
 				</tr>
 			</table>
+
 			<?php 
 					$detail_flag = false; 
 					$detail_submenu = null;
@@ -98,14 +195,19 @@
 			$detail_flag = true;
 			$position += 1;
 			$detail = $helper->removeFromString("<detail>", $path);
+			$detail_id = $helper->toId($detail);
 			$id = $detail;
 			if (empty($detail)) {
 					$detail = "<>";
 					$id = "empty";
+					$detail_id = "empty";
 			}
 
-			$id = $helper->toId($problem."-".$group."-".$id);
-			if ($parent) $id = $parent."-".$id;
+			$problem = $helper->toId($problem);
+			$group = $helper->toId($group);
+			$id = $helper->toId($id);
+			$id = $problem."-".$group."__".$id;
+			if ($parent) $id = $parent."---".$id;
 	?>
 	@endif
 
@@ -128,67 +230,214 @@
 
 @endforeach
 
+
 <meta name="csrf-token" content="{{ csrf_token() }}">
 <script>
+var selectedOption = null;
+var selectedInputBox = null;
 $(document).ready(function(){
+
+		$('a').click(function(){
+				var id = $(this).attr('id');
+				var inputBox = $("input[type=text][id="+id+"]");
+				var value = inputBox.val();
+				var detail_submenu = $(this).attr('detail_submenu');
+				var group_id = $(this).attr("group-id");
+				var style = $(this).attr("group-style");
+
+				var isChecked = $("#"+id+":checkbox").prop("checked");
+				if (style == 2) {
+						isChecked = $("#"+id+":radio").prop("checked");
+				}
+
+				if (style == 4) {
+						console.log(group_id);
+						$('#'+group_id+' input:radio:checked').each(function() {
+								$(this).prop("checked", false);
+								removeData($(this).attr("id"));
+						});
+				}
+
+				if (isChecked==false) {
+						$("#"+id+":checkbox").prop("checked", true);
+						$("#"+id+":radio").prop("checked", true);
+						if (!value) {
+								value = $("label[id="+id+"]").text();
+						}
+
+						var dataString = "key="+id+"&value="+value+"&soap={{ $soap }}";
+						$.ajax({
+						type: "POST",
+								headers: {'X-CSRF-TOKEN': $('meta[name=csrf-token]').attr('content')},
+								url: "{{ route('cp.create') }}",
+								data: dataString,
+								success: function(data){
+										console.log(data);
+										$(location).attr('href', detail_submenu);
+								}
+						});
+				} else {
+						$(location).attr('href', detail_submenu);
+				}
+		});
+
 		$('input[type=checkbox]').change(function(){
 				var id = $(this).attr('id');
 				var checked = $(this).prop("checked");
-				var value = $("#"+id+"_input").val();
-				console.log("check: "+checked);
+				//var value = $("#"+id+":checkbox").prop("checked");
+				//alert(value);
+				var inputBox = $("input[type=text][id="+id+"]");
+				var value = inputBox.val();
+				var style = $(this).attr("group-style");
+				var group_id = $(this).attr("group-id");
 
 				if (checked==false) {
-					$("#"+id+"_input").val("");
-				}
-				if (checked==true) {
-					$("#"+id+"_input").focus();
+					inputBox.val("");
+					removeData(id);
 				}
 
-				if (!value) {
-						value = $("#"+id+"_label").text();
+				if (checked==true) {
+						inputBox.focus();
+						if (!value) {
+								value = $("label[id="+id+"]").text();
+						}
+						createData(id, value);
+
+						if (style==4) {
+								// Uncheck all radio button
+								$('#'+group_id+' input:radio:checked').each(function() {
+										$(this).prop("checked", false);
+										removeData($(this).attr("id"));
+								});
+						}
 				}
-				postData(id, value);
+
+		});
+
+		// ************ RADIO ***************
+		
+		$('input[type=radio]').mousedown(function(){
+				var group_id = $(this).attr("group-id");
+				var id = $(this).attr('id');
+				var style = $(this).attr("group-style");
+
+				//selectedOption = $("input[id='"+id+"']:checked");
+				switch (style) {
+						case "3":
+								selectedOption = $("input[id="+id+"]:checked");
+								console.log("----");
+								console.log(selectedOption.val());
+								console.log($(this).val());
+								break;
+						default:
+								selectedOption = $("#"+group_id+" input:radio:checked");
+								break;
+				}
 		});
 
 		$('input[type=radio]').click(function(){
 				var id = $(this).attr('id');
-				var checked = $(this).prop("checked");
-				var value = $(this).prop("value");
-				/*
-				console.log("id: "+id);
-				console.log("value: "+value);
-				console.log("checked: "+checked);
-				 */
+				var input_id = $(this).attr('input-id');
+				var inputBox = $("input[type=text][id="+input_id+"]");
+				var value = inputBox.val();
+				var style = $(this).attr("group-style");
+				var group_id = $(this).attr("group-id");
+
+				if ($(this).prop("value")==selectedOption.prop("value")) {
+						$(this).prop("checked", false);
+						inputBox.val("");
+
+						switch (style) {
+								case "2":
+										removeData(input_id);
+										break;
+								default:
+										removeData(id);
+										break;
+						};
+
+				} else {
+						if (!value) {
+								//value = $("label[id="+input_id+"]").text();
+								value = $(this).val();
+								console.log(value);
+						}
+						console.log(id);
+						createData(id, value);
+						inputBox.focus();
+
+						switch (style) {
+								case "4":
+										var ids = "";
+										$('#'+group_id+' input:checkbox:checked').each(function() {
+												$(this).prop("checked", false);
+												ids += $(this).attr("id")+";";
+										});
+
+										if (ids) {
+												ids = ids.substring(0, ids.length - 1);
+												removeData(ids);
+										}
+										break;
+								case "2":
+										var inputBox = $("input[type=text][id="+selectedOption.attr('input-id')+"]");
+										inputBox.val("");
+										break;
+						}
+
+				}
+		});
+
+		// ************ TEXT ***************
+
+		$('input[type=text]').keydown(function(){
+				var id = $(this).attr('id');
 		});
 
 		$('input[type=text]').keyup(function(){
 				var id = $(this).attr('id');
 				var value = $(this).prop("value");
-				var root = id.substring(0, id.length-6);
 				var pos = $(this).attr("input-position");
 				var style = $(this).attr("group-style");
-				console.log("text:root: "+ root);
+				var group_id = $(this).attr("group-id");
 				/*
 				console.log("text:id: "+id);
 				console.log("text:value: "+value);
 				console.log("pos: " + pos);
 				 */
 
-				//var checkedOption = $("input[id='"+root+"']:checked");
+				//var checkedOption = $("input[id='"+id+"']:checked");
 				//console.log("checked option: "+checkedOption.prop('value'));
 				
+
 				switch(style) {
 				case '2':
-						var roots = root.split("-");
+						var roots = id.split("-");
+						var ids = "";
 						root = "";
 						for (i=0;i<roots.length-1;i++) {
 							root += roots[i];
 							if (i<roots.length-2) root += "-";
 						}
-						if (value) $("input[name="+root+"][value=" + pos + "]").prop('checked', true);
+						if (value) {
+								
+								//$("input[id="+root+"][value=" + pos + "]").prop('checked', true);
+								$("input[id="+id+"]").prop('checked', true);
+
+								$('#'+group_id+' :input:text').each(function() {
+										if (id != $(this).attr("id")) {
+											$(this).val("");
+											ids += $(this).attr("id")+";";
+										}
+								});
+
+								ids = ids.substring(0,ids.length-1);
+								console.log(ids);
+								removeData(ids);
+						}
 						break;
 				default:
-						$("#"+root).prop("checked", true);
+						$("#"+id+":checkbox").prop("checked", true);
 						break;
 				};
 		});
@@ -196,25 +445,25 @@ $(document).ready(function(){
 		$('input[type=text]').focusout(function(){
 				var id = $(this).attr('id');
 				var value = $(this).prop("value");
-				var root = id.substring(0, id.length-6);
+				var root = id; //id.substring(0, id.length-6);
 				var pos = $(this).attr("input-position");
 				var style = $(this).attr("group-style");
 
 				console.log("text:id: "+id);
 				console.log("text:value: "+value);
 				console.log("text:pos: " + pos);
+				console.log("text:root: " + root);
 
-				if (value) postData(root, value);
+				if (value) createData(root, value);
 		});
 });
 
-
-function postData(key, value) {
-		var dataString = "key="+key+"&value="+value;
+function createData(key, value) {
+		var dataString = "key="+key+"&value="+value+"&soap={{ $soap }}";
 		$.ajax({
 		type: "POST",
 				headers: {'X-CSRF-TOKEN': $('meta[name=csrf-token]').attr('content')},
-				url: "{{ route('cp.post') }}",
+				url: "{{ route('cp.create') }}",
 				data: dataString,
 				success: function(data){
 						console.log(data);
@@ -222,7 +471,28 @@ function postData(key, value) {
 		});
 }
 
+function removeData(key) {
+		var dataString = "ids="+key+"&soap={{ $soap }}";
+		$.ajax({
+		type: "POST",
+				headers: {'X-CSRF-TOKEN': $('meta[name=csrf-token]').attr('content')},
+				url: "{{ route('cp.remove') }}",
+				data: dataString,
+				success: function(data){
+						console.log(data);
+				}
+		});
+}
 
+window.addEventListener( "pageshow", function ( event ) {
+        var historyTraversal = event.persisted ||
+                         ( typeof window.performance != "undefined" &&
+                              window.performance.navigation.type === 2 );
+        if ( historyTraversal ) {
+        // Handle page restore.
+        window.location.reload();
+        }
+});
 </script>
 </body>
 </html>

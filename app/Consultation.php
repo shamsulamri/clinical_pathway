@@ -16,6 +16,7 @@ class Consultation extends Model
 	protected $table = 'consultations';
 	protected $fillable = [
 				'consultation_id',
+				'consultation_note',
 				'consultation_pathway'];
 	
 	protected $casts = [
