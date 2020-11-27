@@ -31,6 +31,19 @@ class EditorController extends Controller
 
 			$pathways = explode("\n", $file);
 
+			foreach($pathways as $index=>$p) {
+					if ($helper->stringStartsWith($p, "<load>")) {
+							$load = $helper->removeFromString("<load>", $p);
+
+							$file = Storage::get('clinical_pathways/'.$soap.'/'.$load);
+
+							$details = explode("\n", $file);
+
+							unset($pathways[$index]);
+							array_splice($pathways, $index, 0, $details);
+					}
+			}
+
 			$consultation = Consultation::where('consultation_id', $consultation_id)->first();
 
 			$soap = $helper->toId($soap);

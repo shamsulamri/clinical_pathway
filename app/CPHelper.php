@@ -34,6 +34,7 @@ class CPHelper
 				$str = str_replace("(", "", $str);
 				$str = str_replace(")", "", $str);
 				$str = str_replace("?", "", $str);
+				$str = str_replace(".", "", $str);
 				$str = trim($str);
 				$str = str_replace(" ", "_", $str);
 				$str = trim($str);
@@ -50,13 +51,13 @@ class CPHelper
 		}
 
 
-		public function inputBox($type, $side, $label, $id, $value, $position, $group_style, $group_id,$soap, $detail_submenu)
+		public function inputBox($type, $side, $label, $id, $value, $position, $group_style, $group_id,$soap, $detail_submenu, $problem)
 		{
 				if ($label=="<>") $label = "";
 
 				if (!empty($detail_submenu)) {
 						$link = "<a id='".$id."' 
-									detail_submenu='/cp/".$soap."/".urldecode($detail_submenu)."?parent=".$id."' 
+									detail_submenu='?filename=".$detail_submenu."&parent=".$id."'
 									group-style='".$group_style."'
 									group-id='".$group_id."'
 									href='#'>";
@@ -65,7 +66,6 @@ class CPHelper
 						$label = "<label id='".$id."'>".$label."</label>";
 				}
 
-				//$id = $id."_input";
 				$input = "";
 				if ($type=="text") $input = "<input type='text' id='".$id."' name='".$id."' value='".$value ."' input-position=".$position.">";
 				if ($type=="date") $input = "<input type='text' id='".$id."' name='".$id."' value='".$value ."' input-position=".$position.">";
@@ -91,12 +91,41 @@ class CPHelper
 
 		}
 
-		public function pathwayGroup($soap, $problem, $group)
+		public function getPathways($soap, $filename, $pathways=null)
 		{
-				$problem = str_replace("_", " ", $problem);
-				$file = Storage::get('clinical_pathways/'.$soap.'/'.$problem);
-
+				$helper = new CPHelper();
+				$file = Storage::get('clinical_pathways/'.$soap.'/'.$filename);
 				$pathways = explode("\n", $file);
+
+				foreach($pathways as $index=>$p) {
+						if ($helper->stringStartsWith($p, "<load>")) {
+								$filename = $helper->removeFromString("<load>", $p);
+
+								$file = Storage::get('clinical_pathways/'.$soap.'/'.$filename);
+								$details = explode("\n", $file);
+
+								unset($pathways[$index]);
+								array_splice($pathways, $index, 0, $details);
+						}
+				}
+
+				return $pathways;
+		}
+
+		public function pathwayGroup($soap, $problem, $section, $group, $filename=null)
+		{
+				if (empty($filename)) {
+						$filename = $problem." - ".$section;
+						$filename = str_replace("_", " ", $filename);
+				}
+
+				$file = Storage::get('clinical_pathways/'.$soap.'/'.$filename);
+				if (empty($file)) {
+					Log::info("FILE NOT FOUND!!!!!!!!! ".$filename);
+				}
+
+				$pathways = $this->getPathways($soap, $filename);
+
 				$flag = false;
 				$break_now = false;
 
@@ -156,11 +185,40 @@ class CPHelper
 						}
 				}
 
-				$pathway['details'] = $details;
+				$pathway['details'] = $details??null;
 				return $pathway;
 		}
 
-		public function getPGD($str)
+		public function getPSGD($str)
+		{
+				// Get detail
+				$items = explode("__", $str);
+				if (count($items)>1) {
+					$detail = $items[1];
+					$str = $items[0];
+				}
+
+
+				// Get problem
+				$items = explode("--", $str);
+				if (count($items)==1) {
+					$group = $str;
+					return [null, null, $group, $detail];
+				}
+				$problem = $items[0];
+				$str = $items[1];
+
+				// Get group
+				$items = explode("-", $str);
+				$group = $items[1];
+
+				// Get section
+				$section = $items[0];
+
+				return [$problem, $section, $group, $detail];
+		}
+
+		public function getPGD2($str)
 		{
 				$items = explode("__", $str);
 				if (count($items)>1) {
@@ -180,23 +238,20 @@ class CPHelper
 					$problem = implode("-", $merged_items);
 					$group = $items[count($items)-1];
 				} else {
-					Log::info($items);
-					Log::info($str);
 					$problem = $items[0];
 					$group = $items[1];
 				}
-				//$pathObj = $this->pathwayGroup($soap, $problem, $group);
 
 				return [$problem, $group, $detail??null];
 		}
 
-		public function compileText($soap, $problem, $group)
+		public function compileText($soap, $problem, $section, $group)
 		{
-				$problem = $this->toId($problem);
+				//$problem = $this->toId($problem." - ".$section);
 				$group = $this->toId($group);
 				$consultation = Consultation::where('consultation_id',99)->first();
 
-				$obj = $this->pathwayGroup($soap, $problem, $group);
+				$obj = $this->pathwayGroup($soap, $problem, $section, $group);
 
 				if ($consultation) {
 						$kvs = $consultation->consultation_pathway;
@@ -281,10 +336,9 @@ class CPHelper
 		public function getNote($soap, $problem, $group) 
 		{
 				$consultation_id = 99;
-				$helper = new CPHelper();
-				$soap = $helper->toId($soap);
-				$problem = $helper->toId($problem);
-				$group = $helper->toId($group);
+				$soap = $this->toId($soap);
+				$problem = $this->toId($problem);
+				$group = $this->toId($group);
 
 				$consultation = Consultation::where('consultation_id', $consultation_id)->first();
 

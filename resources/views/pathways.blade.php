@@ -11,9 +11,23 @@
 <h1>
 <a href="/editor">Editor</a>
 </h1>
-<h1><a href="/cp/{{ $soap }}">Clinical Pathways</a></h1>
+<h1><a href="/cp/{{ $soap }}/{{ $problem }}/{{ $section }}">Clinical Pathways</a></h1>
 
-{{ $soap }}
+<h2>{{ $problem }}</h2>
+<a href="/cp/subjective/{{ $problem }}">Subjective</a> |
+<a href="/cp/objective/{{ $problem }}">Objective</a> | 
+<a href="/cp/assessment_plan/{{ $problem }}">Assesstment and Plan</a>
+<br>
+<br>
+
+@if($problem_list)
+		@foreach($problem_list as $index=>$p)
+			<a href="/cp/{{ $soap }}/{{ $problem }}/{{ strtolower($p) }}">{{ $p }}</a>
+			<br>
+		@endforeach
+@endif
+
+<h2>{{ $section }}</h2>
 <?php
 	$form = null;
 	$group_style = null;
@@ -27,7 +41,7 @@
 	@if ($helper->stringStartsWith($path, "<form>"))
 		@if (!empty($group_id))
 			<!-- end of group -->
-			{{ $helper->compileText($soap, $problem, $group) }}
+			{{ $helper->compileText($soap, $problem, $section, $group) }}
 		</div>
 		@endif
 		<?php
@@ -63,42 +77,42 @@
 				$child_kvs = $kvs;
 				$roots = explode("---",$parent);
 				foreach($roots as $index=>$root) {
-						$branch[$index] = $helper->getPGD($root);
+						$branch[$index] = $helper->getPSGD($root);
 				}
 
 				switch (count($roots)-1) {
 						case 0:
 								$root_pgd = $branch[0];
-								$child_kvs = $child_kvs[$soap][$root_pgd[0]][$root_pgd[1]][$root_pgd[2]]['child'];
-								$detail_value = $child_kvs[$problem_id][$group_id][$detail_id]['value']??null;
+								$child_kvs = $child_kvs[$soap][$problem][$root_pgd[1]][$root_pgd[2]][$root_pgd[3]]['child'];
+								$detail_value = $child_kvs[$group_id][$detail_id]['value']??null;
 								break;
 						case 1:
 								$root_pgd = $branch[0];
-								$child_kvs = $child_kvs[$soap][$root_pgd[0]][$root_pgd[1]][$root_pgd[2]]['child'];
-								$detail_value = $child_kvs[$problem_id][$group_id][$detail_id]['value']??null;
+								$child_kvs = $child_kvs[$soap][$problem][$root_pgd[1]][$root_pgd[2]][$root_pgd[3]]['child'];
+								$detail_value = $child_kvs[$group_id][$detail_id]['value']??null;
 								if (!empty($branch[1])) {
 										$root_pgd = $branch[1];
-										$child_kvs = $child_kvs[$root_pgd[0]][$root_pgd[1]][$root_pgd[2]]['child'];
-										$detail_value = $child_kvs[$problem_id][$group_id][$detail_id]['value']??null;
+										$child_kvs = $child_kvs[$root_pgd[2]][$root_pgd[3]]['child'];
+										$detail_value = $child_kvs[$group_id][$detail_id]['value']??null;
 								}
 								break;
 						case 2:
 								$root_pgd = $branch[0];
-								$child_kvs = $child_kvs[$soap][$root_pgd[0]][$root_pgd[1]][$root_pgd[2]]['child'];
+								$child_kvs = $child_kvs[$soap][$problem][$root_pgd[1]][$root_pgd[2]][$root_pgd[3]]['child'];
 								if (!empty($branch[1])) {
 										$root_pgd = $branch[1];
-										$child_kvs = $child_kvs[$root_pgd[0]][$root_pgd[1]][$root_pgd[2]]['child'];
+										$child_kvs = $child_kvs[$root_pgd[1]][$root_pgd[2]][$root_pgd[3]]['child'];
 								}
 								if (!empty($branch[2])) {
 										$root_pgd = $branch[2];
-										$child_kvs = $child_kvs[$root_pgd[0]][$root_pgd[1]][$root_pgd[2]]['child'];
+										$child_kvs = $child_kvs[$root_pgd[1]][$root_pgd[2]][$root_pgd[3]]['child'];
 								}
-								$detail_value = $child_kvs[$problem_id][$group_id][$detail_id]['value']??null;
+								$detail_value = $child_kvs[$section_id][$group_id][$detail_id]['value']??null;
 								break;
 				}
 	} else {
 
-				$detail_value = $kvs[$soap][$problem_id][$group_id][$detail_id]['value']??null;
+				$detail_value = $kvs[$soap][$problem][$section_id][$group_id][$detail_id]['value']??null;
 	}
 ?>
 			<table>
@@ -174,7 +188,9 @@
 								$group_style, 
 								$group_id,
 								$soap,
-								$detail_submenu??null) 
+								$detail_submenu??null,
+								$problem
+								) 
 						!!}
 						
 					</td>
@@ -206,13 +222,16 @@
 			$problem = $helper->toId($problem);
 			$group = $helper->toId($group);
 			$id = $helper->toId($id);
-			$id = $problem."-".$group."__".$id;
-			if ($parent) $id = $parent."---".$id;
+			//$id = $problem."-".$group."__".$id;
+			$id = $problem."--".$section_id."-".$group."__".$id;
+			if ($parent) $id = $parent."---".$group."__".$detail_id;
 	?>
 	@endif
 
 	@if ($helper->stringStartsWith($path, "<detail_submenu>"))
-	<?php $detail_submenu = $helper->removeFromString("<detail_submenu>", $path) ?>
+	<?php 
+			$detail_submenu = $helper->removeFromString("<detail_submenu>", $path);
+	?>
 	@endif
 
 	@if ($helper->stringStartsWith($path, "<detail_inputbox>"))
@@ -265,7 +284,7 @@ $(document).ready(function(){
 								value = $("label[id="+id+"]").text();
 						}
 
-						var dataString = "key="+id+"&value="+value+"&soap={{ $soap }}";
+						var dataString = "key="+id+"&value="+value+"&soap={{ $soap }}&filename={{ $filename }}";
 						$.ajax({
 						type: "POST",
 								headers: {'X-CSRF-TOKEN': $('meta[name=csrf-token]').attr('content')},
@@ -273,6 +292,7 @@ $(document).ready(function(){
 								data: dataString,
 								success: function(data){
 										console.log(data);
+										console.log(detail_submenu);
 										$(location).attr('href', detail_submenu);
 								}
 						});
@@ -412,16 +432,8 @@ $(document).ready(function(){
 
 				switch(style) {
 				case '2':
-						var roots = id.split("-");
 						var ids = "";
-						root = "";
-						for (i=0;i<roots.length-1;i++) {
-							root += roots[i];
-							if (i<roots.length-2) root += "-";
-						}
 						if (value) {
-								
-								//$("input[id="+root+"][value=" + pos + "]").prop('checked', true);
 								$("input[id="+id+"]").prop('checked', true);
 
 								$('#'+group_id+' :input:text').each(function() {
@@ -432,8 +444,9 @@ $(document).ready(function(){
 								});
 
 								ids = ids.substring(0,ids.length-1);
+								console.log("-------------");
 								console.log(ids);
-								removeData(ids);
+								//removeData(ids);
 						}
 						break;
 				default:
@@ -459,7 +472,7 @@ $(document).ready(function(){
 });
 
 function createData(key, value) {
-		var dataString = "key="+key+"&value="+value+"&soap={{ $soap }}";
+		var dataString = "key="+key+"&value="+value+"&soap={{ $soap }}&filename={{ $filename }}";
 		$.ajax({
 		type: "POST",
 				headers: {'X-CSRF-TOKEN': $('meta[name=csrf-token]').attr('content')},

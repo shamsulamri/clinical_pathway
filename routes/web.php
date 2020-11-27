@@ -19,7 +19,7 @@ Route::get('/', function () {
 });
 
 
-Route::get('/cp/{soap}/{problem?}', [CPController::class, 'generate']);
+Route::get('/cp/{soap}/{problem}/{section?}', [CPController::class, 'generate']);
 Route::post('/cp/create', [CPController::class, 'create'])->name('cp.create');
 Route::post('/cp/remove', [CPController::class, 'remove'])->name('cp.remove');
 
