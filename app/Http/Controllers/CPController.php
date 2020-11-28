@@ -15,7 +15,7 @@ class CPController extends Controller
 				$helper = new CPHelper();
 				$consultation_id = 99;
 
-				$problem_list = $this->getProblemList($soap, $problem);
+				$problem_list = $helper->getProblemList($soap, $problem);
 
 				if (empty($section)) {
 					$section = strtolower($problem_list[0]);
@@ -32,7 +32,8 @@ class CPController extends Controller
 				$consultation = Consultation::where('consultation_id', $consultation_id)->first();
 				$kvs = $consultation->consultation_pathway??null;
 
-				Log::info(json_encode($kvs[$soap][$helper->toId($problem)][$helper->toId($section)]??null, JSON_PRETTY_PRINT));
+				//Log::info(json_encode($kvs[$soap][$helper->toId($problem)][$helper->toId($section)]??null, JSON_PRETTY_PRINT));
+				Log::info(json_encode($kvs, JSON_PRETTY_PRINT));
 
 				return view('pathways', [
 					'pathways'=>$pathways,	
@@ -48,14 +49,6 @@ class CPController extends Controller
 				]);
 		}
 
-		public function getProblemList($soap, $problem)
-		{
-				$helper = new CPHelper();
-				$file = Storage::get('clinical_pathways/'.$soap.'/'.$problem);
-
-				$problems = explode("\n", $file);
-				return $problems;
-		}
 
 		public function create(Request $request) 
 		{
@@ -173,7 +166,7 @@ class CPController extends Controller
 
 				$consultation->consultation_pathway = $kvs;
 				$consultation->save();
-				Log::info(json_encode($kvs[$soap][$problem], JSON_PRETTY_PRINT));
+				Log::info(json_encode($kvs[$soap][$problem]??null, JSON_PRETTY_PRINT));
 				return "Record saved.";
 		}
 	

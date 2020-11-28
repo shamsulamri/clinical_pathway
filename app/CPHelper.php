@@ -94,13 +94,18 @@ class CPHelper
 		public function getPathways($soap, $filename, $pathways=null)
 		{
 				$helper = new CPHelper();
-				$file = Storage::get('clinical_pathways/'.$soap.'/'.$filename);
+				$filepath = 'clinical_pathways/'.$soap.'/'.$filename;
+
+				if (!Storage::exists($filepath)) {
+						return null;
+				}
+
+				$file = Storage::get($filepath);
 				$pathways = explode("\n", $file);
 
 				foreach($pathways as $index=>$p) {
 						if ($helper->stringStartsWith($p, "<load>")) {
 								$filename = $helper->removeFromString("<load>", $p);
-
 								$file = Storage::get('clinical_pathways/'.$soap.'/'.$filename);
 								$details = explode("\n", $file);
 
@@ -245,19 +250,20 @@ class CPHelper
 				return [$problem, $group, $detail??null];
 		}
 
-		public function compileText($soap, $problem, $section, $group)
+		public function compileText($consultation_id, $soap, $problem, $section, $group)
 		{
-				//$problem = $this->toId($problem." - ".$section);
+				$problem = $this->toId($problem);
+				$section = $this->toId($section);
 				$group = $this->toId($group);
-				$consultation = Consultation::where('consultation_id',99)->first();
+
+				$consultation = Consultation::where('consultation_id',$consultation_id)->first();
 
 				$obj = $this->pathwayGroup($soap, $problem, $section, $group);
 
 				if ($consultation) {
 						$kvs = $consultation->consultation_pathway;
-
-						if (!empty($kvs[$soap][$problem][$group])) {
-								$details = $kvs[$soap][$problem][$group];
+						if (!empty($kvs[$soap][$problem][$section][$group])) {
+								$details = $kvs[$soap][$problem][$section][$group];
 								return $this->loopDetails($details, $obj);
 						}
 				}
@@ -276,21 +282,18 @@ class CPHelper
 				});
 
 				$sentence = "";
+
 				foreach($details as $detail) {
 					if (!empty($detail['text'])) {
 							$child_text = "";
 							if ($detail['child']) {
 								$group = null;
-								$problem = null;
 								foreach($detail['child'] as $key=>$node) {
-									$problem = $key;		
-								}
-								foreach($detail['child'][$problem] as $key=>$node) {
 									$group = $key;		
 								}
 
-								$group_text = $detail['child'][$problem][$group]['group_text'];
-								$child_text = $this->loopDetails($detail['child'][$problem][$group]);
+								$group_text = $detail['child'][$group]['group_text'];
+								$child_text = $this->loopDetails($detail['child'][$group]);
 
 							}
 
@@ -316,7 +319,7 @@ class CPHelper
 				//$group_text = $details['group_text'];
 				
 				$sentence = trim($sentence);
-				$sentence = $this->removeCharAtEnd(",", $sentence);
+				//$sentence = $this->removeCharAtEnd(",", $sentence);
 				$sentence = str_replace("<insert_text>", $sentence, $root_text);
 				$sentence = str_replace(" and .", ".", $sentence);
 
@@ -333,18 +336,23 @@ class CPHelper
 				return $str;
 		}
 
-		public function getNote($soap, $problem, $group) 
+		public function getNote($soap, $problem, $section=null, $group=null) 
 		{
 				$consultation_id = 99;
 				$soap = $this->toId($soap);
 				$problem = $this->toId($problem);
+				$section = $this->toId($section);
 				$group = $this->toId($group);
 
 				$consultation = Consultation::where('consultation_id', $consultation_id)->first();
 
 				if ($consultation) {
 						$kvs = $consultation->consultation_pathway;
-						$note = $kvs[$soap][$problem][$group]['note']??null;
+						if ($section) {
+							$note = $kvs[$soap][$problem][$section][$group]['note']??null;
+						} else {
+							$note = $kvs[$soap][$problem]['note']??null;
+						}
 						return $note;
 				}
 
@@ -374,5 +382,14 @@ class CPHelper
 		public function pretty($json) 
 		{
 				Log::info(json_encode($json, JSON_PRETTY_PRINT));
+		}
+
+		public function getProblemList($soap, $problem)
+		{
+				$helper = new CPHelper();
+				$file = Storage::get('clinical_pathways/'.$soap.'/'.$problem);
+
+				$problems = explode("\n", $file);
+				return $problems;
 		}
 }

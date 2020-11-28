@@ -41,7 +41,7 @@
 	@if ($helper->stringStartsWith($path, "<form>"))
 		@if (!empty($group_id))
 			<!-- end of group -->
-			{{ $helper->compileText($soap, $problem, $section, $group) }}
+			{{ $helper->compileText(99, $soap, $problem, $section, $group) }}
 		</div>
 		@endif
 		<?php

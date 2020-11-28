@@ -12,58 +12,30 @@
 $insert_here = "..";
 ?>
 
-<h1><a href="/cp/subjective/sore throat">Clinical Pathways</a></h1>
+<h1><a href="/cp/{{ $soap }}">Clinical Pathways</a></h1>
 
 <h1>Editor</h1>
 
 <label id='consultation_note' contenteditable=true>{{ $consultation->consultation_note??$insert_here }}</label>
-<br>
-<?php
-			foreach($soaps as $soap) {
+@foreach ($pathways as $index=>$path)
+	@if ($helper->stringStartsWith($path, "<group>"))
+			<?php
+				$position = 0;
+				$group = $helper->removeFromString("<group>", $path);
+				$group_id = $helper->toId($group);
+				$text = $helper->compileText($soap, $problem, $section, $group);
+				//$note = $helper->getNote($soap, $problem, $group);
+			?>
+			@if (!empty($text))
+			<label id='{{ $group_id }}_static'>{{ $text }}</label>
+			<label id='{{ $group_id }}' contenteditable=true>{{ $note??$insert_here }}</label>
+			@endif
+	@endif
 
-					?>
-					<h2>{{ $soap }}</h2>
-					<?php
-					foreach($problems as $problem) {
-							$problem = str_replace("_", " ", $problem);
-							$note = $helper->getNote($soap, $problem);
-							?>
-							<h3>{{ $problem }}</h3>
-							<?php
-							?>
-							<label id='{{ $soap."--".$helper->toId($problem) }}' contenteditable=true>{{ $note??$insert_here }}</label>
-							<?php
-							$problem_list = $helper->getProblemList($soap, $problem);
-							foreach($problem_list as $section) {
-									$filename = $problem." - ".strtolower($section);
-									if (!empty($section)) {
-											$pathways = $helper->getPathways($soap, $filename);
-											if ($pathways) {
-													foreach ($pathways as $index=>$path) {
-															if ($helper->stringStartsWith($path, "<group>")) {
-																	$group = $helper->removeFromString("<group>", $path);
-																	$group_id = $helper->toId($group);
-																	$text = $helper->compileText($consultation_id, $soap, $problem, $section, $group_id);
-																	$note = $helper->getNote($soap, $problem, $section, $group);
-																	if ($text) {
-																			?>
-																			<label id='static'>{{ $text }}</label>
-																			<label id='{{ $soap."--".$helper->toId($problem)."--".$helper->toId($section)."--".$helper->toId($group_id) }}' contenteditable=true>{{ $note??$insert_here }}</label>
-																			<?php
-																	}
-															}
-													}
-											}
-									}
-							}
-					}
-			}
-?>
+@endforeach
+
 <meta name="csrf-token" content="{{ csrf_token() }}">
 <script>
-
-var current_note_index = "";
-
 function parse(str) {
 		var args = [].slice.call(arguments, 1),
 				i = 0;
@@ -112,7 +84,7 @@ $(document).ready(function(){
 		});
 
 		function addNote(id, value) {
-				var dataString = "id="+id+"&value="+value;
+				var dataString = "soap={{ $soap }}&problem={{ $problem }}&group="+id+"&value="+value;
 				dataString = parse(dataString);
 				console.log(dataString);
 				$.ajax({
