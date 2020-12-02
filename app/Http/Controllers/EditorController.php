@@ -12,18 +12,22 @@ class EditorController extends Controller
 {
 	public function generate(Request $request, $soap="subjective", $problem=null)
 	{
-			$soaps = ["subjective", "objective", "assessment_plan"];
+			$soaps = array("subjective"=>"Subjective", "objective"=>"Objective", "assessment_plan"=>"Assessment and Plan");
 
 			$helper = new CPHelper();
 			$consultation_id = 99;
 
 			$consultation = Consultation::where('consultation_id',$consultation_id)->first();
+			if (empty($consultation)) {
+					return "No consultation";
+			}
 			$kvs = $consultation->consultation_pathway;
 
+
 			$problems = [];
-			foreach($soaps as $soap) {
-					if (!empty($kvs[$soap])) {
-							foreach($kvs[$soap] as $key=>$problem) {
+			foreach($soaps as $soap_key=>$soap) {
+					if (!empty($kvs[$soap_key])) {
+							foreach($kvs[$soap_key] as $key=>$problem) {
 								if (!in_array($helper->toId($key), $problems)) {
 										Log::info($key);
 										array_push($problems, $key);
@@ -32,24 +36,24 @@ class EditorController extends Controller
 					}
 			}
 
-			Log::info("--------------------------------------------");
-			foreach($soaps as $soap) {
+			/*
+			foreach($soaps as $soap_key=>$soap) {
 					Log::info($soap);
 					Log::info("=========");
 					foreach($problems as $problem) {
 							$problem = str_replace("_", " ", $problem);
 							Log::info($problem);
 							Log::info(">>>>>>>>>>>>>>>>>>");
-							$problem_list = $helper->getProblemList($soap, $problem);
+							$problem_list = $helper->getProblemList($soap_key, $problem);
 							foreach($problem_list as $section) {
 									$filename = $problem." - ".strtolower($section);
 									if (!empty($section)) {
-											$pathways = $helper->getPathways($soap, $filename);
+											$pathways = $helper->getPathways($soap_key, $filename);
 											if ($pathways) {
 													foreach ($pathways as $index=>$path) {
 															if ($helper->stringStartsWith($path, "<group>")) {
 																	$group = $helper->removeFromString("<group>", $path);
-																	$text = $helper->compileText($consultation_id, $soap, $problem, $section, $group);
+																	$text = $helper->compileText($consultation_id, $soap_key, $problem, $section, $group);
 																	if ($text) {
 																			Log::info($text);
 																	}
@@ -62,9 +66,9 @@ class EditorController extends Controller
 			}
 
 			Log::info($problems);
+			 */
 
 			return view('editor.editor', [
-					'pathways'=>$pathways,	
 					'helper'=>$helper,
 					'problems'=>$problems,
 					'soap'=>$soap,
@@ -72,6 +76,7 @@ class EditorController extends Controller
 					'soaps'=>$soaps,
 					'kvs'=>$kvs,
 					'consultation_id'=>$consultation_id,
+					'isEdit'=>$request->edit??false,
 			]);
 	}
 	
@@ -93,9 +98,12 @@ class EditorController extends Controller
 			if ($request->id != 'consultation_note') {
 					$ids = count(explode("--", $request->id));
 
-					if ($ids>2) {
+					if ($ids==4) {
 							[$soap, $problem, $section, $group] = explode("--",$request->id);
 							$kvs[$soap][$problem][$section][$group]['note']=$value;
+					} elseif ($ids==3) {
+							[$soap, $problem, $section] = explode("--",$request->id);
+							$kvs[$soap][$problem][$section]['note']=$value;
 					} else {
 							[$soap, $problem] = explode("--",$request->id);
 							$kvs[$soap][$problem]['note']=$value;
@@ -149,5 +157,13 @@ class EditorController extends Controller
 			}
 			
 			return "Note added...";
+	}
+
+	public function problem()
+	{
+			$problems = ['nursing assessment', 'sore throat', 'abdominal pain'];
+			return view('editor.problem', [
+				'problems'=>$problems,
+			]);
 	}
 }

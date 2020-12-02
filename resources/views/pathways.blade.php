@@ -1,33 +1,37 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>CP</title>
+@extends('layouts.app')
 
-<script type="text/javascript" src="/js/jquery-3.5.1.min.js"></script>
-	</head>
-<body>
-<h1>
-<a href="/editor">Editor</a>
-</h1>
-<h1><a href="/cp/{{ $soap }}/{{ $problem }}/{{ $section }}">Clinical Pathways</a></h1>
+@section('content')
 
-<h2>{{ $problem }}</h2>
-<a href="/cp/subjective/{{ $problem }}">Subjective</a> |
-<a href="/cp/objective/{{ $problem }}">Objective</a> | 
-<a href="/cp/assessment_plan/{{ $problem }}">Assesstment and Plan</a>
-<br>
-<br>
+ <!-- Side navigation -->
+<div class="sidenav">
+		<a href="/cp">Problems List</a>
+		<a href="/editor">Editor</a>
+		<hr>
+		<strong>
+		<a href="/cp/subjective/{{ $problem }}">Subjective</a>
+		<a href="/cp/objective/{{ $problem }}">Objective</a>  
+		<a href="/cp/assessment_plan/{{ $problem }}">Assesstment and Plan</a>
+		</strong>
+		<hr>
+		@if($problem_list)
+				@foreach($problem_list as $index=>$p)
+					<a href="/cp/{{ $soap }}/{{ $problem }}/{{ strtolower($p) }}"><strong>{{ $p }}</strong></a>
+					@if ($helper->toId($section)==$helper->toId($p))
+						@if (count($groups)>1)
+								@foreach($groups as $link)
+								  <a href="#{{ $helper->toId($link) }}">&nbsp;&nbsp;&nbsp;{{ $link }}</a>
+								@endforeach
+						@endif
+					@endif
+				@endforeach
+		@endif
+</div>
 
-@if($problem_list)
-		@foreach($problem_list as $index=>$p)
-			<a href="/cp/{{ $soap }}/{{ $problem }}/{{ strtolower($p) }}">{{ $p }}</a>
-			<br>
-		@endforeach
-@endif
+<!-- Page content -->
+<div class="main">
+<h2>{{ ucwords($problem) }}</h2>
 
-<h2>{{ $section }}</h2>
+<h3>{{ ucwords($section) }}</h3>
 <?php
 	$form = null;
 	$group_style = null;
@@ -41,7 +45,7 @@
 	@if ($helper->stringStartsWith($path, "<form>"))
 		@if (!empty($group_id))
 			<!-- end of group -->
-			{{ $helper->compileText(99, $soap, $problem, $section, $group) }}
+			</table>
 		</div>
 		@endif
 		<?php
@@ -50,6 +54,7 @@
 			$detail = null;
 			$detail_flag = false;
 			$detail_submenu = null;
+			$detail_text = null;
 			$group_id = null;
 			$radio_id = null;
 		?>
@@ -67,7 +72,9 @@
 			?>
 	<div id="{{ $group_id }}">
 			<!-- start of group -->
-			<h2>{{ $group }}</h2>
+			<br>
+			<h4>{{ $group }}</h4>
+			<table>
 	@endif
 
 	@if ($helper->stringStartsWith($path, "<detail>") or empty($helper->removeBreakLine($path)))
@@ -85,6 +92,7 @@
 								$root_pgd = $branch[0];
 								$child_kvs = $child_kvs[$soap][$problem][$root_pgd[1]][$root_pgd[2]][$root_pgd[3]]['child'];
 								$detail_value = $child_kvs[$group_id][$detail_id]['value']??null;
+								$detail_text = $child_kvs[$group_id][$detail_id]['text']??null;
 								break;
 						case 1:
 								$root_pgd = $branch[0];
@@ -94,6 +102,7 @@
 										$root_pgd = $branch[1];
 										$child_kvs = $child_kvs[$root_pgd[2]][$root_pgd[3]]['child'];
 										$detail_value = $child_kvs[$group_id][$detail_id]['value']??null;
+										$detail_text = $child_kvs[$group_id][$detail_id]['text']??null;
 								}
 								break;
 						case 2:
@@ -101,23 +110,24 @@
 								$child_kvs = $child_kvs[$soap][$problem][$root_pgd[1]][$root_pgd[2]][$root_pgd[3]]['child'];
 								if (!empty($branch[1])) {
 										$root_pgd = $branch[1];
-										$child_kvs = $child_kvs[$root_pgd[1]][$root_pgd[2]][$root_pgd[3]]['child'];
+										$child_kvs = $child_kvs[$root_pgd[2]][$root_pgd[3]]['child'];
 								}
 								if (!empty($branch[2])) {
 										$root_pgd = $branch[2];
-										$child_kvs = $child_kvs[$root_pgd[1]][$root_pgd[2]][$root_pgd[3]]['child'];
+										$child_kvs = $child_kvs[$root_pgd[2]][$root_pgd[3]]['child'];
+										$detail_value = $child_kvs[$group_id][$detail_id]['value']??null;
+										$detail_text = $child_kvs[$group_id][$detail_id]['text']??null;
 								}
-								$detail_value = $child_kvs[$section_id][$group_id][$detail_id]['value']??null;
 								break;
 				}
 	} else {
 
 				$detail_value = $kvs[$soap][$problem][$section_id][$group_id][$detail_id]['value']??null;
+				$detail_text = $kvs[$soap][$problem][$section_id][$group_id][$detail_id]['text']??null;
 	}
 ?>
-			<table>
 				<tr>
-					<td>
+					<td width=@if ($group_style==3) 60 @else 30 @endif>
 					@if ($group_style==1)
 						<input type="checkbox" 
 								name="{{ $id }}" 
@@ -159,8 +169,9 @@
 						}
 						?>
 						<input type="radio" name="{{ $id }}" id="{{ $id }}" value="1" group-style="3" {{ $yes }}> Yes
+					</td>
+					<td width=@if ($group_style==3) 60 @else 30 @endif>
 						<input type="radio" name="{{ $id }}" id="{{ $id }}" value="2" group-style="3" {{ $no }}> No
-						{{ $detail_value }}
 					@endif
 
 					@if ($group_style==4)
@@ -189,13 +200,13 @@
 								$group_id,
 								$soap,
 								$detail_submenu??null,
-								$problem
+								$problem,
+								$detail_text
 								) 
 						!!}
 						
 					</td>
 				</tr>
-			</table>
 
 			<?php 
 					$detail_flag = false; 
@@ -248,9 +259,8 @@
 
 
 @endforeach
-
-
 <meta name="csrf-token" content="{{ csrf_token() }}">
+</div>
 <script>
 var selectedOption = null;
 var selectedInputBox = null;
@@ -383,7 +393,12 @@ $(document).ready(function(){
 								console.log(value);
 						}
 						console.log(id);
-						createData(id, value);
+						if (style==3) {
+								text = $("input[type=text][id="+id+"]").val();
+								createData(id, value);
+						} else {
+								createData(id, value);
+						}
 						inputBox.focus();
 
 						switch (style) {
@@ -467,12 +482,15 @@ $(document).ready(function(){
 				console.log("text:pos: " + pos);
 				console.log("text:root: " + root);
 
-				if (value) createData(root, value);
+				if (value) createData(root, value, value);
 		});
 });
 
-function createData(key, value) {
+function createData(key, value, description) {
 		var dataString = "key="+key+"&value="+value+"&soap={{ $soap }}&filename={{ $filename }}";
+		if (description) {
+			dataString = dataString+"&description="+description;
+		}
 		$.ajax({
 		type: "POST",
 				headers: {'X-CSRF-TOKEN': $('meta[name=csrf-token]').attr('content')},
@@ -507,6 +525,4 @@ window.addEventListener( "pageshow", function ( event ) {
         }
 });
 </script>
-</body>
-</html>
-
+@endsection

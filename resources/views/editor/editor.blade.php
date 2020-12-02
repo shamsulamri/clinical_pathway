@@ -1,63 +1,121 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>CP</title>
+@extends('layouts.app')
 
-<script type="text/javascript" src="/js/jquery-3.5.1.min.js"></script>
-	</head>
-<body>
+@section('content')
+
 <?php
 $insert_here = "..";
+$current_section = "";
 ?>
 
 <h1><a href="/cp/subjective/sore throat">Clinical Pathways</a></h1>
 
 <h1>Editor</h1>
 
-<label id='consultation_note' contenteditable=true>{{ $consultation->consultation_note??$insert_here }}</label>
+<a class="btn @if($isEdit) btn-primary @else btn-secondary @endif" href="/editor?edit={{ !$isEdit }}">Toggle Edit</a>
 <br>
-<?php
-			foreach($soaps as $soap) {
+<br>
 
+@if ($isEdit)
+<strong>
+<label id='consultation_note' class='text text-primary' contenteditable=true>{{ $consultation->consultation_note??$insert_here }}</label>
+</strong>
+@else
+@if ($consultation->consultation_note)
+<label id='consultation_note'>{{ $consultation->consultation_note }}</label>
+@endif
+@endif
+<?php
+	foreach($soaps as $soap_key=>$soap) {
+
+			?>
+			<h3>{{ $soap }}</h3>
+			<br>
+			<?php
+			foreach($problems as $index=>$problem) {
+					$problem = str_replace("_", " ", $problem);
+					$note = $helper->getNote($soap_key, $problem);
 					?>
-					<h2>{{ $soap }}</h2>
+					@if ($index>0)
+					<br>
+					<br>
+					@endif
+					@if (count($problems)>1)
+							<h4>{{ ucwords($problem) }}</h4>
+					@endif
+				@if ($note)
+					@if ($isEdit)	
+					<strong>
+					<label class="text text-primary"  id='{{ $soap_key."--".$helper->toId($problem) }}' contenteditable=true>{{ $note??$insert_here }}</label>
+					</strong>
+						<br>
+						<br>
+					@else
+						{{ $note }}
+						<br>
+						<br>
+					@endif
+				@endif
 					<?php
-					foreach($problems as $problem) {
-							$problem = str_replace("_", " ", $problem);
-							$note = $helper->getNote($soap, $problem);
-							?>
-							<h3>{{ $problem }}</h3>
-							<?php
-							?>
-							<label id='{{ $soap."--".$helper->toId($problem) }}' contenteditable=true>{{ $note??$insert_here }}</label>
-							<?php
-							$problem_list = $helper->getProblemList($soap, $problem);
-							foreach($problem_list as $section) {
-									$filename = $problem." - ".strtolower($section);
-									if (!empty($section)) {
-											$pathways = $helper->getPathways($soap, $filename);
-											if ($pathways) {
-													foreach ($pathways as $index=>$path) {
-															if ($helper->stringStartsWith($path, "<group>")) {
-																	$group = $helper->removeFromString("<group>", $path);
-																	$group_id = $helper->toId($group);
-																	$text = $helper->compileText($consultation_id, $soap, $problem, $section, $group_id);
-																	$note = $helper->getNote($soap, $problem, $section, $group);
-																	if ($text) {
-																			?>
-																			<label id='static'>{{ $text }}</label>
-																			<label id='{{ $soap."--".$helper->toId($problem)."--".$helper->toId($section)."--".$helper->toId($group_id) }}' contenteditable=true>{{ $note??$insert_here }}</label>
-																			<?php
+					$current_section = "";
+					$problem_list = $helper->getProblemList($soap_key, $problem);
+					foreach($problem_list as $section) {
+							$filename = $problem." - ".strtolower($section);
+							if (!empty($section)) {
+									$pathways = $helper->getPathways($soap_key, $filename);
+									if ($pathways) {
+											foreach ($pathways as $index=>$path) {
+													if ($helper->stringStartsWith($path, "<group>")) {
+															$group = $helper->removeFromString("<group>", $path);
+															$group_id = $helper->toId($group);
+															$text = $helper->compileText($consultation_id, $soap_key, $problem, $section, $group_id);
+															$section_note = $helper->getNote($soap_key, $problem, $section);
+															$note = $helper->getNote($soap_key, $problem, $section, $group);
+															if ($text) {
+																	if ($current_section != $section) {
+?>
+																	@if ($current_section)
+																		<br>
+																	@endif
+																		<h5>{{ $section }}</h5>
+																			@if ($isEdit)	
+																			<strong>
+																			<label class="text text-primary"  id='{{ $soap_key."--".$helper->toId($problem)."--".$helper->toId($section) }}' contenteditable=true>{{ $section_note??$insert_here }}</label>
+																			</strong>
+																			@else
+																				@if ($note)
+																				{{ $note }}
+																				@endif
+																			@endif
+<?php
+																			$current_section = $section;
 																	}
+																	if ($isEdit) {
+?>
+																	{!! $text !!}
+<strong>
+																	<label class="text text-primary" id='{{ $soap_key."--".$helper->toId($problem)."--".$helper->toId($section)."--".$helper->toId($group_id) }}' contenteditable=true>{{ $note??$insert_here }}</label>
+</strong>
+<?php
+																	} else {
+?>
+																	{!! $text !!} {{ $note??null }}
+<?php
+																	}
+																	
 															}
+?>
+<?php
 													}
 											}
 									}
 							}
 					}
 			}
+?>
+			<br>
+			<br>
+<?php
+	}
 ?>
 <meta name="csrf-token" content="{{ csrf_token() }}">
 <script>
@@ -128,5 +186,4 @@ $(document).ready(function(){
 
 });
 </script>
-</body>
-</html>
+@endsection
