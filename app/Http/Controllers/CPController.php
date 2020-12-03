@@ -28,16 +28,33 @@ class CPController extends Controller
 				}
 
 				$pathways = $helper->getPathways($soap, $filename);
-				$groups = $helper->getGroups($pathways);
+
+				Log::info($pathways);
+				//$groups = $helper->getGroups($helper->getPathways($soap, $problem." - ".$section));
+				//$groups = $helper->getGroups($pathways);
+				$groups = $helper->getSectionGroups($soap, $problem, $section);
 
 				$consultation = Consultation::where('consultation_id', $consultation_id)->first();
 				$kvs = $consultation->consultation_pathway??null;
 
 				//Log::info(json_encode($kvs[$soap][$helper->toId($problem)][$helper->toId($section)]??null, JSON_PRETTY_PRINT));
-				Log::info(json_encode($kvs, JSON_PRETTY_PRINT));
+				//Log::info(json_encode($kvs, JSON_PRETTY_PRINT));
 
-				//return "X";
-
+				/*
+				$parent_details = [];
+				$psgd = [];
+				if ($request->parent) {
+						$tree = explode("---",$request->parent);
+						$filename = null;
+						foreach($tree as $index=>$t) {
+								$psgd = $helper->getPSGD($t);
+								$obj = $helper->pathwayObject($soap, $psgd[0], $psgd[1], $psgd[2], $filename);
+								$detail = $obj['details'][$psgd[3]];
+								$filename = $detail['detail_submenu'];
+								array_push($parent_details, $detail);
+						}
+				}
+				 */
 				return view('pathways', [
 					'pathways'=>$pathways,	
 					'helper'=>$helper,
@@ -49,7 +66,8 @@ class CPController extends Controller
 					'problem_list'=>$problem_list??null,
 					'problem'=>$problem,
 					'filename'=>$request->filename??null,
-					'groups'=>$groups,
+					'groups'=>$groups??null,
+					'parent_details'=>$parent_details??null,
 				]);
 		}
 
@@ -69,13 +87,6 @@ class CPController extends Controller
 				$description = $request->description??null;
 				$soap = $request->soap;
 
-				$consultation = Consultation::where('consultation_id', $consultation_id)->first();
-				if ($consultation) {
-						$kvs = $consultation->consultation_pathway;
-				} else {
-						$consultation = new Consultation();
-						$consultation->consultation_id = 99;
-				}
 
 				$keys = explode("---",$request->key);
 				$pgd = $helper->getPSGD($keys[count($keys)-1]);
@@ -89,15 +100,19 @@ class CPController extends Controller
 				Log::info($detail);
 				Log::info("Filename: ".$request->filename);
 				 */
-				Log::info("--------------".$group);
-				$obj = $helper->pathwayGroup($soap, $problem, $section, $group, $request->filename);
+				$obj = $helper->pathwayObject($soap, $problem, $section, $group, $request->filename);
 
-				//Log::info($obj);
 
 				$detail_text = $obj['details'][$detail]['detail_text'];
+				Log::info(".................");
+				Log::info($obj);
 
 				$node['value'] = $value;
-				$node['text'] = str_replace("<insert_text>", $request->text, $detail_text);
+				if ($obj['group_style']==3) {
+						$node['text'] = str_replace("<insert_text>", $description, $detail_text);
+				} else {
+						$node['text'] = str_replace("<insert_text>", $value, $detail_text);
+				}
 				$node['description'] = $description;
 				$node['index'] = $obj['details'][$detail]['detail_index'];
 				$node['boolean'] = $request->yesno??null;
@@ -114,10 +129,22 @@ class CPController extends Controller
 						}
 				}
 
+				$consultation = Consultation::where('consultation_id', $consultation_id)->first();
+				if ($consultation) {
+						$kvs = $consultation->consultation_pathway;
+				} else {
+						$consultation = new Consultation();
+						$consultation->consultation_id = 99;
+				}
+
+				Log::info("COunt keys: ".count($keys));
 				switch (count($keys)) {
 						case 0:
 								if ($obj['group_style']==2) {
 										unset($kvs[$soap][$problem][$pgd[1]][$pgd[2]]);
+								}
+								if ($obj['group_style']==4 and $clearAll) {
+										$kvs[$soap][$problem][$pgd[1]][$pgd[2]] = null;
 								}
 								$kvs[$soap][$problem][$pgd[1]][$pgd[2]]['group_text'] = $obj['group_text'];
 								$kvs[$soap][$problem][$pgd[1]][$pgd[2]][$detail] = $node;
@@ -199,7 +226,6 @@ class CPController extends Controller
 								$kvs	[$soap][$root_pgd[0]][$root_pgd[1]][$root_pgd[2]][$root_pgd[3]]['child']
 										[$child1_pgd[2]][$child1_pgd[3]]['child'] 
 										[$child2_pgd[2]][$child2_pgd[3]]['child'] = $child3;
-								Log::info($child3);
 								break;
 				}
 
@@ -212,6 +238,8 @@ class CPController extends Controller
 	
 		public function remove(Request $request)
 		{
+				Log::info("-------REMOVE---------");
+				Log::info($request);
 				$branches = explode("---", $request->ids);
 				if (count($branches)==1) {
 						$this->remove_root($request);
@@ -219,6 +247,7 @@ class CPController extends Controller
 						$this->remove_branches($request);
 				}
 
+				return "Remove data...";
 		}
 
 		public function remove_branch($soap, $id)
@@ -234,7 +263,6 @@ class CPController extends Controller
 						$branch[$index] = $helper->getPSGD($b);
 				}
 
-				Log::info(count($branches));
 				switch (count($branches)-1) {
 					case 1: // First branch
 							$root_pgd = $helper->getPSGD($branches[0]);
@@ -368,9 +396,7 @@ class CPController extends Controller
 						Log::info(count($ids));
 						foreach($ids as $id) {
 								[$problem, $section, $group, $detail] = $helper->getPSGD($id);
-								Log::info(">> ".$id);
-								Log::info($soap);
-								Log::info([$problem, $section, $group, $detail]);
+								
 								if (!empty($kvs[$soap][$problem][$section][$group])) {
 										unset($kvs[$soap][$problem][$section][$group][$detail]);
 										if (count($kvs[$soap][$problem][$section][$group])==1) {

@@ -29,7 +29,6 @@ $current_section = "";
 
 			?>
 			<h3>{{ $soap }}</h3>
-			<br>
 			<?php
 			foreach($problems as $index=>$problem) {
 					$problem = str_replace("_", " ", $problem);
@@ -74,6 +73,7 @@ $current_section = "";
 																	if ($current_section != $section) {
 ?>
 																	@if ($current_section)
+																		<br>
 																		<br>
 																	@endif
 																		<h5>{{ $section }}</h5>

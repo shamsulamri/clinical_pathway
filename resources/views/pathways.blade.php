@@ -19,7 +19,11 @@
 					@if ($helper->toId($section)==$helper->toId($p))
 						@if (count($groups)>1)
 								@foreach($groups as $link)
-								  <a href="#{{ $helper->toId($link) }}">&nbsp;&nbsp;&nbsp;{{ $link }}</a>
+									@if ($parent)
+										 <a href="/cp/{{ $soap }}/{{ $problem }}/{{ $section }}#{{ $helper->toId($link) }}">&nbsp;&nbsp;&nbsp;{{ $link }}</a>
+									@else
+										 <a href="#{{ $helper->toId($link) }}">&nbsp;&nbsp;&nbsp;{{ $link }}</a>
+									@endif
 								@endforeach
 						@endif
 					@endif
@@ -69,11 +73,15 @@
 				$position = 0;
 				$group = $helper->removeFromString("<group>", $path);
 				$group_id = $helper->toId($group);
+
+
 			?>
 	<div id="{{ $group_id }}">
 			<!-- start of group -->
 			<br>
-			<h4>{{ $group }}</h4>
+			<h4>
+			{{ $group }}
+			</h4>
 			<table>
 	@endif
 
@@ -204,7 +212,6 @@
 								$detail_text
 								) 
 						!!}
-						
 					</td>
 				</tr>
 
@@ -266,6 +273,41 @@ var selectedOption = null;
 var selectedInputBox = null;
 $(document).ready(function(){
 
+		/*
+		$('label').click(function(){
+				var style = $(this).attr("group-style");
+				if (style == 3) return;
+				var id = $(this).attr('id');
+				var radioButton = $("#"+id+":radio");
+				var checkButton = $("#"+id+":checkbox");
+				console.log("Radio: "+radioButton.prop('id'));
+				console.log("Check: "+checkButton.prop('id'));
+				
+				value = $(this).text();
+
+				if (radioButton.prop('id')) {
+						var isChecked = radioButton.prop("checked");
+						radioButton.prop("checked", !isChecked);
+						if (!isChecked) {
+								createData(id, value);
+						} else {
+								removeData(id);
+						}
+				}
+
+				if (checkButton.prop('id')) {
+						var isChecked = checkButton.prop("checked");
+						if (!isChecked) {
+								createData(id, value);
+						} else {
+								removeData(id);
+						}
+						checkButton.prop("checked", !isChecked);
+				}
+
+		});
+		 */
+
 		$('a').click(function(){
 				var id = $(this).attr('id');
 				var inputBox = $("input[type=text][id="+id+"]");
@@ -291,7 +333,7 @@ $(document).ready(function(){
 						$("#"+id+":checkbox").prop("checked", true);
 						$("#"+id+":radio").prop("checked", true);
 						if (!value) {
-								value = $("label[id="+id+"]").text();
+								value = $("a[id="+id+"]").text();
 						}
 
 						var dataString = "key="+id+"&value="+value+"&soap={{ $soap }}&filename={{ $filename }}";
@@ -395,7 +437,7 @@ $(document).ready(function(){
 						console.log(id);
 						if (style==3) {
 								text = $("input[type=text][id="+id+"]").val();
-								createData(id, value);
+								createData(id, value, text);
 						} else {
 								createData(id, value);
 						}
@@ -411,7 +453,7 @@ $(document).ready(function(){
 
 										if (ids) {
 												ids = ids.substring(0, ids.length - 1);
-												removeData(ids);
+												//removeData(ids);
 										}
 										break;
 								case "2":
@@ -491,6 +533,7 @@ function createData(key, value, description) {
 		if (description) {
 			dataString = dataString+"&description="+description;
 		}
+		console.log(dataString);
 		$.ajax({
 		type: "POST",
 				headers: {'X-CSRF-TOKEN': $('meta[name=csrf-token]').attr('content')},
@@ -504,6 +547,7 @@ function createData(key, value, description) {
 
 function removeData(key) {
 		var dataString = "ids="+key+"&soap={{ $soap }}";
+		console.log(dataString);
 		$.ajax({
 		type: "POST",
 				headers: {'X-CSRF-TOKEN': $('meta[name=csrf-token]').attr('content')},

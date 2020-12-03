@@ -68,9 +68,9 @@ class CPHelper
 									group-style='".$group_style."'
 									group-id='".$group_id."'
 									href='#'>";
-						$label = $link."<label ".$style." id='".$id."'>".$label."</label></a>";
+						$label = $link.$label."</a><label ".$style.">&nbsp;</label>";
 				} else {
-						$label = "<label ".$style." id='".$id."'>".$label."</label>";
+						$label = "<label ".$style." id='".$id."' group-style='".$group_style."'>".$label."</label>";
 				}
 
 				$input = "";
@@ -109,6 +109,7 @@ class CPHelper
 
 				$file = Storage::get($filepath);
 				$pathways = explode("\n", $file);
+				array_push($pathways, "\n");
 
 				foreach($pathways as $index=>$p) {
 						if ($helper->stringStartsWith($p, "<load>")) {
@@ -138,7 +139,30 @@ class CPHelper
 				return $groups;
 		}
 
-		public function pathwayGroup($soap, $problem, $section, $group, $filename=null)
+		public function getSectionGroups($soap, $problem, $section)
+		{
+				$filename = $problem." - ".$section;
+				$filename = str_replace("_", " ", $filename);
+
+				Log::info("Section....");
+				Log::info($filename);
+
+				$file = Storage::get('clinical_pathways/'.$soap.'/'.$filename);
+				$groups = [];
+				$pathways = $this->getPathways($soap, $filename);
+
+				foreach ($pathways as $index=>$p) {
+						if ($this->stringStartsWith($p, "<group>")) { 
+								$group_name = $this->removeFromString("<group>", $p);
+								array_push($groups, $group_name);
+						}
+				}
+
+				return $groups;
+
+		}
+
+		public function pathwayObject($soap, $problem, $section, $group, $filename=null)
 		{
 				if (empty($filename)) {
 						$filename = $problem." - ".$section;
@@ -210,11 +234,12 @@ class CPHelper
 
 										$detail_id = $this->toId($detail);
 										$details[$detail_id] = $obj;
-										$detail_text = "";
+										//$detail_text = "";
 										if ($break_now) break;
 								}
 
 								if ($this->stringStartsWith($p, "<detail>")) {
+										$detail_text = "";
 										$detail = $this->removeFromString("<detail>", $p);
 										if (empty($detail)) $detail = "empty";
 										$detail_index++;
@@ -300,7 +325,7 @@ class CPHelper
 
 				$consultation = Consultation::where('consultation_id',$consultation_id)->first();
 
-				$obj = $this->pathwayGroup($soap, $problem, $section, $group);
+				$obj = $this->pathwayObject($soap, $problem, $section, $group);
 				if ($group=="general") {
 						//Log::info($obj);
 				}
@@ -309,8 +334,6 @@ class CPHelper
 						$kvs = $consultation->consultation_pathway;
 						if (!empty($kvs[$soap][$problem][$section][$group])) {
 								$details = $kvs[$soap][$problem][$section][$group];
-								Log::info("-------------------");
-								Log::info($obj);
 								return $this->loopDetails($soap, $details, $obj);
 						}
 				}
@@ -349,7 +372,7 @@ class CPHelper
 							$child_filename = $detail['child'][$group]['filename'];
 							Log::info("---->>>> ".$group);
 							Log::info("---->>>> ".$filename);
-							$child_obj = $this->pathwayGroup($soap, null, null, $group, $child_filename);
+							$child_obj = $this->pathwayObject($soap, null, null, $group, $child_filename);
 							$child_str = $this->loopDetails($soap, $detail['child'][$group], $child_obj);
 						}
 
@@ -365,9 +388,9 @@ class CPHelper
 						} else {
 								//$detail_text = $detail['text']=="empty"?$detail['value']:$detail['text'];
 								if (strtolower($detail['value'])==strtolower($detail['text'])) {
-									$detail_text = $detail['description']." ".$detail['text'];
+									$detail_text = $detail['text'];
 								} else {
-									$detail_text = $detail['description']." ".(trim($detail['text'])=='empty'?'':$detail['text']);
+									$detail_text = trim($detail['text'])=='empty'?'':$detail['text'];
 									$detail_text = trim($detail_text);
 								}
 
@@ -435,122 +458,6 @@ class CPHelper
 
 				return $final;
 
-		}
-		public function loopDetails2($details, $obj = null)
-		{
-				$root_text = $details['group_text'];
-				$newline = $obj['group_newline']??0;
-				$separator = $obj['group_separator']??null;
-				if ($separator) {
-					//Log::info($obj);
-				}
-				unset($details['group_text']);
-				unset($details['group_newline']);
-				unset($details['group_separator']);
-				unset($details['note']);
-				usort($details, function($a, $b){
-						return $a['index'] <=> $b['index'];
-				});
-
-				$sentence = "";
-				$elements = count($details);
-				$element_count = 0;
-
-				foreach($details as $detail) {
-					if (!empty($detail['text'])) {
-							$child_text = "";
-							if ($detail['child']) {
-								$group = null;
-								foreach($detail['child'] as $key=>$node) {
-									$group = $key;		
-								}
-
-								$group_text = $detail['child'][$group]['group_text'];
-								$child_text = $this->loopDetails($detail['child'][$group]);
-							}
-
-							$text = $detail['text'];
-							if (!empty($obj['details'][$text])) {
-									Log::info("-->>>>".$text);
-
-									if (!$detail['child']) {
-										$sentence = $sentence.$text;
-									}
-									if ($separator) {
-											if (!empty($sentence)) {
-												$sentence = $sentence.$separator;
-											}
-									}
-							} else {
-									/** Add to child text **/
-									$element_count++;
-									Log::info($element_count." == ".count($details));
-									Log::info("..".$sentence." ~ ".$text);
-									if ($sentence) {
-											if ($element_count==count($details)) {
-													$sentence = $sentence." and ".$text;
-											} else {
-													$sentence = $sentence.", ".$text;
-											}
-									} else {
-											$sentence = $text;
-									}
-									Log::info("....".$sentence);
-							}
-
-							if (empty($child_text)) {
-									/** Only to root text **/
-									//Log::info("XXXXX");
-									/*
-									$element_count++;
-									if ($element_count<count($details)) {
-											if ($element_count+1<count($details)) {
-													$sentence = $sentence.", ";
-											} else {
-													$sentence = $sentence." and ";
-											}
-									}
-									 */
-							} else {
-									Log::info(">".$sentence." + ".$child_text);
-									if (strtolower($sentence)==substr(strtolower($child_text),0, strlen($sentence))) {
-											$sentence = $child_text;
-									} else {
-											$sentence = $sentence." ".$child_text;
-									}
-									$sentence = $sentence." ".$child_text;
-									Log::info(">>".$sentence);
-							}
-					}
-				}
-
-
-				/*
-				if ($obj['group_style']==4) {
-						Log::info("444444444444444444444");
-						foreach($obj['details'] as $key=>$node) {
-							break;
-						}
-						if (array_key_exists($key, $details)) {
-							$sentence = $detail['text'];
-							return $sentence;
-						}
-				}
-				 */
-
-				$sentence = trim($sentence);
-				$sentence = $this->removeCharAtEnd(",", $sentence);
-				Log::info("ROOT: ".$root_text);
-				Log::info("      + ".$sentence);
-				$sentence = str_replace("<insert_text>", $sentence, $root_text);
-				Log::info("      = ".$sentence);
-
-				if ($newline==1) {
-						$sentence = "<br>".$sentence;
-				}
-				$sentence = str_replace(" and .", ".", $sentence);
-
-				return $sentence;
 		}
 
 		public function removeCharAtEnd($chr, $str)

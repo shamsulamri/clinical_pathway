@@ -29,7 +29,6 @@ class EditorController extends Controller
 					if (!empty($kvs[$soap_key])) {
 							foreach($kvs[$soap_key] as $key=>$problem) {
 								if (!in_array($helper->toId($key), $problems)) {
-										Log::info($key);
 										array_push($problems, $key);
 								}
 							}
