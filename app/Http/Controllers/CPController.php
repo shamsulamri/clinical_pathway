@@ -29,7 +29,6 @@ class CPController extends Controller
 
 				$pathways = $helper->getPathways($soap, $filename);
 
-				Log::info($pathways);
 				//$groups = $helper->getGroups($helper->getPathways($soap, $problem." - ".$section));
 				//$groups = $helper->getGroups($pathways);
 				$groups = $helper->getSectionGroups($soap, $problem, $section);
@@ -38,7 +37,7 @@ class CPController extends Controller
 				$kvs = $consultation->consultation_pathway??null;
 
 				//Log::info(json_encode($kvs[$soap][$helper->toId($problem)][$helper->toId($section)]??null, JSON_PRETTY_PRINT));
-				//Log::info(json_encode($kvs, JSON_PRETTY_PRINT));
+				Log::info(json_encode($kvs, JSON_PRETTY_PRINT));
 
 				/*
 				$parent_details = [];
@@ -99,13 +98,13 @@ class CPController extends Controller
 				Log::info($group);
 				Log::info($detail);
 				Log::info("Filename: ".$request->filename);
+				Log::info(".................");
+				Log::info($obj);
 				 */
 				$obj = $helper->pathwayObject($soap, $problem, $section, $group, $request->filename);
 
 
 				$detail_text = $obj['details'][$detail]['detail_text'];
-				Log::info(".................");
-				Log::info($obj);
 
 				$node['value'] = $value;
 				if ($obj['group_style']==3) {
@@ -119,13 +118,21 @@ class CPController extends Controller
 
 				if (empty($node['text'])) $node['text'] = strtolower($obj['details'][$detail]['detail']);
 				
-				$clearAll = false;
+				$removeCheckedItems = false;
+				$removeRadio = false;
+				$radioId = null;
 				
 				if ($obj['group_style']==4) {
 						/** Set group text to empty if radio selected **/
 						if ($obj['details'][$pgd[3]]['detail_index']==1) {
+								// Remove all checked items
 								$obj['group_text']="<insert_text>";
-								$clearAll = true;
+								$removeCheckedItems = true;
+						} else {
+								$removeRadio = true;
+								$array_values = array_values($obj['details']);
+								Log::info($array_values[0]['detail']);
+								$radioId = $helper->toId($array_values[0]['detail']);
 						}
 				}
 
@@ -143,8 +150,11 @@ class CPController extends Controller
 								if ($obj['group_style']==2) {
 										unset($kvs[$soap][$problem][$pgd[1]][$pgd[2]]);
 								}
-								if ($obj['group_style']==4 and $clearAll) {
+								if ($obj['group_style']==4 and $removeCheckedItems) {
 										$kvs[$soap][$problem][$pgd[1]][$pgd[2]] = null;
+								}
+								if ($obj['group_style']==4 and $removeRadio) {
+										unset($kvs[$soap][$problem][$pgd[1]][$pgd[2]][$radioId]);
 								}
 								$kvs[$soap][$problem][$pgd[1]][$pgd[2]]['group_text'] = $obj['group_text'];
 								$kvs[$soap][$problem][$pgd[1]][$pgd[2]][$detail] = $node;
@@ -158,9 +168,13 @@ class CPController extends Controller
 								if ($obj['group_style']==2) {
 										$child = null;
 								}
-								if ($obj['group_style']==4 and $clearAll) {
+								if ($obj['group_style']==4 and $removeCheckedItems) {
 										$child = null;
 								}
+								if ($obj['group_style']==4 and $removeRadio) {
+										unset($child[$pgd[2]][$radioId]);
+								}
+
 								$child[$pgd[2]]['group_text'] = $obj['group_text'];
 								$child[$pgd[2]]['filename'] = $request->filename;
 								$child[$pgd[2]][$pgd[3]] = $node;
@@ -168,6 +182,8 @@ class CPController extends Controller
 
 								$kvs[$soap][$root_pgd[0]][$root_pgd[1]][$root_pgd[2]][$root_pgd[3]]['child'] = $child;
 
+								Log::info("----------");
+										Log::info($kvs[$soap][$root_pgd[0]][$root_pgd[1]][$root_pgd[2]][$root_pgd[3]]['child']);
 								break;
 						case 2:
 								$root_pgd = $helper->getPSGD($keys[0]);
@@ -179,8 +195,11 @@ class CPController extends Controller
 								if ($obj['group_style']==2) {
 										$child2 = null;
 								}
-								if ($obj['group_style']==4 and $clearAll) {
+								if ($obj['group_style']==4 and $removeCheckedItems) {
 										$child2= null;
+								}
+								if ($obj['group_style']==4 and $removeRadio) {
+										unset($child2[$pgd[2]][$radioId]);
 								}
 								$child2[$pgd[2]]['group_text'] = $obj['group_text'];
 								$child2[$pgd[2]]['filename'] = $request->filename;
@@ -207,10 +226,12 @@ class CPController extends Controller
 								if ($obj['group_style']==2) {
 										$child3= null;
 								}
-								if ($obj['group_style']==4 and $clearAll) {
+								if ($obj['group_style']==4 and $removeCheckedItems) {
 										$child3 = null;
 								}
-
+								if ($obj['group_style']==4 and $removeRadio) {
+										unset($child3[$pgd[2]][$radioId]);
+								}
 
 								$child3[$pgd[2]]['group_text'] = $obj['group_text'];
 								$child3[$pgd[2]]['filename'] = $request->filename;

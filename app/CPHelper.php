@@ -199,6 +199,7 @@ class CPHelper
 								$addObject = false;
 								$yes_text = "";
 								$no_text = "";
+								$detail_label = "";
 
 								$pathway['group']= $this->removeFromString("<group>", $p);
 								if ($group_name==$group) {
@@ -230,6 +231,7 @@ class CPHelper
 												'detail_inputbox'=>$detail_inputbox??null,
 												'detail_submenu'=>$detail_submenu??null,
 												'detail_index'=>$detail_index??null,
+												'detail_label'=>$detail_label??null,
 										];
 
 										$detail_id = $this->toId($detail);
@@ -240,6 +242,7 @@ class CPHelper
 
 								if ($this->stringStartsWith($p, "<detail>")) {
 										$detail_text = "";
+										$detail_label = "";
 										$detail = $this->removeFromString("<detail>", $p);
 										if (empty($detail)) $detail = "empty";
 										$detail_index++;
@@ -247,6 +250,7 @@ class CPHelper
 								}
 								if ($this->stringStartsWith($p, "<detail_text>")) {
 										$detail_text = $this->removeFromString("<detail_text>", $p);
+										if (empty($detail_text)) { $detail_label = "<blank>"; }
 								}
 								if ($this->stringStartsWith($p, "<detail_inputbox>")) $detail_inputbox = $this->removeFromString("<detail_inputbox>", $p);
 								if ($this->stringStartsWith($p, "<detail_submenu>")) $detail_submenu = $this->removeFromString("<detail_submenu>", $p);
@@ -334,6 +338,7 @@ class CPHelper
 						$kvs = $consultation->consultation_pathway;
 						if (!empty($kvs[$soap][$problem][$section][$group])) {
 								$details = $kvs[$soap][$problem][$section][$group];
+								Log::info("----------------START-----------------");
 								return $this->loopDetails($soap, $details, $obj);
 						}
 				}
@@ -341,7 +346,7 @@ class CPHelper
 				return;
 		}
 
-		public function loopDetails($soap, $details, $obj=null)
+		public function loopDetails($soap, $details, $obj=null, $isRoot=true)
 		{
 				$str = null;
 				$str_yes = null;
@@ -350,9 +355,10 @@ class CPHelper
 				$group_text = $details['group_text'];
 				$yes_text = $obj['yes_text']??null;
 				$no_text = $obj['no_text']??null;
-				$newline = $obj['group_newline']??0;
+				$newline = empty($obj['group_newline'])?0:1;
 				$separator = $obj['group_separator']??null;
 				$filename = $details['filename']??null;
+				$has_children = false;
 
 				unset($details['group_text']);
 				unset($details['group_newline']);
@@ -373,7 +379,10 @@ class CPHelper
 							Log::info("---->>>> ".$group);
 							Log::info("---->>>> ".$filename);
 							$child_obj = $this->pathwayObject($soap, null, null, $group, $child_filename);
-							$child_str = $this->loopDetails($soap, $detail['child'][$group], $child_obj);
+							$child_str = $this->loopDetails($soap, $detail['child'][$group], $child_obj, false);
+
+							$has_children = true;
+							Log::info("---->>>> ".$child_str);
 						}
 
 						// Combine detail text
@@ -390,24 +399,35 @@ class CPHelper
 								if (strtolower($detail['value'])==strtolower($detail['text'])) {
 									$detail_text = $detail['text'];
 								} else {
-									$detail_text = trim($detail['text'])=='empty'?'':$detail['text'];
+									$detail_text = "X".trim($detail['text'])=='empty'?'':$detail['text'];
 									$detail_text = trim($detail_text);
 								}
 
 								if ($child_str) {
 										if (strtolower($detail['text'])==substr(strtolower($child_str),0, strlen($detail['text']))) {
 											$str = $str." ".$child_str;
+											Log::info("IIIA ".($isRoot?"ROOT":"CHILD").": ".$str);
 										} else {
-											$str = $str." ".$detail_text." ".$child_str;
+											Log::info(">>>> has children: ".$has_children);
+											if ($has_children and $isRoot and !empty($obj['details'][$detail_text]['detail_label'])) {
+													$str = $str." ".$child_str;
+											} else {
+													$str = $str." ".$detail_text." ".$child_str;
+											}
 										}
+										Log::info("IIIB ".($isRoot?"ROOT":"CHILD").": ".$str);
 										$child_str = null;
 								} else {
 										$str = $str.$detail_text;
+										Log::info("TTTC ".($isRoot?"ROOT":"CHILD").": ".$str);
 								}
 						}
 
 						if (!empty($str)) {
-								$str = $str.", ";
+								// Separator between detail
+								Log::info("HHHH ".($isRoot?"ROOT":"CHILD").": ".$str);
+								$str = trim($str).($separator??", ")." ";
+								Log::info("HHHH ".($isRoot?"ROOT":"CHILD").": ".$str);
 						}
 
 				}
@@ -425,27 +445,38 @@ class CPHelper
 							$str = str_replace("but", "", $str);
 							$str = ucfirst(trim($str));
 						}
+						Log::info("EEEE: ".$str);
 				} else {
-						$str = $this->commaAnd($str, $separator);
+						Log::info("XXX ".($isRoot?"ROOT":"CHILD").": ".$str);
+						if (!$has_children) {
+								$str = $this->commaAnd($str, $separator);
+						}
+						Log::info("Separator ".$separator);
+						Log::info("XXX ".($isRoot?"ROOT":"CHILD").": ".$str);
 				}
 
+				$str = $this->removeCharAtEnd(",", trim($str));
+				$str = $this->removeCharAtEnd(";", trim($str));
 				$str = str_replace("<insert_text>", $str, $group_text);
 
 				if ($newline==1) {
 						$str = "<br>".$str;
 				}
 
-				Log::info($str);
+				Log::info(($isRoot?"ROOT":"CHILD").": ".$str);
 				return $str;
 		}
 
 		public function commaAnd($str, $separator=null, $group_style=null)
 		{
+				Log::info("COMMA: ".$str);
 				$words = explode(", ", $str);
 				array_pop($words);
+				if (empty($words)) return $str;
 				$final = null;
 				foreach($words as $index=>$word) {
 						if (!empty($word)) {
+								//Log::info("Word: ".$word);
 								$final = $final.$word;
 								if ($index+1<count($words)-1) {
 										$final = $final.($separator?:", ");

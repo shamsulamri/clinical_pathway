@@ -33,6 +33,7 @@
 
 <!-- Page content -->
 <div class="main">
+{{ $filename }}
 <h2>{{ ucwords($problem) }}</h2>
 
 <h3>{{ ucwords($section) }}</h3>
@@ -359,7 +360,7 @@ $(document).ready(function(){
 				//var value = $("#"+id+":checkbox").prop("checked");
 				//alert(value);
 				var inputBox = $("input[type=text][id="+id+"]");
-				var value = inputBox.val();
+				//var value = inputBox.val();
 				var style = $(this).attr("group-style");
 				var group_id = $(this).attr("group-id");
 
@@ -370,16 +371,15 @@ $(document).ready(function(){
 
 				if (checked==true) {
 						inputBox.focus();
-						if (!value) {
-								value = $("label[id="+id+"]").text();
-						}
-						createData(id, value);
+						value=1;
+						description = inputBox.val();
+						createData(id, value, description);
 
 						if (style==4) {
 								// Uncheck all radio button
 								$('#'+group_id+' input:radio:checked').each(function() {
 										$(this).prop("checked", false);
-										removeData($(this).attr("id"));
+										//removeData($(this).attr("id"));
 								});
 						}
 				}
