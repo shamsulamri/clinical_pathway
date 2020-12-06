@@ -436,10 +436,22 @@ class CPHelper
 				
 				if ($obj['group_style']==3) {
 						if ($str_yes) {
-								$str = $yes_text." ".$this->commaAnd($str_yes, $separator);
+								Log::info("YES TEXT: ".$yes_text);
+								$str = $this->commaAnd($str_yes, $separator);
+								if (strpos($yes_text, "<insert_text>") !==false) {
+										$str = str_replace("<insert_text>", $str, $yes_text);
+								} else {
+										$str = $yes_text." ".$str;
+								}
 						}
 						if ($str_no) {
-							$str = $str." ".$no_text." ".$this->commaAnd($str_no, $separator);
+							Log::info("NO TEXT: ".$no_text);
+							if (strpos($no_text, "<insert_text>") !==false) {
+									$temp_str = str_replace("<insert_text>", $this->commaAnd($str_no), $no_text);
+									$str = $str." ".$temp_str;
+							} else {
+									$str = $str." ".$no_text." ".$this->commaAnd($str_no, $separator);
+							}
 						}
 						if (empty($str_yes)) {
 							$str = str_replace("but", "", $str);
