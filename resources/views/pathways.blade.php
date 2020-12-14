@@ -2,25 +2,28 @@
 
 @section('content')
 
+<main role="main" class="container">
  <!-- Side navigation -->
 <div class="sidenav">
-		<a href="/cp">Problems List</a>
-		<a href="/editor">Editor</a>
+		<a href="/editor/{{ $consultation_id }}/{{ $target_problem }}">Editor</a>
+		<a href="/cp/{{ $consultation_id }}">Problems List</a>
 		<hr>
 		<strong>
-		<a href="/cp/subjective/{{ $problem }}">Subjective</a>
-		<a href="/cp/objective/{{ $problem }}">Objective</a>  
-		<a href="/cp/assessment_plan/{{ $problem }}">Assesstment and Plan</a>
+		<a href="/cp/{{ $consultation_id }}/subjective/{{ $problem }}?target_problem={{ $target_problem }}">Subjective</a>
+		<a href="/cp/{{ $consultation_id }}/objective/{{ $problem }}?target_problem={{ $target_problem }}">Objective</a>  
+		<a href="/cp/{{ $consultation_id }}/assessment_plan/{{ $problem }}?target_problem={{ $target_problem }}">Assesstment and Plan</a>
+		<hr>
+		<a href="/cp/{{ $consultation_id }}/pmh/{{ $problem }}?target_problem={{ $target_problem }}">Patient History</a>
 		</strong>
 		<hr>
 		@if($problem_list)
 				@foreach($problem_list as $index=>$p)
-					<a href="/cp/{{ $soap }}/{{ $problem }}/{{ strtolower($p) }}"><strong>{{ $p }}</strong></a>
+					<a href="/cp/{{ $consultation_id }}/{{ $soap }}/{{ $problem }}/{{ strtolower($p) }}"><strong>{{ $p }}</strong></a>
 					@if ($helper->toId($section)==$helper->toId($p))
 						@if (count($groups)>1)
 								@foreach($groups as $link)
 									@if ($parent)
-										 <a href="/cp/{{ $soap }}/{{ $problem }}/{{ $section }}#{{ $helper->toId($link) }}">&nbsp;&nbsp;&nbsp;{{ $link }}</a>
+										 <a href="/cp/{{ $consultation_id }}/{{ $soap }}/{{ $problem }}/{{ $section }}#{{ $helper->toId($link) }}">&nbsp;&nbsp;&nbsp;{{ $link }}</a>
 									@else
 										 <a href="#{{ $helper->toId($link) }}">&nbsp;&nbsp;&nbsp;{{ $link }}</a>
 									@endif
@@ -32,11 +35,16 @@
 </div>
 
 <!-- Page content -->
-<div class="main">
-{{ $filename }}
-<h2>{{ ucwords($problem) }}</h2>
+<div class="pathway">
+{{ $filename }}<br>
+{{ $target_problem }}
 
-<h3>{{ ucwords($section) }}</h3>
+@if ($soap == 'pmh')
+		<h3>Patient History</h3>
+@else
+		<h3>{{ ucwords($problem) }}</h3>
+		<h5>{{ ucwords($section) }}</h5>
+@endif
 <?php
 	$form = null;
 	$group_style = null;
@@ -47,7 +55,7 @@
 ?>
 @foreach ($pathways as $index=>$path)
 
-	@if ($helper->stringStartsWith($path, "<form>"))
+	@if ($helper->stringStartsWith($path, "<form>") or $index==count($pathways)-1)
 		@if (!empty($group_id))
 			<!-- end of group -->
 			</table>
@@ -80,9 +88,9 @@
 	<div id="{{ $group_id }}">
 			<!-- start of group -->
 			<br>
-			<h4>
+			<h5>
 			{{ $group }}
-			</h4>
+			</h5>
 			<table>
 	@endif
 
@@ -101,16 +109,19 @@
 								$root_pgd = $branch[0];
 								$child_kvs = $child_kvs[$soap][$problem][$root_pgd[1]][$root_pgd[2]][$root_pgd[3]]['child'];
 								$detail_value = $child_kvs[$group_id][$detail_id]['value']??null;
+								$detail_description = $child_kvs[$group_id][$detail_id]['description']??null;
 								$detail_text = $child_kvs[$group_id][$detail_id]['text']??null;
 								break;
 						case 1:
 								$root_pgd = $branch[0];
 								$child_kvs = $child_kvs[$soap][$problem][$root_pgd[1]][$root_pgd[2]][$root_pgd[3]]['child'];
 								$detail_value = $child_kvs[$group_id][$detail_id]['value']??null;
+								$detail_description = $child_kvs[$group_id][$detail_id]['description']??null;
 								if (!empty($branch[1])) {
 										$root_pgd = $branch[1];
 										$child_kvs = $child_kvs[$root_pgd[2]][$root_pgd[3]]['child'];
 										$detail_value = $child_kvs[$group_id][$detail_id]['value']??null;
+								    	$detail_description = $child_kvs[$group_id][$detail_id]['description']??null;
 										$detail_text = $child_kvs[$group_id][$detail_id]['text']??null;
 								}
 								break;
@@ -125,6 +136,49 @@
 										$root_pgd = $branch[2];
 										$child_kvs = $child_kvs[$root_pgd[2]][$root_pgd[3]]['child'];
 										$detail_value = $child_kvs[$group_id][$detail_id]['value']??null;
+								  		$detail_description = $child_kvs[$group_id][$detail_id]['description']??null;
+										$detail_text = $child_kvs[$group_id][$detail_id]['text']??null;
+								}
+								break;
+						case 3:
+								$root_pgd = $branch[0];
+								$child_kvs = $child_kvs[$soap][$problem][$root_pgd[1]][$root_pgd[2]][$root_pgd[3]]['child'];
+								if (!empty($branch[1])) {
+										$root_pgd = $branch[1];
+										$child_kvs = $child_kvs[$root_pgd[2]][$root_pgd[3]]['child'];
+								}
+								if (!empty($branch[2])) {
+										$root_pgd = $branch[2];
+										$child_kvs = $child_kvs[$root_pgd[2]][$root_pgd[3]]['child'];
+								}
+								if (!empty($branch[3])) {
+										$root_pgd = $branch[3];
+										$child_kvs = $child_kvs[$root_pgd[2]][$root_pgd[3]]['child'];
+										$detail_value = $child_kvs[$group_id][$detail_id]['value']??null;
+										$detail_description = $child_kvs[$group_id][$detail_id]['description']??null;
+										$detail_text = $child_kvs[$group_id][$detail_id]['text']??null;
+								}
+								break;
+						case 4:
+								$root_pgd = $branch[0];
+								$child_kvs = $child_kvs[$soap][$problem][$root_pgd[1]][$root_pgd[2]][$root_pgd[3]]['child'];
+								if (!empty($branch[1])) {
+										$root_pgd = $branch[1];
+										$child_kvs = $child_kvs[$root_pgd[2]][$root_pgd[3]]['child'];
+								}
+								if (!empty($branch[2])) {
+										$root_pgd = $branch[2];
+										$child_kvs = $child_kvs[$root_pgd[2]][$root_pgd[3]]['child'];
+								}
+								if (!empty($branch[3])) {
+										$root_pgd = $branch[3];
+										$child_kvs = $child_kvs[$root_pgd[2]][$root_pgd[3]]['child'];
+								}
+								if (!empty($branch[4])) {
+										$root_pgd = $branch[4];
+										$child_kvs = $child_kvs[$root_pgd[2]][$root_pgd[3]]['child'];
+										$detail_value = $child_kvs[$group_id][$detail_id]['value']??null;
+										$detail_description = $child_kvs[$group_id][$detail_id]['description']??null;
 										$detail_text = $child_kvs[$group_id][$detail_id]['text']??null;
 								}
 								break;
@@ -132,6 +186,7 @@
 	} else {
 
 				$detail_value = $kvs[$soap][$problem][$section_id][$group_id][$detail_id]['value']??null;
+				$detail_description = $kvs[$soap][$problem][$section_id][$group_id][$detail_id]['description']??null;
 				$detail_text = $kvs[$soap][$problem][$section_id][$group_id][$detail_id]['text']??null;
 	}
 ?>
@@ -173,11 +228,12 @@
 						$yes = "";
 						$no = "";
 						if (!empty($detail_value)) {
-								if ($detail_value==1) $yes = "checked";
+								if ($detail_value!=2) $yes = "checked";
 								if ($detail_value==2) $no = "checked";
 						}
 						?>
 						<input type="radio" name="{{ $id }}" id="{{ $id }}" value="1" group-style="3" {{ $yes }}> Yes
+
 					</td>
 					<td width=@if ($group_style==3) 60 @else 30 @endif>
 						<input type="radio" name="{{ $id }}" id="{{ $id }}" value="2" group-style="3" {{ $no }}> No
@@ -202,15 +258,17 @@
 					@endif
 					</td>
 					<td>
+						
 						{!! $helper->inputBox($inputbox_type, $inputbox_side, $detail, $id, 
-								$detail_value,
+								$detail_description,
 								$position, 
 								$group_style, 
 								$group_id,
 								$soap,
 								$detail_submenu??null,
 								$problem,
-								$detail_text
+								$detail_text,
+								$target_problem
 								) 
 						!!}
 					</td>
@@ -263,12 +321,10 @@
 			if ($helper->wordContains($path, "<R>")) $inputbox_side = "R";
 	?>
 	@endif
-
-
-
 @endforeach
 <meta name="csrf-token" content="{{ csrf_token() }}">
 </div>
+<br>
 <script>
 var selectedOption = null;
 var selectedInputBox = null;
@@ -316,9 +372,17 @@ $(document).ready(function(){
 				var detail_submenu = $(this).attr('detail_submenu');
 				var group_id = $(this).attr("group-id");
 				var style = $(this).attr("group-style");
-
 				var isChecked = $("#"+id+":checkbox").prop("checked");
+
+				console.log(detail_submenu);
+
 				if (style == 2) {
+						isChecked = $("#"+id+":radio").prop("checked");
+				}
+
+				if (style == 3) {
+						$("#"+id+":radio").val("1");
+						value = 1;
 						isChecked = $("#"+id+":radio").prop("checked");
 				}
 
@@ -337,7 +401,7 @@ $(document).ready(function(){
 								value = $("a[id="+id+"]").text();
 						}
 
-						var dataString = "key="+id+"&value="+value+"&soap={{ $soap }}&filename={{ $filename }}";
+						var dataString = "consultation_id={{ $consultation_id }}&key="+id+"&value="+value+"&soap={{ $soap }}&filename={{ $filename }}";
 						$.ajax({
 						type: "POST",
 								headers: {'X-CSRF-TOKEN': $('meta[name=csrf-token]').attr('content')},
@@ -506,10 +570,22 @@ $(document).ready(function(){
 								//removeData(ids);
 						}
 						break;
+				case '4':
+						// Uncheck all radio button
+						$('#'+group_id+' input:radio:checked').each(function() {
+								$(this).prop("checked", false);
+						});
+						break;
+				case '3':
+						$("#"+id+":radio").prop("checked", true);
+						break;
+				/*
 				default:
 						$("#"+id+":checkbox").prop("checked", true);
 						break;
+				*/
 				};
+				$("#"+id+":checkbox").prop("checked", true);
 		});
 
 		$('input[type=text]').focusout(function(){
@@ -518,18 +594,26 @@ $(document).ready(function(){
 				var root = id; //id.substring(0, id.length-6);
 				var pos = $(this).attr("input-position");
 				var style = $(this).attr("group-style");
+				
+				description = value;
+				if (style==3) {
+						console.log("text:id: "+id);
+						console.log("text:value: "+value);
+						description = value;
+						value = $("#"+id+":checked").val();
+				} else {
+						console.log("text:id: "+id);
+						console.log("text:value: "+value);
+						console.log("text:pos: " + pos);
+						console.log("text:root: " + root);
+				}
 
-				console.log("text:id: "+id);
-				console.log("text:value: "+value);
-				console.log("text:pos: " + pos);
-				console.log("text:root: " + root);
-
-				if (value) createData(root, value, value);
+				if (value) createData(root, value, description);
 		});
 });
 
 function createData(key, value, description) {
-		var dataString = "key="+key+"&value="+value+"&soap={{ $soap }}&filename={{ $filename }}";
+		var dataString = "consultation_id={{ $consultation_id }}&key="+key+"&value="+value+"&soap={{ $soap }}&filename={{ $filename }}";
 		if (description) {
 			dataString = dataString+"&description="+description;
 		}
@@ -546,7 +630,7 @@ function createData(key, value, description) {
 }
 
 function removeData(key) {
-		var dataString = "ids="+key+"&soap={{ $soap }}";
+		var dataString = "consultation_id={{ $consultation_id }}&ids="+key+"&soap={{ $soap }}";
 		console.log(dataString);
 		$.ajax({
 		type: "POST",
@@ -569,4 +653,5 @@ window.addEventListener( "pageshow", function ( event ) {
         }
 });
 </script>
+</main>
 @endsection

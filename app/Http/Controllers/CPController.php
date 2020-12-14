@@ -7,13 +7,22 @@ use Illuminate\Support\Facades\Storage;
 use Log;
 use App\CPHelper;
 use App\Consultation;
+use App\History;
 
 class CPController extends Controller
 {
-		public function generate(Request $request, $soap, $problem, $section=null)
+		public $patient_id = 1;
+
+		public function generate(Request $request, $consultation_id, $soap, $problem, $section=null)
 		{
+				if ($soap=='pmh') {
+						$problem = 'pmh';
+						$target_problem = $request->target_problem;
+				} else {
+						$problem = $request->target_problem?:$problem;
+				}
+
 				$helper = new CPHelper();
-				$consultation_id = 99;
 
 				$problem_list = $helper->getProblemList($soap, $problem);
 
@@ -27,18 +36,29 @@ class CPController extends Controller
 						$filename = $request->filename;
 				}
 
+				Log::info("---->>>>".$filename);
 				$pathways = $helper->getPathways($soap, $filename);
 
 				//$groups = $helper->getGroups($helper->getPathways($soap, $problem." - ".$section));
 				//$groups = $helper->getGroups($pathways);
+
+
 				$groups = $helper->getSectionGroups($soap, $problem, $section);
 
-				$consultation = Consultation::where('consultation_id', $consultation_id)->first();
-				$kvs = $consultation->consultation_pathway??null;
+				$kvs = [];
+				if ($soap=='pmh') {
+						$history = History::where('patient_id', $this->patient_id)->first();
+						$kvs = $history->history_pathway??null;
+				} else {
+						$consultation = Consultation::where('consultation_id', $consultation_id)->first();
+						$kvs = $consultation->consultation_pathway??null;
+				}
 
 				//Log::info(json_encode($kvs[$soap][$helper->toId($problem)][$helper->toId($section)]??null, JSON_PRETTY_PRINT));
 				Log::info(json_encode($kvs, JSON_PRETTY_PRINT));
 
+				//Log::info("------PATHWAYS-----");
+				//Log::info($pathways);
 				/*
 				$parent_details = [];
 				$psgd = [];
@@ -67,6 +87,8 @@ class CPController extends Controller
 					'filename'=>$request->filename??null,
 					'groups'=>$groups??null,
 					'parent_details'=>$parent_details??null,
+					'consultation_id'=>$consultation_id,
+					'target_problem'=>$target_problem??$problem,
 				]);
 		}
 
@@ -77,8 +99,7 @@ class CPController extends Controller
 				Log::info($request);
 
 				$helper = new CPHelper();
-				$consultation_id = 99;
-				$consultation = new Consultation();
+				$consultation_id = $request->consultation_id;
 
 				$kvs = [];
 				$key = $request->key;
@@ -98,11 +119,10 @@ class CPController extends Controller
 				Log::info($group);
 				Log::info($detail);
 				Log::info("Filename: ".$request->filename);
-				Log::info(".................");
-				Log::info($obj);
 				 */
 				$obj = $helper->pathwayObject($soap, $problem, $section, $group, $request->filename);
-
+				Log::info(".................");
+				Log::info($obj);
 
 				$detail_text = $obj['details'][$detail]['detail_text'];
 
@@ -110,7 +130,8 @@ class CPController extends Controller
 				if ($obj['group_style']==3) {
 						$node['text'] = str_replace("<insert_text>", $description, $detail_text);
 				} else {
-						$node['text'] = str_replace("<insert_text>", $value, $detail_text);
+						//$node['text'] = str_replace("<insert_text>", $value, $detail_text);
+						$node['text'] = $detail_text;
 				}
 				$node['description'] = $description;
 				$node['index'] = $obj['details'][$detail]['detail_index'];
@@ -136,17 +157,29 @@ class CPController extends Controller
 						}
 				}
 
-				$consultation = Consultation::where('consultation_id', $consultation_id)->first();
-				if ($consultation) {
-						$kvs = $consultation->consultation_pathway;
+				$consultation = new Consultation();
+				$history = new History();
+
+				if ($soap=='pmh') {
+						$history = History::find($this->patient_id);
+						if ($history) {
+								$kvs = $history->history_pathway;
+						} else {
+								$history = new History();
+								$history->patient_id = $this->patient_id;
+						}
 				} else {
-						$consultation = new Consultation();
-						$consultation->consultation_id = 99;
+						$consultation = Consultation::where('consultation_id', $consultation_id)->first();
+						if ($consultation) {
+								$kvs = $consultation->consultation_pathway;
+						} else {
+								$consultation = new Consultation();
+								$consultation->consultation_id = $request->consultation_id;
+						}
 				}
 
-				Log::info("COunt keys: ".count($keys));
 				switch (count($keys)) {
-						case 0:
+						case 0: // Root
 								if ($obj['group_style']==2) {
 										unset($kvs[$soap][$problem][$pgd[1]][$pgd[2]]);
 								}
@@ -157,6 +190,8 @@ class CPController extends Controller
 										unset($kvs[$soap][$problem][$pgd[1]][$pgd[2]][$radioId]);
 								}
 								$kvs[$soap][$problem][$pgd[1]][$pgd[2]]['group_text'] = $obj['group_text'];
+								$kvs[$soap][$problem][$pgd[1]][$pgd[2]]['group_index'] = $obj['group_index'];
+								$kvs[$soap][$problem][$pgd[1]][$pgd[2]]['group'] = $obj['group'];
 								$kvs[$soap][$problem][$pgd[1]][$pgd[2]][$detail] = $node;
 								$kvs[$soap][$problem][$pgd[1]][$pgd[2]][$detail]['child'] = null;
 								break;
@@ -166,7 +201,7 @@ class CPController extends Controller
 								$child = $kvs[$soap][$root_pgd[0]][$root_pgd[1]][$root_pgd[2]][$root_pgd[3]]['child'];
 
 								if ($obj['group_style']==2) {
-										$child = null;
+										unset($child[$pgd[2]]);
 								}
 								if ($obj['group_style']==4 and $removeCheckedItems) {
 										$child = null;
@@ -176,6 +211,8 @@ class CPController extends Controller
 								}
 
 								$child[$pgd[2]]['group_text'] = $obj['group_text'];
+								$child[$pgd[2]]['group_index'] = $obj['group_index'];
+								$child[$pgd[2]]['group'] = $obj['group'];
 								$child[$pgd[2]]['filename'] = $request->filename;
 								$child[$pgd[2]][$pgd[3]] = $node;
 								$child[$pgd[2]][$pgd[3]]['child'] = null;
@@ -183,7 +220,7 @@ class CPController extends Controller
 								$kvs[$soap][$root_pgd[0]][$root_pgd[1]][$root_pgd[2]][$root_pgd[3]]['child'] = $child;
 
 								Log::info("----------");
-										Log::info($kvs[$soap][$root_pgd[0]][$root_pgd[1]][$root_pgd[2]][$root_pgd[3]]['child']);
+								Log::info($kvs[$soap][$root_pgd[0]][$root_pgd[1]][$root_pgd[2]][$root_pgd[3]]['child']);
 								break;
 						case 2:
 								$root_pgd = $helper->getPSGD($keys[0]);
@@ -193,7 +230,7 @@ class CPController extends Controller
 								$child2 = $child[$child1_pgd[2]][$child1_pgd[3]]['child'];
 
 								if ($obj['group_style']==2) {
-										$child2 = null;
+										unset($child2[$pgd[2]]);
 								}
 								if ($obj['group_style']==4 and $removeCheckedItems) {
 										$child2= null;
@@ -202,6 +239,8 @@ class CPController extends Controller
 										unset($child2[$pgd[2]][$radioId]);
 								}
 								$child2[$pgd[2]]['group_text'] = $obj['group_text'];
+								$child2[$pgd[2]]['group_index'] = $obj['group_index'];
+								$child2[$pgd[2]]['group'] = $obj['group'];
 								$child2[$pgd[2]]['filename'] = $request->filename;
 								$child2[$pgd[2]][$pgd[3]] = $node;
 								$child2[$pgd[2]][$pgd[3]]['child'] = null;
@@ -219,12 +258,8 @@ class CPController extends Controller
 								$child2 = $child[$child1_pgd[2]][$child1_pgd[3]]['child'];
 								$child3 = $child2[$child2_pgd[2]][$child2_pgd[3]]['child'];
 
-								//$child = $kvs[$soap][$root_pgd[0]][$root_pgd[0]][$root_pgd[1]][$root_pgd[2]]['child']; 
-								//$child2 = $child[$child1_pgd[0]][$child1_pgd[1]][$child1_pgd[2]]['child'];
-								//$child3 = $child2[$child2_pgd[0]][$child2_pgd[1]][$child2_pgd[2]]['child'];
-
 								if ($obj['group_style']==2) {
-										$child3= null;
+										unset($child3[$pgd[2]]);
 								}
 								if ($obj['group_style']==4 and $removeCheckedItems) {
 										$child3 = null;
@@ -234,24 +269,97 @@ class CPController extends Controller
 								}
 
 								$child3[$pgd[2]]['group_text'] = $obj['group_text'];
+								$child3[$pgd[2]]['group_index'] = $obj['group_index'];
+								$child3[$pgd[2]]['group'] = $obj['group'];
 								$child3[$pgd[2]]['filename'] = $request->filename;
 								$child3[$pgd[2]][$pgd[3]] = $node;
 								$child3[$pgd[2]][$pgd[3]]['child'] = null;
-
-								/**
-								$kvs	[$soap][$root_pgd[0]][$root_pgd[0]][$root_pgd[1]][$root_pgd[2]]['child']
-										[$child1_pgd[0]][$child1_pgd[1]][$child1_pgd[2]]['child']
-										[$child2_pgd[0]][$child2_pgd[1]][$child2_pgd[2]]['child'] = $child3;
-										**/
 
 								$kvs	[$soap][$root_pgd[0]][$root_pgd[1]][$root_pgd[2]][$root_pgd[3]]['child']
 										[$child1_pgd[2]][$child1_pgd[3]]['child'] 
 										[$child2_pgd[2]][$child2_pgd[3]]['child'] = $child3;
 								break;
+						case 4:
+								$root_pgd = $helper->getPSGD($keys[0]);
+								$child1_pgd = $helper->getPSGD($keys[1]);
+								$child2_pgd = $helper->getPSGD($keys[2]);
+								$child3_pgd = $helper->getPSGD($keys[3]);
+
+								$child = $kvs[$soap][$root_pgd[0]][$root_pgd[1]][$root_pgd[2]][$root_pgd[3]]['child']; 
+								$child2 = $child[$child1_pgd[2]][$child1_pgd[3]]['child'];
+								$child3 = $child2[$child2_pgd[2]][$child2_pgd[3]]['child'];
+								$child4 = $child3[$child3_pgd[2]][$child3_pgd[3]]['child'];
+
+								if ($obj['group_style']==2) {
+										unset($child4[$pgd[2]]);
+								}
+								if ($obj['group_style']==4 and $removeCheckedItems) {
+										$child4 = null;
+								}
+								if ($obj['group_style']==4 and $removeRadio) {
+										unset($child4[$pgd[2]][$radioId]);
+								}
+
+								$child4[$pgd[2]]['group_text'] = $obj['group_text'];
+								$child4[$pgd[2]]['group_index'] = $obj['group_index'];
+								$child4[$pgd[2]]['group'] = $obj['group'];
+								$child4[$pgd[2]]['filename'] = $request->filename;
+								$child4[$pgd[2]][$pgd[3]] = $node;
+								$child4[$pgd[2]][$pgd[3]]['child'] = null;
+
+								$kvs	[$soap][$root_pgd[0]][$root_pgd[1]][$root_pgd[2]][$root_pgd[3]]['child']
+										[$child1_pgd[2]][$child1_pgd[3]]['child'] 
+										[$child2_pgd[2]][$child2_pgd[3]]['child'] 
+										[$child3_pgd[2]][$child3_pgd[3]]['child'] = $child4;
+								break;
+						case 5:
+								$root_pgd = $helper->getPSGD($keys[0]);
+								$child1_pgd = $helper->getPSGD($keys[1]);
+								$child2_pgd = $helper->getPSGD($keys[2]);
+								$child3_pgd = $helper->getPSGD($keys[3]);
+								$child4_pgd = $helper->getPSGD($keys[4]);
+
+								$child = $kvs[$soap][$root_pgd[0]][$root_pgd[1]][$root_pgd[2]][$root_pgd[3]]['child']; 
+								$child2 = $child[$child1_pgd[2]][$child1_pgd[3]]['child'];
+								$child3 = $child2[$child2_pgd[2]][$child2_pgd[3]]['child'];
+								$child4 = $child3[$child3_pgd[2]][$child3_pgd[3]]['child'];
+								$child5 = $child4[$child4_pgd[2]][$child4_pgd[3]]['child'];
+
+								if ($obj['group_style']==2) {
+										unset($child5[$pgd[2]]);
+								}
+								if ($obj['group_style']==4 and $removeCheckedItems) {
+										$child5 = null;
+								}
+								if ($obj['group_style']==4 and $removeRadio) {
+										unset($child5[$pgd[2]][$radioId]);
+								}
+
+								$child5[$pgd[2]]['group_text'] = $obj['group_text'];
+								$child5[$pgd[2]]['group_index'] = $obj['group_index'];
+								$child5[$pgd[2]]['group'] = $obj['group'];
+								$child5[$pgd[2]]['filename'] = $request->filename;
+								$child5[$pgd[2]][$pgd[3]] = $node;
+								$child5[$pgd[2]][$pgd[3]]['child'] = null;
+
+								$kvs	[$soap][$root_pgd[0]][$root_pgd[1]][$root_pgd[2]][$root_pgd[3]]['child']
+										[$child1_pgd[2]][$child1_pgd[3]]['child'] 
+										[$child2_pgd[2]][$child2_pgd[3]]['child'] 
+										[$child3_pgd[2]][$child3_pgd[3]]['child']
+										[$child4_pgd[2]][$child4_pgd[3]]['child'] = $child5;
+								break;
 				}
 
-				$consultation->consultation_pathway = $kvs;
-				$consultation->save();
+				if ($soap == 'pmh') {
+						$history->history_pathway = $kvs;
+						Log::info($history);
+						Log::info($kvs);
+						$history->save();
+						Log::info("SAVEEEED!!!!!!!!!!!!!!!!!");
+				} else {
+						$consultation->consultation_pathway = $kvs;
+						$consultation->save();
+				}
 				//Log::info(json_encode($kvs[$soap][$problem]??null, JSON_PRETTY_PRINT));
 				Log::info(json_encode($kvs, JSON_PRETTY_PRINT));
 				return "Record saved.";
@@ -262,21 +370,30 @@ class CPController extends Controller
 				Log::info("-------REMOVE---------");
 				Log::info($request);
 				$branches = explode("---", $request->ids);
+				$consultation_id = $request->consultation_id;
 				if (count($branches)==1) {
-						$this->remove_root($request);
+						$this->remove_root($request, $consultation_id);
 				} else {
-						$this->remove_branches($request);
+						$this->remove_branches($request, $consultation_id);
 				}
 
 				return "Remove data...";
 		}
 
-		public function remove_branch($soap, $id)
+		public function remove_branch($consultation_id, $soap, $id)
 		{
 				$helper = new CPHelper();
-				$consultation_id = 99;
-				$consultation = Consultation::where('consultation_id', $consultation_id)->first();
-				$kvs = $consultation->consultation_pathway;
+				$consultation = null;
+				$history = null;
+				$kvs = [];
+
+				if ($soap == 'pmh') {
+						$history = History::find($this->patient_id);
+						$kvs = $history->history_pathway;
+				} else {
+						$consultation = Consultation::where('consultation_id', $consultation_id)->first();
+						$kvs = $consultation->consultation_pathway;
+				}
 
 				$branches = explode("---", $id);
 
@@ -284,6 +401,7 @@ class CPController extends Controller
 						$branch[$index] = $helper->getPSGD($b);
 				}
 
+				Log::info(count($branches)-1);
 				switch (count($branches)-1) {
 					case 1: // First branch
 							$root_pgd = $helper->getPSGD($branches[0]);
@@ -292,7 +410,7 @@ class CPController extends Controller
 							unset($kvs[$soap][$root_pgd[0]][$root_pgd[1]][$root_pgd[2]][$root_pgd[3]]['child']
 									[$child1_pgd[2]][$child1_pgd[3]]);
 
-							if (count($kvs[$soap][$root_pgd[0]][$root_pgd[1]][$root_pgd[2]][$root_pgd[3]]['child'][$child1_pgd[2]])==1) {
+							if (count($kvs[$soap][$root_pgd[0]][$root_pgd[1]][$root_pgd[2]][$root_pgd[3]]['child'][$child1_pgd[2]])<=4) {
 									Log::info("Remove node.....");
 									unset($kvs[$soap][$root_pgd[0]][$root_pgd[1]][$root_pgd[2]][$root_pgd[3]]['child']
 											[$child1_pgd[2]]);
@@ -305,6 +423,15 @@ class CPController extends Controller
 							unset($kvs[$soap][$root_pgd[0]][$root_pgd[1]][$root_pgd[2]][$root_pgd[3]]['child']
 									[$child1_pgd[2]][$child1_pgd[3]]['child']
 									[$child2_pgd[2]][$child2_pgd[3]]);
+
+							if (count($kvs[$soap][$root_pgd[0]][$root_pgd[1]][$root_pgd[2]][$root_pgd[3]]['child']
+									[$child1_pgd[2]][$child1_pgd[3]]['child']
+									[$child2_pgd[2]])<=2) 
+							{
+									unset($kvs[$soap][$root_pgd[0]][$root_pgd[1]][$root_pgd[2]][$root_pgd[3]]['child']
+											[$child1_pgd[2]][$child1_pgd[3]]['child']
+											[$child2_pgd[2]]);
+							}
 							break;
 					case 3:
 							$root_pgd = $helper->getPSGD($branches[0]);
@@ -317,102 +444,116 @@ class CPController extends Controller
 									[$child2_pgd[2]][$child2_pgd[3]]['child']
 									[$child3_pgd[2]][$child3_pgd[3]]);
 
-							/*
-							unset($kvs[$soap][$root_pgd[0]][$root_pgd[1]][$root_pgd[2]]['child']
-									[$child1_pgd[0]][$child1_pgd[1]][$child1_pgd[2]]['child']
-									[$child2_pgd[0]][$child2_pgd[1]][$child2_pgd[2]]['child']
-									[$child3_pgd[0]][$child3_pgd[1]][$child3_pgd[2]]);
-							 */
+							if (count($kvs[$soap][$root_pgd[0]][$root_pgd[1]][$root_pgd[2]][$root_pgd[3]]['child']
+									[$child1_pgd[2]][$child1_pgd[3]]['child']
+									[$child2_pgd[2]][$child2_pgd[3]]['child']
+									[$child3_pgd[2]])<=2)
+							{
+									unset($kvs[$soap][$root_pgd[0]][$root_pgd[1]][$root_pgd[2]][$root_pgd[3]]['child']
+											[$child1_pgd[2]][$child1_pgd[3]]['child']
+											[$child2_pgd[2]][$child2_pgd[3]]['child']
+											[$child3_pgd[2]]);
+							}
+							break;
+					case 4:
+							$root_pgd = $helper->getPSGD($branches[0]);
+							$child1_pgd = $helper->getPSGD($branches[1]);
+							$child2_pgd = $helper->getPSGD($branches[2]);
+							$child3_pgd = $helper->getPSGD($branches[3]);
+							$child4_pgd = $helper->getPSGD($branches[4]);
+
+							unset($kvs[$soap][$root_pgd[0]][$root_pgd[1]][$root_pgd[2]][$root_pgd[3]]['child']
+									[$child1_pgd[2]][$child1_pgd[3]]['child']
+									[$child2_pgd[2]][$child2_pgd[3]]['child']
+									[$child3_pgd[2]][$child3_pgd[3]]['child']
+									[$child4_pgd[2]][$child4_pgd[3]]);
+
+							if (count($kvs[$soap][$root_pgd[0]][$root_pgd[1]][$root_pgd[2]][$root_pgd[3]]['child']
+									[$child1_pgd[2]][$child1_pgd[3]]['child']
+									[$child2_pgd[2]][$child2_pgd[3]]['child']
+									[$child3_pgd[2]][$child3_pgd[3]]['child']
+									[$child4_pgd[2]])<=2) {
+									
+									unset($kvs[$soap][$root_pgd[0]][$root_pgd[1]][$root_pgd[2]][$root_pgd[3]]['child']
+											[$child1_pgd[2]][$child1_pgd[3]]['child']
+											[$child2_pgd[2]][$child2_pgd[3]]['child']
+											[$child3_pgd[2]][$child3_pgd[3]]['child']
+											[$child4_pgd[2]]);
+							}
+							break;
+					case 5:
+							$root_pgd = $helper->getPSGD($branches[0]);
+							$child1_pgd = $helper->getPSGD($branches[1]);
+							$child2_pgd = $helper->getPSGD($branches[2]);
+							$child3_pgd = $helper->getPSGD($branches[3]);
+							$child4_pgd = $helper->getPSGD($branches[4]);
+							$child5_pgd = $helper->getPSGD($branches[5]);
+
+							unset($kvs[$soap][$root_pgd[0]][$root_pgd[1]][$root_pgd[2]][$root_pgd[3]]['child']
+									[$child1_pgd[2]][$child1_pgd[3]]['child']
+									[$child2_pgd[2]][$child2_pgd[3]]['child']
+									[$child3_pgd[2]][$child3_pgd[3]]['child']
+									[$child4_pgd[2]][$child4_pgd[3]]['child']
+									[$child5_pgd[2]][$child5_pgd[3]]);
+
+							if (count($kvs[$soap][$root_pgd[0]][$root_pgd[1]][$root_pgd[2]][$root_pgd[3]]['child']
+									[$child1_pgd[2]][$child1_pgd[3]]['child']
+									[$child2_pgd[2]][$child2_pgd[3]]['child']
+									[$child3_pgd[2]][$child3_pgd[3]]['child']
+									[$child4_pgd[2]][$child4_pgd[3]]['child']
+									[$child5_pgd[2]])<=2) {
+									
+									unset($kvs[$soap][$root_pgd[0]][$root_pgd[1]][$root_pgd[2]][$root_pgd[3]]['child']
+											[$child1_pgd[2]][$child1_pgd[3]]['child']
+											[$child2_pgd[2]][$child2_pgd[3]]['child']
+											[$child3_pgd[2]][$child3_pgd[3]]['child']
+											[$child4_pgd[2]][$child4_pgd[3]]['child']
+											[$child5_pgd[2]]);
+							}
 							break;
 				}
 
-				$consultation->consultation_pathway = $kvs;
-				$consultation->save();
+				if ($soap == 'pmh') {
+						$history->history_pathway = $kvs;
+						$history->save();
+				} else {
+						$consultation->consultation_pathway = $kvs;
+						$consultation->save();
+				}
 
 				Log::info(json_encode($kvs, JSON_PRETTY_PRINT));
 		}
 
-		public function remove_branches($request) 
+		public function remove_branches($request, $consultation_id) 
 		{
 				$soap = $request->soap;
 				$ids = explode(";", $request->ids);
 				foreach($ids as $id) {
-					$this->remove_branch($soap, $id);
+					$this->remove_branch($consultation_id, $soap, $id);
 				}
-
-				/*
-
-
-				Log::info("Remove branch...................");
-				$soap = $request->soap;
-				$branches = explode(";", $request->ids);
-				$consultation_id = 99;
-				$helper = new CPHelper();
-
-				$consultation = Consultation::where('consultation_id', $consultation_id)->first();
-				$kvs = $consultation->consultation_pathway;
-
-				if ($consultation) {
-						$test_node = $consultation->consultation_pathway;
-
-						foreach($branches as $index=>$branch){
-							$pgd = $helper->getPSGD($branch);
-
-							if (!empty($test_node[$soap][$pgd[0]][$pgd[1]][$pgd[2]][$pgd[3]]['child'])) {
-									Log::info("Child exist...");
-							} else {
-									break;
-							}	
-						}
-				}
-
-				switch ($index) {
-					case 1:
-							$root_pgd = $helper->getPSGD($branches[0]);
-							$child1_pgd = $helper->getPSGD($branches[1]);
-							unset($kvs[$soap][$root_pgd[0]][$root_pgd[1]][$root_pgd[2]][$root_pgd[3]]['child']
-									[$child1_pgd[2]][$child1_pgd[3]]);
-							break;
-					case 2:
-							$root_pgd = $helper->getPGD($branches[0]);
-							$child1_pgd = $helper->getPGD($branches[1]);
-							$child2_pgd = $helper->getPGD($branches[2]);
-							unset($kvs[$soap][$root_pgd[0]][$root_pgd[1]][$root_pgd[2]]['child']
-									[$child1_pgd[0]][$child1_pgd[1]][$child1_pgd[2]]['child']
-									[$child2_pgd[0]][$child2_pgd[1]][$child2_pgd[2]]);
-							break;
-					case 3:
-							$root_pgd = $helper->getPGD($branches[0]);
-							$child1_pgd = $helper->getPGD($branches[1]);
-							$child2_pgd = $helper->getPGD($branches[2]);
-							$child3_pgd = $helper->getPGD($branches[3]);
-							unset($kvs[$soap][$root_pgd[0]][$root_pgd[1]][$root_pgd[2]]['child']
-									[$child1_pgd[0]][$child1_pgd[1]][$child1_pgd[2]]['child']
-									[$child2_pgd[0]][$child2_pgd[1]][$child2_pgd[2]]['child']
-									[$child3_pgd[0]][$child3_pgd[1]][$child3_pgd[2]]);
-							break;
-				}
-
-				$consultation->consultation_pathway = $kvs;
-				$consultation->save();
-
-				//Log::info(json_encode($kvs, JSON_PRETTY_PRINT));
-				*/
 		}
 
-		public function remove_root(Request $request) 
+		public function remove_root(Request $request, $consultation_id) 
 		{
 				$soap = $request->soap;
 				$problem = $request->problem;
 				$section = $request->section;
 
-				$consultation_id = 99;
 				$helper = new CPHelper();
 
-				$consultation = Consultation::where('consultation_id', $consultation_id)->first();
-				if ($consultation) {
+				$consultation = null;
+				$history = null;
+
+				if ($soap=='pmh') {
+						$history = History::find($this->patient_id);
+						$kvs = $history->history_pathway??null;
+				} else {
+						$consultation = Consultation::where('consultation_id', $consultation_id)->first();
+						$kvs = $consultation->consultation_pathway??null;
+				}
+
+				if ($kvs) {
 						$ids = explode(";",$request->ids);
-						$kvs = $consultation->consultation_pathway;
 
 						Log::info(count($ids));
 						foreach($ids as $id) {
@@ -420,7 +561,7 @@ class CPController extends Controller
 								
 								if (!empty($kvs[$soap][$problem][$section][$group])) {
 										unset($kvs[$soap][$problem][$section][$group][$detail]);
-										if (count($kvs[$soap][$problem][$section][$group])==1) {
+										if (count($kvs[$soap][$problem][$section][$group])==3) {
 												unset($kvs[$soap][$problem][$section][$group]);
 										}
 										if (count($kvs[$soap][$problem][$section])==0) {
@@ -433,34 +574,19 @@ class CPController extends Controller
 												unset($kvs[$soap]);
 										}
 								}
-								$consultation->consultation_pathway = $kvs;
-								$consultation->save();
+
+
+								if ($soap == 'pmh') {
+										$history->history_pathway = $kvs;
+										$history->save();
+								} else {
+										$consultation->consultation_pathway = $kvs;
+										$consultation->save();
+								}
+
 								Log::info(json_encode($kvs, JSON_PRETTY_PRINT));
 						}
 				}
-
-				/**
-				return "X";
-
-				$consultation_id = 99;
-
-				$ids = explode(";",$request->ids);
-
-				$consultation = Consultation::where('consultation_id', $consultation_id)->first();
-
-				if ($consultation) {
-						$kvs = $consultation->consultation_pathway;
-
-						foreach($ids as $id) {
-								unset($kvs[$id]);
-						}
-						$consultation->consultation_pathway = $kvs;
-						$consultation->save();
-						Log::info("Record removed....");
-						Log::info(json_encode($kvs, JSON_PRETTY_PRINT));
-						return "Record removed.";
-				}
-				**/
 		}
 
 }

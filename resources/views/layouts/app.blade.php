@@ -16,7 +16,6 @@
 <link rel="stylesheet" href="/datetimepicker/tempusdominus-bootstrap-4.min.css" />
 
 	<style>
-
 		.bd-placeholder-img {
 				font-size: 1.125rem;
 				text-anchor: middle;
@@ -50,45 +49,42 @@
 			border-bottom: 0px solid #dee2e6;
 		}
 
- /* The sidebar menu */
-.sidenav {
-  height: 100%; /* Full-height: remove this if you want "auto" height */
-  width: 220px; /* Set the width of the sidebar */
-  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
-  left: 15px;
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 20px;
-}
+		 /* The sidebar menu */
+		.sidenav {
+		  height: 100%; /* Full-height: remove this if you want "auto" height */
+		  width: 220px; /* Set the width of the sidebar */
+		  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+		  z-index: 1; /* Stay on top */
+		  top: 0; /* Stay at the top */
+		  left: 0px;
+		  overflow-x: hidden; /* Disable horizontal scroll */
+		  padding-top: 0px;
+		}
 
-/* The navigation menu links */
-.sidenav a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 16px;
-  display: block;
-}
+		/* The navigation menu links */
+		.sidenav a {
+		  padding: 0px 8px 6px 0px;
+		  text-decoration: none;
+		  font-size: 16px;
+		  display: block;
+		}
 
 
-/* Style page content */
-.main {
-  margin-left: 200px; /* Same as the width of the sidebar */
-  padding: 0px 10px;
-}
+		/* Style page content */
+		.pathway {
+		  margin-left: 150px; /* Same as the width of the sidebar */
+		  padding: 0px 0px;
+		}
 
-/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
+		/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+		@media screen and (max-height: 450px) {
+		  .sidenav {padding-top: 15px;}
+		  .sidenav a {font-size: 18px;}
+		}
 
 	</style>
   </head>
-<body>
-		<main role="main" class="container">
-			<br>
+<body class='bg-white'>
 			@yield('content')
-		</main>
 </body>
 </html>

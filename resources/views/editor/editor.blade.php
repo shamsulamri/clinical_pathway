@@ -1,34 +1,42 @@
 @extends('layouts.app')
 
 @section('content')
+<style>
+body {
+	padding-top: 0px;
+	padding-left: 0px;
+}
+</style>
 
 <?php
 $insert_here = "..";
 $current_section = "";
 ?>
 
-<h1><a href="/cp/subjective/sore throat">Clinical Pathways</a></h1>
+<a class='btn btn-warning' href="/cp/{{ $consultation_id }}/subjective/{{ $problem }}"><i class="fa fa-chevron-left" aria-hidden="true"></i> Back</a>
+<a class="btn @if($isEdit) btn-primary @else btn-secondary @endif" href="/editor/{{ $consultation_id }}/{{ $problem }}?soap={{ $soap }}&edit={{ !$isEdit }}">Toggle Edit</a>
 
-<h1>Editor</h1>
-
-<a class="btn @if($isEdit) btn-primary @else btn-secondary @endif" href="/editor?edit={{ !$isEdit }}">Toggle Edit</a>
+<br>
+<a href="/editor/{{ $consultation_id }}/{{ $problem }}?soap=cc">Complain</a>
+<a href="/editor/{{ $consultation_id }}/{{ $problem }}?soap=pmh">PMH</a>
 <br>
 <br>
-
 @if ($isEdit)
 <strong>
-<label id='consultation_note' class='text text-primary' contenteditable=true>{{ $consultation->consultation_note??$insert_here }}</label>
+<label id='consultation_note' class='text text-primary' contenteditable=true>{{ $editor_note??$insert_here }}</label>
 </strong>
 @else
-@if ($consultation->consultation_note)
-<label id='consultation_note'>{{ $consultation->consultation_note }}</label>
+@if ($editor_note)
+<label id='consultation_note'>{{ $editor_note }}</label>
 @endif
 @endif
 <?php
 	foreach($soaps as $soap_key=>$soap) {
 
 			?>
+			@if ($soap != 'pmh')
 			<h3>{{ $soap }}</h3>
+			@endif
 			<?php
 			foreach($problems as $index=>$problem) {
 					$problem = str_replace("_", " ", $problem);
@@ -170,7 +178,7 @@ $(document).ready(function(){
 		});
 
 		function addNote(id, value) {
-				var dataString = "id="+id+"&value="+value;
+				var dataString = "soap={{ $soap }}&consultation_id={{ $consultation_id }}&id="+id+"&value="+value;
 				dataString = parse(dataString);
 				console.log(dataString);
 				$.ajax({

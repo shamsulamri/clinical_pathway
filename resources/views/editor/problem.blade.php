@@ -1,15 +1,22 @@
 @extends('layouts.app')
 
 @section('content')
+<style>
+body {
+	padding-top: 10px;
+	padding-left: 16px;
+}
+</style>
 
-<h1>Problem List</h1>
+<h3>Problem List</h3>
+<br>
 
 @foreach($problems as $problem)
 
-<h3>
-<a href="/cp/subjective/{{ $problem }}">{{ ucwords($problem) }}</a>
+<h5>
+<a href="/cp/{{ $consultation_id }}/subjective/{{ $problem }}">{{ ucwords($problem) }}</a>
 <br>
-</h3>
+</h5>
 @endforeach
 
 @endsection
