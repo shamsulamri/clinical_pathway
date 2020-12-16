@@ -204,7 +204,8 @@ class CPController extends Controller
 										unset($child[$pgd[2]]);
 								}
 								if ($obj['group_style']==4 and $removeCheckedItems) {
-										$child = null;
+										unset($child[$pgd[2]]);
+										//$child = null;
 								}
 								if ($obj['group_style']==4 and $removeRadio) {
 										unset($child[$pgd[2]][$radioId]);
@@ -233,7 +234,8 @@ class CPController extends Controller
 										unset($child2[$pgd[2]]);
 								}
 								if ($obj['group_style']==4 and $removeCheckedItems) {
-										$child2= null;
+										unset($child2[$pgd[2]]);
+										//$child2= null;
 								}
 								if ($obj['group_style']==4 and $removeRadio) {
 										unset($child2[$pgd[2]][$radioId]);
@@ -294,7 +296,8 @@ class CPController extends Controller
 										unset($child4[$pgd[2]]);
 								}
 								if ($obj['group_style']==4 and $removeCheckedItems) {
-										$child4 = null;
+										unset($child4[$pgd[2]]);
+										//$child4 = null;
 								}
 								if ($obj['group_style']==4 and $removeRadio) {
 										unset($child4[$pgd[2]][$radioId]);
@@ -329,7 +332,8 @@ class CPController extends Controller
 										unset($child5[$pgd[2]]);
 								}
 								if ($obj['group_style']==4 and $removeCheckedItems) {
-										$child5 = null;
+										unset($child5[$pgd[2]]);
+										//$child5 = null;
 								}
 								if ($obj['group_style']==4 and $removeRadio) {
 										unset($child5[$pgd[2]][$radioId]);

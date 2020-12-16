@@ -105,6 +105,7 @@ $current_section = "";
 </strong>
 <?php
 																	} else {
+																			Log::info($text);
 ?>
 																	{!! $text !!} {{ $note??null }}
 <?php

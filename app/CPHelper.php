@@ -37,6 +37,7 @@ class CPHelper
 				$str = str_replace(")", "", $str);
 				$str = str_replace("?", "", $str);
 				$str = str_replace(".", "", $str);
+				$str = str_replace(",", "", $str);
 				$str = str_replace("/ ", "", $str);
 				$str = str_replace("/", "", $str);
 				$str = trim($str);
@@ -380,8 +381,13 @@ class CPHelper
 						}
 				}
 
+				$str = str_replace("<blank>", "", $str);
 				$str = str_replace(" ()", "", $str);
 				$str = str_replace(".)", ")", $str);
+				$str = str_replace("( ", "(", $str);
+				$str = str_replace(" ;", "", $str);
+				$str = rtrim($str, "; ");
+				Log::info($str);
 				return $str;
 		}
 
@@ -411,7 +417,7 @@ class CPHelper
 						$obj = $this->pathwayObject($path['soap'], null, null, $group_name, $group_filename);
 				}
 				
-				$this->pretty($obj);
+				//$this->pretty($obj);
 				
 				/** Sort detail in each group **/
 				usort($group, function($a, $b){
@@ -466,7 +472,6 @@ class CPHelper
 						}
 
 						//$str = str_replace("<insert_value>", $detail['description'], $str);
-						Log::info($str);
 
 				}
 
@@ -506,6 +511,13 @@ class CPHelper
 				}
 
 				//Log::info($group_str);
+				if(!empty($obj['group_newline'])) {
+						if ($obj['group_newline']==1) $group_str = "<br>".$group_str;
+				}
+
+				//$group_str = strtolower($group_str);
+				//$group_str = ucfirst($group_str);
+				Log::info($str);
 				return $group_str;
 
 		}
