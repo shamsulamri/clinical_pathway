@@ -1,0 +1,24 @@
+<form>Assessment & Plan
+<group>DDx
+<group_text>Diagnosis: <insert_text>
+<group_style>1
+<new_line>
+<separator><new_line>
+<detail>Panic disorder
+<detail_text>Panic disorder
+<detail_submenu>AP - Probability
+<detail>Generalized anxiety disorder
+<detail_text>Generalized anxiety disorder
+<detail_submenu>AP - Probability
+<detail>Mixed anxiety and depressive disorder
+<detail_text>Mixed anxiety and depressive disorder
+<detail_submenu>AP - Probability
+<detail>Depressive disorder
+<detail_text>Depressive disorder
+<detail_submenu>AP - Probability
+<detail>
+<detail_text><insert_text>
+<detail_inputbox><text><L>
+
+<Load>AP - Assessment & Plan
+

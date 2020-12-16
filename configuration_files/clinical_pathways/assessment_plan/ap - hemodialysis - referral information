@@ -1,0 +1,12 @@
+<form>Hemodialysis
+<group>Referral
+<group_text><insert_text>
+<group_style>1
+<separator><new_line>
+<sub_notes>
+<detail>Referral information
+<detail_text>
+<detail_submenu>AP - hemodialysis - treatment
+<detail>Make appointment
+<detail_text>
+

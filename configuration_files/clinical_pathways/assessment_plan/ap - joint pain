@@ -1,0 +1,21 @@
+<form>Assessment & Plan
+<group>DDx
+<group_text>Diagnosis: <insert_text>
+<group_style>1
+<new_line>
+<separator><new_line>
+<detail>Septic arthritis
+<detail_text>Septic arthritis
+<detail_submenu>AP - Probability
+<detail>Gout
+<detail_submenu>AP - Probability
+<detail>Rheumatoid arthritis
+<detail_submenu>AP - Probability
+<detail>Osteoarthritis
+<detail_submenu>AP - Probability
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<Load>AP - Assessment & Plan
+

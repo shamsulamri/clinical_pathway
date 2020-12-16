@@ -1,0 +1,37 @@
+<form>Haematology
+<group>Haematology
+<group_text><insert_text>
+<group_style>1
+<new_line>
+<detail>Bleeding Profile 
+<detail_text>Bleeding Profile 
+<detail_order>bleeding_pro
+<detail>Group cross match
+<detail_text>Group cross match
+<detail_order>339
+<detail>Coomb's Test
+<detail_text>Coomb's Test
+<detail_order>coombs
+<detail>Erythrocyte sedimentation rate
+<detail_text>Erythrocyte sedimentation rate
+<detail_order>338
+<detail>FBS
+<detail_text>FBS
+<detail_order>fbs
+<detail>Full blood count
+<detail_text>Full blood count
+<detail_order>337
+<detail>Full blood examination (FBC+ESR+Film)
+<detail_text>Full blood count
+<detail_order>fbe
+<detail>Hb
+<detail_text>Hb
+<detail_order>hb
+<detail>Hb Electrophoresis
+<detail_text>Hb Electrophoresis
+<detail_order>hb_electro
+<detail>Random Blood sugar
+<detail_text>Random Blood sugar
+<detail_order>342
+
+

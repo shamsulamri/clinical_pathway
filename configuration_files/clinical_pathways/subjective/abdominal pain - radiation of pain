@@ -1,0 +1,24 @@
+<form>Radiation of pain
+<group>Radiation of pain
+<group_text>the pain radiates to <insert_text>
+<group_style>1
+<detail>Chest
+<detail>Back
+<detail>Shoulder
+<detail_submenu>objective - side
+<detail>Groin
+<detail_submenu>objective - side
+<detail>Flank
+<detail_submenu>objective - side
+<detail>Pelvis
+<detail_submenu>objective - side
+<detail>Testes
+<detail_submenu>objective - side
+<detail>Scrotum
+<detail_submenu>objective - side
+<detail>Inner thighs
+<detail_submenu>objective - side
+<detail>Rectum
+<detail>
+<detail_text><insert_text>
+<detail_inputbox><text><L>

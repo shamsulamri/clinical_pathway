@@ -1,0 +1,17 @@
+<form>Illness
+<group>State of Illness
+<group_text><insert_text>.
+<group_style>1
+<detail>Appears well
+<detail>Appears ill
+<detail>Acutely ill
+<detail>Chronically ill
+<detail>Uncooperative
+<detail>Chills
+<detail>Dyspnea
+<detail_submenu>objective - dyspnea
+<detail>Cyanosis
+<detail_submenu>objective - cyanosis
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

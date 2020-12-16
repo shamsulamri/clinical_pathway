@@ -1,0 +1,10 @@
+<form>Fundus - Non-Visualized
+<group>Non-Visualized
+<group_text>due to <insert_text>
+<group_style>1
+<detail>Cataracts
+<detail>High myopia
+<detail>Uncooperative
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

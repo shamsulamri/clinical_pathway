@@ -1,0 +1,8 @@
+<form>Average Blood Sugar
+<group>Average Blood Sugar
+<group_text><insert_text>
+<group_style>0
+<detail>
+<detail_text>with an average blood sugar of <insert_text> mmol/L
+<detail_inputbox><text><L>
+

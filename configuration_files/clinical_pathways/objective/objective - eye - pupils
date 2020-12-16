@@ -1,0 +1,24 @@
+<form>Pupils
+<group>Pupils
+<group_text>Pupils - <insert_text>
+<group_style>1
+<detail>PERRLA
+<detail>Equal
+<detail>Round
+<detail_submenu>objective - oropharynx - side
+<detail>Reactive
+<detail_submenu>objective - oropharynx - side
+<detail>Red reflex
+<detail_submenu>objective - oropharynx - side
+<detail>Dilated
+<detail_submenu>objective - oropharynx - side
+<detail>Constricted
+<detail_submenu>objective - oropharynx - side
+<detail>Non-reactive
+<detail_submenu>objective - oropharynx - side
+<detail>Anisocoria
+<detail_submenu>objective - oropharynx - side
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+

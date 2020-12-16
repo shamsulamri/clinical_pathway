@@ -1,0 +1,17 @@
+<form>Babinski
+<group>Babinski
+<group_text>Babinski - <insert_text>
+<group_style>1
+<separator>,
+<detail>Upgoing
+<detail>Downgoing
+<detail>Right
+<detail_text>on the right
+<detail>Left
+<detail_text>on the left
+<detail>Both, more on right
+<detail_text>bilaterally, more on the right
+<detail>Both, more on left
+<detail_text>bilaterally, more on the left
+<detail>Bilaterally
+<detail_text>bilaterally

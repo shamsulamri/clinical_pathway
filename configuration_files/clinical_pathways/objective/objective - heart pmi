@@ -1,0 +1,15 @@
+<form>Heart PMI
+<group>Precordial impulse
+<group_text>PMI over <insert_text>
+<group_style>1
+<detail>Right parasternal
+<detail_submenu>objective - heart - pmi - location
+<detail>Sternal
+<detail_submenu>objective - heart - pmi - location
+<detail>Apical
+<detail_submenu>objective - heart - pmi - location
+<detail>Basal
+<detail_submenu>objective - heart - pmi - location
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

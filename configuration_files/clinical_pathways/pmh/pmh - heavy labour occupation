@@ -1,0 +1,17 @@
+<form>Heavy Labor Occupation
+<group>Heavy labor
+<group_text><insert_text>
+<group_style>1
+<detail>Manufacturing
+<detail_text>in manufacturing
+<detail>Construction
+<detail_text>in construction
+<detail>Moving
+<detail_text>in moving
+<detail>Mining
+<detail_text>in mining
+<detail>Lumber industry
+<detail_text>in lumber industry
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

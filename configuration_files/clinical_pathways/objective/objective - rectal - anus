@@ -1,0 +1,21 @@
+<form>Anus
+<group>Anus
+<group_text><insert_text>
+<group_style>1
+<detail>Tender
+<detail>Non-tender
+<detail>Fistula
+<detail>Fissure
+<detail>Stenosis
+<detail>Abscess
+<detail>Prolapse
+<detail>Patulous
+<detail_text>Patulous
+<detail>Hemorrhoids
+<detail_submenu>objective - rectal - anus - hemorrhoids
+<detail>Erythema
+<detail>Hematoma
+<detail>Rectal tear
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

@@ -1,0 +1,11 @@
+<form>Physical
+<group>Degree of physical activity
+<group_text>(<insert_text>)
+<group_style>2
+<detail>Mild
+<detail>Moderate
+<detail>Intense
+<detail>
+<detail_text><insert_text>
+<detail_inputbox><text><L>
+

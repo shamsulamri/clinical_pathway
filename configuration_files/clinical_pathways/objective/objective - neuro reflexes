@@ -1,0 +1,43 @@
+<form>Reflexes
+<group>Reflexes
+<group_text>Reflexes - <insert_text>
+<group_style>1
+<separator>;
+<detail>Normal
+<detail_text>Reflexes: normal
+<detail>Rt biceps
+<detail_text>right biceps
+<detail_submenu>objective - neuro reflexes - strength of reflex
+<detail>Lt biceps
+<detail_text>left biceps
+<detail_submenu>objective - neuro reflexes - strength of reflex
+<detail>Rt triceps
+<detail_text>right triceps
+<detail_submenu>objective - neuro reflexes - strength of reflex
+<detail>Lt triceps
+<detail_text>left triceps
+<detail_submenu>objective - neuro reflexes - strength of reflex
+<detail>Rt supinator
+<detail_text>right supinator
+<detail_submenu>objective - neuro reflexes - strength of reflex
+<detail>Lt supinator
+<detail_text>left supinator
+<detail_submenu>objective - neuro reflexes - strength of reflex
+<detail>Rt patellar
+<detail_text>right patellar
+<detail_submenu>objective - neuro reflexes - strength of reflex
+<detail>Lt patellar
+<detail_text>left patellar
+<detail_submenu>objective - neuro reflexes - strength of reflex
+<detail>Rt Achilles
+<detail_text>right archilles
+<detail_submenu>objective - neuro reflexes - strength of reflex
+<detail>Lt Achilles
+<detail_text>left archilles
+<detail_submenu>objective - neuro reflexes - strength of reflex
+<detail>Babinski
+<detail_text>
+<detail_submenu>objective - neuro reflexes - babinski
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

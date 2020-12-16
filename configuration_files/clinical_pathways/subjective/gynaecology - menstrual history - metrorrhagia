@@ -1,0 +1,16 @@
+<form>Metrorrhagia
+<group>Frequency of metrorrhagia
+<group_text>occurs <insert_text>
+<group_style>1
+<detail>Rarely
+<detail>Occasionally
+<detail>Frequently
+<detail>Times a month
+<detail_text><insert_value> times per month
+<detail_inputbox><inte><L>
+<detail>All the time
+<detail_text>all the time
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+

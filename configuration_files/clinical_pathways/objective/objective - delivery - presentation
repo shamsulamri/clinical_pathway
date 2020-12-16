@@ -1,0 +1,12 @@
+<form>Presentation
+<group>Fetal presentation
+<group_text>Fetal presentation - <insert_text>
+<group_style>1
+<detail>Occipital Anterior
+<detail>Occipital Posterior
+<detail>Occipital Lateral
+<detail>Face
+<detail>Brow
+<detail>Breech
+<detail_submenu>objective - delivery - fetal presentation - breech
+

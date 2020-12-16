@@ -1,0 +1,13 @@
+<form>Heart Murmurs
+<group>Heart Murmurs
+<group_text><insert_text> murmurs;
+<group_style>1
+<detail>Early systolic
+<detail>Midsystolic
+<detail>Holosystolic
+<detail>Diastolic
+<detail>Continous
+<detail>Friction rub
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

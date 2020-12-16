@@ -1,0 +1,13 @@
+<form>Foods
+<group>Type of food
+<group_text><insert_text>
+<group_style>1
+<detail>Cold
+<detail>Hot
+<detail>Fatty
+<detail>Greasy
+<detail>Spicy
+<detail>Dairy products
+<detail>Wheat products
+<detail>Overeating
+

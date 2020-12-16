@@ -1,0 +1,43 @@
+<form>Gynaecology History
+<group>Menstrual History
+<group_text><insert_text>
+<group_style>4
+<new_line>
+<separator>;
+<detail>Pre-menarche
+<detail_text>The patient is currently pre-menarche.
+<detail>Menarche
+<detail_text>Age at menarche: <insert_text> years old.
+<detail_inputbox><inte><L>
+<detail>Length of menstrual cycle
+<detail_text>Length of cycle: <insert_text> days
+<detail_inputbox><inte><L>
+<detail>Duration of menstrual cycle
+<detail_text>Duration: <insert_text> days
+<detail_inputbox><inte><L>
+<detail>Regularity of periods
+<detail_text>Periods:
+<detail_submenu>gynaecology - menstrual history - regularity
+<detail>Extent of bleeding
+<detail_text>Bleeding is
+<detail_submenu>gynaecology - menstrual history - bleeding
+<detail>Metrorrhagia
+<detail_text>Metrorrhagia
+<detail_submenu>gynaecology - menstrual history - metrorrhagia
+<detail>Dysmenorrhea
+<detail_submenu>gynaecology - menstrual history - dysmenorrhea
+<detail>Date of last period
+<detail_text>Last normal menstrual period
+<detail_submenu>When
+
+<form>Gynaecology History
+<group>Menopausal
+<group_text><insert_text>
+<group_style>1
+<new_line>
+<separator>;
+<detail>Menopause
+<detail_text>Age at menopause: <insert_text> years old.
+<detail_inputbox><inte><L>
+<detail>Surgical menopause
+<detail_text>menopause surgically induced

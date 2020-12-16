@@ -1,0 +1,11 @@
+<form>Physical Examination
+<group>Blood group
+<group_text><insert_text>
+<group_style>1
+<separator>
+<detail>Group
+<detail_text>
+<detail_submenu>objective - blood group select
+<detail>Rhesus
+<detail_text>
+<detail_submenu>objective - blood rhesus

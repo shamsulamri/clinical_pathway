@@ -1,0 +1,18 @@
+<form>Relevant Diagnoses
+<group>Relevant Medical History
+<group_text>Past medical history is notable for <insert_text>.
+<group_style>1
+<detail>Renal disease
+<detail_submenu>subjective - relevant diagnosis - renal disease
+<detail>Endocrine disease
+<detail_submenu>subjective - relevant diagnosis - endocrine disease
+<detail>Metabolic disease
+<detail_submenu>subjective - relevant diagnosis - metabolic disease
+<detail>Toxemia of pregnancy
+<detail>Polycythemia
+<detail>Polyarteritis nodosa
+<detail>Patent ductus arteriosus
+<detail>
+<detail_text><insert_text>
+<detail_inputbox><text><L>
+

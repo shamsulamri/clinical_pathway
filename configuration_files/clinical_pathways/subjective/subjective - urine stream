@@ -1,0 +1,15 @@
+<form>Urine Stream
+<group>Urinary strean reduced with
+<group_text>The urinary stream is reduced so that <insert_text>
+<group_style>4
+<detail>Normal urine stream
+<detail_text>The urine stream is normal
+<detail>Terminal dribbling
+<detail_text>there is terminal dribbling
+<detail>Need to stand closer to the toilet
+<detail_text>the patient needs to stand closer to the toilet
+<detail>Need to sit to urinate
+<detail_text>patient needs to sit to urinate
+<detail>Need to strain to urinate
+<detail_text>the patient needs to strain in order to urinate
+

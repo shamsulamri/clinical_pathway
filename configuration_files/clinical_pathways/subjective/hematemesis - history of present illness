@@ -1,0 +1,139 @@
+<form>Presentation
+<group>Mode of Presentation
+<group_text>The patient presented with <insert_text>.
+<group_style>1
+<detail>Hematemesis
+<detail>Coffee ground emesis
+<detail>Melena
+<detail>Abdominal pain
+<detail>Weakness
+<detail>Lightheadedness
+<detail>Syncope
+<detail>Palpitations
+<detail>Sweating
+<detail>Positive hemoccult
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<form>Presentation
+<group>Date of Onset
+<group_text>Symptoms were first noted <insert_text>.
+<group_style>2
+<reveal_date>
+<detail>Hours ago
+<detail_text><insert_value> hours ago
+<detail_inputbox><inte><L>
+<detail>Days ago
+<detail_text><insert_value> days ago
+<detail_inputbox><inte><L>
+<detail>Weeks ago
+<detail_text><insert_value> weeks ago
+<detail_inputbox><inte><L>
+<detail>Months ago
+<detail_text><insert_value> months ago
+<detail_inputbox><inte><L>
+<detail>Years ago
+<detail_text><insert_value> years ago
+<detail_inputbox><inte><L>
+
+<form>Presentation
+<group>Duration of Symptom
+<group_text>It lasted <insert_text>.
+<group_style>1
+<detail>Minutes
+<detail_text><insert_value> minutes
+<detail_inputbox><inte><L>
+<detail>Hours
+<detail_text><insert_value> hours
+<detail_inputbox><inte><L>
+<detail>Days
+<detail_text><insert_value> days
+<detail_inputbox><inte><L>
+<detail>Weeks
+<detail_text><insert_value> weeks
+<detail_inputbox><inte><L>
+<detail>Months
+<detail_text><insert_value> months
+<detail_inputbox><inte><L>
+<detail>Years
+<detail_text><insert_value> years
+<detail_inputbox><inte><L>
+<detail>Still present
+
+<form>Presentation
+<group>Number of episodes
+<group_text>The patient recalls <insert_text> in the past.
+<group_style>2
+<detail>Single episode
+<detail_text>a single episode
+<detail>Few episodes
+<detail_text>a few episode
+<detail>Episodes
+<detail_text><insert_value> episodes
+<detail_inputbox><inte><L>
+<detail>Many episodes
+
+<form>Presentation
+<group>Estimated total blood loss
+<group_text>The total blood loss was estimated as <insert_text>.
+<group_style>2
+<detail>1-2 Teaspoons
+<detail_text>1-2 teaspoons
+<detail>1-2 Tablespoons
+<detail_text>1-2 tablespoons
+<detail>Cups
+<detail_text><insert_value> cups
+<detail_inputbox><inte><L>
+<detail>Ounces
+<detail_text><insert_value> ounces
+<detail_inputbox><inte><L>
+<detail>Mililiters
+<detail_text><insert_value> ml per day
+<detail_inputbox><inte><L>
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<form>Presentation
+<group>Precipitating factors
+<group_text>Symptoms are precipitated by <insert_text>.
+<group_style>4
+<detail>No precipitating factor
+<detail_text>There was no precipitating factor known.
+<detail>Drinking alcohol
+<detail>Eating food
+<detail>Medications
+<detail>Stress
+<detail>Excessive vomiting
+<detail>Liver disease
+<detail>Caustic ingestion
+<detail>Foreign body ingestion
+<detail>GE reflux
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<form>Presentation
+<group>Associated Symptoms
+<group_text><insert_text>
+<group_style>3
+<yes_text>Associated symptoms include 
+<no_text>but no 
+<new_paragraph>
+<detail>Abdominal pain
+<detail>Change-bowel habits
+<detail>Changes in stool
+<detail>Dizziness
+<detail>Fever
+<detail_submenu>Fever (deg F)
+<detail>Tachycardia
+<detail>Dysphagia
+<detail>Jaundice
+<detail>Failure to thrive
+<detail>Vomiting
+<detail>Weight loss
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+

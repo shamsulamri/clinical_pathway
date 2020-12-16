@@ -1,0 +1,19 @@
+<form>Physical Examination
+<group>Audiometry
+<group_text>Audiometry: <insert_text>
+<group_style>1
+<separator>;
+<counter>
+<detail>Indications
+<detail_text>
+<detail_submenu>objective - procedures - indications
+<detail>Date
+<detail_text>
+<detail_submenu>When
+<detail>Written consent obtained ?
+<detail_text>
+<detail_submenu>objective - procedures - consent
+<detail>Results
+<detail_text>
+<detail_submenu>objective - procedures - audiometry - results
+

@@ -1,0 +1,12 @@
+<form>Urine
+<group>Odor of urine
+<group_text>urine has <insert_text> odor
+<group_style>1
+<detail>Normal  
+<detail>Offensive 
+<detail>Putrid 
+<detail>Fishy 
+<detail>
+<detail_text><insert_text>
+<detail_inputbox><text><L>
+

@@ -1,0 +1,15 @@
+<form>Investigation of
+<group>Investigation of
+<group_text>upon investigation of <insert_text>
+<group_style>1
+<detail>Polyuria
+<detail>Polydipsia
+<detail>Polyphagia
+<detail>Weight loss
+<detail>Fatigue
+<detail>Visual distubance
+<detail>Neuropathy
+<detail>
+<detail_text><insert_text>
+<detail_inputbox><text><L>
+

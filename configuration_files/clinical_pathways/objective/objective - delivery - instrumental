@@ -1,0 +1,15 @@
+<form>Instrumental
+<group>Forceps
+<group_text><insert_text>
+<group_style>1
+<detail>Low
+<detail_text>low forceps
+<detail>Midcavity
+<detail_text>midcavity forceps
+<detail>Rotation
+<detail_text>rotational forceps
+<detail>Manual
+<detail_text>manual forceps
+<detail>Failed forceps
+<detail_submenu>objective - delivery - failed forceps 
+

@@ -1,0 +1,14 @@
+<form>Joints
+<group>Joints
+<group_text><insert_text>
+<group_style>1
+<detail>Head
+<detail>Neck
+<detail>Shoulder
+<detail>Elbow
+<detail>Forearm
+<detail>Wrist
+<detail>Trunk
+<detail>Knee
+<detail>Ankle
+

@@ -1,0 +1,70 @@
+<form>Sputum
+<group>Consistency of sputum
+<group_text>Sputum is <insert_text>.
+<group_style>1
+<detail>Thick
+<detail>Thin
+<detail>Watery
+<detail>Mucoid
+<detail>
+<detail_text><insert_text>
+<detail_inputbox><text><L>
+
+<form>Sputum
+<group>Colour of sputum
+<group_text>It has <insert_text> colour.
+<group_style>1
+<detail>Clear
+<detail>Pink
+<detail>Green
+<detail>White
+<detail>Brown
+<detail>Yellow
+<detail>Rusty
+<detail>Unknown
+<detail>
+<detail_text><insert_text>
+<detail_inputbox><text><L>
+
+<form>Sputum
+<group>Blood content
+<group_text>The patient has noted <insert_text>.
+<group_style>4
+<detail>No hemoptysis
+<detail_text>The patient denied hemoptysis.
+<detail>Red streaks
+<detail>Clots
+<detail>Gross blood
+<detail>
+<detail_text><insert_text>
+<detail_inputbox><text><L>
+
+<form>Sputum
+<group>Odour of sputum
+<group_text>The sputum <insert_text>.
+<group_style>2
+<detail>Foul
+<detail_text>foul smelling
+<detail>No odour
+<detail_text>has no odour
+<detail>
+<detail_text><insert_text>
+<detail_inputbox><text><L>
+
+<form>Presentation
+<group>Daily sputum production
+<group_text>Approximate dialy sputum production is <insert_text>.
+<group_style>2
+<detail>Mililiters
+<detail_text><insert_text> ml per day
+<detail_inputbox><doub><L>
+<detail>Teaspoons
+<detail_text><insert_text> teaspoons
+<detail_inputbox><inte><L>
+<detail>Tablespoons
+<detail_text><insert_text> tablespoons
+<detail_inputbox><inte><L>
+<detail>Cups
+<detail_text><insert_text> cups
+<detail_inputbox><inte><L>
+<detail>Unknown

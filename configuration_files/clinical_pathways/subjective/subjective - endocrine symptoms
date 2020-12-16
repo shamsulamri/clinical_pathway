@@ -1,0 +1,17 @@
+<form>Presentation
+<group>Renal symptoms
+<group_text>(<insert_text>)
+<group_style>1
+<detail>Cold intolerance
+<detail>Heat intolerance
+<detail>Dry skin
+<detail>Muscle cramps
+<detail>Muscle weakness
+<detail>Polydipsia
+<detail>Polyphagia
+<detail>Weight gain
+<detail>Weight loss
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+

@@ -1,0 +1,20 @@
+<form>Follow up
+<group>Change since last visit
+<group_text>Since the last visit the patient's condition has <insert_text>.
+<group_style>2
+<detail>Resolved
+<detail>Improved
+<detail>Worsened
+<detail>Not change
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<form>Presentation
+<group>Problems with medication
+<group_text>The patient is having difficulty with the medication <insert_text>.
+<group_style>4
+<detail>No 
+<detail_text>The patient is not having difficulty with her medications.
+<detail>Side effects
+

@@ -1,0 +1,19 @@
+<form>Aggravating Medication
+<group>Aggravating medication
+<group_text><insert_text>
+<group_style>3
+<yes_text>Aggravating medication include 
+<no_text>but no 
+<new_paragraph>
+<detail>Aspirin
+<detail>NSAIDs
+<detail_text>NSAIDs
+<detail>Corticosteroids
+<detail>Antibiotics
+<detail>Antidepressants
+<detail>Narcotics
+<detail>Potassium
+<detail>Chemotherapy
+<detail>
+<detail_text><insert_text>
+<detail_inputbox><text><L>

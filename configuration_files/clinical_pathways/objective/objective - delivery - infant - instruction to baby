@@ -1,0 +1,7 @@
+<form>Instruction to baby
+<group>Description
+<group_text>Instruction: <insert_text>
+<group_style>0
+<detail>
+<detail_text><insert_value> 
+<detail_inputbox><text><L>

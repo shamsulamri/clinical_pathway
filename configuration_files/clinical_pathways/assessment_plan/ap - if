@@ -1,0 +1,15 @@
+<form>Assessment & Plan
+<group>If...
+<group_text><insert_text>
+<group_style>1
+<detail>Symptoms worsen
+<detail_text>symptoms worsen
+<detail>Symptoms persist
+<detail_text>symptoms persist more than
+<detail_submenu>AP - symptoms persist
+<detail>Specific symptom present
+<detail_text>
+<detail_submenu>AP - specific symptom present
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

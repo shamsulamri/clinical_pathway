@@ -1,0 +1,34 @@
+<form>Age of children
+<group>Age of children
+<group_text>The children are aged <insert_text> years old
+<group_style>1
+<detail>Years old (1st)
+<detail_text><insert_value>
+<detail_inputbox><inte><L>
+<detail>Years old (2nd)
+<detail_text><insert_value>
+<detail_inputbox><inte><L>
+<detail>Years old (3rd)
+<detail_text><insert_value>
+<detail_inputbox><inte><L>
+<detail>Years old (4th)
+<detail_text><insert_value>
+<detail_inputbox><inte><L>
+<detail>Years old (5th)
+<detail_text><insert_value>
+<detail_inputbox><inte><L>
+<detail>Years old (6th)
+<detail_text><insert_value>
+<detail_inputbox><inte><L>
+<detail>Years old (7th)
+<detail_text><insert_value>
+<detail_inputbox><inte><L>
+<detail>Years old (8th)
+<detail_text><insert_value>
+<detail_inputbox><inte><L>
+<detail>Years old (9th)
+<detail_text><insert_value>
+<detail_inputbox><inte><L>
+<detail>Years old (10th)
+<detail_text><insert_value>
+<detail_inputbox><inte><L>

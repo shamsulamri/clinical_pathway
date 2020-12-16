@@ -1,0 +1,17 @@
+<form>Worsening Hypertension
+<group>Worsening Hypertension
+<group_text>. Blood pressures in the past have been <insert_text>
+<group_style>1
+<detail>Normal
+<detail>Borderline hypertensive
+<detail>Mildly elevated
+<detail>Moderately elevated
+<detail>Severely elevated
+<detail_text>severely elevated
+<detail>Approximate systolic BP
+<detail_text>approximately
+<detail_submenu>hypertension - approximate systolic bp
+<detail>Approximate diastolic BP
+<detail_text>approximately
+<detail_submenu>hypertension - approximate diastolic bp
+

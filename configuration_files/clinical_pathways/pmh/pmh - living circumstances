@@ -1,0 +1,14 @@
+<form>Living Conditions
+<group>Living Conditions
+<group_text><insert_text>
+<group_style>1
+<separator>.
+<detail>Socioeconomic status
+<detail_text>The patient's
+<detail_submenu>PMH - Socioeconomic status
+<detail>Housing
+<detail_text>The patient lives in a
+<detail_submenu>PMH - Housing
+<detail>Patient lives with
+<detail_text><blank>
+<detail_submenu>PMH - Patient lives with

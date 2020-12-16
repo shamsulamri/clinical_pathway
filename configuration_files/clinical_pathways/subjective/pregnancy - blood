@@ -1,0 +1,12 @@
+<form>Obstetric History
+<group>Blood
+<group_text><insert_text>
+<group_style>1
+<detail>Blood Group
+<detail_text>Blood group:
+<detail_submenu>objective - blood group
+<detail>VDRL
+<detail_text>VDRL (+ve)
+<detail>TPHA
+<detail_text>TPHA (+ve)
+

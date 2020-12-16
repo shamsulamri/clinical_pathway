@@ -1,0 +1,13 @@
+<form>Procedures & Imaging
+<group>Follow-up instructions
+<group_text>.The patient was instructed to <insert_text>
+<group_style>1
+<detail>Schedule the appointment
+<detail_text>schedule the appointment for the procedure
+<detail>Call for the results
+<detail_text>call for the results of the procedure
+<detail>Schedule appt. after procedure
+<detail_text>schedule for future appointment after the procedure
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

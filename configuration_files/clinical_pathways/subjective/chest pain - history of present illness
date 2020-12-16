@@ -1,0 +1,239 @@
+<form>Presentation
+<group>Date of Onset
+<group_text>The patient presented with chest pain that began <insert_text>
+<group_style>2
+<reveal_date>
+<detail>Today
+<detail>Date:
+<detail_text>on the <insert_text>
+<detail_inputbox><date><R>
+<detail>Days ago
+<detail_text><insert_text> days ago
+<detail_inputbox><inte><L>
+<detail>Weeks ago
+<detail_text><insert_text> weeks ago
+<detail_inputbox><inte><L>
+<detail>Months ago
+<detail_text><insert_text> months ago
+<detail_inputbox><inte><L>
+<detail>Years ago
+<detail_text><insert_text> years ago
+<detail_inputbox><inte><L>
+
+<form>Presentation
+<group>Duration of Symptom
+<group_text>and lasted <insert_text>.
+<group_style>1
+<detail>Hours
+<detail_text><insert_text> hours
+<detail_inputbox><inte><L>
+<detail>Days
+<detail_text><insert_text> days
+<detail_inputbox><inte><L>
+<detail>Weeks
+<detail_text><insert_text> weeks
+<detail_inputbox><inte><L>
+<detail>Months
+<detail_text><insert_text> months
+<detail_inputbox><inte><L>
+<detail>Years
+<detail_text><insert_text> years
+<detail_inputbox><inte><L>
+<detail>Still present
+
+<form>Presentation
+<group>Rate of Onset
+<group_text>Symptoms appeared <insert_text>.
+<group_style>2
+<detail>Abruptly
+<detail>Over hours
+<detail_text>over a period of <insert_text> hours
+<detail_inputbox><inte><L>
+<detail>Over days
+<detail_text>over a period of <insert_text> days
+<detail_inputbox><inte><L>
+<detail>Over weeks
+<detail_text>over a period of <insert_text> weeks
+<detail_inputbox><inte><L>
+<detail>Over months
+<detail_text>over a period of <insert_text> months
+<detail_inputbox><inte><L>
+<detail>Over years
+<detail_text>over a period of <insert_text> years
+<detail_inputbox><inte><L>
+
+<form>Presentation
+<group>Character of Pain
+<group_text>The patient describe it as <insert_text> pain
+<group_style>1
+<detail>Sharp
+<detail>Dull
+<detail>Tight
+<detail>Pressure-like
+<detail>Squeezing
+<detail>Crushing
+<detail>Cramp-like
+<detail>Aching
+<detail>Stabbing
+<detail>Burning
+<detail>Pleuritic
+<detail>
+<detail_text><insert_text>
+<detail_inputbox><text><L>
+
+<form>Presentation
+<group>Severity
+<group_text>, which is <insert_text>.
+<group_style>1
+<detail>Mild
+<detail_text>mild in intensity
+<detail_submenu>subjective - severity
+<detail>Moderate
+<detail_text>moderate in intensity
+<detail_submenu>subjective - severity
+<detail>Severe
+<detail_text>severe in intensity
+<detail_submenu>subjective - severity
+<detail>Excruciating
+<detail_text>excruciating in intensity
+<detail_submenu>subjective - severity
+<detail>Scale of 1 to 10
+<detail_text>.The pain is described as <insert_text> on a scale of 1 to 10 in severity
+<detail_inputbox><inte><L>
+<detail>
+<detail_text><insert_text>
+<detail_inputbox><text><L>
+
+<form>Presentation
+<group>Location of pain
+<group_text>The pain is located in the <insert_text>.
+<group_style>1
+<detail>Substernal area
+<detail>Upper chest
+<detail_submenu>objective - side
+<detail>Abdomen
+<detail_submenu>objective - abdomen - location
+<detail>Axillary area
+<detail_submenu>objective - side
+<detail>Anterior chest
+<detail_submenu>objective - side
+<detail>Costochondral
+<detail>
+<detail_text><insert_text>
+<detail_inputbox><text><L>
+
+<form>Presentation
+<group>Radiation of pain
+<group_text>It radiates to <insert_text>.
+<group_style>4
+<detail>No radiation
+<detail_text>The pain does not radiate.
+<detail>Shoulder
+<detail_submenu>objective - side
+<detail>Arm
+<detail_submenu>objective - side
+<detail>Axilla
+<detail_submenu>objective - side
+<detail>Neck
+<detail>Through to upper back
+<detail_submenu>objective - side
+<detail>Around to upper back
+<detail_submenu>objective - side
+<detail>Through to lower back
+<detail_submenu>objective - side
+<detail>Jaw
+<detail_submenu>objective - side
+<detail>Abdomen
+<detail_submenu>objective - abdomen - location
+<detail>Scapula
+<detail_submenu>objective - side
+<detail>Entire chest
+<detail>
+<detail_text><insert_text>
+<detail_inputbox><text><L>
+
+<form>Presentation
+<group>Sleep disturbance
+<group_text>The chest pain <insert_text> awakens the patient from sleep.
+<group_style>2
+<detail>Never
+<detail>Rarely
+<detail>Occasionally
+<detail>Frequently
+<detail>Usually
+
+<form>Presentation
+<group>Patient cannot
+<group_text>Symptom prevent the patient from <insert_text>.
+<group_style>4
+<detail>No disability
+<detail_text>The patient is not disabled by the symptoms.
+<detail>Engage in strenous activity
+<detail_text>participating in strenous activity
+<detail>Walk long distances
+<detail_text>walking long distances
+<detail>Continue usual employment
+<detail_text>continuing in his usual employment
+<detail>Climb stairs
+<detail_text>climbing stairs
+<detail>
+<detail_text><insert_text>
+<detail_inputbox><text><L>
+
+<form>Presentation
+<group>Precipitating factors
+<group_text>The chest pain is precipitated by <insert_text>.
+<group_style>4
+<detail>No precipitating factor
+<detail_text>There was no precipitating factor known.
+<detail>Walking
+<detail_text>
+<detail_submenu>chest pain - walking
+<detail>Climbing stairs
+<detail>Lying flat in bed
+<detail>Physical activity
+<detail_submenu>chest pain - degree of physical activity
+<detail>Emotional stress
+<detail>Cold weather
+<detail>Hot weather
+<detail>Meals
+<detail>Fasting
+<detail>Sexual activity
+<detail>Chest trauma
+<detail>Noncompliance
+<detail>
+<detail_text><insert_text>
+<detail_inputbox><text><L>
+
+<form>Presentation
+<group>Associated Symptoms
+<group_text><insert_text>
+<group_style>3
+<yes_text>Associated symptoms include 
+<no_text>but no 
+<new_paragraph>
+<detail>Dyspnea
+<detail_submenu>chest pain - associated symptoms
+<detail>Nausea
+<detail_submenu>chest pain - associated symptoms
+<detail>Vomiting
+<detail_submenu>chest pain - associated symptoms
+<detail>Diaphoresis
+<detail_submenu>chest pain - associated symptoms
+<detail>Palpitations
+<detail_submenu>chest pain - associated symptoms
+<detail>Weakness
+<detail_submenu>chest pain - associated symptoms
+<detail>Cough
+<detail_submenu>chest pain - associated symptoms
+<detail>Syncope
+<detail_submenu>chest pain - associated symptoms
+<detail>Heartburn
+<detail_submenu>chest pain - associated symptoms
+<detail>Abdominal pain
+<detail_submenu>chest pain - associated symptoms
+<detail>Fever
+<detail_submenu>chest pain - associated symptoms
+<detail>
+<detail_text><insert_text>
+<detail_inputbox><text><L>

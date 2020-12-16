@@ -1,0 +1,10 @@
+<form>Presentation
+<group>Homebound status
+<group_text>Patient is <insert_text>
+<group_style>1
+<detail>Leaves home only
+<detail>Blind or mentally incapable
+<detail>Limited activity
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

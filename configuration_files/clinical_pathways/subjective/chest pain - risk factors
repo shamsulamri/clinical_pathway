@@ -1,0 +1,22 @@
+<form>Risk Factors
+<group>Risk factors
+<group_text><insert_text>
+<group_style>3
+<yes_text>Risk factors include 
+<no_text>but no
+<new_paragraph>
+<detail>Smoking
+<detail>Hypercholesterolemia
+<detail>Hyperlipidaemia
+<detail>Hypertension
+<detail>Diabetes mellitus
+<detail>Obesity
+<detail>Sedentary life style
+<detail>Known family history
+<detail>Cocaine abuse
+<detail>
+<detail_text><insert_text>
+<detail_inputbox><text><L>
+
+<load>subjective - risk factors
+

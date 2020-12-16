@@ -1,0 +1,23 @@
+<form>Scrotum
+<group>Scrotum
+<group_text><insert_text>
+<group_style>1
+<detail>Normal
+<detail>Erythematous
+<detail>Swollen
+<detail_text>Swollen
+<detail>Testicular swelling
+<detail_submenu>objective - side
+<detail>Testicular tenderness
+<detail_submenu>objective - side
+<detail>Enlarged testicles
+<detail_submenu>objective - side
+<detail>Hydrocele
+<detail_submenu>objective - side
+<detail>Undescended testicle
+<detail_submenu>objective - side
+<detail>Scrotal hernia
+<detail_submenu>objective - side
+<detail>
+<detail_text><insert_value> 
+<detail_inputbox><text><L>

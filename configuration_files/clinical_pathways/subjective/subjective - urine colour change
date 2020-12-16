@@ -1,0 +1,12 @@
+<form>Urine
+<group>Change in colour
+<group_text>urine has become <insert_text>
+<group_style>4
+<detail>No change in colour
+<detail_text>The urine has not changed in colour
+<detail>Lighter than usual
+<detail>Darker than usual
+<detail>
+<detail_text><insert_text>
+<detail_inputbox><text><L>
+

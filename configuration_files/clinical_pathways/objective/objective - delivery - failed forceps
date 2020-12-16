@@ -1,0 +1,11 @@
+<form>Failed Forceps
+<group>Outcome
+<group_text><insert_text>
+<group_style>1
+<detail>Normal
+<detail_text>with normal outcome
+<detail>Shoulder dystocia
+<detail_text>resulted in shoulder dystocia
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

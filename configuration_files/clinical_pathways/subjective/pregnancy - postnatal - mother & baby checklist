@@ -1,0 +1,111 @@
+<form>Mother & Baby Checklist
+<group>Check mother's condition
+<group_text>Check mother's condition: <insert_text>.
+<group_style>1
+<separator>;
+<detail>Perineum
+<detail_text>perineum
+<detail_submenu>subjective - postnatal - comments
+<detail>Fundal Height (cm)
+<detail_text>fundal height: <insert_text> cm
+<detail_submenu>subjective - postnatal - comments
+<detail_inputbox><text><L>
+<detail>Breasts
+<detail_text>breasts
+<detail_submenu>subjective - postnatal - comments
+<detail>Lochia
+<detail_text>lochia
+<detail_submenu>subjective - postnatal - comments
+
+<form>Mother & Baby Checklist
+<group>Advise mother on
+<group_text>Advise mother on <insert_text>.
+<group_style>1
+<new_line>
+<detail>Breast feeding
+<detail_text>breast feeding
+<detail_submenu>subjective - postnatal - comments
+<detail>Care of the breast
+<detail_text>care of the breast
+<detail_submenu>subjective - postnatal - comments
+<detail>Care of the baby
+<detail_text>care of the baby
+<detail_submenu>subjective - postnatal - comments
+<detail>Immunisation of baby
+<detail_text>immunisation of baby
+<detail_submenu>subjective - postnatal - comments
+<detail>Nutrition of mother && baby
+<detail_text>nutrition of mother & baby
+<detail_submenu>subjective - postnatal - comments
+<detail>Family plannig
+<detail_text>family plannig
+<detail_submenu>subjective - postnatal - comments
+<detail>Personal hygiene
+<detail_text>personal hygiene
+<detail_submenu>subjective - postnatal - comments
+
+<form>Mother & Baby Checklist
+<group>Advise on postnatal follow up
+<group_text>Advise on postnatal follow up <insert_text>.
+<group_style>1
+<new_line>
+<detail>To seek treatment/advice for any problem during confinement
+<detail_text>to seek treatment/advice for any problem during confinement
+<detail_submenu>subjective - postnatal - comments
+<detail>6 wks after date of delivery
+<detail_text>6 wks after date of delivery
+<detail_submenu>subjective - postnatal - comments
+<detail>Parents to confirm date and time of clinic session at nearest clinic
+<detail_text>parents to confirm date and time of clinic session at nearest clinic
+<detail_submenu>subjective - postnatal - comments
+
+<form>Mother & Baby Checklist
+<group>Collect DISC
+<group_text><insert_text>.
+<group_style>1
+<new_line>
+<detail>Collect DISC from the mother and baby
+<detail_text>DISC collected from mother and baby
+<detail_submenu>subjective - postnatal - comments
+
+<form>Mother & Baby Checklist
+<group>Check sex of the baby
+<group_text><insert_text>.
+<group_style>1
+<new_line>
+<detail>Check sex of the baby with the mother and the mother's tag
+<detail_text>Sex of the baby checked with the mother and the mother's tag
+<detail_submenu>subjective - postnatal - comments
+
+<form>Mother & Baby Checklist
+<group>Check sex of the baby and write in
+<group_text>Sex of the baby checked and was written in <insert_text>.
+<group_style>1
+<new_line>
+<detail>Patient's folder
+<detail_text>patient's folder
+<detail_submenu>subjective - postnatal - comments
+<detail>Postnatal card
+<detail_text>postnatal card
+<detail_submenu>subjective - postnatal - comments
+<detail>Birth certificate application form
+<detail_text>birth certificate application form
+<detail_submenu>subjective - postnatal - comments
+
+<form>Mother & Baby Checklist
+<group>Top to toe examination of baby
+<group_text><insert_text>.
+<group_style>1
+<new_line>
+<detail>Advise on care of the baby
+<detail_text>Advise on care of the baby given
+<detail_submenu>subjective - postnatal - comments
+
+<form>Mother & Baby Checklist
+<group>Answer questions raised by mother
+<group_text><insert_text>.
+<group_style>1
+<new_line>
+<detail>Questions answered
+<detail_text>Questions answered raised by mother
+<detail_submenu>subjective - postnatal - comments

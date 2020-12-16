@@ -1,0 +1,16 @@
+<form>Risk Factors
+<group>Risk factors
+<group_text><insert_text>
+<group_style>3
+<yes_text>Risk factors include 
+<no_text>but not 
+<new_paragraph>
+<detail>Obesity
+<detail>Alcohol abuse
+<detail>Pregnancy
+<detail>Emotional stress
+<detail>Family history
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+

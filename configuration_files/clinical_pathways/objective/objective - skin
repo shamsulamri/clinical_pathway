@@ -1,0 +1,14 @@
+<form>Skin
+<group>Skin
+<group_text>skin <insert_text>
+<group_style>1
+<detail>Colour
+<detail>Cranial asymmetry
+<detail>Facial asymmetry
+<detail>Hypertelorism
+<detail>Down's facies
+<detail>FLK
+<detail>Hematoma
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

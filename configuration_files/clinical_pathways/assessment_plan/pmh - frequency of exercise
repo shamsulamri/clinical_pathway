@@ -1,0 +1,18 @@
+<form>Frequency of exercise
+<group>Frequency of exercise
+<group_text><insert_text>
+<group_style>2
+<detail>Occasionally
+<detail_text>occasionally
+<detail>Daily
+<detail_text>daily
+<detail>Once a week
+<detail_text>once a week
+<detail>A few times a week
+<detail_text>a few times a week
+<detail>Times a week
+<detail_text><insert_value> times a week
+<detail_inputbox><text><L>
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

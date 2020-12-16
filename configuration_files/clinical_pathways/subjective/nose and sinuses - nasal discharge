@@ -1,0 +1,12 @@
+<form>Nasal discharge
+<group>Nasal discharge
+<group_text>(<insert_text>)
+<group_style>1
+<detail>Watery
+<detail>Purulent
+<detail>Greenish
+<detail>Bloody
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+

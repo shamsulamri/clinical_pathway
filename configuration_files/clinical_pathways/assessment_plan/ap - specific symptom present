@@ -1,0 +1,15 @@
+<form>Assessment & Plan
+<group>Specific symptom present
+<group_text><insert_text> present
+<group_style>1
+<detail>Severe headache
+<detail>Persistant vomiting
+<detail>Blurring of vision
+<detail>Severe chest pain
+<detail>Severe abdominal pain
+<detail>High fever
+<detail>Urinary retention
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+

@@ -1,0 +1,216 @@
+<form>Presentation
+<group>Mode of Presentation
+<group_text>The patient presented with <insert_text>
+<group_style>1
+<detail>Earache
+<detail_submenu>objective - side
+<detail>Ear tenderness
+<detail_submenu>objective - side
+<detail>Ear discharge
+<detail_submenu>objective - side
+<detail>Pressure in ear
+<detail_submenu>objective - side
+<detail>Fullness in ear
+<detail_submenu>objective - side
+<detail>Itching in ear
+<detail_submenu>objective - side
+<detail>
+<detail_text><insert_text>
+<detail_inputbox><text><L>
+
+<form>Presentation
+<group>Location of symptoms
+<group_text>which is located in <insert_text>.
+<group_style>1
+<detail>External ear
+<detail_submenu>objective - side
+<detail>Inside ear canal
+<detail_submenu>objective - side
+<detail>Mastoid region
+<detail_submenu>objective - side
+<detail>Preauricular region
+<detail_submenu>objective - side
+<detail>Scalp
+<detail>Cheek
+<detail>Side of the head
+<detail_submenu>objective - side
+<detail>Throat
+<detail>Neck
+<detail>
+<detail_text><insert_text>
+<detail_inputbox><text><L>
+
+<form>Presentation
+<group>Radiation of symptoms
+<group_text>The discomfort radiates to the <insert_text>.
+<group_style>1
+<detail>Nose
+<detail>Pharynx
+<detail>Paranasal sinuses
+<detail>Mouth
+<detail>Cheek
+<detail_submenu>objective - side
+<detail>Side of the head
+<detail_submenu>objective - side
+<detail>Throat
+<detail>Head
+<detail>Neck
+<detail_submenu>objective - side
+<detail>Shoulder
+<detail_submenu>objective - side
+<detail>Jaw
+<detail_submenu>objective - side
+<detail>
+<detail_text><insert_text>
+<detail_inputbox><text><L>
+
+<form>Presentation
+<group>Date of Onset
+<group_text>Symptoms were first noted <insert_text>
+<group_style>2
+<reveal_date>
+<detail>Today
+<detail>Date:
+<detail_text>on the <insert_text>
+<detail_inputbox><date><R>
+<detail>Days ago
+<detail_text><insert_text> days ago
+<detail_inputbox><inte><L>
+<detail>Weeks ago
+<detail_text><insert_text> weeks ago
+<detail_inputbox><inte><L>
+<detail>Months ago
+<detail_text><insert_text> months ago
+<detail_inputbox><inte><L>
+<detail>Years ago
+<detail_text><insert_text> years ago
+<detail_inputbox><inte><L>
+
+<form>Presentation
+<group>Duration of Symptom
+<group_text>and lasted <insert_text>.
+<group_style>1
+<detail>Hours
+<detail_text><insert_text> hours
+<detail_inputbox><inte><L>
+<detail>Days
+<detail_text><insert_text> days
+<detail_inputbox><inte><L>
+<detail>Weeks
+<detail_text><insert_text> weeks
+<detail_inputbox><inte><L>
+<detail>Months
+<detail_text><insert_text> months
+<detail_inputbox><inte><L>
+<detail>Years
+<detail_text><insert_text> years
+<detail_inputbox><inte><L>
+<detail>Still present
+
+<form>Presentation
+<group>Rate of Onset
+<group_text>Symptoms appeared <insert_text>.
+<group_style>2
+<detail>Abruptly
+<detail>Over hours
+<detail_text>over a period of <insert_text> hours
+<detail_inputbox><inte><L>
+<detail>Over days
+<detail_text>over a period of <insert_text> days
+<detail_inputbox><inte><L>
+<detail>Over weeks
+<detail_text>over a period of <insert_text> weeks
+<detail_inputbox><inte><L>
+<detail>Over months
+<detail_text>over a period of <insert_text> months
+<detail_inputbox><inte><L>
+<detail>Over years
+<detail_text>over a period of <insert_text> years
+<detail_inputbox><inte><L>
+
+<form>Presentation
+<group>Character of Pain
+<group_text>The pain is <insert_text>.
+<group_style>1
+<detail>Aching
+<detail>Throbbing
+<detail>Stabbing
+<detail>Dull
+<detail>Lancinating
+<detail>
+<detail_text><insert_text>
+<detail_inputbox><text><L>
+
+<form>Presentation
+<group>Severity
+<group_text>The pain is rated as <insert_text>.
+<group_style>1
+<detail>Mild
+<detail_text>mild in intensity
+<detail_submenu>subjective - severity
+<detail>Moderate
+<detail_text>moderate in intensity
+<detail_submenu>subjective - severity
+<detail>Severe
+<detail_text>severe in intensity
+<detail_submenu>subjective - severity
+<detail>Excruciating
+<detail_text>excruciating in intensity
+<detail_submenu>subjective - severity
+
+<form>Presentation
+<group>Sleep disturbance
+<group_text>The pain <insert_text> awakens the patient from sleep.
+<group_style>2
+<detail>Never
+<detail>Rarely
+<detail>Occasionally
+<detail>Frequently
+<detail>Usually
+
+<form>Presentation
+<group>Precipitating factors
+<group_text>Symptoms are precipitated by <insert_text>.
+<group_style>4
+<detail>No precipitating factor
+<detail_text>There was no precipitating factor known.
+<detail>Eustachian tube blockage
+<detail>Swimming
+<detail>URTI
+<detail_text>upper respiratory tract infection
+<detail>Driving
+<detail>Allergic rhinitis
+<detail>Atopic rhinitis
+<detail>Seasonal rhinitis
+<detail>
+<detail_text><insert_text>
+<detail_inputbox><text><L>
+
+<form>Presentation
+<group>Associated Symptoms
+<group_text><insert_text>
+<group_style>3
+<yes_text>Associated symptoms include 
+<no_text>but no 
+<new_paragraph>
+<detail>URTI
+<detail>Cough
+<detail>Hearing loss
+<detail_submenu>objective - side
+<detail>Headache
+<detail>Fever
+<detail_submenu>Fever (deg F)
+<detail>Dizziness
+<detail>Tinnitus
+<detail_submenu>objective - side
+<detail>Ear inflammation
+<detail_submenu>objective - side
+<detail>Otorrhea
+<detail_submenu>objective - side
+<detail>Cervical nodes
+<detail>Mastoiditis
+<detail_submenu>objective - side
+<detail>
+<detail_text><insert_text>
+<detail_inputbox><text><L>
+

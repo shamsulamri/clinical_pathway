@@ -1,0 +1,17 @@
+<form>Presentation
+<group>On which side ?
+<group_text><insert_text>
+<group_style>2
+<detail>Rigth arm
+<detail_text>in the right arm
+<detail>Left arm
+<detail_text>in the left arm
+<detail>Both arms
+<detail_text>Both arm
+<detail>Right leg
+<detail_text>in the right arm
+<detail>Left leg
+<detail_text>in the left arm
+<detail>Both legs
+<detail_text>in the both legs
+

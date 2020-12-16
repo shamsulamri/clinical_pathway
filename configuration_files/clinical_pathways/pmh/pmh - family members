@@ -1,0 +1,30 @@
+<form>Family members
+<group>Which family members ?
+<group_text>involving <insert_text>
+<group_style>1
+<detail>Mother
+<detail>Father
+<detail>Both parents
+<detail>Siblings
+<detail_inputbox><inte><L>
+<detail>Children
+<detail_inputbox><inte><L>
+<detail>Granparents
+<detail_text><insert_value> grandparents
+<detail_submenu>PMH - Family side
+<detail_inputbox><inte><L>
+<detail>Aunts
+<detail_text><insert_value> aunts
+<detail_submenu>PMH - Family side
+<detail_inputbox><inte><L>
+<detail>Uncles
+<detail_text><insert_value> uncles
+<detail_submenu>PMH - Family side
+<detail_inputbox><inte><L>
+<detail>Cousins
+<detail_text><insert_value> cousins
+<detail_submenu>PMH - Family side
+<detail_inputbox><inte><L>
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

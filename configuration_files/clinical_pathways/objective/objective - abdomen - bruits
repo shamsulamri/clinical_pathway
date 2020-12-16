@@ -1,0 +1,12 @@
+<form>Bruits
+<group>Abdomen - Bruit
+<group_text><insert_text> present
+<group_style>1
+<detail>Abdominal bruit
+<detail>Right renal bruit
+<detail>Left renal bruit
+<detail>Right femoral bruit
+<detail>Left femoral bruit
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

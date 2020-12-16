@@ -1,0 +1,45 @@
+<form>Location of pain
+<group>Location of pain
+<group_text>of the <insert_text>
+<group_style>1
+<detail>Head
+<detail_text>head (<insert_text>)
+<detail_submenu>subjective - complain
+<detail>Neck
+<detail_text>neck (<insert_text>)
+<detail_submenu>subjective - complain
+<detail>Chest
+<detail_text>chest (<insert_text>)
+<detail_submenu>subjective - complain
+<detail_submenu>objective - lung - location
+<detail>Shoulder
+<detail_text>shoulder (<insert_text>)
+<detail_submenu>subjective - complain
+<detail_submenu>objective - side
+<detail>Upper limb
+<detail_text>upper limb (<insert_text>)
+<detail_submenu>subjective - complain
+<detail_submenu>objective - side
+<detail>Abdomen
+<detail_text>abdomen (<insert_text>)
+<detail_submenu>subjective - complain
+<detail_submenu>objective - abdomen - location
+<detail>Back
+<detail_text>back (<insert_text>)
+<detail_submenu>subjective - complain
+<detail_submenu>objective - side
+<detail>Hip
+<detail_text>hip (<insert_text>)
+<detail_submenu>subjective - complain
+<detail>Knee
+<detail_text>knee (<insert_text>)
+<detail_submenu>subjective - complain
+<detail_submenu>objective - side
+<detail>Ankle
+<detail_text>ankle (<insert_text>)
+<detail_submenu>subjective - complain
+<detail_submenu>objective - side
+<detail>
+<detail_text><insert_value> (<insert_text>)
+<detail_submenu>subjective - complain
+<detail_inputbox><text><L>

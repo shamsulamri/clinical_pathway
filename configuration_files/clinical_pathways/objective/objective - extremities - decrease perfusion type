@@ -1,0 +1,18 @@
+<form>Decrease perfusion
+<group>Decrease perfusion
+<group_text><insert_text>
+<group_style>1
+<detail>Cynosis
+<detail_submenu>objective - extremities - decrease perfusion location
+<detail>Pallor
+<detail_submenu>objective - extremities - decrease perfusion location
+<detail>Coolness
+<detail_submenu>objective - extremities - decrease perfusion location
+<detail>Decrease hair
+<detail_submenu>objective - extremities - decrease perfusion location
+<detail>Capillary refill
+<detail_text><insert_value> (s)
+<detail_inputbox><doub><L>
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

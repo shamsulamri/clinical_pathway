@@ -1,0 +1,19 @@
+<form>Injectable narcotics
+<group>Injectable narcotics
+<group_text><insert_text>
+<group_style>1
+<detail>Heroin
+<detail_text>heroin
+<detail_submenu>PMH - substance abuse - drug abuse - duration
+<detail>Morphine
+<detail_text>morphine
+<detail_submenu>PMH - substance abuse - drug abuse - duration
+<detail>Meperidine
+<detail_text>meperidine
+<detail_submenu>PMH - substance abuse - drug abuse - duration
+<detail>Opium
+<detail_text>opium
+<detail_submenu>PMH - substance abuse - drug abuse - duration
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

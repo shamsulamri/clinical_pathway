@@ -33,6 +33,7 @@ class CPHelper
 		{
 				$str = trim($str);
 				$str = strtolower($str);
+				$str = str_replace("+", "", $str);
 				$str = str_replace("(", "", $str);
 				$str = str_replace(")", "", $str);
 				$str = str_replace("?", "", $str);
@@ -64,7 +65,7 @@ class CPHelper
 				$text_value =$value;
 				if ($group_style == 3) {
 						$style = "style='padding-top:8px'"; 
-						$text_value = $detail_text??null;
+						//$text_value = $detail_text??null;
 				}
 
 				if (!empty($detail_submenu)) {
@@ -73,7 +74,7 @@ class CPHelper
 									group-style='".$group_style."'
 									group-id='".$group_id."'
 									href='#'>";
-						$label = $link.$label."</a><label ".$style.">&nbsp;</label>...";
+						$label = $link.$label."<label ".$style.">&nbsp;</label>...</a>";
 				} else {
 						$label = "<label ".$style." id='".$id."' group-style='".$group_style."'>".$label."</label>";
 				}
@@ -320,33 +321,6 @@ class CPHelper
 				return [$problem, $section, $group, $detail];
 		}
 
-		public function getPGD2($str)
-		{
-				$items = explode("__", $str);
-				if (count($items)>1) {
-					$detail = $items[1];
-				}
-
-				$items = explode("-", $items[0]);
-				for($i=0;$i<count($items);$i++) {
-					$items[$i] = trim($items[$i]);
-				}
-
-				if (count($items)>2) {
-					$merged_items = [];
-					for($i=0;$i<count($items)-1;$i++) {
-						array_push($merged_items, $items[$i]);
-					}
-					$problem = implode("-", $merged_items);
-					$group = $items[count($items)-1];
-				} else {
-					$problem = $items[0];
-					$group = $items[1];
-				}
-
-				return [$problem, $group, $detail??null];
-		}
-
 		public function compileText($consultation_id, $soap, $problem, $section, $group)
 		{
 				$problem = $this->toId($problem);
@@ -386,6 +360,7 @@ class CPHelper
 				$str = str_replace(".)", ")", $str);
 				$str = str_replace("( ", "(", $str);
 				$str = str_replace(" ;", "", $str);
+				$str = str_replace("..", ".", $str);
 				$str = rtrim($str, "; ");
 				Log::info($str);
 				return $str;
@@ -443,20 +418,25 @@ class CPHelper
 						/** Compile detail text **/
 						if ($obj['group_style']==3) {
 								Log::info($detail['text']);
+								Log::info($detail['description']);
+								if ($detail['description']) {
+										$detail['text'] = str_replace("<insert_value>", trim($detail['description']), $detail['text']);
+								}
+
 								if ($detail['value']==1) {
-										$str_yes = $str_yes.$detail['text']."+++".$child_str;
+										$str_yes = $str_yes.$detail['text'].$child_str."@@@";
 								} else {
-										$str_no = $str_no.$detail['text']."+++".$child_str;
+										$str_no = $str_no.$detail['text'].$child_str."@@@";
 								}
 								Log::info("YES: ".$str_yes);
 								Log::info("NO: ".$str_no);
 						} else {
 								if (strpos($detail['text'], "<insert_text>") !== false) {
-										//$str = $str.str_replace("<insert_text>", trim($child_str), $detail['text'])."+++";
-										$detail['text'] = str_replace("<insert_text>", trim($child_str), $detail['text'])."+++";
+										//$str = $str.str_replace("<insert_text>", trim($child_str), $detail['text'])."@@@";
+										$detail['text'] = str_replace("<insert_text>", trim($child_str), $detail['text'])."@@@";
 								} else {
-										//$str = $str.$detail['text'].$child_str."+++";
-										$detail['text'] = $detail['text'].$child_str."+++";
+										//$str = $str.$detail['text'].$child_str."@@@";
+										$detail['text'] = $detail['text'].$child_str."@@@";
 
 								}
 
@@ -485,7 +465,7 @@ class CPHelper
 										Log::info("!!!!!!!!!!!!!!!");
 										$group_str = str_replace("<insert_text>", $str_yes, $obj['yes_text']);
 								} else {
-										$group_str = $obj['yes_text']." ".$str_yes;
+										$group_str = $obj['yes_text'].$str_yes;
 								}
 						}
 
@@ -503,9 +483,13 @@ class CPHelper
 								}
 						}
 
+						Log::info("GROUP TEXT: ".$group_text);
+						$group_str = str_replace("<insert_text>", trim($group_str), $group_text);
 				} else {
 						//Log::info($str);
 						/** Compile group text **/
+						Log::info("DDDDDD ".$str);
+						Log::info("DDDDDD ".$group_text);
 						$group_str = str_replace("<insert_text>", $str, $group_text);
 						$group_str = $this->cleanStr($group_str, $obj['group_separator']??null);
 				}
@@ -525,7 +509,7 @@ class CPHelper
 
 		public function cleanStr($str, $separator=null) 
 		{
-				$words = explode("+++", $str);
+				$words = explode("@@@", $str);
 				//array_pop($words);
 				$s = null;
 				foreach($words as $index=>$word) {
@@ -533,7 +517,7 @@ class CPHelper
 
 						if ($separator) {
 								if ($index+2<sizeof($words)) {
-										$s = $s.$separator;
+										$s = $s.$separator." ";
 								}
 						} else {
 								if ($index+3<sizeof($words)) {

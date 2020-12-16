@@ -1,0 +1,96 @@
+<form>Delivery
+<group>Stages of labour
+<group_text>Stages of labour: <insert_text>
+<group_style>1
+<detail>1st Stage (hrs)
+<detail_text>1st stage (<insert_value> hours)
+<detail_inputbox><text><L>
+<detail>2nd Stage (hrs)
+<detail_text>2nd stage (<insert_value> hours)
+<detail_inputbox><text><L>
+<detail>3rd Stage (mins)
+<detail_text>3rd stage (<insert_value> minutes)
+<detail_inputbox><text><L>
+
+<form>Delivery
+<group>Mother
+<group_text>Mother: <insert_text>
+<group_style>1
+<new_line>
+<detail>Membrane rupture
+<detail_text>
+<detail_submenu>objective - delivery - membrane rupture
+<detail>Presentation
+<detail_text>
+<detail_submenu>objective - delivery - presentation
+<detail>Instrumental
+<detail_text>
+<detail_submenu>objective - delivery - instrumental
+<detail>Tranfer observation
+<detail_text>
+<detail_submenu>objective - delivery - transfer observation
+
+<form>Delivery
+<group>Infant
+<group_text>Infant: <insert_text>
+<group_style>1
+<new_line>
+<separator>;
+<detail>Status
+<detail_text>
+<detail_submenu>objective - delivery - infant - status
+<detail>Sex
+<detail_text>
+<detail_submenu>objective - delivery - infant - sex
+<detail>Date of Birth
+<detail_text>date of birth - <insert_value>
+<detail_inputbox><text><L>
+<detail>Time of Birth
+<detail_text>time of birth - <insert_value>
+<detail_inputbox><text><L>
+<detail>Head circum. (cm)
+<detail_text>head circumferance - <insert_value> cm
+<detail_inputbox><text><L>
+<detail>Length (cm)
+<detail_text><insert_value> cm long
+<detail_inputbox><text><L>
+<detail>Weight (kg)
+<detail_text><insert_value> kg
+<detail_inputbox><text><L>
+<detail>Apgar Score
+<detail_text>
+<detail_submenu>objective - delivery - infant - apgar score
+<detail>Anus
+<detail_text>anus - <insert_value>
+<detail_inputbox><text><R>
+<detail>Resuscitation method
+<detail_text>
+<detail_submenu>objective - delivery - infant - resuscitation method
+<detail>Fetal abnormality
+<detail_text>
+<detail_submenu>objective - delivery - infant - fetal abnormality
+
+<form>Delivery
+<group>Infant checklist
+<group_text>Infant checklist: <insert_text>
+<group_style>1
+<new_line>
+<separator>;
+<detail>Cold blood collected
+<detail_text>
+<detail_submenu>objective - delivery - infant - Cold blood collected
+<detail>Injection vitamin K
+<detail_text>
+<detail_submenu>objective - delivery - infant - injection vit k
+<detail>Injection hepatitis B
+<detail_text>
+<detail_submenu>objective - delivery - infant - injection hepatitis B
+<detail>G6PD
+<detail_text>
+<detail_submenu>objective - delivery - infant - g6pd
+<detail>Rh Factor
+<detail_text>
+<detail_submenu>objective - delivery - infant - rh factor
+<detail>Instruction to baby
+<detail_text>
+<detail_submenu>objective - delivery - infant - instruction to baby

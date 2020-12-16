@@ -1,0 +1,24 @@
+<form>Status of disease
+<group>Status of disease
+<group_text>and is <insert_text>
+<group_style>2
+<reveal_date>
+<detail>Resolved
+<detail_text>resolved
+<detail>Cured
+<detail_text>cured
+<detail>Improving
+<detail_text>improving
+<detail>Stable
+<detail_text>stable
+<detail>Inactive
+<detail_text>inactive
+<detail>Worsening gradually
+<detail_text>worsening gradually
+<detail>Progressing rapidly
+<detail_text>progressing rapidly
+<detail>Variable course
+<detail_text>variable course
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

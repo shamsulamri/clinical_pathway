@@ -1,0 +1,19 @@
+<form>Rate of change
+<group>Rate of change
+<group_text>over the past <insert_text>
+<group_style>2
+<detail>Hours
+<detail_text><insert_value> hours
+<detail_inputbox><inte><L>
+<detail>Days
+<detail_text><insert_value> days
+<detail_inputbox><inte><L>
+<detail>Weeks
+<detail_text><insert_value> weeks
+<detail_inputbox><inte><L>
+<detail>Months
+<detail_text><insert_value> months
+<detail_inputbox><inte><L>
+<detail>Years
+<detail_text><insert_value> years
+<detail_inputbox><inte><L>

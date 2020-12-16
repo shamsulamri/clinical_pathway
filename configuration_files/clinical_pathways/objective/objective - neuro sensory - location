@@ -1,0 +1,15 @@
+<form>Location
+<group>Location
+<group_text><insert_text>
+<group_style>1
+<detail>RUE
+<detail_text>right upper extremity
+<detail>LUE
+<detail_text>left upper extremity
+<detail>RLE
+<detail_text>right lower extremity
+<detail>LLE
+<detail_text>left lower extremity
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

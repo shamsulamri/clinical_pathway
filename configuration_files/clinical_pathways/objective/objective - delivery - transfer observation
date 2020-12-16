@@ -1,0 +1,25 @@
+<form>Transfer Observation
+<group>Transfer observation
+<group_text><insert_text>
+<group_style>1
+<detail>Temperature (F)
+<detail_text>T: <insert_value> (F)
+<detail_inputbox><text><L>
+<detail>Pulse rate
+<detail_text>PR: <insert_value>/min
+<detail_inputbox><text><L>
+<detail>Breathing
+<detail_text>R:<insert_value>/min
+<detail_inputbox><text><L>
+<detail>Blood Pressure
+<detail_text>BP:
+<detail_submenu>objective - blood pressure
+<detail>Uterus
+<detail_text>Uterus: <insert_value>
+<detail_inputbox><text><L>
+<detail>Perineum
+<detail_text>Perineum: <insert_value>
+<detail_inputbox><text><L>
+<detail>Time of transfer
+<detail_text>Time of transfer: <insert_value>
+<detail_inputbox><text><L>

@@ -1,0 +1,20 @@
+<form>Presentation
+<group>Duration of Symptom
+<group_text>It lasted for <insert_text>.
+<group_style>1
+<detail>Hours
+<detail_text><insert_value> hours
+<detail_inputbox><inte><L>
+<detail>Days
+<detail_text><insert_value> days
+<detail_inputbox><inte><L>
+<detail>Weeks
+<detail_text><insert_value> weeks
+<detail_inputbox><inte><L>
+<detail>Months
+<detail_text><insert_value> months
+<detail_inputbox><inte><L>
+<detail>Years
+<detail_text><insert_value> years
+<detail_inputbox><inte><L>
+<detail>Still present

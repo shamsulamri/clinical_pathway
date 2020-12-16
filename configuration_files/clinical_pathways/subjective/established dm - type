@@ -1,0 +1,16 @@
+<form>Type of Diabetes
+<group>Type of Diabetes
+<group_text>, <insert_text>
+<group_style>1
+<detail>Definite diabetes mellitus
+<detail>Probable diabetes mellitus
+<detail>Possible diabetes mellitus
+<detail>IDDM (type I DM)
+<detail>NIDDM (type II DM)
+<detail>Gestational diabetes
+<detail>Secondary diabetes
+<detail>Brittle diabetes
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+

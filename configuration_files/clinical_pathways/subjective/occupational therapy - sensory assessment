@@ -1,0 +1,111 @@
+<form>Sensory assessment
+<group>Shape
+<group_text>Shape:<insert_text>
+<group_style>1
+<sub_notes>
+<separator><new_line>
+<new_paragraph>
+<detail>Square
+<detail_text>Square
+<detail_submenu>occupational therapy - arthritis evaluation checklist - rightleft - descriptions
+<detail>Circle
+<detail_text>Circle
+<detail_submenu>occupational therapy - arthritis evaluation checklist - rightleft - descriptions
+<detail>Triangle
+<detail_text>Triangle
+<detail_submenu>occupational therapy - arthritis evaluation checklist - rightleft - descriptions
+<detail>Semi-circle
+<detail_text>Semi-circle
+<detail_submenu>occupational therapy - arthritis evaluation checklist - rightleft - descriptions
+
+<form>Sensory assessment
+<group>Texture
+<group_text>Texture:<insert_text>
+<group_style>1
+<sub_notes>
+<separator><new_line>
+<new_paragraph>
+<detail>Sand paper
+<detail_text>Sand paper
+<detail_submenu>occupational therapy - arthritis evaluation checklist - rightleft - descriptions
+<detail>Wood
+<detail_text>Wood
+<detail_submenu>occupational therapy - arthritis evaluation checklist - rightleft - descriptions
+<detail>Velvet
+<detail_text>Velvet
+<detail_submenu>occupational therapy - arthritis evaluation checklist - rightleft - descriptions
+<detail>Cotton wool
+<detail_text>Cotton wool
+<detail_submenu>occupational therapy - arthritis evaluation checklist - rightleft - descriptions
+<detail>Rubber
+<detail_text>Rubber
+<detail_submenu>occupational therapy - arthritis evaluation checklist - rightleft - descriptions
+<detail>Sponge
+<detail_text>Sponge
+<detail_submenu>occupational therapy - arthritis evaluation checklist - rightleft - descriptions
+
+<form>Sensory assessment
+<group>Coins
+<group_text><insert_text>
+<group_style>1
+<separator><new_line>
+<new_paragraph>
+<detail>1 cent
+<detail_text>1 cent
+<detail_submenu>occupational therapy - arthritis evaluation checklist - rightleft - descriptions
+<detail>20 cent
+<detail_text>20 cent
+<detail_submenu>occupational therapy - arthritis evaluation checklist - rightleft - descriptions
+<detail>50 cent
+<detail_text>50 cent
+<detail_submenu>occupational therapy - arthritis evaluation checklist - rightleft - descriptions
+
+<form>Sensory assessment
+<group>Object (large)
+<group_text>Object (large):<insert_text>
+<group_style>1
+<sub_notes>
+<separator><new_line>
+<new_paragraph>
+<detail>Plug
+<detail_text>Plug
+<detail_submenu>occupational therapy - arthritis evaluation checklist - rightleft - descriptions
+<detail>Bottle
+<detail_text>Bottle
+<detail_submenu>occupational therapy - arthritis evaluation checklist - rightleft - descriptions
+<detail>Saucer
+<detail_text>Saucer
+<detail_submenu>occupational therapy - arthritis evaluation checklist - rightleft - descriptions
+<detail>Pencil
+<detail_text>Pencil
+<detail_submenu>occupational therapy - arthritis evaluation checklist - rightleft - descriptions
+<detail>Fork
+<detail_text>Fork
+<detail_submenu>occupational therapy - arthritis evaluation checklist - rightleft - descriptions
+<detail>Toothbrush
+<detail_text>Toothbrush
+<detail_submenu>occupational therapy - arthritis evaluation checklist - rightleft - descriptions
+
+<form>Sensory assessment
+<group>Object (small)
+<group_text>Object (small):<insert_text>
+<group_style>1
+<sub_notes>
+<separator><new_line>
+<new_paragraph>
+<detail>Safety pin
+<detail_text>Safety pin
+<detail_submenu>occupational therapy - arthritis evaluation checklist - rightleft - descriptions
+<detail>Screw
+<detail_text>Screw
+<detail_submenu>occupational therapy - arthritis evaluation checklist - rightleft - descriptions
+<detail>Button
+<detail_text>Button
+<detail_submenu>occupational therapy - arthritis evaluation checklist - rightleft - descriptions
+<detail>Ball of string
+<detail_text>Ball of string
+<detail_submenu>occupational therapy - arthritis evaluation checklist - rightleft - descriptions
+<detail>Nut
+<detail_text>Nut
+<detail_submenu>occupational therapy - arthritis evaluation checklist - rightleft - descriptions
+

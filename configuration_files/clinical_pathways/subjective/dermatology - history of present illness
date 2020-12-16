@@ -1,0 +1,142 @@
+<form>Presentation
+<group>Mode of Presentation
+<group_text>The patient presented with <insert_text>.
+<group_style>1
+<detail>Abrasion
+<detail>Incised wound
+<detail>Laceration
+<detail>Itchiness
+<detail>Swelling
+<detail>Skin rash
+<detail>Soft tissue injury
+<detail>Soft tissue pain
+<detail>
+<detail_text><insert_text>
+<detail_inputbox><text><L>
+
+<form>Presentation
+<group>Location of symptoms
+<group_text>The symptom is located on the <insert_text>.
+<group_style>4
+<detail>Diffusely
+<detail_text>The symptom is located over the entire body.
+<detail>Head
+<detail_text>head
+<detail>Chest
+<detail_text>chest
+<detail>Back
+<detail_text>back
+<detail>Buttocks
+<detail_text>buttocks
+<detail>Abdomen
+<detail_text>abdomen
+<detail>Perineum
+<detail_text>perineum
+<detail>Upper extremities
+<detail_text>upper extremities
+<detail_submenu>objective - side
+<detail>lower extremities
+<detail_text>lower extremities
+<detail_submenu>objective - side
+<detail>
+<detail_text><insert_text>
+<detail_inputbox><text><L>
+
+<form>Presentation
+<group>Symptom Spread
+<group_text>It spread to the <insert_text>.
+<group_style>1
+<detail>Head
+<detail_text>head
+<detail>Chest
+<detail_text>chest
+<detail>Back
+<detail_text>back
+<detail>Buttocks
+<detail_text>buttocks
+<detail>Abdomen
+<detail_text>abdomen
+<detail>Perineum
+<detail_text>perineum
+<detail>Upper extremities
+<detail_text>upper extremities
+<detail_submenu>objective - side
+<detail>Lower extremities
+<detail_text>lower extremities
+<detail_submenu>objective - side
+<detail>
+<detail_text><insert_text>
+<detail_inputbox><text><L>
+
+<load>subjective - date of onset
+
+<load>subjective - duration of symptom
+
+<load>subjective - rate of onset
+
+<load>subjective - intensity
+
+<form>Presentation
+<group>Sleep disturbance
+<group_text>The problem <insert_text> awakens the patient from sleep.
+<group_style>2
+<detail>Never
+<detail>Rarely
+<detail>Occasionally
+<detail>Frequently
+
+<form>Presentation
+<group>Symptom Worse
+<group_text>Symptoms are worst <insert_text>.
+<group_style>1
+<detail>Upon wakening
+<detail_text>upon awakening
+<detail>Morning
+<detail_text>in the morning
+<detail>Afternoon
+<detail_text>in the afternoon
+<detail>Evening
+<detail_text>in the evening
+<detail>Night
+<detail_text>in the night
+<detail>
+<detail_text><insert_text>
+<detail_inputbox><text><L>
+
+<form>Presentation
+<group>Associated Symptoms
+<group_text><insert_text>
+<group_style>3
+<yes_text>Associated symptoms include 
+<no_text>but no 
+<new_paragraph>
+<detail>Pain
+<detail>Pruritus
+<detail>Disturbed sensation
+<detail>Fever
+<detail>Heachache
+<detail>Fatigue
+<detail>Anorexia
+<detail>Weight loss
+<detail>Allergy
+<detail>
+<detail_text><insert_text>
+<detail_inputbox><text><L>
+
+<form>Presentation
+<group>Precipitating factors
+<group_text>The symptoms was precipitated by <insert_text>.
+<group_style>4
+<detail>No precipitating factor
+<detail_text>There was no precipitating factor known.
+<detail>Scratching
+<detail>Exposure to sun
+<detail>Exposure to heat
+<detail>Exposure to cold
+<detail>Medication
+<detail>Smoking inhalation
+<detail>Chemical irritant
+<detail>Trauma
+<detail>
+<detail_text><insert_text>
+<detail_inputbox><text><L>

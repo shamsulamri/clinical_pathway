@@ -1,0 +1,30 @@
+<form>Assessment & Plan
+<group>DDx
+<group_text>Diagnosis: <insert_text>
+<group_style>1
+<new_line>
+<separator><new_line>
+<detail>Cervical sprain
+<detail_submenu>AP - Probability
+<detail>Contusion of chest wall
+<detail_submenu>AP - Probability
+<detail>Multiple contusions
+<detail_submenu>AP - Probability
+<detail>MV/MV Collision, driver
+<detail_submenu>AP - Probability
+<detail>MV/MV Collision, passenger
+<detail_submenu>AP - Probability
+<detail>MVA Due to loss of control, driver
+<detail_submenu>AP - Probability
+<detail>Open wound of forehead
+<detail_submenu>AP - Probability
+<detail>Open wound of scalp
+<detail_submenu>AP - Probability
+<detail>Trunk injury
+<detail_submenu>AP - Probability
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<Load>AP - Assessment & Plan
+

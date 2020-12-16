@@ -1,0 +1,19 @@
+<form>Pelvic
+<group>Pelvic
+<group_text><insert_text>
+<group_style>1
+<new_line>
+<detail>Hip joint (Bilateral) AP && Axial
+<detail_text>Hip joint (Bilateral) AP & Axial
+<detail_order>xr_hip_ap_ax
+<detail>Pelvis && Lateral 1 view hip
+<detail_text>Pelvis & Lateral 1 view hip
+<detail_order>xr_pelvis_l
+<detail>Pelvis: AP
+<detail_text>Pelvis: AP
+<detail_order>xr_pelvis_ap
+<detail>Sacrum + Coccyx: AP && Lateral
+<detail_text>Sacrum + Coccyx: AP & Lateral
+<detail_order>xrsacrumcoccyx_ap_l
+
+

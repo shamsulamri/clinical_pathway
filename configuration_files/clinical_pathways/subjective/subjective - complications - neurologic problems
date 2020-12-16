@@ -1,0 +1,17 @@
+<form>Complications
+<group>Neurologic problems
+<group_text>(<insert_text>)
+<group_style>1
+<detail>CVA
+<detail_text>CVA
+<detail>TIA
+<detail_text>TIA
+<detail>Neuropathy
+<detail>Diabetic amyotrophy
+<detail>3rd nerve palsy
+<detail>Cranial nerve palsies
+<detail>Mononeuritis
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+

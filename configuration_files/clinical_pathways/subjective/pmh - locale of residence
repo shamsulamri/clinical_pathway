@@ -1,0 +1,13 @@
+<form>Locale of residence
+<group>Locale of residence
+<group_text>in <insert_text> setting
+<group_style>2
+<detail>Urban
+<detail_text>an urban
+<detail>Suburban
+<detail_text>a suburban
+<detail>Rural
+<detail_text>a rural
+<detail>
+<detail_text><insert_text>
+<detail_inputbox><text><L>

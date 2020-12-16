@@ -1,0 +1,14 @@
+<form>Presentation
+<group>Visual symptoms
+<group_text>(<insert_text>)
+<group_style>1
+<detail>Rt monocular vision loss
+<detail>Lt monocular vision loss
+<detail>Rt homonymous hemianopsia
+<detail>Lt homonymous hemianopsia
+<detail>Blurring of vision
+<detail>Total blindness
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+

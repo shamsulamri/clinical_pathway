@@ -1,0 +1,11 @@
+<form>Sputum
+<group>Consistency of sputum
+<group_text>Sputum is <insert_text>.
+<group_style>1
+<detail>Thick
+<detail>Thin
+<detail>Watery
+<detail>Mucoid
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

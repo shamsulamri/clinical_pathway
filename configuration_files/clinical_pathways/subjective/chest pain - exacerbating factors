@@ -1,0 +1,21 @@
+<form>Exacerbating Factors
+<group>Exacerbating factors
+<group_text><insert_text>
+<group_style>3
+<yes_text>Exacerbating factors include 
+<no_text>but no 
+<new_paragraph>
+<detail>Continued physical activity
+<detail>Coughing
+<detail>Lying flat
+<detail>Deep inspiration
+<detail>Swallowing
+<detail>Changing position
+<detail>Pressure on chest wall
+<detail>Fasting
+<detail>Spicy foods
+<detail>Coffee or tea
+<detail>Alcohol
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

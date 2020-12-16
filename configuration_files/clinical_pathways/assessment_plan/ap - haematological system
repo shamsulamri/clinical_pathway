@@ -1,0 +1,28 @@
+<form>Assessment & Plan
+<group>DDx
+<group_text>Diagnosis: <insert_text>
+<group_style>1
+<new_line>
+<separator><new_line>
+<detail>Peptic ulcer
+<detail_submenu>AP - Probability
+<detail>Gastritis
+<detail_submenu>AP - Probability
+<detail>Irritable bowel
+<detail_submenu>AP - Probability
+<detail>Hepatitis
+<detail_submenu>AP - Probability
+<detail>Renal colic
+<detail_submenu>AP - Probability
+<detail>Biliary colic
+<detail_submenu>AP - Probability
+<detail>Diverticulitis
+<detail_submenu>AP - Probability
+<detail>Pancreatitis
+<detail_submenu>AP - Probability
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<Load>AP - Assessment & Plan
+

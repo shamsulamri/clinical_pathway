@@ -1,0 +1,12 @@
+<form>Frequency
+<group>Frequency
+<group_text><insert_text>
+<group_style>2
+<detail>Increased
+<detail_text>increased
+<detail_submenu>subjective - frequency - count
+<detail>Decreased
+<detail_text>decreased
+<detail_submenu>subjective - frequency - count
+<detail>Unchanged
+

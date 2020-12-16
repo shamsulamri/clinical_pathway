@@ -1,0 +1,24 @@
+<form>Assessment & Plan
+<group>DDx
+<group_text>Diagnosis: <insert_text>
+<group_style>1
+<new_line>
+<separator><new_line>
+<detail>Diabetes Mellitus
+<detail_submenu>AP - Probability
+<detail>Thyrotoxicosis
+<detail_submenu>AP - Probability
+<detail>Hypothyroidism
+<detail_submenu>AP - Probability
+<detail>Hypoglycaemia
+<detail_submenu>AP - Probability
+<detail>Primary adrenal insufficiency
+<detail_submenu>AP - Probability
+<detail>Acromegaly
+<detail_submenu>AP - Probability
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<Load>AP - Assessment & Plan
+

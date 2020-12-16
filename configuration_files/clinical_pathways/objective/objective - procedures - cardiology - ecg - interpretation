@@ -1,0 +1,21 @@
+<form>ECG Interpretation
+<group>ECG Interpretation
+<group_text><insert_text>
+<group_style>1
+<detail>Normal
+<detail>Abnormal
+<detail>Acute myocardial infaction
+<detail>Acute myocardial ischemia
+<detail>Pericarditis
+<detail>Possible pulmonary embolus
+<detail>CVA
+<detail>Mitral stenosis
+<detail>Hyperkalemia
+<detail>Hypokalemia
+<detail>Hypercalcemia
+<detail>Hypocalcemia
+<detail>Hypothermia
+<detail>Digitalis effect
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

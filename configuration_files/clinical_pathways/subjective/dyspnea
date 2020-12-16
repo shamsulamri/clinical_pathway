@@ -1,0 +1,17 @@
+<form>Dyspnea
+<group>Dyspnea
+<group_text><insert_text>
+<group_style>1
+<detail>Acute
+<detail_text>acute dyspnea
+<detail>Progressive
+<detail_text>Progressive dyspnea
+<detail>Paroxysmal
+<detail_text>Paroxysmal dyspnea
+<detail>Exertional
+<detail_text>exertional
+<detail>Orthopnea
+<detail_text>orthopnea
+<detail>Paroxysmal nocturnal dyspnea
+<detail_text>paroxysmal nocturnal dyspnea
+

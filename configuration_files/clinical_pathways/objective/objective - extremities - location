@@ -1,0 +1,21 @@
+<form>Edema Location
+<group>Edema Location
+<group_text>of the <insert_text>
+<group_style>1
+<detail>Foot
+<detail_submenu>objective - extremities - side
+<detail>Ankle
+<detail_submenu>objective - extremities - side
+<detail>Calf
+<detail_submenu>objective - extremities - side
+<detail>Thigh
+<detail_submenu>objective - extremities - side
+<detail>Arm
+<detail_submenu>objective - extremities - side
+<detail>Hand
+<detail_submenu>objective - extremities - side
+<detail>Face
+<detail>Sacrum
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

@@ -1,0 +1,16 @@
+<form>Cause of death
+<group>Cause of death
+<group_text> due to <insert_text>
+<group_style>1
+<detail>Natural causes
+<detail>Heart disease
+<detail>Cancer
+<detail_submenu>PMH - Cancer
+<detail>Stroke
+<detail>Accidental death
+<detail>Suicide
+<detail>COPD
+<detail>Pneumonia
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

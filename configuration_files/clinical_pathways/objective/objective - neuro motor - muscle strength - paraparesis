@@ -1,0 +1,13 @@
+<form>Motor
+<group>Paraparesis
+<group_text><insert_text> paraparesis
+<group_style>1
+<detail>Mild
+<detail>Moderate
+<detail>Severe
+<detail>Grade /5
+<detail_text>grade <insert_value>/5
+<detail_inputbox><text><R>
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

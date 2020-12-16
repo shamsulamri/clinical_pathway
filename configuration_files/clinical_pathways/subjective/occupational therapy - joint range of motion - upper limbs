@@ -1,0 +1,63 @@
+<form>Upper limb range of motion
+<group>Shoulder
+<group_text>Shoulder:<insert_text>
+<group_style>1
+<sub_notes>
+<separator><new_line>
+<new_paragraph>
+<detail>Flexion
+<detail_text>Flexion
+<detail_submenu>occupational therapy - arthritis evaluation checklist - rightleft - descriptions
+<detail>Extension
+<detail_text>Extension
+<detail_submenu>occupational therapy - arthritis evaluation checklist - rightleft - descriptions
+<detail>External rotation
+<detail_text>External rotation
+<detail_submenu>occupational therapy - arthritis evaluation checklist - rightleft - descriptions
+<detail>Internal rotation
+<detail_text>Internal rotation
+<detail_submenu>occupational therapy - arthritis evaluation checklist - rightleft - descriptions
+<detail>Abduction
+<detail_text>Abduction
+<detail_submenu>occupational therapy - arthritis evaluation checklist - rightleft - descriptions
+<detail>Adduction
+<detail_text>Adduction
+<detail_submenu>occupational therapy - arthritis evaluation checklist - rightleft - descriptions
+<detail>Circumduction
+<detail_text>Circumduction
+<detail_submenu>occupational therapy - arthritis evaluation checklist - rightleft - descriptions
+
+<form>Upper limb range of motion
+<group>Elbow
+<group_text>Elbow:<insert_text>
+<group_style>1
+<sub_notes>
+<separator><new_line>
+<new_paragraph>
+<detail>Flexion
+<detail_text>Flexion
+<detail_submenu>occupational therapy - arthritis evaluation checklist - rightleft - description
+<detail>Extension
+<detail_text>Extension
+<detail_submenu>occupational therapy - arthritis evaluation checklist - rightleft - description
+
+<form>Upper limb range of motion
+<group>Wrist
+<group_text>Wrist:<insert_text>
+<group_style>1
+<sub_notes>
+<separator><new_line>
+<new_paragraph>
+<detail>Flexion
+<detail_text>Flexion
+<detail_submenu>occupational therapy - arthritis evaluation checklist - rightleft - description
+<detail>Extension
+<detail_text>Extension
+<detail_submenu>occupational therapy - arthritis evaluation checklist - rightleft - description
+<detail>Ulnar deviation
+<detail_text>Ulnar deviation
+<detail_submenu>occupational therapy - arthritis evaluation checklist - rightleft - description
+<detail>Radial deviation
+<detail_text>Radial deviation
+<detail_submenu>occupational therapy - arthritis evaluation checklist - rightleft - description
+

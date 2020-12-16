@@ -1,0 +1,20 @@
+<form>Abdomen Palpation
+<group>Abdomen Palpation
+<group_text><insert_text>
+<group_style>1
+<detail>Tenderness
+<detail_submenu>objective - abdomen palpation - location
+<detail>Guarding
+<detail_submenu>objective - abdomen palpation - location
+<detail>Rebound
+<detail_submenu>objective - abdomen palpation - location
+<detail>Rigidity
+<detail_text>rigidity
+<detail>Mass
+<detail_submenu>objective - abdomen palpation - location
+<detail>Organomegaly
+<detail_text><blank>
+<detail_submenu>objective - abdomen palpation - organomegaly
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

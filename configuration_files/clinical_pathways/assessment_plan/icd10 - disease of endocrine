@@ -1,0 +1,32 @@
+<form>Assessment & Plan
+<group>ICD10
+<group_text><insert_text>
+<group_style>1
+<detail>Disorders of thyroid gland
+<detail_text>
+<detail_submenu>AP - Probability
+<detail>Diabetes mellitus
+<detail_text>
+<detail_submenu>ICD10 - Disease of endocrine - Diabetes Mellitus
+<detail>Other disorders of glucose regulation and pancreatic internal secretion
+<detail_text>
+<detail_submenu>AP - Probability
+<detail>Disorders of other endocrine glands
+<detail_text>
+<detail_submenu>AP - Probability
+<detail>Malnutrition
+<detail_text>
+<detail_submenu>AP - Probability
+<detail>Other nutritional deficiencies
+<detail_text>
+<detail_submenu>AP - Probability
+<detail>Obesity and other hyperalimentation
+<detail_text>
+<detail_submenu>AP - Probability
+<detail>Metabolic disorders
+<detail_text>
+<detail_submenu>AP - Probability
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+

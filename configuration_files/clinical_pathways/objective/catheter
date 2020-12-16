@@ -1,0 +1,16 @@
+<form>Physical Examination
+<group>Catheter
+<group_text><insert_text>.
+<group_style>1
+<detail>Size
+<detail_text>size: <insert_value> unit
+<detail_inputbox><doub><L>
+<detail>Date inserted
+<detail_text>inserted on the <insert_value>
+<detail_inputbox><date><L>
+<detail>Date due changed
+<detail_text>due changed on the <insert_value>
+<detail_inputbox><date><L>
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

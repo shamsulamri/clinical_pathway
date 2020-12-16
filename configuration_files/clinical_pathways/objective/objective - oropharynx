@@ -1,0 +1,14 @@
+<form>Oropharynx
+<group>Oropharynx
+<group_text>Oropharynx - <insert_text>
+<group_style>1
+<detail>Teeth
+<detail_submenu>objective - oropharynx - teeth
+<detail>Mucosal
+<detail_text>
+<detail_submenu>objective - oropharynx - mucosal
+<detail>Tonsils
+<detail_submenu>objective - oropharynx - tonsils
+<detail>Congenital
+<detail_submenu>objective - oropharynx - congenital
+

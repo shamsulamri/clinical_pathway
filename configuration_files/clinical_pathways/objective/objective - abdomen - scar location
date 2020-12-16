@@ -1,0 +1,25 @@
+<form>Location
+<group>Location of Scar
+<group_text><insert_text>
+<group_style>1
+<detail>Midline
+<detail_text>midline
+<detail_submenu>objective - abdomen - scar type
+<detail>RUQ
+<detail_text>RUQ
+<detail_submenu>objective - abdomen - scar type
+<detail>LUQ
+<detail_text>LUQ
+<detail_submenu>objective - abdomen - scar type
+<detail>RLQ
+<detail_text>RLQ
+<detail_submenu>objective - abdomen - scar type
+<detail>LLQ
+<detail_text>LLQ
+<detail_submenu>objective - abdomen - scar type
+<detail>Suprapubic
+<detail_text>suprapubic
+<detail_submenu>objective - abdomen - scar type
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

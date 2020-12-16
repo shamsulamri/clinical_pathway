@@ -1,0 +1,21 @@
+<form>Orthotics & Prosthesis
+<group>Part
+<group_text><insert_text>
+<group_style>1
+<separator>;
+<detail>Mobility
+<detail_text>
+<detail_submenu>AP - orthotics & prosthesis - rehabilitation aid - type
+<detail>Seating and Furniture
+<detail_text>
+<detail_submenu>AP - orthotics & prosthesis - rehabilitation aid - type
+<detail>Assistive device
+<detail_text>
+<detail_submenu>AP - orthotics & prosthesis - rehabilitation aid - type
+<detail>Accesibility
+<detail_text>
+<detail_submenu>AP - orthotics & prosthesis - rehabilitation aid - type
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+

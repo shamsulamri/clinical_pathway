@@ -1,0 +1,18 @@
+<form>Side
+<group>On which side ?
+<group_text><insert_text>
+<group_style>1
+<detail>Right
+<detail_text>on the right
+<detail>Left
+<detail_text>on the left
+<detail>Upper jaw
+<detail_text>on the upper jaw
+<detail>Lower jaw
+<detail_text>on the lower jaw
+<detail>Both, more on the right
+<detail_text>bilaterally (more on the right)
+<detail>Both, more on the left
+<detail_text>bilaterally (more on the left)
+<detail>Bilaterally
+<detail_text>bilaterally

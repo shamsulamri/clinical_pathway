@@ -1,0 +1,119 @@
+<form>Presentation
+<group>Mode of Presentation
+<group_text>The patient presented with <insert_text> vaginal discharge.
+<group_style>1
+<detail>Clear
+<detail>Bloody
+<detail>Creamy
+<detail>Purulent
+<detail>Offensive
+<detail>
+<detail_text><insert_text>
+<detail_inputbox><text><L>
+
+<load>subjective - date of onset
+
+<load>subjective - duration of symptom
+
+<load>subjective - rate of onset
+
+<load>subjective - intensity
+
+<form>Presentation
+<group>Location of Discomfort
+<group_text>The discomfort is localized to the <insert_text>
+<group_style>1
+<detail>Genitalia
+<detail>Urethra
+<detail>Suprapubic area
+<detail_text>suprapubic area
+<detail>Lower abdomen
+<detail_text>lower abdomen
+<detail_submenu>objective - side
+<detail>Flank
+<detail_text>flank
+<detail_submenu>objective - side
+<detail>Costovertebral angle
+<detail_text>costovertebral angle
+<detail_submenu>objective - side
+<detail>
+<detail_text><insert_text>
+<detail_inputbox><text><L>
+
+<form>Presentation
+<group>Radiation of Discomfort
+<group_text>and radiates to <insert_text>
+<group_style>4
+<detail>Does not radiate
+<detail_text>and does not radiate
+<detail>Genitalia
+<detail>Urethra
+<detail>Suprapubic area
+<detail_text>suprapubic area
+<detail>Lower abdomen
+<detail_text>lower abdomen
+<detail_submenu>objective - side
+<detail>Flank
+<detail_text>flank
+<detail_submenu>objective - side
+<detail>Costovertebral angle
+<detail_text>costovertebral angle
+<detail_submenu>objective - side
+<detail>
+<detail_text><insert_text>
+<detail_inputbox><text><L>
+
+<form>Presentation
+<group>Sleep disturbance
+<group_text>The problem <insert_text> awakens the patient from sleep.
+<group_style>2
+<detail>Never
+<detail>Rarely
+<detail>Occasionally
+<detail>Frequently
+
+<form>Presentation
+<group>Symptom Worse
+<group_text>Symptoms are worst <insert_text>.
+<group_style>1
+<detail>Upon wakening
+<detail_text>upon awakening
+<detail>Morning
+<detail_text>in the morning
+<detail>Afternoon
+<detail_text>in the afternoon
+<detail>Evening
+<detail_text>in the evening
+<detail>Night
+<detail_text>in the night
+<detail>
+<detail_text><insert_text>
+<detail_inputbox><text><L>
+
+<form>Presentation
+<group>Associated Symptoms
+<group_text><insert_text>
+<group_style>3
+<yes_text>It was associated with
+<no_text>but no 
+<detail>Fever
+<detail_submenu>Fever (deg F)
+<detail>Loin pain
+<detail>Urethral discharge
+<detail>Vaginal discharge
+<detail>Calculi
+<detail>Genital rash
+<detail>Dysmenorrheoea
+<detail>Menorrhagia
+<detail>Headache
+<detail>Fatigue
+<detail>Anorexia
+<detail>Vomiting
+<detail>Hiccup
+<detail>Insomnia
+<detail>Pruritus
+<detail>Bruising
+<detail>Edema
+<detail>
+<detail_text><insert_text>
+<detail_inputbox><text><L>

@@ -1,0 +1,11 @@
+<form>Location
+<group>Normal muscle strength
+<group_text><insert_text>
+<group_style>1
+<detail>RUE
+<detail>LUE
+<detail>RLE
+<detail>LLE
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

@@ -1,0 +1,70 @@
+<form>Obstetric History
+<group>Obstetric History
+<group_text><insert_text>
+<group_style>1
+<separator>;
+<detail>Date of marriage
+<detail_text>The patient married
+<detail_submenu>When
+<detail>Gravida
+<detail_text>Gravida - <insert_text>
+<detail_inputbox><text><L>
+<detail>Para
+<detail_text>Para - <insert_text>
+<detail_inputbox><text><L>
+<detail>LMP
+<detail_text>LMP:
+<detail_submenu>When
+<detail>POA
+<detail_text>POA: <insert_text> weeks
+<detail_inputbox><text><L>
+<detail>EDD
+<detail_text>EDD: <insert_text>
+<detail_inputbox><text><L>
+<detail>Blood
+<detail_text>
+<detail_submenu>pregnancy - blood
+
+<form>Obstetric History
+<group>Pregnancies
+<group_text><insert_text>
+<group_style>1
+<new_paragraph>
+<detail>Spontaneous abortions
+<detail_text><insert_text> spontaneous abortion
+<detail_inputbox><text><L>
+<detail>Induced abortions
+<detail_text><insert_text> induced abortion
+<detail_inputbox><text><L>
+<detail>Stillbirths
+<detail_text><insert_text> stillbirths
+<detail_inputbox><text><L>
+<detail>Multiple gestation
+<detail_text>prior history of multiple gestatations
+<detail>Age at first pregnancy
+<detail_text>age at first pregnancy was <insert_text>
+<detail_inputbox><text><L>
+<detail>Complication in pregnancy
+<detail_text>complications in pregnancy are <insert_text>
+<detail_submenu>pregnancy - complication in pregnancy
+
+<form>Obstetric History
+<group>Immunization
+<group_text><insert_text>
+<group_style>1
+<new_paragraph>
+<separator>;
+<results_viewer>
+<detail>Rubella
+<detail_text>Rubella:
+<detail_submenu>When
+<detail>ATT (1st dose)
+<detail_text>Tetanus Toxoid (1st dose) -
+<detail_submenu>When
+<detail>ATT (2nd dose)
+<detail_text>Tetanus Toxoid (2nd dose) -
+<detail_submenu>When
+<detail>ATT (3rd dose)
+<detail_text>Tetanus Toxoid (3rd dose) -
+<detail_submenu>When
+

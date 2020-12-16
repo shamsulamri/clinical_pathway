@@ -1,0 +1,12 @@
+<form>Procedures & Imaging
+<group>Dye in study
+<group_text>It should be done <insert_text>
+<group_style>2
+<reveal_date>
+<detail>With dye
+<detail_text>with dye
+<detail>Without dye
+<detail_text>without dye
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

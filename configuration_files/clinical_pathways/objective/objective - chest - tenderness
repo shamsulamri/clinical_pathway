@@ -1,0 +1,11 @@
+<form>Tenderness
+<group>Location of chest tenderness
+<group_text>over <insert_text>
+<group_style>1
+<detail>Sternum
+<detail>Right chest
+<detail>Left chest
+<detail>Entire chest
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

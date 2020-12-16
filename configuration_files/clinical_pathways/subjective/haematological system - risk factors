@@ -1,0 +1,14 @@
+<form>Risk Factors
+<group>Risk factors
+<group_text><insert_text>
+<group_style>3
+<yes_text>Risk factors include 
+<no_text>but not 
+<new_paragraph>
+<detail>Gastric surgery
+<detail>Malabsorption
+<detail>Recurrent infection
+<detail>Immunocompromised
+<detail>
+<detail_text><insert_text>
+<detail_inputbox><text><L>

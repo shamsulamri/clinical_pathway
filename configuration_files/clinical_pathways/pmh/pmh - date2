@@ -1,0 +1,27 @@
+<form>Hypertension Date
+<group>Date of diagnosis
+<group_text>diagnosed <insert_text>
+<group_style>2
+<reveal_date>
+<detail>Today
+<detail_submenu>PMH - Disease Status
+<detail>Date
+<detail_text>on the <insert_value>
+<detail_submenu>PMH - Disease Status
+<detail_inputbox><date><L>
+<detail>Days ago
+<detail_text><insert_value> days ago
+<detail_submenu>PMH - Disease Status
+<detail_inputbox><inte><L>
+<detail>Weeks ago
+<detail_text><insert_value> weeks ago
+<detail_submenu>PMH - Disease Status
+<detail_inputbox><inte><L>
+<detail>Months ago
+<detail_text><insert_value> months ago
+<detail_submenu>PMH - Disease Status
+<detail_inputbox><inte><L>
+<detail>Years ago
+<detail_text><insert_value> years ago
+<detail_submenu>PMH - Disease Status
+<detail_inputbox><inte><L>

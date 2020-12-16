@@ -1,0 +1,25 @@
+<form>Hemodialysis
+<group>Hemodialysis
+<group_text><insert_text>
+<group_style>1
+<new_line>
+<separator>;
+<detail>Single use blood line + 1 dialyser per week 
+<detail_text>Single use blood line + 1 dialyser per week 
+<detail_order>
+<detail>Single line dialyser and blood line (infected)
+<detail_text>Single line dialyser and blood line (infected)
+<detail_order>
+<detail>Review case for chronic hemodialysis patients
+<detail_text>Review case for chronic hemodialysis patients
+<detail_order>
+<detail>Pakar perunding nefrologi
+<detail_text>Pakar perunding nefrologi
+<detail_order>
+<detail>Pakar perubatan
+<detail_text>Pakar perubatan
+<detail_order>
+<detail>Pendaftar dan pegawai perubatan
+<detail_text>Pendaftar dan pegawai perubatan
+<detail_order>
+

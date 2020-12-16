@@ -1,0 +1,171 @@
+<form>Presentation
+<group>Mode of Presentation
+<group_text>The patient presented with <insert_text>
+<group_style>1
+<detail>Incised wound
+<detail>Abrasion
+<detail>Itchiness
+<detail>Laceration
+<detail>Rash
+<detail>Eczema
+<detail>Swelling
+<detail>Pain
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<form>Presentation
+<group>Date of Onset
+<group_text>which occured <insert_text>.
+<group_style>2
+<reveal_date>
+<detail>Today
+<detail>Date:
+<detail_text>on the <insert_value>
+<detail_inputbox><date><R>
+<detail>Days ago
+<detail_text><insert_value> days ago
+<detail_inputbox><text><L>
+<detail>Weeks ago
+<detail_text><insert_value> weeks ago
+<detail_inputbox><text><L>
+<detail>Months ago
+<detail_text><insert_value> months ago
+<detail_inputbox><text><L>
+<detail>Years ago
+<detail_text><insert_value> years ago
+<detail_inputbox><text><L>
+
+<form>Presentation
+<group>Location of symptoms
+<group_text>It is located in the <insert_text>
+<group_style>1
+<detail>Face
+<detail>Head
+<detail>Neck
+<detail>Chest
+<detail>Back
+<detail>Arm
+<detail_submenu>objective - extremities - side
+<detail>Forearm
+<detail_submenu>objective - extremities - side
+<detail>Elbow
+<detail_submenu>objective - extremities - side
+<detail>Hand
+<detail_submenu>objective - extremities - side
+<detail>Thigh
+<detail_submenu>objective - extremities - side
+<detail>Knee
+<detail_submenu>objective - extremities - side
+<detail>Calf
+<detail_submenu>objective - extremities - side
+<detail>Ankle
+<detail_submenu>objective - extremities - side
+<detail>Foot
+<detail_submenu>objective - extremities - side
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<form>Presentation
+<group>Rate of Onset
+<group_text>Symptoms appeared <insert_text>.
+<group_style>2
+<detail>Abruptly
+<detail>Over hours
+<detail_text>over a period of <insert_value> hours
+<detail_inputbox><text><L>
+<detail>Over days
+<detail_text>over a period of <insert_value> days
+<detail_inputbox><text><L>
+<detail>Over weeks
+<detail_text>over a period of <insert_value> weeks
+<detail_inputbox><text><L>
+<detail>Over months
+<detail_text>over a period of <insert_value> months
+<detail_inputbox><text><L>
+<detail>Over years
+<detail_text>over a period of <insert_value> years
+<detail_inputbox><text><L>
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<form>Presentation
+<group>Severity of pain
+<group_text>The pain is <insert_text>
+<group_style>1
+<detail>Mild
+<detail_text>mild in intensity
+<detail_submenu>subjective - severity
+<detail>Moderate
+<detail_text>moderate in intensity
+<detail_submenu>subjective - severity
+<detail>Severe
+<detail_text>severe in intensity
+<detail_submenu>subjective - severity
+<detail>Excruciating
+<detail_text>excruciating in intensity
+<detail_submenu>subjective - severity
+<detail>Scale of 1 to 10
+<detail_text>.The pain is described as <insert_value> on a scale of 1 to 10 in severity
+<detail_inputbox><text><L>
+
+<form>Presentation
+<group>Symptom Worse
+<group_text>Symptoms are worst <insert_text>.
+<group_style>1
+<detail>Upon wakening
+<detail_text>upon awakening
+<detail>Morning
+<detail_text>in the morning
+<detail>Afternoon
+<detail_text>in the afternoon
+<detail>Evening
+<detail_text>in the evening
+<detail>Night
+<detail_text>in the night
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<form>Presentation
+<group>Precipitating factors
+<group_text>The symptoms was precipitated by <insert_text>.
+<group_style>4
+<detail>No precipitating factor
+<detail_text>There was no precipitating factor known.
+<detail>Scratching
+<detail>Allergy
+<detail>Exposure to sun
+<detail>Exposure to Heat
+<detail>Exposure to Cold
+<detail>Medication
+<detail>Smoking inhalation
+<detail>Chemical irritant
+<detail>Low humidity
+<detail>Trauma
+<detail>Broad spectrum antibiotics
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<form>Presentation
+<group>Associated Symptoms
+<group_text><insert_text>
+<group_style>3
+<yes_text>Associated symptoms include 
+<no_text>but no 
+<new_paragraph>
+<detail>Fever
+<detail_submenu>Fever (deg F)
+<detail>Headache
+<detail>Fatigue
+<detail>Anorexia
+<detail>Cervical adenopathy
+<detail>Pruritus
+<detail>Rash
+<detail>Weight loss
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

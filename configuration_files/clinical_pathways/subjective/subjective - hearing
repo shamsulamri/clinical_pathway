@@ -1,0 +1,10 @@
+<form>Presentation
+<group>Hearing Difficulty
+<group_text>(<insert_text>)
+<group_style>1
+<detail>Adequate
+<detail_submenu>objective - side
+<detail>Impaired
+<detail_submenu>objective - side
+<detail>Hearing Aid
+<detail_submenu>objective - side

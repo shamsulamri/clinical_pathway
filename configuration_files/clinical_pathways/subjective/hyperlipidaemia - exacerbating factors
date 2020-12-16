@@ -1,0 +1,17 @@
+<form>Exacerbating Factors
+<group>Exacerbating factors
+<group_text><insert_text>
+<group_style>3
+<yes_text>Exacerbating factors include 
+<no_text>but no 
+<new_paragraph>
+<detail>Concurrent infection
+<detail>Stress
+<detail>Concurrent medications
+<detail>Obesity
+<detail>Excessive alcohol intake
+<detail>Pregnancy
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+

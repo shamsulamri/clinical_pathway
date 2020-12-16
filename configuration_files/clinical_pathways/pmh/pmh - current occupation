@@ -1,0 +1,42 @@
+<form>Current Occupation
+<group>Current Occupation
+<group_text><insert_text>
+<group_style>1
+<detail>Professional
+<detail_text>in a professional field
+<detail_submenu>PMH - Professional occupation
+<detail>Technical
+<detail_text>in a technical field
+<detail_submenu>PMH - Technical occupation
+<detail>Managerial
+<detail_text>in a managerial field
+<detail_submenu>PMH - Managerial occupation
+<detail>Secretarial
+<detail_text>in a secretarial field
+<detail_submenu>PMH - Secretarial occupation
+<detail>Sales
+<detail_text>in sales
+<detail_submenu>PMH - Sales occupation
+<detail>Services
+<detail_text>in services
+<detail_submenu>PMH - Services occupation
+<detail>Trades
+<detail_text>in trade
+<detail_submenu>PMH - Trades occupation
+<detail>Transport
+<detail_text>in transportation
+<detail_submenu>PMH - Transport occupation
+<detail>Heavy labour
+<detail_text>as a heavy laborer
+<detail_submenu>PMH - Heavy labour occupation
+<detail>Agriculture
+<detail_text>in agriculture
+<detail_submenu>PMH - Agriculture occupation
+<detail>Domestic labour
+<detail_text>in domestic labour
+<detail_submenu>PMH - Domestic labour occupation
+<detail>Homemaker
+<detail_text>as a homemaker
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

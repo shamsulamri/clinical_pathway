@@ -1,0 +1,13 @@
+<form>Chest
+<group>Chest
+<group_text><insert_text>
+<group_style>1
+<new_line>
+<detail>Chest: PA
+<detail_text>Chest: PA
+<detail_order>xr_chest_pa
+<detail>Chest: PA && Lateral
+<detail_text>Chest : PA & Lateral
+<detail_order>xr_chest_pa_l
+
+

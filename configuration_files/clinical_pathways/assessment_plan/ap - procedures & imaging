@@ -1,0 +1,90 @@
+<form>Assessment & Plan
+<group>Procedures/Imaging
+<group_text>Procedures/Imaging: <insert_text>
+<group_style>1
+<new_line>
+<separator>;
+<detail>ECG
+<detail_text>ECG
+<detail_order>
+<detail_submenu>AP - Procedures & Imaging - instruction
+<detail>Dressing
+<detail_text>Dressing
+<detail_order>
+<detail_submenu>AP - Procedures & Imaging - instruction
+<detail>Nebuliser
+<detail_text>Nebuliser
+<detail_order>
+<detail_submenu>AP - Procedures & Imaging - instruction
+<detail>Vision test
+<detail_text>Vision test
+<detail_order>
+<detail_submenu>AP - Procedures & Imaging - instruction
+<detail>Pap Smear
+<detail_text>Pap smear
+<detail_order>
+<detail_submenu>AP - Procedures & Imaging - instruction
+<detail>Injection
+<detail_text>Injection
+<detail_order>
+<detail_submenu>AP - Procedures & Imaging - instruction
+<detail>Ultrasound
+<detail_text>Ultrasound
+<detail_order>
+<detail_submenu>AP - Procedures & Imaging - instruction
+<detail>Nasal suction
+<detail_text>Nasal suction
+<detail_order>
+<detail_submenu>AP - Procedures & Imaging - instruction
+<detail>Weight/Height
+<detail_text>Weight/height
+<detail_order>
+<detail_submenu>AP - Procedures & Imaging - instruction
+<detail>Incision and drainage
+<detail_text>Incision and drainage
+<detail_order>
+<detail_submenu>AP - Procedures & Imaging - instruction
+<detail>BP reading
+<detail_text>BP reading
+<detail_order>
+<detail_submenu>AP - Procedures & Imaging - instruction
+<detail>Ryles tube insertion
+<detail_text>Ryles tube insertion
+<detail_order>
+<detail_submenu>AP - Procedures & Imaging - instruction
+<detail>Tepid sponging
+<detail_text>Tepid sponging
+<detail_order>
+<detail_submenu>AP - Procedures & Imaging - instruction
+<detail>Removal of sutures
+<detail_text>Removal of sutures
+<detail_order>
+<detail_submenu>AP - Procedures & Imaging - instruction
+<detail>Ear syringing
+<detail_text>Ear syringing
+<detail_order>
+<detail_submenu>AP - Procedures & Imaging - instruction
+<detail>Eye irrigation
+<detail_text>Eye irrigation
+<detail_order
+<detail_submenu>AP - Procedures & Imaging - instruction
+<detail>Toilet and suture
+<detail_text>Toilet and suture
+<detail_order>
+<detail_submenu>AP - Procedures & Imaging - instruction
+<detail>Vaginal examination
+<detail_text>Vaginal examination
+<detail_order>
+<detail_submenu>AP - Procedures & Imaging - instruction
+<detail>CBD
+<detail_text>CBD
+<detail_order>
+<detail_submenu>AP - Procedures & Imaging - instruction
+<detail>Antenatal examination
+<detail_text>Antenatal examination
+<detail_order>
+<detail_submenu>AP - Procedures & Imaging - instruction
+<detail>Medications
+<detail_text>Medications
+<detail_order>
+<detail_submenu>AP - Procedures & Imaging - instruction

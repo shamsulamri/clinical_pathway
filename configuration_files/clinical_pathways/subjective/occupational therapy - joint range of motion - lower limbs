@@ -1,0 +1,60 @@
+<form>Upper limb range of motion
+<group>Hip
+<group_text>Hip:<insert_text>
+<group_style>1
+<sub_notes>
+<separator><new_line>
+<new_paragraph>
+<detail>Flexion
+<detail_text>Flexion
+<detail_submenu>occupational therapy - arthritis evaluation checklist - rightleft - descriptions
+<detail>Extension
+<detail_text>Extension
+<detail_submenu>occupational therapy - arthritis evaluation checklist - rightleft - descriptions
+<detail>Abduction
+<detail_text>Abduction
+<detail_submenu>occupational therapy - arthritis evaluation checklist - rightleft - descriptions
+<detail>Adduction
+<detail_text>Adduction
+<detail_submenu>occupational therapy - arthritis evaluation checklist - rightleft - descriptions
+<detail>Internal rotation
+<detail_text>Internal rotation
+<detail_submenu>occupational therapy - arthritis evaluation checklist - rightleft - descriptions
+<detail>External rotation
+<detail_text>External rotation
+<detail_submenu>occupational therapy - arthritis evaluation checklist - rightleft - descriptions
+
+<form>Upper limb range of motion
+<group>Knee
+<group_text>Knee:<insert_text>
+<group_style>1
+<sub_notes>
+<separator><new_line>
+<new_paragraph>
+<detail>Flexion
+<detail_text>Flexion
+<detail_submenu>occupational therapy - arthritis evaluation checklist - rightleft - descriptions
+<detail>Extension
+<detail_text>Extension
+<detail_submenu>occupational therapy - arthritis evaluation checklist - rightleft - descriptions
+
+<form>Upper limb range of motion
+<group>Ankle
+<group_text>Ankle:<insert_text>
+<group_style>1
+<sub_notes>
+<separator><new_line>
+<new_paragraph>
+<detail>Dorsi flexion
+<detail_text>Dorsi flexion
+<detail_submenu>occupational therapy - arthritis evaluation checklist - rightleft - descriptions
+<detail>Plantar flexion
+<detail_text>Plantar flexion
+<detail_submenu>occupational therapy - arthritis evaluation checklist - rightleft - descriptions
+<detail>Internal rotation
+<detail_text>Internal rotation
+<detail_submenu>occupational therapy - arthritis evaluation checklist - rightleft - descriptions
+<detail>External rotation
+<detail_text>External rotation
+<detail_submenu>occupational therapy - arthritis evaluation checklist - rightleft - descriptions
+

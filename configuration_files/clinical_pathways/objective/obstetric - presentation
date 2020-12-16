@@ -1,0 +1,27 @@
+<form>Obstetric History
+<group>Pregnancies
+<group_text><insert_text>
+<group_style>1
+<detail>Gravida
+<detail_text>Gravida - <insert_value>
+<detail_inputbox><text><L>
+<detail>Para
+<detail_text>Para - <insert_value>
+<detail_inputbox><text><L>
+<detail>Spontaneous abortions
+<detail_text><insert_value> spontaneous abortion
+<detail_inputbox><text><L>
+<detail>Induced abortions
+<detail_text><insert_value> induced abortion
+<detail_inputbox><text><L>
+<detail>Stillbirths
+<detail_text><insert_value> stillbirths
+<detail_inputbox><text><L>
+<detail>Multiple gestation
+<detail_text>prior history of multiple gestatations
+<detail>Age at first pregnancy
+<detail_text>age at first pregnancy was <insert_value>
+<detail_inputbox><text><R>
+<detail>Complication in pregnancy
+<detail_text>complications in pregnancy are <insert_text>
+<detail_submenu>Complications of pregnancy

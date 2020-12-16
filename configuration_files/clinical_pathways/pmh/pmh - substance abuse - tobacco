@@ -1,0 +1,17 @@
+<form>Tobacco
+<group>Tobacco
+<group_text>(<insert_text>)
+<group_style>1
+<separator>.
+<detail>Past smoking per day
+<detail_text><blank>
+<detail_submenu>PMH - substance abuse - tobacco - past smoking
+<detail>Current smoking per day
+<detail_text><blank>
+<detail_submenu>PMH - substance abuse - tobacco - current smoking
+<detail>Date of quitting
+<detail_text><blank>
+<detail_submenu>PMH - substance abuse - tobacco - date of quitting
+<detail>Second hand smoke
+<detail_text><blank>
+<detail_submenu>PMH - substance abuse - tobacco - second hand smoke

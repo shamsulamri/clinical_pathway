@@ -1,0 +1,16 @@
+<form>Presentation
+<group>Severity
+<group_text>It is <insert_text>.
+<group_style>1
+<detail>Mild
+<detail_text>mild in intensity
+<detail_submenu>subjective - severity
+<detail>Moderate
+<detail_text>moderate in intensity
+<detail_submenu>subjective - severity
+<detail>Severe
+<detail_text>severe in intensity
+<detail_submenu>subjective - severity
+<detail>Excruciating
+<detail_text>excruciating in intensity
+<detail_submenu>subjective - severity

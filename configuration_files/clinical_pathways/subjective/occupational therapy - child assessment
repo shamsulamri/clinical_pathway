@@ -1,0 +1,227 @@
+<form>Penilaian kanak-kanak
+<group>Gross motor developement
+<group_text><insert_text>
+<group_style>1
+<separator><new_line>
+<detail>Head control
+<detail_text>Head control: <insert_value>
+<detail_inputbox><text><L>
+<detail>Roll side to side
+<detail_text>Roll side to side: <insert_value>
+<detail_inputbox><text><L>
+<detail>Rolling
+<detail_text>Rolling: <insert_value>
+<detail_inputbox><text><L>
+<detail>Creeping
+<detail_text>Creeping: <insert_value>
+<detail_inputbox><text><L>
+<detail>Crawling
+<detail_text>Crawling: <insert_value>
+<detail_inputbox><text><L>
+<detail>Sitting
+<detail_text>Sitting: <insert_value>
+<detail_inputbox><text><L>
+<detail>Squatting
+<detail_text>Squatting: <insert_value>
+<detail_inputbox><text><L>
+<detail>Kneeling
+<detail_text>Kneeling: <insert_value>
+<detail_inputbox><text><L>
+<detail>Standing
+<detail_text>Standing: <insert_value>
+<detail_inputbox><text><L>
+<detail>Walking
+<detail_text>Walking: <insert_value>
+<detail_inputbox><text><L>
+<detail>Walking up/down stairs
+<detail_text>Walking up/down stairs: <insert_value>
+<detail_inputbox><text><L>
+<detail>Kicking ball
+<detail_text>Kicking ball: <insert_value>
+<detail_inputbox><text><L>
+<detail>Jumping
+<detail_text>Jumping: <insert_value>
+<detail_inputbox><text><L>
+<detail>Ride a bicycle
+<detail_text>Ride a bicycle: <insert_value>
+<detail_inputbox><text><L>
+<detail>Catch/throw ball
+<detail_text>Catch/throw ball: <insert_value>
+<detail_inputbox><text><L>
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<form>Penilaian kanak-kanak
+<group>Fine motor development
+<group_text><insert_text>
+<group_style>1
+<separator><new_line>
+<detail>Vision
+<detail_text>Vision: <insert_value>
+<detail_inputbox><text><L>
+<detail>Grasp
+<detail_text>Grasp: <insert_value>
+<detail_inputbox><text><L>
+<detail>Release
+<detail_text>Release: <insert_value>
+<detail_inputbox><text><L>
+<detail>Hand-eye coordination
+<detail_text>Hand-eye coordination: <insert_value>
+<detail_inputbox><text><L>
+<detail>Hand-hand coordination
+<detail_text>Hand-hand coordination: <insert_value>
+<detail_inputbox><text><L>
+<detail>Hand manipulation
+<detail_text>Hand manipulation: <insert_value>
+<detail_inputbox><text><L>
+
+<form>Penilaian kanak-kanak
+<group>Speech/Language development
+<group_text><insert_text>
+<group_style>1
+<separator><new_line>
+<detail>Hearing
+<detail_text>Hearing: <insert_value>
+<detail_inputbox><text><L>
+<detail>Vision
+<detail_text>Vision: <insert_value>
+<detail_inputbox><text><L>
+<detail>Words
+<detail_text>Words: <insert_value>
+<detail_inputbox><text><L>
+<detail>Sentences
+<detail_text>Sentences: <insert_value>
+<detail_inputbox><text><L>
+<detail>Understanding
+<detail_text>Understanding: <insert_value>
+<detail_inputbox><text><L>
+
+<form>Penilaian kanak-kanak
+<group>Social development
+<group_text><insert_text>
+<group_style>1
+<separator><new_line>
+<detail>Interaction with other children and adult
+<detail_text>Interaction with other children and adult: <insert_value>
+<detail_inputbox><text><L>
+
+<form>Penilaian kanak-kanak
+<group>Self help skill
+<group_text><insert_text>
+<group_style>1
+<separator><new_line>
+<detail>Feeding
+<detail_text>Feeding: <insert_value>
+<detail_inputbox><text><L>
+<detail>Drinking
+<detail_text>Drinking: <insert_value>
+<detail_inputbox><text><L>
+<detail>Toileting
+<detail_text>Toileting: <insert_value>
+<detail_inputbox><text><L>
+<detail>Dressing/undress
+<detail_text>Dressing/undress: <insert_value>
+<detail_inputbox><text><L>
+<detail>Button/unbutton
+<detail_text>Button/unbutton: <insert_value>
+<detail_inputbox><text><L>
+<detail>Washing hand/body
+<detail_text>Washing hand/body: <insert_value>
+<detail_inputbox><text><L>
+<detail>Brushing teeth
+<detail_text>Brushing teeth: <insert_value>
+<detail_inputbox><text><L>
+<detail>Combing hair
+<detail_text>Combing hair: <insert_value>
+<detail_inputbox><text><L>
+
+<form>Penilaian kanak-kanak
+<group>Cognitive development
+<group_text><insert_text>
+<group_style>1
+<separator><new_line>
+<detail>Shape, colour, number, alphabet and size
+<detail_text>Shape, colour, number, alphabet and size: <insert_value>
+<detail_inputbox><text><L>
+<detail>Recognising
+<detail_text>Recognising: <insert_value>
+<detail_inputbox><text><L>
+<detail>Matching
+<detail_text>Matching: <insert_value>
+<detail_inputbox><text><L>
+<detail>Sequencing
+<detail_text>Sequencing: <insert_value>
+<detail_inputbox><text><L>
+
+<form>Penilaian kanak-kanak
+<group>Pre-reading skill
+<group_text><insert_text>
+<group_style>1
+<separator><new_line>
+<detail>Look/Attenting
+<detail_text>Look/Attention: <insert_value>
+<detail_inputbox><text><L>
+<detail>Concentration
+<detail_text>Concentration: <insert_value>
+<detail_inputbox><text><L>
+<detail>Listening
+<detail_text>Listening: <insert_value>
+<detail_inputbox><text><L>
+
+<form>Penilaian kanak-kanak
+<group>Pre-numbering skill
+<group_text><insert_text>
+<group_style>1
+<separator><new_line>
+<detail>Rote counting
+<detail_text>Rote counting: <insert_value>
+<detail_inputbox><text><L>
+<detail>Recognition of number symbol
+<detail_text>Recognition of number symbol: <insert_value>
+<detail_inputbox><text><L>
+<detail>Understand quantity
+<detail_text>Understand quantity: <insert_value>
+<detail_inputbox><text><L>
+
+<form>Penilaian kanak-kanak
+<group>Pre-writing
+<group_text><insert_text>
+<group_style>1
+<separator><new_line>
+<detail>Random scribbling
+<detail_text>Random scribbling: <insert_value>
+<detail_inputbox><text><L>
+<detail>Straight scribbling
+<detail_text>Straight scribbling: <insert_value>
+<detail_inputbox><text><L>
+<detail>Circular scribbling
+<detail_text>Circular scribbling: <insert_value>
+<detail_inputbox><text><L>
+<detail>Copies horizontal/vertical/circular line
+<detail_text>Copies horizontal/vertical/circular line: <insert_value>
+<detail_inputbox><text><L>
+
+<form>Penilaian kanak-kanak
+<group>Problem List
+<group_text><insert_text>
+<group_style>1
+<separator><new_line>
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

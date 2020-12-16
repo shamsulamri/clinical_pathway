@@ -1,0 +1,17 @@
+<form>ECG Interpretation
+<group>ECG Interpretation
+<group_text><insert_text>
+<group_style>1
+<detail>Rate
+<detail_submenu>objective - procedures - cardiology - ecg - rate measured
+<detail>Atrial Rate
+<detail_submenu>objective - procedures - cardiology - ecg - rate measured
+<detail>Ventricular rate
+<detail_submenu>objective - procedures - cardiology - ecg - rate measured
+<detail>Junctional rate
+<detail_submenu>objective - procedures - cardiology - ecg - rate measured
+<detail>Undetermined location
+<detail_submenu>objective - procedures - cardiology - ecg - rate measured
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

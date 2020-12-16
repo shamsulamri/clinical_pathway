@@ -1,0 +1,14 @@
+<form>Apgar Score
+<group>Apgar Score
+<group_text>Apgar Score - <insert_text>
+<group_style>1
+<detail>1 min
+<detail_text>1 min (<insert_value>)
+<detail_inputbox><text><L>
+<detail>5 min
+<detail_text>5 min (<insert_value>)
+<detail_inputbox><text><L>
+<detail>10 min
+<detail_text>10 min (<insert_value>)
+<detail_inputbox><text><L>
+

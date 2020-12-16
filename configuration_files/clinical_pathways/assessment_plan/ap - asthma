@@ -1,0 +1,39 @@
+<form>Assessment & Plan
+<group>DDx
+<group_text>Diagnosis: <insert_text>
+<group_style>1
+<new_line>
+<separator><new_line>
+<detail>Asthma
+<detail_text>Asthma
+<detail_submenu>AP - Probability
+<detail>COPD
+<detail_text>Chronic obstructive pulmonary disease
+<detail_submenu>AP - Probability
+<detail>Status asthmaticus
+<detail_text>Status asthmaticus
+<detail_submenu>AP - Probability
+<detail>Acute bronchitis
+<detail_text>Acute bronchitis
+<detail_submenu>AP - Probability
+<detail>Chronic bronchitis
+<detail_text>Chronic bronchitis
+<detail_submenu>AP - Probability
+<detail>Pneumonia
+<detail_text>Pneumonia
+<detail_submenu>AP - Probability
+<detail>Anaphylaxis
+<detail_text>Anaphylaxis
+<detail_submenu>AP - Probability
+<detail>Respiratory failure
+<detail_text>Respiratory failure
+<detail_submenu>AP - Probability
+<detail>CHF
+<detail_text>Congestive heart failure
+<detail_submenu>AP - Probability
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<Load>AP - Assessment & Plan
+

@@ -1,0 +1,17 @@
+<form>Complications
+<group>Renal problems
+<group_text>(<insert_text>)
+<group_style>1
+<detail>Proteinuria
+<detail>Microscopic hematuria
+<detail>Renal insufficiency
+<detail>Chronic renal failure
+<detail>Hypertensive glomerulonsclerosis
+<detail>Hyperaldosteronemia
+<detail>Diabetic glomerulosclerosis
+<detail>Hypertension
+<detail>Nephropathy
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+

@@ -1,0 +1,12 @@
+<form>Vaccination
+<group>Tetanus vaccination
+<group_text>vaccination: <insert_text>
+<group_style>1
+<separator>;
+<counter>
+<detail>Date
+<detail_text>
+<detail_submenu>When
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

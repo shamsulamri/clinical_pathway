@@ -1,0 +1,39 @@
+<form>Severity
+<group>Change in Severity
+<group_text>and has been <insert_text>
+<group_style>2
+<detail>Stable
+<detail_text>stable
+<detail>Improving
+<detail_text>improving
+<detail>Worsening
+<detail_text>worsening
+<detail>Constant
+<detail_text>constant
+<detail>Fluctuating
+<detail_text>fluctuating
+<detail>Intermittent
+<detail_text>intermittent
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<form>Rate of change
+<group>Rate of change
+<group_text>over the past <insert_text>
+<group_style>2
+<detail>Hours
+<detail_text><insert_value> hours
+<detail_inputbox><inte><L>
+<detail>Days
+<detail_text><insert_value> days
+<detail_inputbox><inte><L>
+<detail>Weeks
+<detail_text><insert_value> weeks
+<detail_inputbox><inte><L>
+<detail>Months
+<detail_text><insert_value> months
+<detail_inputbox><inte><L>
+<detail>Years
+<detail_text><insert_value> years
+<detail_inputbox><inte><L>

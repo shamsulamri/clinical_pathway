@@ -1,0 +1,24 @@
+<form>Assessment & Plan
+<group>DDx
+<group_text>Diagnosis: <insert_text>
+<group_style>1
+<new_line>
+<separator><new_line>
+<detail>Acute cervical disc prolapse
+<detail_text>Acute cervical disc prolapse
+<detail_submenu>AP - Probability
+<detail>Cervical spondylosis
+<detail_text>Cervical spondylosis
+<detail_submenu>AP - Probability
+<detail>Rheumatoid arthritis
+<detail_text>Rheumatoid arthritis
+<detail_submenu>AP - Probability
+<detail>Neuralgic amyotrophy
+<detail_text>Neuralgic amyotrophy
+<detail_submenu>AP - Probability
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<Load>AP - Assessment & Plan
+

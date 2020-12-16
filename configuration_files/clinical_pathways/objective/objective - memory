@@ -1,0 +1,8 @@
+<form>Physical Examination
+<group>Cognitive Review
+<group_text>patient is having problem with <insert_text> memory.
+<group_style>4
+<detail>No abnormality detected.
+<detail_text>Memory: no abnormality detected
+<detail>Short Term
+<detail>Long Term

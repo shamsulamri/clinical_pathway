@@ -1,0 +1,22 @@
+<form>Date of Diagnosis
+<group>Date of Diagnosis
+<group_text>The diagnosis of it was first made <insert_text>
+<group_style>2
+<reveal_date>
+<detail>Today
+<detail>Date:
+<detail_text>on the <insert_value>
+<detail_inputbox><date><R>
+<detail>Days ago
+<detail_text><insert_value> days ago
+<detail_inputbox><text><L>
+<detail>Weeks ago
+<detail_text><insert_value> weeks ago
+<detail_inputbox><text><L>
+<detail>Months ago
+<detail_text><insert_value> months ago
+<detail_inputbox><text><L>
+<detail>Years ago
+<detail_text><insert_value> years ago
+<detail_inputbox><text><L>
+

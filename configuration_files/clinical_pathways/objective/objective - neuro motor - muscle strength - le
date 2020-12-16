@@ -1,0 +1,47 @@
+<form>Muscle Strength
+<group>Muscle strength
+<group_text><insert_text>
+<group_style>1
+<separator>,
+<detail>Gluteus maximus
+<detail_text>gluteus maximus <insert_value>
+<detail_inputbox><text><L>
+<detail>Gluteus medius
+<detail_text>gluteus medius <insert_value>
+<detail_inputbox><text><L>
+<detail>Hip adductors
+<detail_text>hip adductors <insert_value>
+<detail_inputbox><text><L>
+<detail>Illiopsoas
+<detail_text>illiopsoas <insert_value>
+<detail_inputbox><text><L>
+<detail>Quadriceps
+<detail_text>quadriceps <insert_value>
+<detail_inputbox><text><L>
+<detail>Hamstrings
+<detail_text>hamstrings <insert_value>
+<detail_inputbox><text><L>
+<detail>Gastrocnemius
+<detail_text>gastrocnemius <insert_value>
+<detail_inputbox><text><L>
+<detail>Tibialis posterior
+<detail_text>tibialis posterior <insert_value>
+<detail_inputbox><text><L>
+<detail>Tibialis anterior
+<detail_text>tibialis anterior <insert_value>
+<detail_inputbox><text><L>
+<detail>Peroneus longus
+<detail_text>peroneus longus <insert_value>
+<detail_inputbox><text><L>
+<detail>Extensor hallucis longus
+<detail_text>extensor hallucis longus <insert_value>
+<detail_inputbox><text><L>
+<detail>Extensor digitorum brevis
+<detail_text>extensor digitorum brevis <insert_value>
+<detail_inputbox><text><L>
+<detail>Flexor digitorum muscles
+<detail_text>flexor digitorum muscles <insert_value>
+<detail_inputbox><text><L>
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

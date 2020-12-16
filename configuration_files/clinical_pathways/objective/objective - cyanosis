@@ -1,0 +1,21 @@
+<form>Illness
+<group>Cynosis
+<group_text>of the <insert_text>
+<group_style>1
+<detail>Toes
+<detail_submenu>objective - side - toes
+<detail>Foot
+<detail_submenu>objective - side - foot
+<detail>Lower Extremity
+<detail_submenu>objective - side - lower extremity
+<detail>Fingers
+<detail_submenu>objective - side - fingers
+<detail>Hand
+<detail_submenu>objective - side - hand
+<detail>Upper Extremity
+<detail_submenu>objective - side - upper extremity
+<detail>Perioral
+<detail>General
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

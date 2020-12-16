@@ -1,0 +1,14 @@
+<form>Sputum
+<group>Sputum
+<group_text><insert_text>
+<group_style>1
+<detail>Color
+<detail_text>color: <insert_text>
+<detail_inputbox><text><L>
+<detail>Amount
+<detail_text>amount: <insert_text>
+<detail_inputbox><text><L>
+<detail>Consist
+<detail_text>consist: <insert_text>
+<detail_inputbox><text><L>
+

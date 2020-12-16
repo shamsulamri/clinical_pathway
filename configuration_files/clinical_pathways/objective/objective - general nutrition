@@ -1,0 +1,12 @@
+<form>Nutrition
+<group>Nutrition
+<group_text><insert_text>
+<group_style>2
+<detail>Well nourished
+<detail>Malnourished
+<detail>Obese
+<detail>Thin
+<detail>Well developed
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

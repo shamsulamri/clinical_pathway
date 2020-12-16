@@ -1,0 +1,13 @@
+<form>Presentation
+<group>Cardiovascular symptoms
+<group_text>(<insert_text>)
+<group_style>1
+<detail>Palpitations
+<detail>Chest pain
+<detail>Chest discomfort
+<detail>Dyspnea
+<detail>Poor exercise tolerance
+<detail>
+<detail_text><insert_text>
+<detail_inputbox><text><L>
+

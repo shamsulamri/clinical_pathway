@@ -1,0 +1,13 @@
+<form>Relevant Diagnoses
+<group>Renal disease
+<group_text>(<insert_text>)
+<group_style>1
+<detail>Renovascular stenosis
+<detail>Chronic pyelonephritis
+<detail>Glomerulonephritis
+<detail>Polycystic kidney disease
+<detail>Previous renal injury
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+

@@ -1,0 +1,17 @@
+<form>Procedures & Imaging
+<group>Date of study
+<group_text>It should be performed in <insert_text>
+<group_style>2
+<reveal_date>
+<detail>Days
+<detail_text><insert_value> days
+<detail_inputbox><text><L>
+<detail>Weeks
+<detail_text><insert_value> weeks
+<detail_inputbox><text><L>
+<detail>Months
+<detail_text><insert_value> months
+<detail_inputbox><text><L>
+<detail>Years
+<detail_text><insert_value> years
+<detail_inputbox><text><L>

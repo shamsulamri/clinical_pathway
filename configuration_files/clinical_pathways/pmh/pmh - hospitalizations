@@ -1,0 +1,29 @@
+<form>Hospitalizations
+<group>Hospitalizations
+<group_text>of <insert_text>
+<group_style>1
+<detail>Asthma
+<detail_submenu>PMH - Date
+<detail>Pneumonia
+<detail_submenu>PMH - Date
+<detail>Croup
+<detail_submenu>PMH - Date
+<detail>Neonatal sepsis
+<detail_submenu>PMH - Date
+<detail>Gastroenteritis
+<detail_submenu>PMH - Date
+<detail>Renal disease
+<detail_submenu>PMH - Date
+<detail>Diabetes
+<detail_submenu>PMH - Date
+<detail>Meningitis
+<detail_submenu>PMH - Date
+<detail>Leukemia
+<detail_submenu>PMH - Date
+<detail>Seizures
+<detail_submenu>PMH - Date
+<detail>Trauma
+<detail_submenu>PMH - Date
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

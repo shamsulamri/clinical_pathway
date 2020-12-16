@@ -1,0 +1,22 @@
+<form>Ear
+<group>Ear
+<group_text>Ear - <insert_text>
+<group_style>1
+<detail>Normal
+<detail>Serous Discharge
+<detail_submenu>objective - ear - side
+<detail>Mucopurulent
+<detail_submenu>objective - ear - side
+<detail>Bulging TM
+<detail_submenu>objective - ear - side
+<detail>Retracted TM
+<detail_submenu>objective - ear - side
+<detail>Perforated TM
+<detail_submenu>objective - ear - side
+<detail>Serous effusion
+<detail_submenu>objective - ear - side
+<detail>Tubes
+<detail_submenu>objective - ear - side
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

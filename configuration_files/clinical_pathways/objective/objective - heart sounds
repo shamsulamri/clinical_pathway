@@ -1,0 +1,20 @@
+<form>Heart Sounds
+<group>Heart Sounds
+<group_text><insert_text>
+<group_style>1
+<detail>S1, S2 intact
+<detail>S1 split
+<detail>S1 absent
+<detail_text>S1 absent
+<detail>S2 split
+<detail_text>S2 split
+<detail_submenu>objective - heart - S2 split
+<detail>S2 absent
+<detail>Ejection click
+<detail>Midsystolic click
+<detail>Opening snap
+<detail>S3 present
+<detail>S4 present
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

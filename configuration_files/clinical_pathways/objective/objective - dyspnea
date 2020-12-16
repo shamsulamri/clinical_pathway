@@ -1,0 +1,10 @@
+<form>Illness
+<group>Dyspneic
+<group_text>with <insert_text>
+<group_style>1
+<detail>Stridor
+<detail>Wheezing
+<detail>Cough
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

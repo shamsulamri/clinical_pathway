@@ -1,0 +1,11 @@
+<form>Relevant Diagnoses
+<group>Vascular disease
+<group_text>(<insert_text>)
+<group_style>1
+<detail>Thrombophlebitis
+<detail>Pulmonary embolism
+<detail>Peripheral vascular disease
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+

@@ -1,0 +1,23 @@
+<form>Complications
+<group>Complications
+<group_text>Complications have included <insert_text>.
+<group_style>1
+<detail>Recurrent infections
+<detail_submenu>subjective - complications - recurrent infections
+<detail>Metabolic problems
+<detail_submenu>subjective - complications - metabolic problems
+<detail>Ocular problems
+<detail_submenu>subjective - complications - ocular problems
+<detail>Renal problems
+<detail_submenu>subjective - complications - renal problems
+<detail>Neurologic problems
+<detail_submenu>subjective - complications - neurologic problems
+<detail>Cardiac problems
+<detail_submenu>subjective - complications - cardiac problems
+<detail>Dermatologic problems
+<detail_submenu>subjective - complications - dermatologic problems
+<detail>Pregnancy related problems
+<detail_submenu>subjective - complications - pregnancy related problems
+<detail>
+<detail_text><insert_text>
+<detail_inputbox><text><L>

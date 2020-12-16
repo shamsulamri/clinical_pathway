@@ -1,0 +1,19 @@
+<form>Oral narcotics
+<group>Oral narcotics
+<group_text><insert_text>
+<group_style>2
+<detail>Codeine
+<detail_text>codeine
+<detail_submenu>PMH - substance abuse - drug abuse - duration
+<detail>Oxycodone
+<detail_text>oxycodone
+<detail_submenu>PMH - substance abuse - drug abuse - duration
+<detail>Hydrocodone
+<detail_text>hydrocodone
+<detail_submenu>PMH - substance abuse - drug abuse - duration
+<detail>Hydromorphone
+<detail_text>hydromorphone
+<detail_submenu>PMH - substance abuse - drug abuse - duration
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

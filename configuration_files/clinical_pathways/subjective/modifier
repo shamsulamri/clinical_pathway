@@ -1,0 +1,15 @@
+<form>Modifier
+<group>Modifier
+<group_text>(<insert_text>)
+<group_style>2
+<detail>Resolved
+<detail_text>resolved
+<detail>Improved
+<detail_text>improved
+<detail>Worsened
+<detail_text>worsened
+<detail>Not change
+<detail_text>not change
+<detail>
+<detail_text><insert_text>
+<detail_inputbox><text><L>

@@ -1,0 +1,13 @@
+<form>Pinprick
+<group>Pinprick
+<group_text><insert_text>
+<group_style>1
+<detail>Normal
+<detail_submenu>objective - neuro sensory - location
+<detail>Decreased
+<detail_submenu>objective - neuro sensory - location
+<detail>Increased
+<detail_submenu>objective - neuro sensory - location
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

@@ -1,0 +1,20 @@
+<form>Relevant Diagnoses
+<group>Relevant Medical History
+<group_text>Past medical history is notable for <insert_text>.
+<group_style>1
+<detail>Otitis media
+<detail>Streptococcal pharyngitis
+<detail>Viral pharyngitis
+<detail>Sinusitis
+<detail>Thrush
+<detail>Peritonsillar abscess
+<detail>Bronchitis
+<detail>Pneumonia
+<detail>Sepsis
+<detail>Thyroid mass
+<detail>Esophageal divericulum
+<detail>Diabetes
+<detail>
+<detail_text><insert_text>
+<detail_inputbox><text><L>
+

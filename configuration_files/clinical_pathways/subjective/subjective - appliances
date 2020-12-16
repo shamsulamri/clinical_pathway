@@ -1,0 +1,12 @@
+<form>Physical Examination
+<group>Appliances
+<group_text>Appliances: <insert_text>
+<group_style>1
+<separator>;
+<new_line>
+<detail>Oxygen
+<detail>Pacemaker
+<detail>Tracheostomy
+<detail>Feeding Tube
+<detail_submenu>objective - feeding tube
+<detail>Urinary catheter

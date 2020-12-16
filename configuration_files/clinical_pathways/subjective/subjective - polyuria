@@ -1,0 +1,8 @@
+<form>Polyuria
+<group>Frequency of Voiding
+<group_text><insert_text>
+<group_style>0
+<detail>
+<detail_text>, voiding on average <insert_value> times per day
+<detail_inputbox><text><L>
+

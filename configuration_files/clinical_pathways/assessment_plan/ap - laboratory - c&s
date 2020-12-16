@@ -1,0 +1,17 @@
+<form>Culture & Sensitivity
+<group>Culture & Sensitivity
+<group_text><insert_text>
+<group_style>1
+<new_line>
+<detail>Swab C&&S
+<detail_text>Swab C&S
+<detail_order>swab_cs
+<detail>Sputum C&&S
+<detail_text>Sputum C&S
+<detail_order>sputum_c&s
+<detail>Urine C&&S
+<detail_text>Urine C&S
+<detail_order>urine_cs
+
+
+

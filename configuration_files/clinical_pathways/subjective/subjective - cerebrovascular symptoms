@@ -1,0 +1,14 @@
+<form>Presentation
+<group>Cerebrovascular symptoms
+<group_text>(<insert_text>)
+<group_style>1
+<detail>Syncope
+<detail>Confusion
+<detail>Convulsions
+<detail>Sensory deficit
+<detail>Rt sided weakness
+<detail>Lt sided weakness
+<detail>
+<detail_text><insert_text>
+<detail_inputbox><text><L>
+

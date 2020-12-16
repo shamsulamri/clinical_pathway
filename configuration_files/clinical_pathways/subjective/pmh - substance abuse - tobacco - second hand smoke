@@ -1,0 +1,12 @@
+<form>Second hand smoke
+<group>Second Hand Smoke
+<group_text>There is history of <insert_text> 
+<group_style>4
+<detail>No exposure
+<detail_text>The patient denied exposure to second hand smoke
+<detail>Heavy exposure
+<detail_text>heavy exposure to second hand smoke
+<detail_submenu>PMH - substance abuse - tobacco - exposure
+<detail>Mild exposure
+<detail_text>mild exposure to second hand smoke
+<detail_submenu>PMH - substance abuse - tobacco - exposure

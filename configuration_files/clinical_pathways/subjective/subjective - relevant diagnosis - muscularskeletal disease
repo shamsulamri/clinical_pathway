@@ -1,0 +1,13 @@
+<form>Relevant Diagnoses
+<group>Musculoskeletal disease
+<group_text>(<insert_text>)
+<group_style>1
+<detail>Recent chest trauma
+<detail>Musculoskeletal chest wall pain
+<detail>Calcific tendinitis
+<detail>Subdeltoid bursitis
+<detail>Radiculopathy
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+

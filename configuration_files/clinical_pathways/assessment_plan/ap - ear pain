@@ -1,0 +1,36 @@
+<form>Assessment & Plan
+<group>DDx
+<group_text>Diagnosis: <insert_text>
+<group_style>1
+<new_line>
+<separator><new_line>
+<detail>Otitis media
+<detail_text>Otitis media
+<detail_submenu>objective - side - ddx
+<detail>Serous otitis
+<detail_text>Serous otitis
+<detail_submenu>objective - side - ddx
+<detail>Otitis external
+<detail_text>otitis external
+<detail_submenu>objective - side - ddx
+<detail>Tonsilitis
+<detail_text>Tonsilitis
+<detail_submenu>objective - side - ddx
+<detail>Barotrauma
+<detail_text>Barotrauma
+<detail_submenu>objective - side - ddx
+<detail>Trauma
+<detail_text>Trauma
+<detail_submenu>objective - side - ddx
+<detail>Foreign body
+<detail_text>Foreign body
+<detail_submenu>objective - side - ddx
+<detail>TMJ dysfunction
+<detail_text>TMJ dysfunction
+<detail_submenu>objective - side - ddx
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<Load>AP - Assessment & Plan
+

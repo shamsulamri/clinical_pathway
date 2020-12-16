@@ -1,0 +1,13 @@
+<form>S2 Split
+<group>S2 Split
+<group_text>with <insert_text>;
+<group_style>2
+<detail>Fixed splitting
+<detail_text>fixed splitting
+<detail>Wide splitting
+<detail_text>wide splitting
+<detail>Reverse splitting
+<detail_text>reverse splitting
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

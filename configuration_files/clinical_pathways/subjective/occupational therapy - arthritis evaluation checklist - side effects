@@ -1,0 +1,13 @@
+<form>Side effects
+<group>Side effects
+<group_text>and complain of <insert_text>
+<group_style>1
+<detail>Headaches
+<detail>Nausea
+<detail>Itching
+<detail>Rash
+<detail>Ringing in ears
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+

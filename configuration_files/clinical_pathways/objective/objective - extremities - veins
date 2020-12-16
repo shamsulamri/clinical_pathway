@@ -1,0 +1,13 @@
+<form>Veins
+<group>Veins
+<group_text><insert_text>
+<group_style>1
+<detail>Varicose veins
+<detail_submenu>objective - extremities - veins side
+<detail>Venous stasis dermatitis
+<detail_submenu>objective - extremities - veins side
+<detail>Venous ulcerations
+<detail_submenu>objective - extremities - veins side
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

@@ -1,0 +1,44 @@
+<form>Presentation
+<group>Mode of Presentation
+<group_text>The patient presented with <insert_text>.
+<group_style>1
+<detail>Dental problems
+<detail_submenu>mouth and throat - dental problems
+<detail>Hoarseness
+<detail>Sore throat
+<detail>Sore tongue
+<detail>Cold sores
+<detail>Apthous ulcers
+<detail>Dysphagia
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<load>subjective - rate of onset
+
+<load>subjective - intensity
+
+<form>Presentation
+<group>Associated Symptoms
+<group_text><insert_text>
+<group_style>3
+<yes_text>Associated symptoms include 
+<no_text>but no 
+<detail>Fever
+<detail_submenu>Fever (deg F)
+<detail>Malaise
+<detail>Dysphagia
+<detail>Nasal Congestion
+<detail>Post-nasal drip
+<detail>Cervical adenopathy
+<detail>Enanthem
+<detail>Cough
+<detail>Ear pain
+<detail>Dyspnea
+<detail>Stridor
+<detail>Wheezing
+<detail>Rash
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+

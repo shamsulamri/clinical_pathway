@@ -1,0 +1,68 @@
+<form>Hand function assessment
+<group>General
+<group_text><insert_text>
+<group_style>1
+<separator><new_line>
+<detail>Dominant hand
+<detail_text>Dominat hand: 
+<detail_submenu>occupational therapy - arthritis evaluation checklist - rightleft only
+<detail>Affected hand
+<detail_text>Affected hand: 
+<detail_submenu>occupational therapy - arthritis evaluation checklist - rightleft only
+
+<form>Hand fucntion assessment
+<group>Finger thumb prehension
+<group_text>Finger thumb prehension:<insert_text>
+<group_style>1
+<sub_notes>
+<separator><new_line>
+<new_paragraph>
+<detail>Lateral pinch
+<detail_text>Lateral pinch
+<detail_submenu>occupational therapy - arthritis evaluation checklist - rightleft - descriptions
+<detail>2 point tip
+<detail_text>2 point tip
+<detail_submenu>occupational therapy - arthritis evaluation checklist - rightleft - descriptions
+<detail>3 point tip
+<detail_text>3 point tip
+<detail_submenu>occupational therapy - arthritis evaluation checklist - rightleft - descriptions
+<detail>2 point pad
+<detail_text>2 point pad
+<detail_submenu>occupational therapy - arthritis evaluation checklist - rightleft - descriptions
+<detail>3 point pad
+<detail_text>3 point pad
+<detail_submenu>occupational therapy - arthritis evaluation checklist - rightleft - descriptions
+
+<form>Hand fucntion assessment
+<group>Full hand prehension
+<group_text>Full hand prehension:<insert_text>
+<group_style>1
+<sub_notes>
+<separator><new_line>
+<new_paragraph>
+<detail>Cylindrical grasp
+<detail_text>Cylindrical grasp
+<detail_submenu>occupational therapy - arthritis evaluation checklist - rightleft - descriptions
+<detail>Gross grasp
+<detail_text>Gross grasp
+<detail_submenu>occupational therapy - arthritis evaluation checklist - rightleft - descriptions
+
+<form>Hand fucntion assessment
+<group>Others
+<group_text><insert_text>
+<group_style>1
+<separator><new_line>
+<new_paragraph>
+<detail>Nonprehension
+<detail_text>Nonprehension
+<detail_submenu>occupational therapy - arthritis evaluation checklist - rightleft - descriptions
+<detail>Bilateral prehension
+<detail_text>Bilateral prehension
+<detail_submenu>occupational therapy - arthritis evaluation checklist - rightleft - descriptions
+<detail>Power grip
+<detail_text>Power grip
+<detail_submenu>occupational therapy - arthritis evaluation checklist - rightleft - descriptions
+<detail>Pinch grip
+<detail_text>Pinch grip
+<detail_submenu>occupational therapy - arthritis evaluation checklist - rightleft - descriptions
+

@@ -1,0 +1,15 @@
+<form>Referred by
+<group>Referred by
+<group_text>(<insert_text>)
+<group_style>2
+<separator>;
+<detail>HUKM Doctor
+<detail_text>HUKM doctor
+<detail_submenu>HUKM Doctor - Department
+<detail>GP
+<detail_text>GP
+<detail_submenu>palliative care - referee address
+<detail>Family specialist
+<detail_text>family specialist
+<detail_submenu>palliative care - referee address
+

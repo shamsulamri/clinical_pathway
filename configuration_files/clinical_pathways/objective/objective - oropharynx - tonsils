@@ -1,0 +1,17 @@
+<form>Tonsils
+<group>Tonsils
+<group_text><insert_text>
+<group_style>1
+<detail>Enlargement
+<detail_submenu>objective - oropharynx - tonsils - side
+<detail>Inflammation
+<detail_submenu>objective - oropharynx - tonsils - side
+<detail>Exudate
+<detail_submenu>objective - oropharynx - tonsils - side
+<detail>Abcess
+<detail_submenu>objective - oropharynx - tonsils - side
+<detail>Absent
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+

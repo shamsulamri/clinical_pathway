@@ -1,0 +1,20 @@
+<form>Decrease perfusion location
+<group>Where ?
+<group_text>of the <insert_text>
+<group_style>1
+<detail>Toes
+<detail_submenu>objective - extremities - side
+<detail>Foot
+<detail_submenu>objective - extremities - side
+<detail>Lower extremity
+<detail_submenu>objective - extremities - side
+<detail>Fingers
+<detail_submenu>objective - extremities - side
+<detail>Hand
+<detail_submenu>objective - extremities - side
+<detail>Upper extremity
+<detail_submenu>objective - extremities - side
+<detail>General
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

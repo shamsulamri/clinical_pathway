@@ -1,0 +1,69 @@
+<form>Labour Progress
+<group>Maternal && Fetal
+<group_text><insert_text>
+<group_style>1
+<separator>;
+<results_viewer>
+<detail>Blood Pressure
+<detail_text>BP:<insert_value> mmHg
+<detail_inputbox><bpre><L>
+<detail>Pulse rate
+<detail_text>PR: <insert_value>/min
+<detail_inputbox><inte><L>
+<detail>Temperature (C)
+<detail_text>T: <insert_value> (C)
+<detail_inputbox><doub><L>
+<detail>Contraction
+<detail_text><insert_value> contractions per 10 minutes
+<detail_inputbox><text><L>
+<detail>Fetal Heart Rate
+<detail_text>FHR: <insert_value> beats per minute
+<detail_inputbox><text><L>
+
+<form>Labour Progress
+<group>Liquor
+<group_text>Liquor: <insert_text>
+<group_style>2
+<new_line>
+<detail>Clear
+<detail_text>clear
+<detail_submenu>objective - labour progress - liquor clear
+<detail>Not Clear
+<detail_text>not clear
+<detail_submenu>objective - labour progress - liquor not clear
+
+<form>Labour Progress
+<group>Vaginal Examination
+<group_text>Cervix: <insert_text>
+<group_style>1
+<new_line>
+<detail>Dilatation (cm)
+<detail_text>dilatation (<insert_value> cm)
+<detail_inputbox><text><L>
+<detail>Length (cm)
+<detail_text><insert_value> cm long
+<detail_inputbox><text><L>
+<detail>Consistency 
+<detail_text>
+<detail_submenu>objective - ve - consistency
+<detail>Position
+<detail_text>
+<detail_submenu>objective - ve - position
+<detail>Station
+<detail_submenu>objective - ve - station
+
+<form>Labour Progress
+<group>Urine
+<group_text>Urine: <insert_text>
+<group_style>1
+<new_line>
+<detail>Volume (ml)
+<detail_text>volume (<insert_value> ml)
+<detail_inputbox><text><L>
+<detail>Albumin
+<detail_submenu>objective - urine - findings
+<detail>Sugar
+<detail_submenu>objective - urine - findings
+<detail>Acetone
+<detail_submenu>objective - urine - findings
+

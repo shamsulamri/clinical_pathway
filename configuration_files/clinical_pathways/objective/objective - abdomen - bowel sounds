@@ -1,0 +1,12 @@
+<form>Abdomen Bowel Sounds
+<group>Bowel sounds
+<group_text>bowel sound is <insert_text>
+<group_style>2
+<detail>Normal
+<detail>Absent
+<detail>Decreased
+<detail>Hyperactive
+<detail>High pitched
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

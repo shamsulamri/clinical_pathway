@@ -1,0 +1,58 @@
+<form>Obstetric Examination
+<group>Inspection
+<group_text>Inspection: <insert_text>
+<group_style>1
+<detail>Fetal movement
+<detail>Distention
+<detail_text>Distention
+<detail>Scar
+<detail_text>
+<detail_submenu>objective - abdomen - scar location
+<detail>Linea niagra
+<detail>Linea albicans
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<form>Obstetric Examination
+<group>Palpation
+<group_text>Palpation: <insert_text>
+<group_style>1
+<new_line>
+<separator>;
+<results_viewer> 
+<detail>Fundal Height
+<detail_text>fundal height - <insert_value> cm
+<detail_inputbox><text><L>
+<detail>Single
+<detail_text>single fetus
+<detail>Multiple
+<detail_text>multiple fetus
+<detail>Lie
+<detail_text>
+<detail_submenu>objective - labour onset - lie
+<detail>Presentation
+<detail_text>
+<detail_submenu>objective - labour onset - presentation
+<detail>Engagement
+<detail_text>engagement -
+<detail_submenu>objective - obstetric examination - engagement
+<detail>Liquor
+<detail_text>liquor -
+<detail_submenu>objective - obstetric examination - liquor
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<form>Obstetric Examination
+<group>Auscultation
+<group_text>Auscultation: <insert_text>
+<group_style>1
+<new_line>
+<separator>;
+<detail>Fetal Heart
+<detail_text>Fetal heart sound heard - <insert_value>beats per min
+<detail_inputbox><text><L>
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

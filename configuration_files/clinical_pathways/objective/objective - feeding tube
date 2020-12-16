@@ -1,0 +1,18 @@
+<form>Physical Examination
+<group>Feeding Tube
+<group_text>Feeding Tube: <insert_text>;
+<group_style>1
+<separator>;
+<new_line>
+<detail>NG-tube
+<detail>PEG-tube
+<detail>J-tube
+<detail>Size
+<detail_text>Size: <insert_value>
+<detail_inputbox><int><L>
+<detail>Date inserted
+<detail_text>inserted on the <insert_value>
+<detail_inputbox><date><L>
+<detail>Due Change
+<detail_text>due change on the <insert_value>
+<detail_inputbox><date><L>

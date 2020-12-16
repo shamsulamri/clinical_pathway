@@ -1,0 +1,15 @@
+<form>Relevant Diagnoses
+<group>Pulmonary disease
+<group_text>(<insert_text>)
+<group_style>1
+<detail>Pleurisy
+<detail>Spontaneous pneumothorax
+<detail>COPD
+<detail_text>COPD
+<detail>Chronic bronchitis
+<detail>Tuberculosis
+<detail>Asthma
+<detail>
+<detail_text><insert_text>
+<detail_inputbox><text><L>
+

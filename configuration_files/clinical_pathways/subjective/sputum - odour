@@ -1,0 +1,11 @@
+<form>Sputum
+<group>Odour of sputum
+<group_text>The sputum <insert_text>.
+<group_style>2
+<detail>Foul
+<detail_text>foul smelling
+<detail>No odour
+<detail_text>has no odour
+<detail>
+<detail_text><insert_text>
+<detail_inputbox><text><L>

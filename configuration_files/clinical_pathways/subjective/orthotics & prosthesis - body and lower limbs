@@ -1,0 +1,84 @@
+<form>Orthotics & Prosthesis
+<group>Details
+<group_text><insert_text>
+<group_style>1
+<separator><new_line>
+<detail>Tarikh ukuran
+<detail_text>Tarikh ukuran: <insert_value>
+<detail_inputbox><date><L>
+<detail>Ukuran oleh
+<detail_text>Ukuran oleh: <insert_value>
+<detail_inputbox><text><L>
+<detail>Tindakan oleh
+<detail_text>Tindakan oleh: <insert_value>
+<detail_inputbox><text><L>
+<detail>Tarikh 'fit and check out'
+<detail_text>Tarikh 'fit and checkout': <insert_value>
+<detail_inputbox><date><L>
+<detail>Tarikh serahan
+<detail_text>Tarikh serahan: <insert_value>
+<detail_inputbox><text><L>
+<detail>
+<detail_text>Catitan: <insert_value>
+<detail_inputbox><text><L>
+
+<form>Orthotics & Prosthesis
+<group>Body and lower limbs
+<group_text><insert_text>
+<group_style>1
+<separator><new_line>
+<detail>Lilitan 1" dari pangkal peha
+<detail_text>Lilitan 1" dari pangkal peha: <insert_value>
+<detail_inputbox><text><L>
+<detail>Lilitan paha tengah
+<detail_text>Lilitan paha tengah: <insert_value>
+<detail_inputbox><text><L>
+<detail>Lilitan paha 3" dari lutut
+<detail_text>Lilitan paha 3" dari lutut: <insert_value>
+<detail_inputbox><text><L>
+<detail>Jarak tapak kaki ke lantai (shortage)
+<detail_text>Jarak tapak kaki ke lantai (shortage): <insert_value>
+<detail_inputbox><text><L>
+<detail>Panjang sebenar pangkal paha ke lantai
+<detail_text>Panjang sebenar pangkal paha ke lantai: <insert_value>
+<detail_inputbox><text><L>
+<detail>Garis pusat lutut (kaki kurus)
+<detail_text>Garis pusat lutut: <insert_value>
+<detail_inputbox><text><L>
+<detail>Lilitan lutut untuk 'kneecap'
+<detail_text>Lilitan lutut untuk 'kneecap': <insert_value>
+<detail_inputbox><text><L>
+<detail>Panjang dari pangkal paha ke sendi lutut
+<detail_text>Panjang dari pangkal paha ke sendi lutut: <insert_value>
+<detail_inputbox><text><L>
+<detail>Panjang dari sendi lutut ke lantai
+<detail_text>: <insert_value>
+<detail_inputbox><text><L>
+<detail>Lilitan bahagian terbesar betis
+<detail_text>Lilitan bahagian terbesar betis: <insert_value>
+<detail_inputbox><text><L>
+<detail>Lilitan betis 8" dari lantai
+<detail_text>Lilitan betis 8" dari lantai: <insert_value>
+<detail_inputbox><text><L>
+<detail>Lilitan pergelangan kaki
+<detail_text>Lilitan pergelangan kaki: <insert_value>
+<detail_inputbox><text><L>
+<detail>Lilitan sekitar tumit dan buku lali
+<detail_text>Lilitan sekitar tumit dan buku lali: <insert_value>
+<detail_inputbox><text><L>
+<detail>Lilitan sekitar 'arch'
+<detail_text>Lilitan sekitar 'arch': <insert_value>
+<detail_inputbox><text><L>
+<detail>Lilitan sekitar 'ball of foot'
+<detail_text>Lilitan sekitar 'ball of foot': <insert_value>
+<detail_inputbox><text><L>
+<detail>Panjang tapak kaki
+<detail_text>Panjang tapak kaki: <insert_value>
+<detail_inputbox><text><L>
+<detail>Jarak buku lali ke lantai
+<detail_text>Jarak buku lali ke lantai: <insert_value>
+<detail_inputbox><text><L>
+<detail>Jenis ortosis (nyatakan)
+<detail_text>
+<detail_submenu>orthotics & prosthesis - jenis orthosis
+

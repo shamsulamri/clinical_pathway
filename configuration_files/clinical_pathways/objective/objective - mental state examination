@@ -1,0 +1,97 @@
+<form>Mental State Examination
+<group>Observable behaviour
+<group_text>Observable behaviour: <insert_text>
+<group_style>1
+<new_line>
+<detail>Excessive slowness
+<detail>Signs of anxiety
+<detail>Stereotypy
+<detail>Mannerism
+<detail>Negativism
+<detail>Echopraxia
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<form>Mental State Examination
+<group>Mode of speech
+<group_text>Mode of speech: <insert_text>
+<group_style>1
+<new_line>
+<detail>Pressure of thought
+<detail>Poverty of thought
+<detail>Flight of ideas
+<detail>Perseveration
+<detail>Loosening of association
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<form>Mental State Examination
+<group>Mood
+<group_text>Mood: <insert_text>
+<group_style>1
+<new_line>
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<form>Mental State Examination
+<group>Thought content
+<group_text>Thought content: <insert_text>
+<group_style>1
+<new_line>
+<detail>Compulsive
+<detail>Obsessive
+<detail_text>obsessive
+<detail>Delusion
+<detail_text>delusion
+<detail_submenu>objective - mse - delusion
+<detail>Hallucination
+<detail_text>hallucination
+<detail_submenu>objective - mse - hallucination
+<detail>Depersonalization
+<detail>Derealization
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<form>Mental State Examination
+<group>Orientation
+<group_text>Orientation: Oriented to <insert_text>.
+<group_style>4
+<detail>Not oriented
+<detail_text>Orientation: The patient was not oriented to time, place and person.
+<detail>Time
+<detail>Place
+<detail>Person
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<form>Mental State Examination
+<group>Cognition
+<group_text>Cognition: <insert_text>
+<group_style>1
+<new_line>
+<separator>;
+<detail>Short-term memory
+<detail_text>Short-term memory: <insert_value>
+<detail_inputbox><text><L>
+<detail>Long-term memory
+<detail_text>Long-term memory: <insert_value>
+<detail_inputbox><text><L>
+<detail>Concentration
+<detail_text>Concentration: <insert_value>
+<detail_inputbox><text><L>
+
+<form>Mental State Examination
+<group>Insight
+<group_text>Insight: <insert_text>
+<group_style>1
+<new_line>
+<separator>;
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+

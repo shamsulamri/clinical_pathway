@@ -1,0 +1,22 @@
+<form>Assessment & Plan
+<group>ICD10
+<group_text><insert_text>
+<group_style>1
+<detail>Insulin-dependent diabetes mellitus
+<detail_text>E10
+<detail_submenu>ICD10 - Disease of endocrine - Diabetes Mellitus - subdivision
+<detail>Non-insulin-dependent diabetes mellitus
+<detail_text>E11
+<detail_submenu>ICD10 - Disease of endocrine - Diabetes Mellitus - subdivision
+<detail>Malnutrition-related diabetes mellitus
+<detail_text>E12
+<detail_submenu>ICD10 - Disease of endocrine - Diabetes Mellitus - subdivision
+<detail>Other specified diabetes mellitus
+<detail_text>E13
+<detail_submenu>ICD10 - Disease of endocrine - Diabetes Mellitus - subdivision
+<detail>Unspecified diabetes mellitus
+<detail_text>E14
+<detail_submenu>ICD10 - Disease of endocrine - Diabetes Mellitus - subdivision
+
+
+

@@ -1,0 +1,13 @@
+<form>Urine
+<group>Colour of urine
+<group_text><insert_text> in colour.
+<group_style>1
+<detail>Clear
+<detail>Light yellow
+<detail>Dark yellow
+<detail>Cloudy
+<detail>Pink
+<detail>Red
+<detail>
+<detail_text><insert_text>
+<detail_inputbox><text><L>

@@ -1,0 +1,36 @@
+<form>Presentation
+<group>Last bowel movement
+<group_text>Last bowel movement occurred <insert_text>
+<group_style>2
+<detail>Minutes ago
+<detail_text><insert_value> minutes ago
+<detail_inputbox><inte><L>
+<detail>Hours ago
+<detail_text><insert_value> hours ago
+<detail_inputbox><inte><L>
+<detail>Days ago
+<detail_text><insert_value> days ago
+<detail_inputbox><inte><L>
+<detail>Weeks ago
+<detail_text><insert_value> weeks ago
+<detail_inputbox><inte><L>
+
+<form>Presentation
+<group>Description of Stools
+<group_text>and noted <insert_text> stool
+<group_style>1
+<detail>Loose
+<detail>Watery
+<detail>Soft
+<detail>Hard
+<detail>Mucoid
+<detail>Oily
+<detail>Purulent
+<detail>Bloody
+<detail>Foul-smelling
+<detail>Pale
+<detail>Yellow
+<detail>Green
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

@@ -1,0 +1,307 @@
+<form>Physical Examination
+<group>Vital Signs
+<group_text><insert_text>
+<group_style>1
+<separator>;
+<results_viewer> 
+<detail>Temperature (C)
+<detail_text>T: <insert_value> (C)
+<detail_inputbox><doub><L>
+<detail>Pulse rate
+<detail_text>PR: <insert_value>/min
+<detail_inputbox><inte><L>
+<detail>Breathing
+<detail_text>R:<insert_value>/min
+<detail_inputbox><inte><L>
+<detail>Blood Pressure
+<detail_text>BP:<insert_value> mmHg
+<detail_inputbox><bpre><L>
+
+<form>Physical Examination
+<group>Measurements
+<group_text><insert_text>
+<group_style>1
+<separator>;
+<results_viewer> 
+<detail>Weight (Kg)
+<detail_text>Wt: <insert_value> Kg
+<detail_inputbox><inte><L>
+<detail>Height (cm)
+<detail_text>Ht: <insert_value> cm
+<detail_inputbox><inte><L>
+<detail>Head circumferance (cm)
+<detail_text>Circumferance: <insert_value> cm
+<detail_inputbox><inte><L>
+
+<form>Physical Examination
+<group>General
+<group_text>General: <insert_text>
+<group_style>1
+<new_line>
+<detail>State
+<detail_text>
+<detail_submenu>objective - general state
+<detail>Orientation
+<detail_text>
+<detail_submenu>objective - general orientation
+<detail>Nutrition
+<detail_text>
+<detail_submenu>objective - general nutrition
+<detail>Illness
+<detail_text>
+<detail_submenu>objective - general illness
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<form>Physical Examination
+<group>EENT
+<group_text>EENT: <insert_text>
+<group_style>1
+<separator>;
+<diagram>Head and Neck
+<new_line>
+<detail>Eye
+<detail_text>
+<detail_submenu>objective - eye
+<detail>Fundus
+<detail_text>
+<detail_submenu>objective - fundus
+<detail>Ear
+<detail_text>
+<detail_submenu>objective - ear
+<detail>Nose
+<detail_text>
+<detail_submenu>objective - nose
+<detail>Oropharynx
+<detail_text>
+<detail_submenu>objective - oropharynx
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<form>Physical Examination
+<group>Nodes
+<group_text>Nodes: <insert_text>
+<group_style>1
+<separator>;
+<new_line>
+<diagram>Head and Neck
+<detail>Occipital
+<detail_text>occipital node
+<detail_submenu>objective - nodes - side
+<detail>Preauricular 
+<detail_text>preauricular node
+<detail_submenu>objective - nodes - side
+<detail>Postauricular
+<detail_text>postauricular node
+<detail_submenu>objective - nodes - side
+<detail>Submental
+<detail_text>submental node
+<detail_submenu>objective - nodes - side
+<detail>Submandibular
+<detail_text>submandibular node
+<detail_submenu>objective - nodes - side
+<detail>Anterior cervical
+<detail_text>anterior cervical node
+<detail_submenu>objective - nodes - side
+<detail>Posterior cervical
+<detail_text>posterior cervical node
+<detail_submenu>objective - nodes - side
+<detail>Axillary
+<detail_text>axillary node
+<detail_submenu>objective - nodes - side
+<detail>Inguinal
+<detail_text>inguinal node
+<detail_submenu>objective - nodes - side
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<form>Physical Examination
+<group>Skin
+<group_text>Skin: <insert_text>
+<group_style>1
+<new_line>
+<diagram>Skin
+<detail>Colour
+<detail_text>
+<detail_submenu>objective - skin - colour
+<detail>Temperature
+<detail_text>
+<detail_submenu>objective - skin - temperature
+<detail>Moisture
+<detail_text>
+<detail_submenu>objective - skin - moisture
+<detail>Turgor
+<detail_text>
+<detail_submenu>objective - skin - turgor
+<detail>Rash
+<detail_text>
+<detail_submenu>objective - skin - rash
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<form>Physical Examination
+<group>Extremities
+<group_text>Extremities: <insert_text>
+<group_style>1
+<new_line>
+<diagram>Extremities
+<detail>Edema
+<detail_text>edema
+<detail_submenu>objective - extremities - location
+<detail>Tender
+<detail_text>tender
+<detail_submenu>objective - extremities - location
+<detail>Clubbing
+<detail_text>Clubbing
+<detail_submenu>objective - extremities - clubbing location
+<detail>Decrease perfusion
+<detail_text>
+<detail_submenu>objective - extremities - decrease perfusion type
+<detail>Veins
+<detail_text>
+<detail_submenu>objective - extremities - veins
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<form>Physical Examination
+<group>Lungs
+<group_text>Lungs: <insert_text>
+<group_style>1
+<new_line>
+<diagram>Lung
+<detail>Breathing
+<detail_text>
+<detail_submenu>objective - lung breathing
+<detail>Percussion
+<detail_text>
+<detail_submenu>objective - lung percussion
+<detail>Auscultation
+<detail_text>
+<detail_submenu>objective - lung auscultation
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<form>Physical Examination
+<group>Heart
+<group_text>Heart: <insert_text>
+<group_style>1
+<new_line>
+<diagram>Heart
+<detail>PMI
+<detail_text>
+<detail_submenu>objective - heart pmi
+<detail>Rate
+<detail_text>
+<detail_submenu>objective - heart rate
+<detail>Rhythm
+<detail_text>
+<detail_submenu>objective - heart rhythm
+<detail>S1-S4
+<detail_text>
+<detail_submenu>objective - heart sounds
+<detail>Murmur
+<detail_text>
+<detail_submenu>objective - heart murmurs
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<form>Physical Examination
+<group>Abdomen
+<group_text>Abdomen: <insert_text>
+<group_style>1
+<separator>;
+<new_line>
+<diagram>Abdomen
+<detail>Inspection
+<detail_text>
+<detail_submenu>objective - abdomen inspection
+<detail>Palpation
+<detail_text>
+<detail_submenu>objective - abdomen palpation
+<detail>Percussion
+<detail_text>
+<detail_submenu>objective - abdomen percussion
+<detail>Auscultation
+<detail_text>
+<detail_submenu>objective - abdomen auscultation
+<detail>Hernia
+<detail_text>
+<detail_submenu>objective - abdomen - hernia
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<form>Physical Examination
+<group>Rectal
+<group_text>Rectal exam: <insert_text>
+<group_style>1
+<separator>;
+<new_line>
+<diagram>Rectal
+<detail>Anus
+<detail_text>
+<detail_submenu>objective - rectal - anus
+<detail>Mass
+<detail_text>rectal mass present
+<detail>Stool
+<detail_submenu>objective - rectal - stool
+<detail>Prostate
+<detail_submenu>objective - rectal - prostate
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<form>Physical Examination
+<group>Genitalia
+<group_text>Genitalia: <insert_text>
+<group_style>1
+<separator>;
+<new_line>
+<diagram>Genitalia
+<detail>Development
+<detail_submenu>objective - genitalia - development
+<detail>Scrotum
+<detail_text>Scrotum -
+<detail_submenu>objective - genitalia - scrotum
+<detail>Penis
+<detail_text>Penis -
+<detail_submenu>objective - genitalia - penis
+<detail>Mass
+<detail_text>Mass -
+<detail_submenu>objective - genitalia - mass
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<form>Physical Examination
+<group>Neuro
+<group_text>Neurologic: <insert_text>
+<group_style>1
+<new_line>
+<diagram>Neuro
+<detail>Motor
+<detail_text>
+<detail_submenu>objective - neuro motor
+<detail>Sensory
+<detail_text>
+<detail_submenu>objective - neuro sensory
+<detail>Reflexes
+<detail_text>
+<detail_submenu>objective - neuro reflexes
+<detail>Tremor
+<detail_text>
+<detail_submenu>objective - neuro tremor
+<detail>Gait
+<detail_text>Gait -
+<detail_submenu>objective - neuro gait
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+

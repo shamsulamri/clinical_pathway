@@ -1,0 +1,16 @@
+<form>Drug abuse
+<group>Drug abuse
+<group_text>(<insert_text>)
+<group_style>1
+<detail>Drug used
+<detail_text><blank>
+<detail_submenu>PMH - substance abuse - drug abuse - drug used
+<detail>Date of quitting
+<detail_text>
+<detail_submenu>PMH - substance abuse - drug abuse - date of quitting
+<detail>Treatments
+<detail_text>
+<detail_submenu>PMH - substance abuse - drug abuse - treatments
+<detail>Complications
+<detail_text>
+<detail_submenu>PMH - substance abuse - drug abuse - complications

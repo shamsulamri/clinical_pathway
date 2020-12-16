@@ -1,0 +1,10 @@
+<form>Route of administration
+<group>Route of administration
+<group_text><insert_text>
+<group_style>2
+<detail>Oral
+<detail_text>oral
+<detail_submenu>PMH - substance abuse - drug abuse - duration
+<detail>Intravenous
+<detail_text>intravenous
+<detail_submenu>PMH - substance abuse - drug abuse - duration

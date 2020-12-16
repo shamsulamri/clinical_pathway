@@ -1,0 +1,11 @@
+<form>Cervix
+<group>Cervix consistency
+<group_text>consistency (<insert_text>)
+<group_style>2
+<detail>Firm
+<detail_text>firm
+<detail>Medium
+<detail_text>medium
+<detail>Soft
+<detail_text>soft
+

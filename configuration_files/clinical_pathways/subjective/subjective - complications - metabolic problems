@@ -1,0 +1,11 @@
+<form>Metabolic problems
+<group>Metabolic problems
+<group_text>(<insert_text>)
+<group_style>1
+<detail>Hypoglycemic attacks
+<detail>Hypoglycemic coma
+<detail>Hyperglycemic coma
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+

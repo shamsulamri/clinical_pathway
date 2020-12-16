@@ -1,0 +1,8 @@
+<form>Polydipsia
+<group>Amount of Fluid Consumed
+<group_text><insert_text>
+<group_style>0
+<detail>Liters per day
+<detail_text>, drinking approximately <insert_value> liters per day
+<detail_inputbox><text><L>
+

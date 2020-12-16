@@ -1,0 +1,13 @@
+<form>Complications
+<group>Dermatologic problems
+<group_text>(<insert_text>)
+<group_style>1
+<detail>Foot ulcers
+<detail>Necrobiosis lipoidica
+<detail>Diabetic dermopathy
+<detail>Candida skin infections
+<detail>Insulin atrophy of adipose tissue
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+

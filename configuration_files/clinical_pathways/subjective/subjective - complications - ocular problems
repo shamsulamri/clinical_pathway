@@ -1,0 +1,17 @@
+<form>Complications
+<group>Ocular problems
+<group_text>(<insert_text>)
+<group_style>1
+<detail>Blurred vision
+<detail>Macular edema
+<detail>Proliferative retinopathy
+<detail>Retinal hemorrhages
+<detail>Retinal exudates
+<detail>Papilledema
+<detail>Retinal detachment
+<detail>Cataracts
+<detail>Glaucoma
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+

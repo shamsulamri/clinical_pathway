@@ -1,0 +1,21 @@
+<form>Allergies
+<group>Drug
+<group_text>(<insert_text>)
+<group_style>1
+<detail>Adenoidectomy
+<detail_submenu>PMH - Date
+<detail>Tonsillectomy
+<detail_submenu>PMH - Date
+<detail>Tympanoplasty
+<detail_submenu>PMH - Date
+<detail>Appendectomy
+<detail_submenu>PMH - Date
+<detail>Inguinal hernia repair
+<detail_submenu>PMH - Date
+<detail>Umbilical hernia repair
+<detail_submenu>PMH - Date
+<detail>Orchiopexy
+<detail_submenu>PMH - Date
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

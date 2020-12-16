@@ -1,0 +1,13 @@
+<form>Morning stiffness
+<group>Morning stiffness
+<group_text><insert_text>
+<group_style>4
+<separator>;
+<detail>No
+<detail_text>No
+<detail>Yes
+<detai_text>Yes
+<detail>Duration
+<detail_text>duration: <insert_text>
+<detail_inputbox><text><L>
+

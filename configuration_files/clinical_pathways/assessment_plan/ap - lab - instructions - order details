@@ -1,0 +1,18 @@
+<form>Labs
+<group>Order details
+<group_text>(<insert_text>)
+<group_style>1
+<separator>;
+<detail>Test date
+<detail_text>
+<detail_submenu>AP - date of study
+<detail>Priority
+<detail_text>
+<detail_submenu>AP - priority
+<detail>Result by
+<detail_text>
+<detail_submenu>AP - result by
+<detail>Instruction
+<detail_text>
+<detail_submenu>AP - lab - instructions - instructions before test
+

@@ -1,0 +1,13 @@
+<form>Complications
+<group>Cardiac problems
+<group_text>(<insert_text>)
+<group_style>1
+<detail>Angina pectoris
+<detail>Myocardial infact
+<detail>LVH
+<detail>Congestive heart failure
+<detail>Cor pulmonale
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+

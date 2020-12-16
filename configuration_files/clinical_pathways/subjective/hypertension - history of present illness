@@ -1,0 +1,223 @@
+<form>Presentation
+<group>Mode of Presentation
+<group_text>The patient presented with <insert_text>.
+<group_style>1
+<detail>New onset of hypertension
+<detail_submenu>hypertension - new onset
+<detail>Worsening hypertension
+<detail_submenu>hypertension - worsening
+<detail>Chronic hypertension
+<detail_submenu>hypertension - worsening
+<detail>Paroxysmal hypertension
+<detail_submenu>hypertension - worsening
+<detail>Stable hypertension
+<detail_submenu>hypertension - worsening
+<detail>Malignant hypertension
+<detail_submenu>hypertension - worsening
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<form>Presentation
+<group>Date of Onset
+<group_text>Blood pressure changes were first noted <insert_text>.
+<group_style>2
+<reveal_date>
+<detail>Today
+<detail>Date:
+<detail_text>on the <insert_value>
+<detail_inputbox><date><R>
+<detail>Days ago
+<detail_text><insert_value> days ago
+<detail_inputbox><inte><L>
+<detail>Weeks ago
+<detail_text><insert_value> weeks ago
+<detail_inputbox><inte><L>
+<detail>Months ago
+<detail_text><insert_value> months ago
+<detail_inputbox><inte><L>
+<detail>Years ago
+<detail_text><insert_value> years ago
+<detail_inputbox><inte><L>
+
+<form>Presentation
+<group>Duration of Symptom
+<group_text>Blood pressure changes lasted <insert_text>.
+<group_style>1
+<detail>Minutes
+<detail_text><insert_value> minutes
+<detail_inputbox><inte><L>
+<detail>Hours
+<detail_text><insert_value> hours
+<detail_inputbox><inte><L>
+<detail>Days
+<detail_text><insert_value> days
+<detail_inputbox><inte><L>
+<detail>Weeks
+<detail_text><insert_value> weeks
+<detail_inputbox><inte><L>
+<detail>Months
+<detail_text><insert_value> months
+<detail_inputbox><inte><L>
+<detail>Years
+<detail_text><insert_value> years
+<detail_inputbox><inte><L>
+<detail>Still present
+
+<form>Presentation
+<group>Rate of Onset
+<group_text>Symptoms appeared <insert_text>.
+<group_style>2
+<detail>Abruptly
+<detail>Over hours
+<detail_text>over a period of <insert_value> hours
+<detail_inputbox><inte><L>
+<detail>Over days
+<detail_text>over a period of <insert_value> days
+<detail_inputbox><inte><L>
+<detail>Over weeks
+<detail_text>over a period of <insert_value> weeks
+<detail_inputbox><inte><L>
+<detail>Over months
+<detail_text>over a period of <insert_value> months
+<detail_inputbox><inte><L>
+<detail>Over years
+<detail_text>over a period of <insert_value> years
+<detail_inputbox><inte><L>
+
+<form>Presentation
+<group>BP Measured
+<group_text>A typical recent blood pressure reading was <insert_text>.
+<group_style>1
+<separator>;
+<detail>Systolic
+<detail_text>systolic: <insert_value> mmHg 
+<detail_inputbox><inte><L>
+<detail>Diastolic
+<detail_text>diastolic: <insert_value> mmHg
+<detail_inputbox><inte><L>
+<detail>Limb measured
+<detail_text>
+<detail_submenu>hypertension - history of present illness - limb measured
+<detail>Posture
+<detail_submenu>hypertension - history of present illness - posture
+
+<form>Presentation
+<group>Type of hypertension
+<group_text>The hypertension is best classified as <insert_text>.
+<group_style>1
+<detail>Essential hypertension
+<detail>Labile hypertension
+<detail>Accelerated hypertension
+<detail>Malignant hypertension
+<detail>Secondary hypertension
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<form>Presentation
+<group>Change in Severity
+<group_text>Serial measurements have demonstrated a <insert_text>.
+<group_style>1
+<detail>Stable
+<detail_text>stable blood pressure
+<detail_submenu>subjective - rate of change
+<detail>Increasing
+<detail_text>increasing blood pressure
+<detail_submenu>subjective - rate of change
+<detail>Descreasing
+<detail_text>decreasing blood pressure
+<detail_submenu>subjective - rate of change
+<detail>Variable
+<detail_text>variable blood pressure
+<detail_submenu>subjective - rate of change
+<detail>Labile
+<detail_text>labile blood pressure
+<detail_submenu>subjective - rate of change
+<detail>Paroxysmally elevated
+<detail_text>paroxysmally elevated blood pressure
+<detail_submenu>subjective - rate of change
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<form>Presentation
+<group>BP Highest
+<group_text>The hypertension tend to be worst in the <insert_text>.
+<group_style>1
+<detail>Morning
+<detail_text>morning
+<detail>Afternoon
+<detail_text>in the afternoon
+<detail>Evening
+<detail_text>in the evening
+<detail>Night
+<detail_text>in the night
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<form>Presentation
+<group>Patient compliant
+<group_text>The patient is <insert_text> compliant with treatment.
+<group_style>2
+<detail>Yes
+<detail_text>usually
+<detail>Partially
+<detail_text>usually partially
+<detail>Intermittently
+<detail_text>usually intermittently
+<detail>No
+<detail_text>usually non
+
+<form>Presentation
+<group>Precipitating factors
+<group_text>Symptoms are precipitated by <insert_text>.
+<group_style>4
+<detail>No precipitating factor
+<detail_text>There was no precipitating factor known.
+<detail>Stress
+<detail>Exercise
+<detail>Forgetting to take meds
+<detail>Recent medical illness
+<detail>Caffeine intake
+<detail>Nicotine abuse
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<form>Presentation
+<group>Associated Symptoms
+<group_text><insert_text>
+<group_style>3
+<yes_text>Associated symptoms include 
+<no_text>but no 
+<detail>Headache
+<detail>Dizziness
+<detail_text>dizziness
+<detail>Cardiovascular sx
+<detail_text>cardiovacular symptoms
+<detail_submenu>subjective - cardiovascular symptoms
+<detail>Cerebrovascular sx
+<detail_text>cerebrovascular symptoms
+<detail_submenu>subjective - cerebrovascular symptoms
+<detail>Epistaxis
+<detail>Sweating
+<detail>Vomiting
+<detail>Back pain
+<detail>Peripheral vascular sx
+<detail_text>peripheral vascular symptoms
+<detail_submenu>subjective - peripheral vascular symptoms
+<detail>Visual sx
+<detail_text>visual symptoms
+<detail_submenu>subjective - visual symptoms
+<detail>Renal sx
+<detail_text>renal symptoms
+<detail_submenu>subjective - renal symptoms
+<detail>Endocrine sx
+<detail_text>endocrine symptoms
+<detail_submenu>subjective - endocrine symptoms
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+

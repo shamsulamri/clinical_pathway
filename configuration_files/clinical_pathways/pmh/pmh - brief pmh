@@ -1,0 +1,212 @@
+<form>Brief PMH
+<group>Medical History
+<group_text><insert_text>.
+<group_style>3
+<yes_text>Medical history is positive for <insert_text>  
+<no_text>but no 
+<detail>Allergies
+<detail_text>allergy
+<detail_submenu>pmh - allergies group
+<detail>Hospitalizations
+<detail_text>hospitalizations
+<detail_submenu>pmh - hospitalizations
+<detail>Hypertension
+<detail_text>hypertension
+<detail_submenu>pmh - date2
+<detail>Coronary disease
+<detail_text>coronary heart disease
+<detail_submenu>pmh - date2
+<detail>Myocardial infaction
+<detail_text>myocardial infaction
+<detail_submenu>pmh - date2
+<detail>Respiratory disease
+<detail_text>respiratory disease
+<detail_submenu>pmh - respiratory disease
+<detail>Diabetes
+<detail_text>diabetes
+<detail_submenu>pmh - date2
+<detail>Cancer
+<detail_text>cancer
+<detail_submenu>pmh - cancer
+<detail>Neurologic disorders
+<detail_text>neurologic disorders
+<detail_submenu>pmh - neurologic disorders
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<form>Brief PMH
+<group>Surgical History
+<group_text>Patient had <insert_text>.
+<group_style>1
+<detail>Adenoidectomy
+<detail_submenu>PMH - Date
+<detail>Tonsillectomy
+<detail_submenu>PMH - Date
+<detail>Tympanoplasty
+<detail_submenu>PMH - Date
+<detail>Appendectomy
+<detail_submenu>PMH - Date
+<detail>Inguinal hernia repair
+<detail_submenu>PMH - Date
+<detail>Umbilical hernia repair
+<detail_submenu>PMH - Date
+<detail>Orchiopexy
+<detail_submenu>PMH - Date
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+<detail_submenu>PMH - Date
+
+<form>Brief PMH
+<group>Childhood illnesses
+<group_text>Childhood illnesses: <insert_text>
+<group_style>4
+<new_line>
+<detail>No known childhood illnesses
+<detail_text>No known childhood illnesses.
+<detail>Chickenpox
+<detail>Mumps
+<detail>Measels
+<detail>Rubella
+<detail>Rheumatic fever
+<detail>Polio
+<detail>Scarlet fever
+<detail>Pertusis
+<detail>Diptheria
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<form>Brief PMH
+<group>Family History
+<group_text><insert_text>.
+<group_style>3
+<yes_text>Family history is notable for 
+<no_text>but no 
+<detail>Hypertension
+<detail_submenu>pmh - family members
+<detail>Diabetes
+<detail_submenu>pmh - family members
+<detail>Myocardial infaction
+<detail_submenu>pmh - family members
+<detail>Stroke
+<detail_submenu>pmh - family members
+<detail>Lung cancer
+<detail_submenu>pmh - family members
+<detail>Breast cancer
+<detail_submenu>pmh - family members
+<detail>Colon cancer
+<detail_submenu>pmh - family members
+<detail>COPD
+<detail_submenu>pmh - family members
+<detail>Asthma
+<detail_submenu>pmh - family members
+<detail>Alcoholism
+<detail_submenu>pmh - family members
+<detail>Renal disease
+<detail_submenu>pmh - family members
+<detail>Psychiatric illness
+<detail_submenu>pmh - family members
+<detail>Death of parent
+<detail_text>
+<detail_submenu>pmh - parental death
+<detail>Death of sibling
+<detail_text>sibling death
+<detail_submenu>pmh - sibling death
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<form>Brief PMH
+<group>Social history
+<group_text><insert_text>.
+<group_style>1
+<new_line>
+<separator>. 
+<detail>Marital status
+<detail_text>Patient is
+<detail_submenu>pmh - marital status
+<detail>Children
+<detail_text>The patient has
+<detail_submenu>pmh - children
+<detail>Occupation
+<detail_text>The patient
+<detail_submenu>pmh - occupation
+<detail>Living circumstances
+<detail_text><blank>
+<detail_submenu>pmh - living circumstances
+<detail>Education
+<detail_text>The patient has completed
+<detail_submenu>pmh - education
+<detail>Exercise
+<detail_text>The patient has completed
+<detail_submenu>pmh - exercise
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<form>Brief PMH
+<group>Substance Abuse
+<group_text><insert_text>.
+<group_style>3
+<new_line>
+<yes_text>Patient has used <insert_text>
+<no_text>but no 
+<detail>Tobacco
+<detail_text>tobacco
+<detail>Alcohol
+<detail_text>alcohol
+<detail>Drug abuse
+<detail_text>illicit drugs
+
+<form>Tobacco
+<group>Tobacco
+<group_text><insert_text>.
+<group_style>1
+<separator>.
+<detail>Past smoking per day
+<detail_text><blank>
+<detail_submenu>PMH - substance abuse - tobacco - past smoking
+<detail>Current smoking per day
+<detail_text><blank>
+<detail_submenu>PMH - substance abuse - tobacco - current smoking
+<detail>Date of quitting
+<detail_text><blank>
+<detail_submenu>PMH - substance abuse - tobacco - date of quitting
+<detail>Second hand smoke
+<detail_text><blank>
+<detail_submenu>PMH - substance abuse - tobacco - second hand smoke
+
+<form>Alcohol
+<group>Alcohol
+<group_text><insert_text>.
+<group_style>1
+<separator>.
+<detail>Drinking history
+<detail_text><blank>
+<detail_submenu>PMH - substance abuse - alcohol - drinking history
+<detail>Current weekly alcohol intake
+<detail_text><blank>
+<detail_submenu>PMH - substance abuse - alcohol - alcohol intake
+<detail>Date of quitting
+<detail_text><blank>
+<detail_submenu>PMH - substance abuse - alcohol - date of quitting
+
+<form>Drug abuse
+<group>Drug abuse
+<group_text><insert_text>.
+<group_style>1
+<separator>.
+<detail>Drug used
+<detail_text><blank>
+<detail_submenu>PMH - substance abuse - drug abuse - drug used
+<detail>Date of quitting
+<detail_text><blank>
+<detail_submenu>PMH - substance abuse - drug abuse - date of quitting
+<detail>Treatments
+<detail_text><blank>
+<detail_submenu>PMH - substance abuse - drug abuse - treatments
+<detail>Complications
+<detail_text><blank>
+<detail_submenu>PMH - substance abuse - drug abuse - complications

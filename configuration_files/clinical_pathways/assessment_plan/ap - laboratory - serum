@@ -1,0 +1,29 @@
+<form>Serum
+<group>Serum
+<group_text><insert_text>
+<group_style>1
+<new_line>
+<detail>Serum Amylase
+<detail_text>Serum Amylase
+<detail_order>sr_amylase
+<detail>Serum Calcium
+<detail_text>Serum Calcium
+<detail_order>sr_calcium
+<detail>Serum Phosphate
+<detail_text>Serum Phosphate
+<detail_order>sr_phosphate
+<detail>Serum Prolactin
+<detail_text>Serum Prolactin
+<detail_order>sr_prolactin
+<detail>Serum urea
+<detail_text>Serum urea
+<detail_order>343
+<detail>Serum uric acid
+<detail_text>Serum uric acid
+<detail_order>344
+<detail>Serum potassium
+<detail_text>Serum potassium
+<detail_order>345
+
+
+

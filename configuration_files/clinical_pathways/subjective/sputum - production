@@ -1,0 +1,21 @@
+<form>Presentation
+<group>Daily sputum production
+<group_text>Approximate dialy sputum production is <insert_text>
+<group_style>2
+<detail>Mililiters
+<detail_text><insert_text> ml per day
+<detail_inputbox><doub><L>
+<detail_submenu>sputum
+<detail>Teaspoons
+<detail_text><insert_text> teaspoons
+<detail_inputbox><inte><L>
+<detail_submenu>sputum
+<detail>Tablespoons
+<detail_text><insert_text> tablespoons
+<detail_inputbox><inte><L>
+<detail_submenu>sputum
+<detail>Cups
+<detail_text><insert_text> cups
+<detail_inputbox><inte><L>
+<detail_submenu>sputum
+<detail>Unknown

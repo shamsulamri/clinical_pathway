@@ -1,0 +1,22 @@
+<form>Conjunctiva
+<group>Conjunctiva
+<group_text>Conjunctiva - <insert_text>
+<group_style>1
+<detail>Erythema
+<detail_submenu>objective - oropharynx - side
+<detail>Pallor
+<detail_submenu>objective - oropharynx - side
+<detail>Watery discharge
+<detail_submenu>objective - oropharynx - side
+<detail>Mucopurulent discharge
+<detail_submenu>objective - oropharynx - side
+<detail>Swelling
+<detail_submenu>objective - oropharynx - side
+<detail>Hemorrhage
+<detail_submenu>objective - oropharynx - side
+<detail>Foreign body
+<detail_submenu>objective - oropharynx - side
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+

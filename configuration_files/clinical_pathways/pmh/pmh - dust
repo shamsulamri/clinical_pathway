@@ -1,0 +1,13 @@
+<form>Dust Occupational Exposure
+<group>Type of dust
+<group_text>(<insert_text>)
+<group_style>1
+<detail>Coal
+<detail_text>coal
+<detail>Grain
+<detail_text>grain
+<detail>house
+<detail_text>house
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

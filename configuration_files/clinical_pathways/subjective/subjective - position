@@ -1,0 +1,11 @@
+<form>Position
+<group>Which positions ?
+<group_text><insert_text>
+<group_style>1
+<detail>Lying supine
+<detail>Stading upright
+<detail>Sitting
+<detail>Lying on the right side
+<detail>Lying on the left side
+<detail>Changing in positions
+

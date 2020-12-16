@@ -1,0 +1,34 @@
+<form>Assessment & Plan
+<group>DDx
+<group_text>Diagnosis: <insert_text>
+<group_style>1
+<new_line>
+<separator><new_line>
+<detail>Angina
+<detail_submenu>AP - Probability
+<detail>MI
+<detail_submenu>AP - Probability
+<detail>Pleurisy
+<detail_submenu>AP - Probability
+<detail>Bronchitis
+<detail_submenu>AP - Probability
+<detail>Pneumonia
+<detail_submenu>AP - Probability
+<detail>Pericarditis
+<detail_submenu>AP - Probability
+<detail>Pulmonary embolus
+<detail_submenu>AP - Probability
+<detail>Reflux esophagitis
+<detail_submenu>AP - Probability
+<detail>Esophageal spasm
+<detail_submenu>AP - Probability
+<detail>Peptic ulcer
+<detail_submenu>AP - Probability
+<detail>Musculoskeletal chest pain
+<detail_submenu>AP - Probability
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<Load>AP - Assessment & Plan
+

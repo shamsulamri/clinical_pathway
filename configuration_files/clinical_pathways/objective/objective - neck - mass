@@ -1,0 +1,36 @@
+<form>Neck Mass Location
+<group>Neck Mass Location
+<group_text>Mass - <insert_text>
+<group_style>1
+<separator>;
+<detail>Midline
+<detail_text>midline mass palpated
+<detail>Right lateral
+<detail_text>right lateral neck mass palpated
+<detail>Left lateral
+<detail_text>left lateral nack mass palpated
+<detail>Right posterior
+<detail_text>right posterior neck mass palpated
+<detail>Left posterior
+<detail_text>left posterior nack mass palpated
+<detail>Cystic
+<detail_text>
+<detail_submenu>objective - neck mass - side
+<detail>Draining cyst
+<detail_text>
+<detail_submenu>objective - neck mass - side
+<detail>Thyroid
+<detail_text>
+<detail_submenu>objective - neck mass - side
+<detail>Submandibular
+<detail_text>
+<detail_submenu>objective - neck mass - side
+<detail>Supraclavicular
+<detail_text>
+<detail_submenu>objective - neck mass - side
+<detail>Sternomastoid
+<detail_text>
+<detail_submenu>objective - neck mass - side
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

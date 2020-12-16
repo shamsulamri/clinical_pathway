@@ -1,0 +1,24 @@
+<form>Date of quitting
+<group>Date of Quitting
+<group_text>The patient <insert_text>
+<group_style>2
+<reveal_date>
+<detail>Has tried to quit
+<detail_text>has tried to quit
+<detail>Still smoking
+<detail_text>is still smoking
+<detail>Date:
+<detail_text>on the <insert_value>
+<detail_inputbox><date><R>
+<detail>Days ago
+<detail_text>quit tobacco use <insert_value> days ago
+<detail_inputbox><inte><L>
+<detail>Weeks ago
+<detail_text>quit tobacco use <insert_value> weeks ago
+<detail_inputbox><inte><L>
+<detail>Months ago
+<detail_text>quit tobacco use <insert_value> months ago
+<detail_inputbox><inte><L>
+<detail>Years ago
+<detail_text>quit tobacco use <insert_value> years ago
+<detail_inputbox><inte><L>

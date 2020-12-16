@@ -1,0 +1,220 @@
+<form>Presentation
+<group>Mode of Presentation
+<group_text>The patient presented with <insert_text>.
+<group_style>1
+<detail>Hyperglycemia
+<detail_submenu>subjective - average blood sugar
+<detail>Polyuria
+<detail_submenu>subjective - polyuria
+<detail>Polydipsia
+<detail_submenu>subjective - polydipsia
+<detail>Polyphagia
+<detail>Weight loss
+<detail_submenu>subjective - weight loss
+<detail>Altered consciousness
+<detail_submenu>subjective - altered consciousness
+<detail>Established DM
+<detail_text>established diabetes mellitus
+<detail_submenu>established DM
+<detail>Stable DM
+<detail_text>stable diabetes mellitus
+<detail_submenu>dm
+<detail>Worsening DM
+<detail_text>worsening diabetes mellitus
+<detail_submenu>dm
+<detail>Diabetic complications
+<detail_submenu>subjective - dm complications
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<form>Presentation
+<group>Date of Onset
+<group_text>Symptoms began <insert_text>
+<group_style>2
+<reveal_date>
+<detail>Today
+<detail>Date:
+<detail_text>on the <insert_value>
+<detail_inputbox><date><R>
+<detail>Days ago
+<detail_text><insert_value> days ago
+<detail_inputbox><inte><L>
+<detail>Weeks ago
+<detail_text><insert_value> weeks ago
+<detail_inputbox><inte><L>
+<detail>Months ago
+<detail_text><insert_value> months ago
+<detail_inputbox><inte><L>
+<detail>Years ago
+<detail_text><insert_value> years ago
+<detail_inputbox><inte><L>
+
+<form>Presentation
+<group>Duration of Symptom
+<group_text>and lasted <insert_text>.
+<group_style>1
+<detail>Hours
+<detail_text><insert_value> hours
+<detail_inputbox><inte><L>
+<detail>Days
+<detail_text><insert_value> days
+<detail_inputbox><inte><L>
+<detail>Weeks
+<detail_text><insert_value> weeks
+<detail_inputbox><inte><L>
+<detail>Months
+<detail_text><insert_value> months
+<detail_inputbox><inte><L>
+<detail>Years
+<detail_text><insert_value> years
+<detail_inputbox><inte><L>
+<detail>Still present
+
+<form>Presentation
+<group>Rate of Onset
+<group_text>Symptoms appeared <insert_text>.
+<group_style>2
+<detail>Abruptly
+<detail>Over hours
+<detail_text>over a period of <insert_value> hours
+<detail_inputbox><inte><L>
+<detail>Over days
+<detail_text>over a period of <insert_value> days
+<detail_inputbox><inte><L>
+<detail>Over weeks
+<detail_text>over a period of <insert_value> weeks
+<detail_inputbox><inte><L>
+<detail>Over months
+<detail_text>over a period of <insert_value> months
+<detail_inputbox><inte><L>
+<detail>Over years
+<detail_text>over a period of <insert_value> years
+<detail_inputbox><inte><L>
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<form>Presentation
+<group>Self testing
+<group_text>The patient checks her blood glucose levels <insert_text>.
+<group_style>4
+<detail>Do not monitor
+<detail_text>The patient does not monitor blood glucose levels.
+<detail>Regularly
+<detail>Once a day
+<detail>Twice a day
+<detail>Three times a day
+<detail>Four times a day
+<detail>Time per day
+<detail_text><insert_value> times per day
+<detail_inputbox><text><L>
+
+<form>Presentation
+<group>Typical glucose levels
+<group_text>Blood glucode levels are usually <insert_text>
+<group_style>1
+<detail>mmol/L fasting
+<detail_text><insert_value> mmol/L fasting
+<detail_inputbox><doub><L>
+<detail>mmol/L 2hr after breakfast
+<detail_text><insert_value> mmol/L 2hr after breakfast
+<detail_inputbox><doub><L>
+<detail>mmol/L before lunch
+<detail_text><insert_value> mmol/L before lunch
+<detail_inputbox><doub><L>
+<detail>mmol/L after lunch
+<detail_text><insert_value> mmol/L after lunch
+<detail_inputbox><doub><L>
+<detail>mmol/L before dinner
+<detail_text><insert_value> mmol/L before dinner
+<detail_inputbox><doub><L>
+<detail>mmol/L after dinner
+<detail_text><insert_value> mmol/L after dinner
+<detail_inputbox><doub><L>
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<form>Presentation
+<group>Episodes of ketoacidosis
+<group_text>The patient had <insert_text>.
+<group_style>1
+<detail>Ketoacidosis
+<detail_text><insert_value> episodes of ketoacidosis
+<detail_inputbox><inte><L>
+<detail>Nonketotic hyperglycemia
+<detail_text><insert_value> episodes of nonketotic hyperglycemia
+<detail_inputbox><inte><L>
+
+<form>Severity
+<group>Change in Severity
+<group_text>Diabetes has been <insert_text>.
+<group_style>1
+<detail>Stable
+<detail_text>stable
+<detail_submenu>subjective - rate of change
+<detail>Improving
+<detail_text>improving
+<detail_submenu>subjective - rate of change
+<detail>Worsening
+<detail_text>worsening
+<detail_submenu>subjective - rate of change
+<detail>Constant
+<detail_text>constant
+<detail_submenu>subjective - rate of change
+<detail>Fluctuating
+<detail_text>fluctuating
+<detail_submenu>subjective - rate of change
+<detail>Intermittent
+<detail_text>intermittent
+<detail_submenu>subjective - rate of change
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<form>Presentation
+<group>Precipitating Factors
+<group_text>Precipitating factors for hyperglycemic episodes include <insert_text>
+<group_style>4
+<detail>None known
+<detail_text>No precipitating factors for hyperglycemic episodes are known.
+<detail>Dietary indiscretion
+<detail>Poor compliance with Rx
+<detail_text>poor compliance with treatment
+<detail>Stress
+<detail>Concurrent infection
+<detail>Medications
+<detail>Obesity
+<detail>Excessive alcohol intake
+<detail>Oral contraceptives
+<detail>Pregnancy
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<form>Presentation
+<group>Associated Symptoms
+<group_text><insert_text>
+<group_style>3
+<yes_text>Associated symptoms include 
+<no_text>but no 
+<new_paragraph>
+<detail>Fatigue
+<detail>Excessive thirst
+<detail>Excessive hunger
+<detail>Polyuria
+<detail>Polydipsia
+<detail>Nausea
+<detail>Vomiting
+<detail>Weight loss
+<detail_submenu>subjective - weight loss
+<detail>Diarrhea
+<detail>Fever
+<detail_submenu>subjective - fever
+<detail>Rash
+<detail_submenu>subjective - rash
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+

@@ -1,0 +1,20 @@
+<form>Diabetic complications
+<group>Diabetic complications
+<group_text>of <insert_text>
+<group_style>1
+<detail>Ketoacidosis
+<detail_submenu>dm
+<detail>Diabetic retinopathy
+<detail_submenu>dm
+<detail>Diabetic neuropathy
+<detail_submenu>dm
+<detail>Diabetic nephropathy
+<detail_submenu>dm
+<detail>Diabetic vascular disease
+<detail_submenu>dm
+<detail>Diabetic coma
+<detail_submenu>dm
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+

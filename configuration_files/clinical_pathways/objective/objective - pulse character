@@ -1,0 +1,8 @@
+<form>Physical Examination
+<group>Pulse Character
+<group_text>(<insert_text> force)
+<group_style>2
+<detail>Normal
+<detail>Bounding 
+<detail>Weak
+<detail>Absent

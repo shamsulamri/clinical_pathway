@@ -1,0 +1,25 @@
+<form>Sibling Death
+<group>Sibling age of death
+<group_text>(<insert_text>)
+<group_style>1
+<reveal_date>
+<detail>1st sibling
+<detail_text>1st sibling died at age <insert_value>
+<detail_submenu>PMH - Cause of death
+<detail_inputbox><text><L>
+<detail>2nd sibling
+<detail_text>2nd sibling died at age <insert_value>
+<detail_submenu>PMH - Cause of death
+<detail_inputbox><text><L>
+<detail>3rd sibling
+<detail_text>3rd sibling died at age <insert_value>
+<detail_submenu>PMH - Cause of death
+<detail_inputbox><text><L>
+<detail>4th sibling
+<detail_text>4th sibling died at age <insert_value>
+<detail_submenu>PMH - Cause of death
+<detail_inputbox><text><L>
+<detail>5th sibling
+<detail_text>5th sibling died at age <insert_value>
+<detail_submenu>PMH - Cause of death
+<detail_inputbox><text><L>

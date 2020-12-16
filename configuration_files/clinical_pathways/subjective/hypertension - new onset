@@ -1,0 +1,12 @@
+<form>New Onset Hypertension
+<group>New Onset Hypertension
+<group_text>. <insert_text>
+<group_style>1
+<separator>.
+<detail>Elevated BP readings
+<detail_text>
+<detail_submenu>hypertension - elevated BP readings
+<detail>BP's recorded
+<detail_text>
+<detail_submenu>hypertension - bp recorded
+

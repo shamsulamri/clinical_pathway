@@ -1,0 +1,28 @@
+<form>Assessment & Plan
+<group>ICD10
+<group_text><insert_text>
+<group_style>1
+<separator>
+<detail>with coma
+<detail_text>.0
+<detail>with ketoacidosis
+<detail_text>.1
+<detail>with renal complications
+<detail_text>.2
+<detail>with ophthalmic complications
+<detail_text>.3
+<detail>with neurological complications
+<detail_text>.4
+<detail>With peripheral circulatory complications
+<detail_text>.5
+<detail>With other specified complications
+<detail_text>.6
+<detail>with multiple complications
+<detail_text>.7
+<detail>with unspecified complications
+<detail_text>.8
+<detail>without complications
+<detail_text>.9
+
+
+

@@ -1,0 +1,29 @@
+<form>Services Occupation
+<group>Services
+<group_text><insert_text>
+<group_style>1
+<detail>Health care industry
+<detail_text>in the health care industry
+<detail>Tourist industry
+<detail_text>in the tourist industry
+<detail>Entertainment industry
+<detail_text>in the entertainment industry
+<detail>Sports industry
+<detail_text>in the Sports industry
+<detail>Food industry
+<detail_text>in the food industry
+<detail>Social work
+<detail_text>in social work
+<detail>Day care
+<detail_text>in day care
+<detail>Law enforcement
+<detail_text>in law enforcement
+<detail>Military
+<detail_text>in military
+<detail>Postal service
+<detail_text>in postal service
+<detail>Firefighter
+<detail_text>as a firefighter
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

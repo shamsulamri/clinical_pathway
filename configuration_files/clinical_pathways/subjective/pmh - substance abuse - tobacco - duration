@@ -1,0 +1,7 @@
+<form>Nocturia
+<group>How many years ?
+<group_text><insert_text>
+<group_style>0
+<detail>
+<detail_text>for <insert_value> year(s)
+<detail_inputbox><inte><L>

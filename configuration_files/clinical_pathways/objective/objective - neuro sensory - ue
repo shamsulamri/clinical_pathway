@@ -1,0 +1,19 @@
+<form>Sensory Loss
+<group>Sensory Loss
+<group_text>in <insert_text> distribution
+<group_style>1
+<detail>Median
+<detail>Ulnar n.
+<detail>Radial n.
+<detail>C5 distribution
+<detail_text>C5 distribution
+<detail>C6 distribution
+<detail_text>C6 distribution
+<detail>C7 distribution
+<detail_text>C7 distribution
+<detail>C8 distribution
+<detail_text>C8 distribution
+<detail>Distally
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

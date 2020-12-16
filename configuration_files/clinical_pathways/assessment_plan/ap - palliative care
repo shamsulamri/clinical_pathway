@@ -1,0 +1,38 @@
+<form>Assessment & Plan
+<group>Main Diagnosis
+<group_text>Diagnosis: <insert_text>
+<group_style>1
+<new_line>
+<separator><new_line>
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<form>Past History/Background Diagnosis
+<group>Past History/Background Diagnosis
+<group_text>Diagnosis: <insert_text>
+<group_style>1
+<new_line>
+<separator><new_line>
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<form>Estimated prognosis
+<group>Estimated prognosis
+<group_text>Estimated prognosis: <insert_text>
+<group_style>1
+<new_line>
+<detail><1 week
+<detail>1-4 weeks
+<detail>4-12 weeks
+<detail>>12 weeks
+
+<form>Assessment & Plan
+<group>Medications
+<group_text>Medications: <insert_text>
+<group_style>1
+<new_line>
+<detail>Prescribe medications
+<detail_text>
+

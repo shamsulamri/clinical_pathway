@@ -1,0 +1,32 @@
+<form>Education
+<group>Education
+<group_text><insert_text>
+<group_style>1
+<detail>Years of primary school
+<detail_text><insert_value> years of primary school
+<detail_inputbox><text><L>
+<detail>Years of high school
+<detail_text><insert_value> years of high school
+<detail_inputbox><text><L>
+<detail>Years of higher learning education
+<detail_text><insert_value> years of higher learning education
+<detail_inputbox><text><L>
+<detail>Completed primary school
+<detail_text>primary school
+<detail>Completed high school
+<detail_text>high school
+<detail>Completed higher learning education
+<detail_text>higher learning education
+<detail>Business school
+<detail_text>business school
+<detail>Trade school
+<detail_text>trade school
+<detail>Bachelor's degrees
+<detail_text>bachelor's degree
+<detail>Master's degree
+<detail_text>master's degree
+<detail>Doctoral's degree
+<detail_text>doctoral's degree
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

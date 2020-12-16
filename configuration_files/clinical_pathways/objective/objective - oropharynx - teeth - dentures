@@ -1,0 +1,11 @@
+<form>Side
+<group>On which side ?
+<group_text><insert_text>
+<group_style>1
+<detail>Upper plate
+<detail_text>on the upper plate
+<detail>Lower plate
+<detail_text>on the lower plate
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

@@ -1,0 +1,26 @@
+<form>Nose
+<group>Nose
+<group_text>Nose - <insert_text>
+<group_style>1
+<detail>Normal
+<detail>Clear rhinorrhea
+<detail_submenu>objective - nose - side
+<detail>Mucoid rhinorrhea
+<detail_submenu>objective - nose - side
+<detail>Mucopurulent rhinorrhea
+<detail_submenu>objective - nose - side
+<detail>Blood-tinged rhinorrhea
+<detail_submenu>objective - nose - side
+<detail>Epistaxis
+<detail_submenu>objective - nose - side
+<detail>Nasal polyp
+<detail_submenu>objective - nose - side
+<detail>Deviated septum
+<detail_submenu>objective - nose - side
+<detail>Mucosal hyperemia
+<detail_submenu>objective - nose - side
+<detail>Foreign Body
+<detail_submenu>objective - nose - side
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

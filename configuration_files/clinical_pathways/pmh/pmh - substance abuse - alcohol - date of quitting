@@ -1,0 +1,22 @@
+<form>Date of quitting
+<group>Date of Quitting
+<group_text>The patient <insert_text>
+<group_style>2
+<reveal_date>
+<detail>Never drank
+<detail_text>never has been a drinker
+<detail>Date:
+<detail_text>quit drinking on the <insert_value>
+<detail_inputbox><inte><R>
+<detail>Days ago
+<detail_text>quit drinking <insert_value> days ago
+<detail_inputbox><inte><L>
+<detail>Weeks ago
+<detail_text>quit drinking <insert_value> weeks ago
+<detail_inputbox><inte><L>
+<detail>Months ago
+<detail_text>quit drinking <insert_value> months ago
+<detail_inputbox><inte><L>
+<detail>Years ago
+<detail_text>quit drinking <insert_value> years ago
+<detail_inputbox><inte><L>

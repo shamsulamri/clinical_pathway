@@ -1,0 +1,32 @@
+<form>Location
+<group>Location
+<group_text>over the <insert_text>
+<group_style>1
+<detail>RUQ
+<detail_text>RUQ
+<detail>LUQ
+<detail_text>LUQ
+<detail>RLQ
+<detail_text>RLQ
+<detail>LLQ
+<detail_text>LLQ
+<detail>Right flank
+<detail_text>right flank
+<detail>Left flank
+<detail_text>left flank
+<detail>Right CVA
+<detail_text>left flank
+<detail>Left CVA
+<detail_text>left flank
+<detail>Epigastric
+<detail_text>epigastric
+<detail>Periumbilical
+<detail_text>periumbilical
+<detail>Suprapubic
+<detail_text>suprapubic
+<detail>Diffuse
+<detalil_text>diffuse
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+

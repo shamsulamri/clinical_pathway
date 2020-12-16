@@ -1,0 +1,34 @@
+<form>Assessment & Plan
+<group>DDx
+<group_text>Diagnosis: <insert_text>
+<group_style>1
+<new_line>
+<separator><new_line>
+<detail>Furuncles
+<detail_submenu>AP - Probability
+<detail>Warts
+<detail_submenu>AP - Probability
+<detail>Lipoma
+<detail_submenu>AP - Probability
+<detail>Sebaceous cyst
+<detail_submenu>AP - Probability
+<detail>Vitiligo
+<detail_submenu>AP - Probability
+<detail>Xanthelasma
+<detail_submenu>AP - Probability
+<detail>Pemphigus
+<detail_submenu>AP - Probability
+<detail>Acne
+<detail_submenu>AP - Probability
+<detail>herpes simplex
+<detail_submenu>AP - Probability
+<detail>Tinea
+<detail_submenu>AP - Probability
+<detail>Allergic contact dermatitis
+<detail_submenu>AP - Probability
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<Load>AP - Assessment & Plan
+

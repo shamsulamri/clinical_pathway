@@ -1,0 +1,23 @@
+<form>Presentation
+<group>Rate of Onset
+<group_text>Symptoms appeared <insert_text>.
+<group_style>2
+<detail>Abruptly
+<detail>Over hours
+<detail_text>over a period of <insert_value> hours
+<detail_inputbox><inte><L>
+<detail>Over days
+<detail_text>over a period of <insert_value> days
+<detail_inputbox><inte><L>
+<detail>Over weeks
+<detail_text>over a period of <insert_value> weeks
+<detail_inputbox><inte><L>
+<detail>Over months
+<detail_text>over a period of <insert_value> months
+<detail_inputbox><inte><L>
+<detail>Over years
+<detail_text>over a period of <insert_value> years
+<detail_inputbox><inte><L>
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

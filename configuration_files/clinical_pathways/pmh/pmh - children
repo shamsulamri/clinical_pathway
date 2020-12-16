@@ -1,0 +1,22 @@
+<form>Number of children
+<group>Number of Children
+<group_text><insert_text>
+<group_style>4
+<detail>No children
+<detail_text>no children
+<detail>Boys
+<detail_text><insert_value> boys
+<detail_inputbox><inte><L>
+<detail>Girls
+<detail_text><insert_value> girls
+<detail_inputbox><inte><L>
+<detail>Deceased children
+<detail_text><insert_value> deceased children
+<detail_inputbox><inte><L>
+<detail>Living with patient
+<detail_text><insert_value> children currently living with the patient.
+<detail_inputbox><inte><L>
+<detail>Age of Children
+<detail_text>
+<detail_submenu>PMH - Age of children
+

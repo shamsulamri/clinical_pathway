@@ -1,0 +1,8 @@
+<form>Nocturia
+<group>How many times per night ?
+<group_text><insert_text>
+<group_style>0
+<detail>
+<detail_text><insert_value> times per night
+<detail_inputbox><text><L>
+<detail_submenu>Modifier

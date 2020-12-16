@@ -1,0 +1,10 @@
+<form>Physical Examination
+<group>Chest A-P diameter
+<group_text>A-P diameter <insert_text>
+<group_style>2
+<separator>
+<results_viewer> 
+<detail>Increased
+<detail_text>increased
+<detail>Decreased
+<detail_text>decreased

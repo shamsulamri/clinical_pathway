@@ -1,0 +1,14 @@
+<form>Teeth
+<group>Teeth
+<group_text><insert_text>
+<group_style>1
+<detail>Caries
+<detail_submenu>objective - oropharynx - teeth - side
+<detail>Missing
+<detail_submenu>objective - oropharynx - teeth - side
+<detail>Dentures
+<detail_submenu>objective - oropharynx - teeth - dentures
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+

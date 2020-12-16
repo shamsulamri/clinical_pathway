@@ -1,0 +1,9 @@
+<form>Sinusitis
+<group>Location of sinusitis
+<group_text>in the <insert_text>
+<group_style>1
+<detail>In maxillary sinus
+<detail_submenu>objective - side
+<detail>In frontal sinus
+<detail_submenu>objective - side
+

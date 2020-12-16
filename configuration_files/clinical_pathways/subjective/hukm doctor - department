@@ -1,0 +1,9 @@
+<form>Department
+<group>Department
+<group_text>from <insert_text> department
+<group_style>1
+<detail>Medical
+<detail>Surgery
+<detail>Orthopaedics
+<detail>Psychiatry
+

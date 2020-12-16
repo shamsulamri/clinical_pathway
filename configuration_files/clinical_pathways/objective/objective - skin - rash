@@ -1,0 +1,31 @@
+<form>Skin
+<group>Skin rash
+<group_text><insert_text>
+<group_style>1
+<detail>Macular
+<detail_text>macular rash
+<detail_submenu>objective - skin - rash - location
+<detail>Papular
+<detail_text>papular rash
+<detail_submenu>objective - skin - rash - location
+<detail>Vesicular
+<detail_text>vesicular rash
+<detail_submenu>objective - skin - rash - location
+<detail>Eczematous
+<detail_text>eczematous rash
+<detail_submenu>objective - skin - rash - location
+<detail>Urticaria
+<detail_text>urticaria rash
+<detail_submenu>objective - skin - rash - location
+<detail>Purpuric
+<detail_text>purpuric rash
+<detail_submenu>objective - skin - rash - location
+<detail>Petechiae
+<detail_text>petechiae rash
+<detail_submenu>objective - skin - rash - location
+<detail>Erythematous
+<detail_text>erythematous rash
+<detail_submenu>objective - skin - rash - location
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

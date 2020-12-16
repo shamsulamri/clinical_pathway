@@ -1,0 +1,8 @@
+<form>Fever
+<group>Fever (deg C)
+<group_text><insert_text>
+<group_style>1
+<detail>Temperature
+<detail_text><insert_value> degrees C
+<detail_inputbox><text><R>
+

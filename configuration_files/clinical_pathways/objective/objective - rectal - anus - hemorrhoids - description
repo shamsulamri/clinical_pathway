@@ -1,0 +1,13 @@
+<form>Hemorrhoids
+<group>Hemorrhoids
+<group_text>- <insert_text>
+<group_style>1
+<detail>Tender
+<detail>Non-tender
+<detail>Bleeding
+<detail>Thrombosed
+<detail>Prolapsed
+<detail>Swollen
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

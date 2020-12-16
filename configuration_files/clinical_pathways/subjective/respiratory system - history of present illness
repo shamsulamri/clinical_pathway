@@ -1,0 +1,181 @@
+<form>Presentation
+<group>Mode of Presentation
+<group_text>The patient presented with <insert_text>.
+<group_style>1
+<detail>Cough
+<detail_text>cough
+<detail_submenu>cough
+<detail>Haemoptysis
+<detail_text>hemoptysis
+<detail>Dyspnoea
+<detail_text>
+<detail_submenu>dyspnea
+<detail>Wheeze
+<detail>Chest pain
+<detail>Fever
+<detail_submenu>Fever (deg F)
+<detail>Hoarseness
+<detail_text>hoarseness
+<detail>Nigh sweats
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<load>subjective - date of onset
+
+<load>subjective - duration of symptom
+
+<load>subjective - rate of onset
+
+<load>subjective - intensity
+
+<form>Presentation
+<group>Location of pain
+<group_text>The symptom is located in the <insert_text>.
+<group_style>1
+<detail>Substernal area
+<detail>Upper chest
+<detail_submenu>objective - side
+<detail>Abdomen
+<detail_submenu>objective - abdomen - location
+<detail>Axillary area
+<detail_submenu>objective - side
+<detail>Anterior chest
+<detail_submenu>objective - side
+<detail>Costochondral
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<form>Presentation
+<group>Radiation of pain
+<group_text>It radiates to <insert_text>.
+<group_style>4
+<detail>No precipitating factor
+<detail_text>The pain does not radiate.
+<detail>Shoulder
+<detail_submenu>objective - side
+<detail>Arm
+<detail_submenu>objective - side
+<detail>Axilla
+<detail_submenu>objective - side
+<detail>Neck
+<detail>Through to upper back
+<detail_submenu>objective - side
+<detail>Around to upper back
+<detail_submenu>objective - side
+<detail>Through to lower back
+<detail_submenu>objective - side
+<detail>Jaw
+<detail_submenu>objective - side
+<detail>Abdomen
+<detail_submenu>objective - abdomen - location
+<detail>Scapula
+<detail_submenu>objective - side
+<detail>Entire chest
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<form>Presentation
+<group>Sleep disturbance
+<group_text>The problem <insert_text> awakens the patient from sleep.
+<group_style>2
+<detail>Never
+<detail>Rarely
+<detail>Occasionally
+<detail>Frequently
+
+<form>Presentation
+<group>Symptom Worse
+<group_text>Symptoms are worst <insert_text>.
+<group_style>1
+<detail>Upon wakening
+<detail_text>upon awakening
+<detail>Morning
+<detail_text>in the morning
+<detail>Afternoon
+<detail_text>in the afternoon
+<detail>Evening
+<detail_text>in the evening
+<detail>Night
+<detail_text>in the night
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<form>Presentation
+<group>Precipitating factors
+<group_text>It is precipitated by <insert_text>.
+<group_style>4
+<detail>No precipitating factor
+<detail_text>There was no precipitating factor known.
+<detail>Walking
+<detail_text>
+<detail_submenu>chest pain - walking
+<detail>Climbing stairs
+<detail>Lying flat in bed
+<detail>Physical activity
+<detail_submenu>chest pain - degree of physical activity
+<detail>Emotional stress
+<detail>Cold weather
+<detail>Hot weather
+<detail>Meals
+<detail>Fasting
+<detail>Sexual activity
+<detail>Chest trauma
+<detail>Noncompliance
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<form>Presentation
+<group>Associated Symptoms
+<group_text><insert_text>
+<group_style>3
+<yes_text>It was associated with
+<no_text>but no 
+<detail>Pain
+<detail_text>pain
+<detail_submenu>pain
+<detail>Cough
+<detail_text>cough
+<detail_submenu>cough
+<detail>Sputum
+<detail_text>sputum
+<detail>Haemoptysis
+<detail_text>haemoptysis
+<detail>Dyspnoea
+<detail_text>dyspnea
+<detail_submenu>dyspnea
+<detail>Wheeze
+<detail>Chest pain
+<detail>Fever
+<detail>Hoarseness
+<detail>Nigh sweats
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<form>Presentation
+<group>Daily sputum production
+<group_text>Approximate dialy sputum production is <insert_text>
+<group_style>2
+<detail>Mililiters
+<detail_text><insert_value> ml per day
+<detail_inputbox><doub><L>
+<detail_submenu>sputum
+<detail>Teaspoons
+<detail_text><insert_value> teaspoons
+<detail_inputbox><inte><L>
+<detail_submenu>sputum
+<detail>Tablespoons
+<detail_text><insert_value> tablespoons
+<detail_inputbox><inte><L>
+<detail_submenu>sputum
+<detail>Cups
+<detail_text><insert_value> cups
+<detail_inputbox><inte><L>
+<detail_submenu>sputum
+<detail>Unknown
+

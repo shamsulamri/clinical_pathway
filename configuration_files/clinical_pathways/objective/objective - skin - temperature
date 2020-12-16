@@ -1,0 +1,15 @@
+<form>Skin
+<group>Skin temperature
+<group_text><insert_text>
+<group_style>2
+<detail>Hot
+<detail_text>hot
+<detail>Warm
+<detail_text>warm
+<detail>Cool
+<detail_text>cool
+<detail>Clammy
+<detail_text>clammy
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

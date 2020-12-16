@@ -1,0 +1,181 @@
+<form>Presentation
+<group>Mode of Presentation
+<group_text>The patient presented with <insert_text>.
+<group_style>1
+<detail>Chest pain
+<detail_text>chest pain
+<detail>Dyspnoea
+<detail_text>
+<detail_submenu>dyspnea
+<detail>Ankle swelling
+<detail_text>ankle swelling
+<detail_submenu>objective - side
+<detail>Palpitations
+<detail>Syncope
+<detail>Internmittent claudication
+<detail>Fatigue
+<detail_text>fatigue
+<detail>Cough
+<detail_text>cough
+<detail_submenu>cough
+<detail>Wheeze
+<detail>Fever
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<load>subjective - date of onset
+
+<load>subjective - duration of symptom
+
+<load>subjective - rate of onset
+
+<load>subjective - intensity
+
+<form>Presentation
+<group>Location of pain
+<group_text>The symptom is located in the <insert_text>.
+<group_style>1
+<detail>Substernal area
+<detail>Upper chest
+<detail_submenu>objective - side
+<detail>Abdomen
+<detail_submenu>objective - abdomen - location
+<detail>Axillary area
+<detail_submenu>objective - side
+<detail>Anterior chest
+<detail_submenu>objective - side
+<detail>Costochondral
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<form>Presentation
+<group>Radiation of pain
+<group_text>It radiates to <insert_text>.
+<group_style>4
+<detail>No precipitating factor
+<detail_text>The pain does not radiate.
+<detail>Shoulder
+<detail_submenu>objective - side
+<detail>Arm
+<detail_submenu>objective - side
+<detail>Axilla
+<detail_submenu>objective - side
+<detail>Neck
+<detail>Through to upper back
+<detail_submenu>objective - side
+<detail>Around to upper back
+<detail_submenu>objective - side
+<detail>Through to lower back
+<detail_submenu>objective - side
+<detail>Jaw
+<detail_submenu>objective - side
+<detail>Abdomen
+<detail_submenu>objective - abdomen - location
+<detail>Scapula
+<detail_submenu>objective - side
+<detail>Entire chest
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<form>Presentation
+<group>Sleep disturbance
+<group_text>The problem <insert_text> awakens the patient from sleep.
+<group_style>2
+<detail>Never
+<detail>Rarely
+<detail>Occasionally
+<detail>Frequently
+
+<form>Presentation
+<group>Symptom Worse
+<group_text>Symptoms are worst <insert_text>.
+<group_style>1
+<detail>Upon wakening
+<detail_text>upon awakening
+<detail>Morning
+<detail_text>in the morning
+<detail>Afternoon
+<detail_text>in the afternoon
+<detail>Evening
+<detail_text>in the evening
+<detail>Night
+<detail_text>in the night
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<form>Presentation
+<group>Patient cannot
+<group_text>Symptom prevent the patient from <insert_text>.
+<group_style>4
+<detail>No disability
+<detail_text>The paitnet is not disabled by the symptoms
+<detail>Engage in strenous activity
+<detail_text>participating in strenous activity
+<detail>Walk long distances
+<detail_text>walking long distances
+<detail>Continue usual employment
+<detail_text>continuing in his usual employment
+<detail>Climb stairs
+<detail_text>climbing stairs
+
+<form>Presentation
+<group>Precipitating factors
+<group_text>It is precipitated by <insert_text>.
+<group_style>4
+<detail>No precipitating factor
+<detail_text>There was no precipitating factor known.
+<detail>Walking
+<detail_text>
+<detail_submenu>chest pain - walking
+<detail>Climbing stairs
+<detail>Lying flat in bed
+<detail>Physical activity
+<detail_submenu>chest pain - degree of physical activity
+<detail>Emotional stress
+<detail>Cold weather
+<detail>Hot weather
+<detail>Meals
+<detail>Fasting
+<detail>Sexual activity
+<detail>Chest trauma
+<detail>Noncompliance
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<form>Presentation
+<group>Associated Symptoms
+<group_text><insert_text>
+<group_style>3
+<yes_text>Associated symptoms include 
+<no_text>but no 
+<new_paragraph>
+<detail>Dyspnea
+<detail_submenu>chest pain - associated symptoms
+<detail>Nausea
+<detail_submenu>chest pain - associated symptoms
+<detail>Vomiting
+<detail_submenu>chest pain - associated symptoms
+<detail>Diaphoresis
+<detail_submenu>chest pain - associated symptoms
+<detail>Palpitations
+<detail_submenu>chest pain - associated symptoms
+<detail>Weakness
+<detail_submenu>chest pain - associated symptoms
+<detail>Cough
+<detail_submenu>chest pain - associated symptoms
+<detail>Syncope
+<detail_submenu>chest pain - associated symptoms
+<detail>Heartburn
+<detail_submenu>chest pain - associated symptoms
+<detail>Abdominal pain
+<detail_submenu>chest pain - associated symptoms
+<detail>Fever
+<detail_submenu>chest pain - associated symptoms
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

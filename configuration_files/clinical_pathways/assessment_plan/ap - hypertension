@@ -1,0 +1,48 @@
+<form>Assessment & Plan
+<group>DDx
+<group_text>Diagnosis: <insert_text>
+<group_style>1
+<new_line>
+<separator><new_line>
+<detail>Essential HTN
+<detail_text>essential hypertension
+<detail_submenu>AP - Probability
+<detail>Borderline HTN
+<detail_text>borderline hypertension
+<detail_submenu>AP - Probability
+<detail>Systolic HTN
+<detail_text>systolic hypertension
+<detail_submenu>AP - Probability
+<detail>Exercise HTN
+<detail_text>exercise HTN
+<detail_submenu>AP - Probability
+<detail>Accelerated HTN
+<detail_text>accelerated HTN
+<detail_submenu>AP - Probability
+<detail>Pyelonephritis
+<detail_text>pyelonephritis
+<detail_submenu>AP - Probability
+<detail>Glomerulonephritis
+<detail_text>glomerulonephritis
+<detail_submenu>AP - Probability
+<detail>Coarctation
+<detail_text>Coarchtation of aorta
+<detail_submenu>AP - Probability
+<detail>Adrenocoritical
+<detail_text>adrenocortical lesion
+<detail_submenu>AP - Probability
+<detail>Malignant HTN
+<detail_text>malignant hypertension
+<detail_submenu>AP - Probability
+<detail>Renovacular HTN
+<detail_text>renovascular hypertension
+<detail_submenu>AP - Probability
+<detail>Pregnancy HTN
+<detail_text>pregnancy hypertension
+<detail_submenu>AP - Probability
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<Load>AP - Assessment & Plan
+

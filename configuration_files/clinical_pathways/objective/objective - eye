@@ -1,0 +1,20 @@
+<form>Eye
+<group>Eye
+<group_text>Eye - <insert_text>
+<group_style>1
+<detail>Eyelids
+<detail_text><blank>
+<detail_submenu>objective - eye - eyelids
+<detail>Conjunctiva
+<detail_text><blank>
+<detail_submenu>objective - eye - conjunctiva
+<detail>Cornea
+<detail_text><blank>
+<detail_submenu>objective - eye - cornea
+<detail>Lacrimal
+<detail_text><blank>
+<detail_submenu>objective - eye - lacrimal
+<detail>Pupils
+<detail_text><blank>
+<detail_submenu>objective - eye - pupils
+

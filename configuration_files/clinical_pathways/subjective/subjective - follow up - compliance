@@ -1,0 +1,16 @@
+<form>Follow up
+<group>Compliance
+<group_text>. The patient <insert_text>
+<group_style>1
+<detail>Medication too expensive
+<detail_text>feels the medications is too expensive
+<detail>Refuses to take medication
+<detail_text>does not want to take the medications
+<detail>Stopped taking medication
+<detail_text>stopped taking the medications
+<detail>Difficulty taking medication regularly
+<detail_text>is having difficulty taking the medications regularly
+<detail>
+<detail_text><insert_text>
+<detail_inputbox><text><L>
+

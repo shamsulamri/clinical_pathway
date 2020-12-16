@@ -1,0 +1,248 @@
+<form>Laboratory
+<group>Virology/Serology
+<group_text>Virology/Serology:<insert_text>
+<group_style>1
+<sub_notes>
+<separator><new_line>
+<new_paragraph>
+<results_viewer>
+<detail>HBs AAg
+<detail_text>HBs AAg: <insert_text>
+<detail_inputbox><text><L>
+<detail>Anti HCV
+<detail_text>Anti HCV: <insert_text>
+<detail_inputbox><text><L>
+<detail>Anti HIV 1/11
+<detail_text>Anti HIV 1/11: <insert_text>
+<detail_inputbox><text><L>
+<detail>CMV
+<detail_text>CMV: <insert_text>
+<detail_inputbox><text><L>
+<detail>VDRL
+<detail_text>VDRL: <insert_text>
+<detail_inputbox><text><L>
+
+<form>Laboratory
+<group>Clinical Chemistry
+<group_text>Clinical Chemistry:<insert_text>
+<group_style>1
+<sub_notes>
+<separator><new_line>
+<new_paragraph>
+<results_viewer>
+<detail>Urea Pre
+<detail_text>Urea Pre: <insert_text> mmol/L
+<detail_inputbox><doub><L>
+<detail>Urea Post
+<detail_text>Urea Post: <insert_text> mmol/L
+<detail_inputbox><doub><L>
+<detail>Sodium Pre
+<detail_text>Sodium Pre: <insert_text> mmol/L
+<detail_inputbox><inte><L>
+<detail>Sodium Post
+<detail_text>Sodium Post: <insert_text> mmol/L
+<detail_inputbox><inte><L>
+<detail>Potassium Pre
+<detail_text>Sodium Pre: <insert_text> mmol/L
+<detail_inputbox><doub><L>
+<detail>Potassium Post:
+<detail_text>Potassium Post:: <insert_text> mmol/L
+<detail_inputbox><doub><L>
+<detail>Creatinine Pre
+<detail_text>Creatinine Pre: <insert_text> mmol/L
+<detail_inputbox><inte><L>
+<detail>Creatinine Post
+<detail_text>Creatinine Post: <insert_text> mmol/L
+<detail_inputbox><inte><L>
+<detail>Chloride Pre/CO2
+<detail_text>Chloride Pre/CO2: <insert_text> mmol/L
+<detail_inputbox><inte><L>
+<detail>Uric Acid
+<detail_text>Uric Acid: <insert_text> mmol/L
+<detail_inputbox><inte><L>
+
+<form>Laboratory
+<group>Clinical Chemistry
+<group_text>Clinical Chemistry:<insert_text>
+<group_style>1
+<sub_notes>
+<separator><new_line>
+<new_paragraph>
+<results_viewer>
+<detail>Total Protein
+<detail_text>Total Protein: <insert_text> g/L
+<detail_inputbox><inte><L>
+<detail>Albumin
+<detail_text>Albumin: <insert_text> g/L
+<detail_inputbox><inte><L>
+<detail>Total bilirubin
+<detail_text>Total bilirubin: <insert_text> mmol/L
+<detail_inputbox><inte><L>
+<detail>Alkaline phosphatase
+<detail_text>Alkaline phosphatase: <insert_text> U/L
+<detail_inputbox><inte><L>
+<detail>ALT (Alanine amino transferase)
+<detail_text>ALT: <insert_text> U/L
+<detail_inputbox><inte><L>
+<detail>Calcium
+<detail_text>Calcium: <insert_text> mmol/L
+<detail_inputbox><doub><L>
+<detail>Phosphorous, inorganic
+<detail_text>Phosphorous, inorganic: <insert_text> mmol/L
+<detail_inputbox><doub><L>
+<detail>Magnesium
+<detail_text>Magnesium: <insert_text> mmol/L
+<detail_inputbox><doub><L>
+<detail>Se/iPTH
+<detail_text>Se/iPTH: <insert_text> pmol/L
+<detail_inputbox><doub><L>
+<detail>Sr Aluminium - HUKM
+<detail_text>Sr Aluminium - HUKM: <insert_text> umol/L
+<detail_inputbox><inte><L>
+<detail>Sr Alumninium - gribbles
+<detail_text>Sr Alumninium - gribbles: <insert_text>
+<detail_inputbox><doub><L>
+<detail>Aluminium Pre
+<detail_text>Aluminium Pre: <insert_text> ummol/L + DFO
+<detail_inputbox><inte><L>
+<detail>Aluminium Post
+<detail_text>Aluminium Post: <insert_text> ummol/L + DFO
+<detail_inputbox><inte><L>
+
+<form>Laboratory
+<group>Fasting lipid profile
+<group_text>Fasting lipid profile:<insert_text>
+<group_style>1
+<sub_notes>
+<separator><new_line>
+<new_paragraph>
+<results_viewer>
+<detail>Total cholestrol
+<detail_text>Total cholestrol: <insert_text> mmol/L
+<detail_inputbox><doub><L>
+<detail>Triglyceride
+<detail_text>Triglyceride: <insert_text> mmol/L
+<detail_inputbox><doub><L>
+<detail>LDL - Cholestrol
+<detail_text>LDL - Cholestrol: <insert_text> mmol/L
+<detail_inputbox><text><L>
+<detail>Total cholestrol/HDL ratio
+<detail_text>Total cholestrol/HDL ratio: <insert_text> mmol/L
+<detail_inputbox><doub><L>
+<detail>RBS
+<detail_text>RBS: <insert_text> mmol/L
+<detail_inputbox><doub><L>
+<detail>HbAIC
+<detail_text>HbAIC: <insert_text> %
+<detail_inputbox><doub><L>
+<detail>Sr Homocycteine
+<detail_text>Sr Homocycteine: <insert_text>
+<detail_inputbox><text><L>
+<detail>Lipoprotein A
+<detail_text>Lipoprotein A: <insert_text> 
+<detail_inputbox><text><L>
+<detail>Lipoprotein B
+<detail_text>Lipoprotein B: <insert_text>
+<detail_inputbox><text><L>
+<detail>Beta-2 microglobulin
+<detail_text>Beta-2 microglobulin: <insert_text> 
+<detail_inputbox><text><L>
+
+<form>Laboratory
+<group>Hematology
+<group_text>Hematology:<insert_text>
+<group_style>1
+<sub_notes>
+<separator><new_line>
+<new_paragraph>
+<results_viewer>
+<detail>Hb
+<detail_text>Hb: <insert_text> mmol/L
+<detail_inputbox><doub><L>
+<detail>TWDC
+<detail_text>TWDC: <insert_text> 
+<detail_inputbox><text><L>
+<detail>HCT
+<detail_text>HCT: <insert_text>
+<detail_inputbox><text><L>
+<detail>Platelets
+<detail_text>Platelets: <insert_text> 
+<detail_inputbox><text><L>
+<detail>MCV
+<detail_text>MCV: <insert_text>
+<detail_inputbox><text><L>
+<detail>Sr Iron
+<detail_text>Sr Iron: <insert_text> 
+<detail_inputbox><text><L>
+<detail>TIBC
+<detail_text>TIBC: <insert_text>
+<detail_inputbox><text><L>
+<detail>Tranferrin ratio
+<detail_text>Tranferrin ratio: <insert_text> 
+<detail_inputbox><text><L>
+<detail>Sr Ferritin
+<detail_text>Sr Ferritin: <insert_text>
+<detail_inputbox><text><L>
+<detail>Reticulocytes
+<detail_text>Reticulocytes: <insert_text> 
+<detail_inputbox><text><L>
+<detail>ESR
+<detail_text>ESR: <insert_text> 
+<detail_inputbox><text><L>
+
+<form>Laboratory
+<group>Group Cross Match
+<group_text>GXM:<insert_text>
+<group_style>1
+<sub_notes>
+<separator><new_line>
+<new_paragraph>
+<results_viewer>
+<detail>Blood group
+<detail_text>Blood group:
+<detail_submenu>objective - blood group select
+<detail>Rhesus
+<detail_text>Rhesus:
+<detail_submenu>objective - blood rhesus
+
+<form>Laboratory
+<group>Renal Function Test
+<group_text>Renal Function Test:<insert_text>
+<group_style>1
+<sub_notes>
+<separator><new_line>
+<new_paragraph>
+<results_viewer>
+<detail>Sodium
+<detail_text>Sodium: <insert_text> mmol/L
+<detail_inputbox><inte><L>
+<detail>Potassium
+<detail_text>Potassium: <insert_text> mmol/L
+<detail_inputbox><doub><L>
+<detail>Urea
+<detail_text>Urea: <insert_text> mmol/L
+<detail_inputbox><doub><L>
+<detail>Uric acid
+<detail_text>Uric acid: <insert_text> umol/L
+<detail_inputbox><inte><L>
+<detail>Calcium
+<detail_text>Calcium: <insert_text> mmol/L
+<detail_inputbox><doub><L>
+<detail>Phosphate
+<detail_text>Phosphate: <insert_text> mmol/L
+<detail_inputbox><doub><L>
+<detail>Amylase
+<detail_text>Amylase: <insert_text> IU/L
+<detail_inputbox><inte><L>
+<detail>Osmolality
+<detail_text>Osmolality: <insert_text> mOsm/Kg H20
+<detail_inputbox><inte><L>
+<detail>Glucose
+<detail_text>Glucose: <insert_text> mmol/L
+<detail_inputbox><doub><L>
+<detail>Chloride
+<detail_text>Chloride: <insert_text> mmol/L
+<detail_inputbox><inte><L>
+<detail>Magnesium
+<detail_text>Magnesium: <insert_text> mmol/L
+<detail_inputbox><doub><L>

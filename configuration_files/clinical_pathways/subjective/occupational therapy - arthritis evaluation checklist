@@ -1,0 +1,198 @@
+<form>Arthritis
+<group>Initial interview
+<group_text><insert_text>
+<group_style>1
+<separator><new_line>
+<detail>Joints bother you most ?
+<detail_text>Which joints bother you the most ?
+<detail_submenu>occupational therapy - arthritis evaluation checklist - joints
+<detail>Pain
+<detail_text>The pain is
+<detail_submenu>occupational therapy - arthritis evaluation checklist - pain
+<detail>Morning stiffness ?
+<detail_text>Do you experience morning stiffness ?
+<detail_submenu>occupational therapy - arthritis evaluation checklist - morning stiffness
+<detail>Medication taking ?
+<detail_text>The patient takes <insert_value>
+<detail_inputbox><text><L>
+<detail_submenu>occupational therapy - arthritis evaluation checklist - side effects
+<detail>Surgeries
+<detail_text>Surgeries: <insert_value>
+<detail_inputbox><text><L>
+<detail>Exercise program
+<detail_text>Exercise program: <insert_value>
+<detail_inputbox><text><L>
+<detail>Splint
+<detail_text>Splint: <insert_value>
+<detail_inputbox><text><L>
+<detail>Knowledge about arthritis
+<detail_text>Knowledge about arthritis: <insert_value>
+<detail_inputbox><text><L>
+<detail>Goals
+<detail_text>Goals: <insert_value>
+<detail_inputbox><text><L>
+
+<form>Arthritis
+<group>Hand
+<group_text>Hand: <insert_text>
+<group_style>1
+<sub_notes>
+<separator><new_line>
+<new_paragraph>
+<detail>Power grip
+<detail_text>Power grip:
+<detail_submenu>occupational therapy - arthritis evaluation checklist - rightleft
+<detail>Lateral pinch
+<detail_text>Lateral pinch
+<detail_submenu>occupational therapy - arthritis evaluation checklist - rightleft
+<detail>Opposition
+<detail_text>Opposition
+<detail_submenu>occupational therapy - arthritis evaluation checklist - rightleft
+
+<form>Arthritis
+<group>Hand placement evaluation
+<group_text>Hand placement evaluation: <insert_text>
+<group_style>1
+<sub_notes>
+<separator><new_line>
+<new_paragraph>
+<detail>Reach overhead
+<detail_text>Reach overhead:
+<detail_submenu>occupational therapy - arthritis evaluation checklist - rightleft
+<detail>Touch top of the head
+<detail_text>Touch top of the head
+<detail_submenu>occupational therapy - arthritis evaluation checklist - rightleft
+<detail>Touch mouth
+<detail_text>Touch mouth
+<detail_submenu>occupational therapy - arthritis evaluation checklist - rightleft
+<detail>Touch back of neck
+<detail_text>Touch back of neck
+<detail_submenu>occupational therapy - arthritis evaluation checklist - rightleft
+<detail>Touch behind back
+<detail_text>Touch behind back
+<detail_submenu>occupational therapy - arthritis evaluation checklist - rightleft
+
+<form>Arthritis
+<group>Sensation
+<group_text>Soft tissue and hand deformities noted:<insert_text>
+<group_style>1
+<sub_notes>
+<separator><new_line>
+<new_paragraph>
+<detail>Flexion contractures
+<detail_text>Flexion contractures
+<detail_submenu>occupational therapy - arthritis evaluation checklist - description
+<detail>Swan neck
+<detail_text>Swan neck
+<detail_submenu>occupational therapy - arthritis evaluation checklist - description
+<detail>Boutonniere
+<detail_text>Boutonniere
+<detail_submenu>occupational therapy - arthritis evaluation checklist - description
+<detail>Ulnar deviation
+<detail_text>Ulnar deviation
+<detail_submenu>occupational therapy - arthritis evaluation checklist - description
+<detail>Subluxation
+<detail_text>Subluxation
+<detail_submenu>occupational therapy - arthritis evaluation checklist - description
+<detail>Edema
+<detail_text>Edema
+<detail_submenu>occupational therapy - arthritis evaluation checklist - description
+<detail>Redness
+<detail_text>Redness
+<detail_submenu>occupational therapy - arthritis evaluation checklist - description
+<detail>Warmth
+<detail_text>Warmth
+<detail_submenu>occupational therapy - arthritis evaluation checklist - description
+
+<form>Arthritis
+<group>Upper extremity ROM
+<group_text>Upper extremity ROM: <insert_text>
+<group_style>1
+<sub_notes>
+<separator><new_line>
+<new_paragraph>
+<detail>Head flexion/extension
+<detail_text>Head flexion/extension:
+<detail_submenu>occupational therapy - arthritis evaluation checklist - key
+<detail>Neck right/left flexion
+<detail_text>Neck right flexion
+<detail_submenu>occupational therapy - arthritis evaluation checklist - key
+<detail>Neck rotation
+<detail_text>Neck rotation
+<detail_submenu>occupational therapy - arthritis evaluation checklist - key
+<detail>Shoulder extension/flexion
+<detail_text>Shoulder extension/flexion:
+<detail_submenu>occupational therapy - arthritis evaluation checklist - key
+<detail>Shoulder adduction/abduction
+<detail_text>Shoulder adduction/abduction:
+<detail_submenu>occupational therapy - arthritis evaluation checklist - key
+<detail>Shoulder internal/external
+<detail_text>Shoulder internal/external
+<detail_submenu>occupational therapy - arthritis evaluation checklist - key
+<detail>Elbow flexion/extension
+<detail_text>Elbow flexion/extension:
+<detail_submenu>occupational therapy - arthritis evaluation checklist - key
+<detail>Forearm supination/pronation
+<detail_text>Head supination/pronation
+<detail_submenu>occupational therapy - arthritis evaluation checklist - key
+<detail>Wrist flexion/extension
+<detail_text>Wrist flexion/extension:
+<detail_submenu>occupational therapy - arthritis evaluation checklist - key
+<detail>Head ulnar/radial deviation
+<detail_text>Head ulnar/radial deviation
+<detail_submenu>occupational therapy - arthritis evaluation checklist - key
+
+<form>Arthritis
+<group>Lower extremity ROM
+<group_text>Lower extremity ROM: <insert_text>
+<group_style>1
+<sub_notes>
+<separator><new_line>
+<new_paragraph>
+<detail>Trunk rotation
+<detail_text>Trunk rotation:
+<detail_submenu>occupational therapy - arthritis evaluation checklist - key
+<detail>Waist bend
+<detail_text>Waist bend
+<detail_submenu>occupational therapy - arthritis evaluation checklist - key
+<detail>Knee flexion/extension
+<detail_text>Knee flexion/extension
+<detail_submenu>occupational therapy - arthritis evaluation checklist - key
+<detail>Ankle inversion/eversion
+<detail_text>Ankle inversion/eversion:
+<detail_submenu>occupational therapy - arthritis evaluation checklist - key
+<detail>Ankle rotation
+<detail_text>Ankle rotation:
+<detail_submenu>occupational therapy - arthritis evaluation checklist - key
+
+<form>Arthritis
+<group>Adaptive equipment
+<group_text>Recommendations (Adaptive equipment):<insert_text>
+<group_style>1
+<sub_notes>
+<separator><new_line>
+<new_paragraph>
+<detail>Key extension
+<detail_text>Key extension
+<detail>Feeding device
+<detail_text>Feeding device
+<detail>Writing device
+<detail_text>Writing device
+<detail>Telephone
+<detail_text>Telephone
+<detail>Car door opener
+<detail_text>Car door opener
+<detail>Dressing stick
+<detail_text>Dressing stick
+<detail>Buttonhook
+<detail_text>Buttonhook
+<detail>Splints
+<detail_text>Splints: <insert_value>
+<detail_inputbox><text><L>
+<detail>Joint protection
+<detail_text>Joint protection: <insert_value>
+<detail_inputbox><text><L>
+<detail>Home program
+<detail_text>Home program: <insert_value>
+<detail_inputbox><text><L>
+

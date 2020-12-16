@@ -1,0 +1,19 @@
+<form>Risk Factors
+<group>Risk factors
+<group_text><insert_text>
+<group_style>3
+<yes_text>Risk factors include 
+<no_text>but no
+<new_paragraph>
+<detail>Fall
+<detail>Exposure to strep
+<detail>Exposure to viral pharyngitis
+<detail>Smoking
+<detail>Crowded living quarters
+<detail>Low socio-economic status
+<detail>Hx of rheumatic fever
+<detail>Immunocompromised status
+<detail>Exposure to gonorrhea
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

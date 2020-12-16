@@ -1,0 +1,13 @@
+<form>Parental Death
+<group>Parental Death
+<group_text>(The patient's <insert_text>)
+<group_style>1
+<reveal_date>
+<detail>Father age of death
+<detail_text>father died at age <insert_value>
+<detail_submenu>PMH - Cause of death
+<detail_inputbox><text><L>
+<detail>Mother age of death
+<detail_text>mother died at age <insert_value>
+<detail_submenu>PMH - Cause of death
+<detail_inputbox><text><L>

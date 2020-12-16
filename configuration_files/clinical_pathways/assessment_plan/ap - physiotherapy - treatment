@@ -1,0 +1,58 @@
+<form>Physiotherapy Treatment
+<group>Physiotherapy
+<group_text><insert_text>
+<group_style>1
+<new_line>
+<separator>;
+<detail>Ultrasound
+<detail_text>Ultrasound
+<detail_order>
+<detail>Interferential therapy
+<detail_text>Interferential therapy
+<detail_order>
+<detail>Infra red ray
+<detail_text>Infra red ray
+<detail_order>
+<detail>Cryotherapy
+<detail_text>Cryotherapy
+<detail_order>
+<detail>Wax therapy
+<detail_text>Wax therapy
+<detail_order>
+<detail>TENS
+<detail_text>TENS
+<detail_order>
+<detail>Alpha stimulation
+<detail_text>Alpha stimulation
+<detail_order>
+<detail>Suction
+<detail_text>Suction
+<detail_order>
+<detail>Postural drainage/chest percussion vibration
+<detail_text>Postural drainage/chest percussion vibration
+<detail_order>
+<detail>Exercise therapy
+<detail_text>Exercise therapy
+<detail_order>
+<detail>Manual therapy
+<detail_text>Manual therapy
+<detail_order>
+<detail>Sonotron
+<detail_text>Sonotron
+<detail_order>
+<detail>Taping
+<detail_text>Taping
+<detail_order>
+<detail>Bandaging
+<detail_text>Bandaging
+<detail_order>
+<detail>Pendidikan pesakit
+<detail_text>Pendidikan pesakit
+<detail_order>
+<detail>Vaginal perineometer
+<detail_text>Vaginal perineometer
+<detail_order>
+<detail>Vaginal cone
+<detail_text>Vaginal cone
+<detail_order>
+

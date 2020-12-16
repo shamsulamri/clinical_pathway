@@ -1,0 +1,35 @@
+<form>Nodes
+<group>Nodes 
+<group_text><insert_text>
+<group_style>1
+<new_line>
+<detail>Occipital
+<detail_text>occipital node
+<detail_submenu>objective - nodes - side
+<detail>Preauricular 
+<detail_text>preauricular node
+<detail_submenu>objective - nodes - side
+<detail>Postauricular
+<detail_text>postauricular node
+<detail_submenu>objective - nodes - side
+<detail>Submental
+<detail_text>submental node
+<detail_submenu>objective - nodes - side
+<detail>Submandibular
+<detail_text>submandibular node
+<detail_submenu>objective - nodes - side
+<detail>Anterior cervical
+<detail_text>anterior cervical node
+<detail_submenu>objective - nodes - side
+<detail>Posterior cervical
+<detail_text>posterior cervical node
+<detail_submenu>objective - nodes - side
+<detail>Axillary
+<detail_text>axillary node
+<detail_submenu>objective - nodes - side
+<detail>Inguinal
+<detail_text>inguinal node
+<detail_submenu>objective - nodes - side
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

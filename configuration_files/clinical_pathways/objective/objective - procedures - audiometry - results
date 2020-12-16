@@ -1,0 +1,19 @@
+<form>Audiometry Results
+<group>Audiometry Results
+<group_text>Audiometry revealed <insert_text>
+<group_style>4
+<detail>No abnormalities
+<detail_text>Audiometry revealed no abnormalities
+<detail>Sensorineural hearing loss
+<detail_text>sensorineural hearing loss
+<detail_submenu>objective - side
+<detail>Conductive hearing loss
+<detail_text>conductive hearing loss
+<detail_submenu>objective - side
+<detail>Mixed hearing loss
+<detail_text>mixed hearing loss
+<detail_submenu>objective - side
+<detail>
+<detail_text>Indications - <insert_value>
+<detail_inputbox><text><L>
+

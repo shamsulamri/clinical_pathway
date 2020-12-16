@@ -1,0 +1,16 @@
+<form>Assessment & Plan
+<group>Probability
+<group_text>- <insert_text>
+<group_style>2
+<detail>Principal
+<detail>Morbidity
+<detail>Definite
+<detail_text>definite
+<detail>Probable
+<detail_text>probable
+<detail>Possible
+<detail_text>possible
+<detail>Suspected
+<detail_text>suspected
+<detail>Rule out
+<detail_text>rule out

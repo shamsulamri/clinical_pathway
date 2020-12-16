@@ -1,0 +1,24 @@
+<form>Oral Mucosal
+<group>Oral mucosal
+<group_text><insert_text>
+<group_style>1
+<detail>Dryness
+<detail_submenu>objective - oropharynx - oral mucosal - location
+<detail>Hyperplasia
+<detail_submenu>objective - oropharynx - oral mucosal - location
+<detail>Erythema
+<detail_submenu>objective - oropharynx - oral mucosal - location
+<detail>Ulceration
+<detail_submenu>objective - oropharynx - oral mucosal - location
+<detail>Abcess
+<detail_submenu>objective - oropharynx - oral mucosal - location
+<detail>Thrush
+<detail_submenu>objective - oropharynx - oral mucosal - location
+<detail>Leukoplakia
+<detail_submenu>objective - oropharynx - oral mucosal - location
+<detail>Gingivitis
+<detail_submenu>objective - oropharynx - oral mucosal - location
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+

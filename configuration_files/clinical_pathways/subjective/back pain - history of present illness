@@ -1,0 +1,160 @@
+<form>Presentation
+<group>Date of Onset
+<group_text>The patient presented with back pain that began <insert_text>.
+<group_style>2
+<reveal_date>
+<detail>Today
+<detail>Date:
+<detail_text>on the <insert_value>
+<detail_inputbox><date><R>
+<detail>Days ago
+<detail_text><insert_value> days ago
+<detail_inputbox><inte><L>
+<detail>Weeks ago
+<detail_text><insert_value> weeks ago
+<detail_inputbox><inte><L>
+<detail>Months ago
+<detail_text><insert_value> months ago
+<detail_inputbox><inte><L>
+<detail>Years ago
+<detail_text><insert_value> years ago
+<detail_inputbox><inte><L>
+
+<form>Presentation
+<group>Location of symptoms
+<group_text>The symptom is located on the <insert_text> of the back.
+<group_style>1
+<detail>Right
+<detail>Left
+<detail>Both side
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<form>Presentation
+<group>Duration of Symptom
+<group_text>It lasted <insert_text>.
+<group_style>1
+<detail>Hours
+<detail_text><insert_value> hours
+<detail_inputbox><inte><L>
+<detail>Days
+<detail_text><insert_value> days
+<detail_inputbox><inte><L>
+<detail>Weeks
+<detail_text><insert_value> weeks
+<detail_inputbox><inte><L>
+<detail>Months
+<detail_text><insert_value> months
+<detail_inputbox><inte><L>
+<detail>Years
+<detail_text><insert_value> years
+<detail_inputbox><inte><L>
+<detail>Still present
+
+<form>Presentation
+<group>Rate of Onset
+<group_text>Symptoms appeared <insert_text>.
+<group_style>2
+<detail>Abruptly
+<detail>Over hours
+<detail_text>over a period of <insert_value> hours
+<detail_inputbox><inte><L>
+<detail>Over days
+<detail_text>over a period of <insert_value> days
+<detail_inputbox><inte><L>
+<detail>Over weeks
+<detail_text>over a period of <insert_value> weeks
+<detail_inputbox><inte><L>
+<detail>Over months
+<detail_text>over a period of <insert_value> months
+<detail_inputbox><inte><L>
+<detail>Over years
+<detail_text>over a period of <insert_value> years
+<detail_inputbox><inte><L>
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<form>Presentation
+<group>Severity of pain
+<group_text>The pain is <insert_text>.
+<group_style>1
+<detail>Mild
+<detail_text>mild in intensity
+<detail_submenu>subjective - severity
+<detail>Moderate
+<detail_text>moderate in intensity
+<detail_submenu>subjective - severity
+<detail>Severe
+<detail_text>severe in intensity
+<detail_submenu>subjective - severity
+<detail>Excruciating
+<detail_text>excruciating in intensity
+<detail_submenu>subjective - severity
+<detail>Scale of 1 to 10
+<detail_text>.The pain is described as <insert_value> on a scale of 1 to 10 in severity
+<detail_inputbox><text><L>
+
+<form>Presentation
+<group>Radiation of pain
+<group_text>It radiates to <insert_text>.
+<group_style>4
+<detail>No radiation
+<detail_text>The pain does not radiate.
+<detail>Abdomen
+<detail_submenu>objective - abdomen - location
+<detail>Back
+<detail_submenu>objective - side
+<detail>Thigh
+<detail_submenu>objective - side
+<detail>Calf
+<detail_submenu>objective - side
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<form>Presentation
+<group>Associated Symptoms
+<group_text><insert_text>
+<group_style>3
+<yes_text>It was associated with
+<no_text>but no 
+<detail>Fever
+<detail_submenu>Fever (deg F)
+<detail>Pain
+<detail>Stiffness
+<detail>Swelling
+<detail>Disturbed sensation
+<detail>Limb weakness
+<detail>Deformity
+<detail>Dry mouth
+<detail>Dry eyes
+<detail>Red eyes
+<detail>Headache
+<detail>Fatigue
+<detail>Anorexia
+<detail>Fatigue
+<detail>Inflammation
+<detail>Weight loss
+<detail>Hesistancy
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<form>Presentation
+<group>Precipitating factors
+<group_text>.The symptoms was precipitated by <insert_text>.
+<group_style>4
+<detail>No precipitating factor
+<detail_text>There was no precipitating factor known.
+<detail>Trauma
+<detail>Particular posture
+<detail>Coughing
+<detail>Straining
+<detail>Lifting objects
+<detail>Medication
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+

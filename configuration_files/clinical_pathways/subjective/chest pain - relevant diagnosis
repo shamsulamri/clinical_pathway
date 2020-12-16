@@ -1,0 +1,19 @@
+<form>Relevant Diagnoses
+<group>Relevant medical history
+<group_text>Patient has a history of <insert_text>.
+<group_style>1
+<detail>Cardiac disease
+<detail_submenu>subjective - relevant diagnosis - cardiac disease
+<detail>Pulmonary disease
+<detail_submenu>subjective - relevant diagnosis - pulmonary disease
+<detail>GI conditions
+<detail_submenu>subjective - relevant diagnosis - gi conditions
+<detail>Vascular disease
+<detail_submenu>subjective - relevant diagnosis - vascular disease
+<detail>Musculoskeletal disease
+<detail_submenu>subjective - relevant diagnosis - muscularskeletal disease
+<detail>Thyrotoxicosis
+<detail>
+<detail_text><insert_text>
+<detail_inputbox><text><L>
+

@@ -1,0 +1,26 @@
+<form>Location 
+<group>Spread
+<group_text>and spread to the <insert_text>
+<group_style>1
+<detail>Scalp
+<detail_text>scalp
+<detail>Face
+<detail_text>face
+<detail>Neck
+<detail_text>neck
+<detail>Chest
+<detail_text>chest
+<detail>Upper limb
+<detail_text>upper limb
+<detail_submenu>objective - side
+<detail>Abdomen
+<detail_text>Abdomen
+<detail_submenu>objective - abdomen - location
+<detail>Back
+<detail_text>Back
+<detail>Lower limb
+<detail_text>lower limp
+<detail>
+<detail_text><insert_text>
+<detail_inputbox><text><L>
+

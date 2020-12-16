@@ -1,0 +1,20 @@
+<form>Side
+<group>On which side ?
+<group_text> - <insert_text>
+<group_style>2
+<detail>Right
+<detail_text>on the right
+<detail_submenu>objective - nodes - character
+<detail>Left
+<detail_text>on the left
+<detail_submenu>objective - nodes - character
+<detail>Both, more on right
+<detail_text>bilateral, more on right
+<detail_submenu>objective - nodes - character 
+<detail>Both, more on left
+<detail_text>bilateral, more on left
+<detail_submenu>objective - nodes - character 
+<detail>Bilaterally
+<detail_text>bilaterally
+<detail_submenu>objective - nodes - character
+

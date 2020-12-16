@@ -1,0 +1,12 @@
+<form>Sputum
+<group>Blood content
+<group_text>The patient has noted <insert_text>.
+<group_style>4
+<detail>No hemoptysis
+<detail_text>The patient denied hemoptysis.
+<detail>Red streaks
+<detail>Clots
+<detail>Gross blood
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

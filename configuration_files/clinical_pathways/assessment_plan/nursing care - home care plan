@@ -1,0 +1,151 @@
+<form>Personal care
+<group>Personal care
+<group_text>Personal care: <insert_text>
+<group_style>1
+<new_line>
+<separator>;
+<detail>Bed bath
+<detail>Tub bath / shower
+<detail>Sponge bath
+<detail>Oral hygiene / Denture care
+<detail>Shampoo
+<detail>Comb / Brush hair
+<detail>Shave
+
+<form>Elimination
+<group>Elimination
+<group_text>Elimination: <insert_text>
+<group_style>1
+<new_line>
+<separator>;
+<detail>Toilet
+<detail>Bed-side commode
+<detail>Bedpan
+<detail>Urinal
+<detail>Empty catheter / Drainage bag
+<detail>Ostomy care - empty bag
+<detail>Ostomy care - change bag
+<detail>Record output (urine)
+<detail>Urinal
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<form>Homemaking
+<group>Homemaking
+<group_text>Homemaking: <insert_text>
+<group_style>1
+<new_line>
+<separator>;
+<detail>Linen change and make bed
+<detail>Laundry / wash linen
+<detail>Light house keeping
+<detail_submenu>home care - light housekeeping
+<detail>Light shopping
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<form>Activity Instruction
+<group>Activity Instruction
+<group_text>Activity Instruction: <insert_text>
+<group_style>1
+<new_line>
+<separator>;
+<detail>Position / Turn patient
+<detail>Dangle
+<detail>Assist with ambulation
+<detail>Up in chair
+<detail>Range of motion excercise
+<detail_submenu>home care - range of motion exercise
+<detail>Bedrest
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<form>Nutrition
+<group>Nutrition
+<group_text>Nutrition: <insert_text>
+<group_style>1
+<new_line>
+<separator>;
+<detail>Light meal
+<detail_text>light meal - <insert_value>
+<detail_inputbox><text><L>
+<detail_submenu>home care - light meal
+<detail>Record intake
+<detail_text>record intake - <insert_value>
+<detail_inputbox><text><L>
+<detail_submenu>home care - record intake
+
+<form>Safety activity
+<group>Safety activity
+<group_text>Safety activity: <insert_text>
+<group_style>1
+<new_line>
+<separator>;
+<detail>Walker
+<detail>Crutches
+<detail>Wheel chairs
+
+<form>Treatment
+<group>Treatment
+<group_text>Treatment: take the following readings <insert_text>
+<group_style>1
+<new_line>
+<separator>;
+<detail>Weight
+<detail_text>weight (<insert_value> times)
+<detail_inputbox><inte><L>
+<detail>Temperature
+<detail_text>temperature (<insert_value> times)
+<detail_inputbox><inte><L>
+<detail_submenu>objective - temperature site
+<detail>Pulse
+<detail_text>pulse (<insert_value> times)
+<detail_inputbox><inte><L>
+<detail>Respiration
+<detail_text>respiration (<insert_value> times)
+<detail_inputbox><inte><L>
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<form>Considerations / Precautions
+<group>Considerations / Precautions
+<group_text>Considerations / Precautions: <insert_text>
+<group_style>1
+<new_line>
+<separator>;
+<detail>Confused at times
+<detail>Deaf / hearing impaired
+<detail>Blind
+<detail>Language impaired
+<detail>Diabetic
+<detail>Precautions
+<detail_submenu>home care - precautions
+
+<form>Goals
+<group>Goals
+<group_text>Goals: <insert_text>
+<group_style>2
+<new_line>
+<separator>;
+<detail>Patient
+<detail_text>HCN will provide patient with personal care until patient can meet patient's personal care needs independently
+<detail>Patient caregiver
+<detail_text>HCN will provide patient with personal care until patient caregiver can meet patient's personal care needs independently
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<form>Special instruction
+<group>Special instruction
+<group_text>Special instruction: <insert_text>
+<group_style>1
+<new_line>
+<separator>;
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+

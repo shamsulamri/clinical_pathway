@@ -1,0 +1,31 @@
+<form>Upper Limb X-ray
+<group>Upper Limb X-ray
+<group_text><insert_text>
+<group_style>1
+<new_line>
+<detail>Arm: AP && Lateral
+<detail_text>Arm: AP & Lateral
+<detail_order>xr_arm_ap_l
+<detail>Forearm: AP && Lateral && T
+<detail_text>Forearm: AP & Lateral & T
+<detail_order>xr_forearm_ap_l_t
+<detail>Elbow: AP && Lateral
+<detail_text>Elbow: AP & Lateral
+<detail_order>xr_elbow_ap_l
+<detail>Hand: PA && Oblique
+<detail_text>Hand: PA & Oblique
+<detail_order>xr_hand_pa_o
+<detail>Wrist: AP && Lateral
+<detail_text>Wrist: AP & Lateral
+<detail_order>xr_wrist_ap_l
+<detail>Scaphoid 3 views
+<detail_text>Scaphoid 3 views
+<detail_order>xr_scaphoid_3
+<detail>Scapula : AP && Lateral
+<detail_text>Scapula : AP & Lateral
+<detail_order>xr_scapula_ap_l
+<detail>Shoulder joint: AP && Axial
+<detail_text>Shoulder joint: AP & Axial
+<detail_order>xr_shoulder_ap_ax
+
+

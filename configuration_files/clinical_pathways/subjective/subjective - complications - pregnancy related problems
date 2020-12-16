@@ -1,0 +1,10 @@
+<form>Complications
+<group>Complications of pregnancy
+<group_text>(<insert_text>)
+<group_style>1
+<detail>Large babies
+<detail>Intrauterine death
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+

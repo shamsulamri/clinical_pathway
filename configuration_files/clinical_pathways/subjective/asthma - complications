@@ -1,0 +1,14 @@
+<form>Complications
+<group>Complications
+<group_text>Complications have included <insert_text>.
+<group_style>1
+<detail>Ventilatory failure
+<detail>Pneumothorax
+<detail>Penumomediasternum
+<detail>Atelectasis
+<detail>Mucous plug
+<detail>Pulmonary infiltrates
+<detail>
+<detail_text><insert_text>
+<detail_inputbox><text><L>
+

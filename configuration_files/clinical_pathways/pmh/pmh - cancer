@@ -1,0 +1,40 @@
+<form>Cancer
+<group>Cancer
+<group_text>of the <insert_text>
+<group_style>1
+<detail>Lung
+<detail_text>lung
+<detail_submenu>PMH - Date2
+<detail>Breast
+<detail_text>breast
+<detail_submenu>PMH - Date2
+<detail>Colon
+<detail_text>colon
+<detail_submenu>PMH - Date2
+<detail>Cervical
+<detail_text>cervical
+<detail_submenu>PMH - Date2
+<detail>Uterine
+<detail_text>uterine
+<detail_submenu>PMH - Date2
+<detail>Ovarian
+<detail_text>ovarian
+<detail_submenu>PMH - Date2
+<detail>Brain
+<detail_text>brain
+<detail_submenu>PMH - Date2
+<detail>Leukemia
+<detail_text>leukemia
+<detail_submenu>PMH - Date2
+<detail>Lymphoma
+<detail_text>lymphoma
+<detail_submenu>PMH - Date2
+<detail>Skin
+<detail_text>skin
+<detail_submenu>PMH - Date2
+<detail>Melanoma
+<detail_text>Melanoma
+<detail_submenu>PMH - Date2
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

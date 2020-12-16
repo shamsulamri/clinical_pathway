@@ -1,0 +1,12 @@
+<form>Side
+<group>Cystic mass on which side ?
+<group_text>mass palpated <insert_text>
+<group_style>1
+<detail>Right
+<detail_text>on the right side
+<detail>Left
+<detail_text>on the left side
+<detail>Midline
+<detail_text>in the midline
+<detail>Bilateral
+<detail_text>palpated bilaterally

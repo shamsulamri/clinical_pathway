@@ -1,0 +1,37 @@
+<form>Drug used
+<group>Drug used
+<group_text>The patient admits to having used <insert_text>
+<group_style>1
+<detail>Marijuana
+<detail_text>marijuana
+<detail_submenu>PMH - substance abuse - drug abuse - duration
+<detail>Cocaine
+<detail_text>cocaine
+<detail_submenu>PMH - substance abuse - drug abuse - cocaine
+<detail>Crack cocaine
+<detail_text>crack cocaine
+<detail_submenu>PMH - substance abuse - drug abuse - duration
+<detail>Injectable narcotics
+<detail_text>Injectable narcotics
+<detail_submenu>PMH - substance abuse - drug abuse - injectable narcotics
+<detail>Oral narcotics
+<detail_text>oral narcotics
+<detail_submenu>PMH - substance abuse - drug abuse - oral narcotics
+<detail>PCP (phencyclidine)
+<detail_text>PCP (phencyclidine)
+<detail_submenu>PMH - substance abuse - drug abuse - duration
+<detail>LSD
+<detail_text>LSD
+<detail_submenu>PMH - substance abuse - drug abuse - duration
+<detail>Amphetamines
+<detail_text>amphetamines
+<detail_submenu>PMH - substance abuse - drug abuse - route of administration
+<detail>Barbiturates
+<detail_text>barbiturates
+<detail_submenu>PMH - substance abuse - drug abuse - route of administration
+<detail>Benzodiazepines
+<detail_text>benzodiazepines
+<detail_submenu>PMH - substance abuse - drug abuse - duration
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

@@ -1,0 +1,19 @@
+<form>Risk Factors
+<group>Risk factors
+<group_text><insert_text>
+<group_style>3
+<yes_text>Risk factors include 
+<no_text>but not 
+<new_paragraph>
+<detail>Hypertension
+<detail>Smoking
+<detail>Diabetes mellitus
+<detail>Hyperlipidaemia
+<detail>Atrial fibrillation
+<detail>Bacterial endocarditis
+<detail>Myocardial infaction
+<detail>Haematological disease
+<detail>Family history of stroke
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

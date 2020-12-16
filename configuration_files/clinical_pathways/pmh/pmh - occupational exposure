@@ -1,0 +1,33 @@
+<form>Occupational Exposure
+<group>Occupational Exposure
+<group_text><insert_text>
+<group_style>1
+<detail>Cigarette smoke
+<detail_text>cigarette smoke
+<detail>Asbestos
+<detail_text>asbestos
+<detail>Petrochemicals
+<detail_text>petrochemicals
+<detail>Organic solvents
+<detail_text>organic solvents
+<detail_submenu>PMH - Organic solvents
+<detail>Pesticides
+<detail_text>pesticides
+<detail>Fertilizers
+<detail_text>fertilizers
+<detail>Dust
+<detail_text>dust
+<detail_submenu>PMH - Dust
+<detail>Smoke
+<detail_text>smoke
+<detail>Gases
+<detail_text>gases
+<detail>Silicon
+<detail_text>silicon
+<detail>Mercury
+<detail_text>mercury
+<detail>Lead
+<detail_text>lead
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

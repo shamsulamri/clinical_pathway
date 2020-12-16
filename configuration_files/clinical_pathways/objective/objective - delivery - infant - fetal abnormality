@@ -1,0 +1,8 @@
+<form>Fetal abnormality
+<group>Description
+<group_text>Fetal abnormality: <insert_text>
+<group_style>0
+<detail>
+<detail_text><insert_value> 
+<detail_inputbox><text><L>
+

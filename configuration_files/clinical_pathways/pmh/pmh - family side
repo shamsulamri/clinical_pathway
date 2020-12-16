@@ -1,0 +1,7 @@
+<form>Family side
+<group>Which side of family ?
+<group_text>on the <insert_text> side
+<group_style>1
+<detail>Maternal
+<detail>Paternal
+a

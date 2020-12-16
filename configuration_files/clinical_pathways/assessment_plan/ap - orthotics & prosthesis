@@ -1,0 +1,21 @@
+<form>Orthotics & Prosthesis
+<group>Referral information
+<group_text><insert_text>
+<group_style>1
+<separator><new_line>
+<sub_notes>
+<detail>Aim of supply/fabrication
+<detail_text>
+<detail_submenu>ap - orthotics & prosthesis - aim of supply
+<detail>Orthosis
+<detail_text>
+<detail_submenu>ap - orthotics & prosthesis - orthosis
+<detail>Prosthesis
+<detail_text>
+<detail_submenu>ap - orthotics & prosthesis - prosthesis
+<detail>Rehabilitation aid
+<detail_text>
+<detail_submenu>ap - orthotics & prosthesis - rehabilitation aid
+<detail>Make appointment
+<detail_text>
+

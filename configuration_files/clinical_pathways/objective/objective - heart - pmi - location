@@ -1,0 +1,11 @@
+<form>Heart
+<group>Location
+<group_text><insert_text>
+<group_style>1
+<separator>,
+<detail>Intercostal space
+<detail_text><insert_value> intercostal space
+<detail_inputbox><inte><L>
+<detail>cm from midline
+<detail_text><insert_value> cm from midline
+<detail_inputbox><inte><L>

@@ -1,0 +1,16 @@
+<form>Allergies Manifestations
+<group>Manifestations
+<group_text>- manisfested by <insert_text>
+<group_style>1
+<detail>Anaphylaxis
+<detail>Rash
+<detail>Urticaria
+<detail>Swelling
+<detail>Wheezing
+<detail>Rhinorrhea
+<detail>Diarrhea
+<detail>GI Upset
+<detail>Confusion
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

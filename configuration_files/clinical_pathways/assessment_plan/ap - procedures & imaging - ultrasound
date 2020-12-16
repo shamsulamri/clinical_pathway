@@ -1,0 +1,31 @@
+<form>Assessment & Plan
+<group>Ultrasound
+<group_text>Ultrasound: <insert_text>
+<group_style>1
+<new_line>
+<detail>Abdomen
+<detail_text>Abdomen
+<detail_order>us_abdomen
+<detail>Abdomen && Pelvis
+<detail_text>Abdomen & Pelvis
+<detail_order>us_abdomen_pelvis
+<detail>Breast (Bilateral)
+<detail_text>Breast (Bilateral)
+<detail_order>us_breast_bi
+<detail>Hepatobiliary
+<detail_text>Hepatobiliary
+<detail_order>us_hepatobiliary
+<detail>Pelvis
+<detail_text>Pelvis
+<detail_order>us_pelvis
+<detail>Single organ
+<detail_text>Single organ
+<detail_order>us_organ
+<detail>Thyroid
+<detail_text>Thyroid
+<detail_order>us_thyroid
+<detail>Urinary system
+<detail_text>Urinary system
+<detail_order>us_urinary
+
+

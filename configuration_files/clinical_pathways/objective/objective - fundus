@@ -1,0 +1,22 @@
+<form>Fundus
+<group>Fundus
+<group_text>Fundus - <insert_text>
+<group_style>1
+<detail>Normal
+<detail>Non-visualized
+<detail_submenu>objective - fundus - non-visualized
+<detail>Retinopathy Grade
+<detail_text>grade <insert_value> retinopathy
+<detail_inputbox><text><L>
+<detail_submenu>objective - fundus - side
+<detail>Hemorrhage
+<detail_submenu>objective - fundus - side
+<detail>Arteriolar narrowing
+<detail_submenu>objective - fundus - side
+<detail>Exudate
+<detail_submenu>objective - fundus - side
+<detail>Papilledema
+<detail_submenu>objective - fundus - side
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

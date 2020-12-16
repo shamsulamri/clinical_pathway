@@ -1,0 +1,12 @@
+<form>Blood Group
+<group>Please choose
+<group_text><insert_text>
+<group_style>2
+<detail>A
+<detail_text>A
+<detail>B
+<detail_text>B
+<detail>AB
+<detail_text>AB
+<detail>O
+<detail_text>O

@@ -1,0 +1,27 @@
+<form>Organic Solvents
+<group>Organic Solvents
+<group_text>(<insert_text>)
+<group_style>1
+<detail>Carbon tetrachloride
+<detail_text>carbon tetrachloride
+<detail>Benzene
+<detail_text>benzene
+<detail>Toluene
+<detail_text>Toluene
+<detail>Ether
+<detail_text>ether
+<detail>Methyl ethyl ketone
+<detail_text>methyl ethyl ketone
+<detail>Acetone
+<detail_text>acetone
+<detail>Ethanol
+<detail_text>ethanol
+<detail>Methanol
+<detail_text>methanol
+<detail>PVC's
+<detail_text>PVC's
+<detail>Triorthocresyl phosphate
+<detail_text>Triorthocresyl phosphate
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

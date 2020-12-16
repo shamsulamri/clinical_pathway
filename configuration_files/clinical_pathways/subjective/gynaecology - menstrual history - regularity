@@ -1,0 +1,12 @@
+<form>Regularity of periods
+<group>Regularity of periods
+<group_text><insert_text>
+<group_style>2
+<detail>Regular
+<detail_text>regular
+<detail>Irregular
+<detail_text>irregular
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+

@@ -1,0 +1,27 @@
+<form>Risk Factors
+<group>Risk factors
+<group_text><insert_text>
+<group_style>3
+<yes_text>Risk factors include 
+<no_text>but not 
+<new_paragraph>
+<detail>Alcohol usage
+<detail>Toxic exposure
+<detail>Trauma
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<form>Risk Factors
+<group>Trauma
+<group_text>The patient reported recent <insert_text>.
+<group_style>1
+<detail>Blunt abdominal injury
+<detail>Penetrating abdominal injury
+<detail>Heavy lifting
+<detail>Electrocution
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<load>subjective - risk factors

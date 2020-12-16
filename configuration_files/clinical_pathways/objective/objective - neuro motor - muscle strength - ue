@@ -1,0 +1,40 @@
+<form>Muscle Strength
+<group>Muscle strength
+<group_text><insert_text>
+<group_style>1
+<detail>Deltoid
+<detail_text>deltoid <insert_value>
+<detail_inputbox><text><L>
+<detail>Supraspinatus
+<detail_text>supraspinatus <insert_value>
+<detail_inputbox><text><L>
+<detail>Biceps
+<detail_text>biceps <insert_value>
+<detail_inputbox><text><L>
+<detail>Triceps
+<detail_text>triceps <insert_value>
+<detail_inputbox><text><L>
+<detail>Brachioradialis
+<detail_text>brachioradialis <insert_value>
+<detail_inputbox><text><L>
+<detail>Flexor carpi muscles
+<detail_text>flexor carpi muscles <insert_value>
+<detail_inputbox><text><L>
+<detail>Extensor carpi muscles
+<detail_text>extensor carpi muscles <insert_value>
+<detail_inputbox><text><L>
+<detail>Flexor digiti muscles
+<detail_text>flexor digiti muscles <insert_value>
+<detail_inputbox><text><L>
+<detail>Extensor digiti muscles
+<detail_text>extensor digiti muscles <insert_value>
+<detail_inputbox><text><L>
+<detail>Abductor pollicis brevis
+<detail_text>abductor pollicis brevis <insert_value>
+<detail_inputbox><text><L>
+<detail>Interossei
+<detail_text>interossei <insert_value>
+<detail_inputbox><text><L>
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

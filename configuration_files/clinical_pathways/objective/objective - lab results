@@ -1,0 +1,366 @@
+<form>Laboratory
+<group>Full blood count
+<group_text>Full blood count:<insert_text>
+<group_style>1
+<sub_notes>
+<separator><new_line>
+<new_paragraph>
+<results_viewer>
+<detail>WBC
+<detail_text>WBC: <insert_value> x 10^3/uL
+<detail_inputbox><doub><L>
+<detail>LY
+<detail_text>LY: <insert_value>%
+<detail_inputbox><doub><L>
+<detail>MO
+<detail_text>MO: <insert_value>%
+<detail_inputbox><doub><L>
+<detail>GR
+<detail_text>GR: <insert_value>%
+<detail_inputbox><doub><L>
+<detail>LY#
+<detail_text>LY#: <insert_value> x 10^3/uL 
+<detail_inputbox><doub><L>
+<detail>MO#
+<detail_text>MO#: <insert_value> x 10^3/uL
+<detail_inputbox><doub><L>
+<detail>GR#
+<detail_text>GR#: <insert_value> x 10^3/uL
+<detail_inputbox><doub><L>
+<detail>RBC
+<detail_text>RBC: <insert_value> x 10^6/uL
+<detail_inputbox><doub><L>
+<detail>Hgb
+<detail_text>Hgb: <insert_value> g/dL
+<detail_inputbox><doub><L>
+<detail>Hct
+<detail_text>Hct: <insert_value>%
+<detail_inputbox><doub><L>
+<detail>MCV
+<detail_text>MCV: <insert_value> fL
+<detail_inputbox><doub><L>
+<detail>MCH
+<detail_text>MCH: <insert_value> pg
+<detail_inputbox><doub><L>
+<detail>MCHC
+<detail_text>MCHC: <insert_value> g/dL
+<detail_inputbox><doub><L>
+<detail>RDW
+<detail_text>RDW: <insert_value>%
+<detail_inputbox><doub><L>
+<detail>Plt
+<detail_text>Plt: <insert_value> x 10 ^3/uL
+<detail_inputbox><doub><L>
+<detail>MPV
+<detail_text>MPV: <insert_value> fL
+<detail_inputbox><doub><L>
+<detail>Pct
+<detail_text>Pct: <insert_value>%
+<detail_inputbox><doub><L>
+<detail>PDW
+<detail_text>PDW: <insert_value> 
+<detail_inputbox><doub><L>
+
+<form>Lab Results
+<group>Urinalysis
+<group_text>Urinalysis: <insert_text>
+<group_style>1
+<sub_notes>
+<separator><new_line>
+<new_paragraph>
+<results_viewer>
+<detail>Specific Gravity
+<detail_text>Specific gravity: <insert_value>
+<detail_inputbox><doub><L>
+<detail>pH
+<detail_text>pH: <insert_value>
+<detail_inputbox><doub><L>
+<detail>Leucocytes
+<detail_text>Leucocytes:
+<detail_submenu>objective - urine - findings
+<detail>Nitrate
+<detail_text>Nitrates:
+<detail_submenu>objective - nitrate - findings
+<detail>Protein
+<detail_text>Protein:
+<detail_submenu>objective - urine - findings
+<detail>Glucose
+<detail_text>Glucose:
+<detail_submenu>objective - urine - findings
+<detail>Ketone
+<detail_text>Ketone:
+<detail_submenu>objective - urine - findings
+<detail>Urobilinogen
+<detail_text>Urobilinogen: 
+<detail_submenu>objective - urine - findings
+<detail>Bilirubin
+<detail_text>Bilirubin: 
+<detail_submenu>objective - urine - findings
+<detail>Erythrocytes
+<detail_text>Erythrocytes: 
+<detail_submenu>objective - urine - findings
+
+<form>Laboratory
+<group>Renal Profile
+<group_text>Renal Profile:<insert_text>
+<group_style>1
+<sub_notes>
+<separator><new_line>
+<new_paragraph>
+<results_viewer>
+<detail>Sodium
+<detail_text>Sodium: <insert_value> mmol/L
+<detail_inputbox><inte><L>
+<detail>Potassium
+<detail_text>Potassium: <insert_value> mmol/L
+<detail_inputbox><doub><L>
+<detail>Urea
+<detail_text>Urea: <insert_value> mmol/L
+<detail_inputbox><doub><L>
+<detail>Creatinine
+<detail_text>Creatinine: <insert_value> umol/L
+<detail_inputbox><inte><L>
+
+<form>Laboratory
+<group>Liver Function Test
+<group_text>Liver Function Test:<insert_text>
+<group_style>1
+<sub_notes>
+<separator><new_line>
+<new_paragraph>
+<results_viewer>
+<detail>Total protein
+<detail_text>Total protein: <insert_value> g/L
+<detail_inputbox><inte><L>
+<detail>Albumin
+<detail_text>Albumin: <insert_value> g/L
+<detail_inputbox><inte><L>
+<detail>Total bilirubin
+<detail_text>Total Bilirubin: <insert_value> umol/L
+<detail_inputbox><inte><L>
+<detail>ALP
+<detail_text>ALP: <insert_value> IU/L
+<detail_inputbox><inte><L>
+<detail>ALT
+<detail_text>ALT: <insert_value> IU/L
+<detail_inputbox><inte><L>
+<detail>AST
+<detail_text>AST: <insert_value> IU/L
+<detail_inputbox><inte><L>
+
+<form>Laboratory
+<group>Blood Sugar
+<group_text><insert_text>
+<group_style>1
+<sub_notes>
+<separator><new_line>
+<new_paragraph>
+<results_viewer>
+<detail>Random blood sugar
+<detail_text>Random blood sugar: <insert_value> mmol/L
+<detail_inputbox><doub><L>
+<detail>Fasting blood sugar
+<detail_text>Fasting blood sugar: <insert_value> mmol/L
+<detail_inputbox><doub><L>
+
+<form>Laboratory
+<group>Fasting Serum Lipids
+<group_text>Lipids:<insert_text>
+<group_style>1
+<sub_notes>
+<separator><new_line>
+<new_paragraph>
+<results_viewer>
+<detail>Triglycerides
+<detail_text>TG: <insert_value> mmol/L
+<detail_inputbox><doub><L>
+<detail>Cholesterol
+<detail_text>Cholesterol: <insert_value> mmol/L
+<detail_inputbox><doub><L>
+<detail>HDL-Cholesterol
+<detail_text>HDL-Cholesterol: <insert_value> mmol/L
+<detail_inputbox><doub><L>
+<detail>LDL-Cholesterol
+<detail_text>LDL-Cholesterol: <insert_value> mmol/L
+<detail_inputbox><doub><L>
+
+<form>Laboratory
+<group>Thyroid function test
+<group_text>Thyroid function test:<insert_text>
+<group_style>1
+<sub_notes>
+<separator><new_line>
+<new_paragraph>
+<results_viewer>
+<detail>TSH
+<detail_text>TSH: <insert_value> mU/L
+<detail_inputbox><doub><L>
+<detail>T4
+<detail_text>T4: <insert_value> nmol/L
+<detail_inputbox><doub><L>
+<detail>T3
+<detail_text>T3: <insert_value> nmol/L
+<detail_inputbox><doub><L>
+
+<form>Laboratory
+<group>Renal Function Test
+<group_text>Renal Function Test:<insert_text>
+<group_style>1
+<sub_notes>
+<separator><new_line>
+<new_paragraph>
+<results_viewer>
+<detail>Uric acid
+<detail_text>Uric acid: <insert_value> umol/L
+<detail_inputbox><inte><L>
+<detail>Calcium
+<detail_text>Calcium: <insert_value> mmol/L
+<detail_inputbox><doub><L>
+<detail>Phosphate
+<detail_text>Phosphate: <insert_value> mmol/L
+<detail_inputbox><doub><L>
+<detail>Amylase
+<detail_text>Amylase: <insert_value> IU/L
+<detail_inputbox><inte><L>
+<detail>Chloride
+<detail_text>Chloride: <insert_value> mmol/L
+<detail_inputbox><inte><L>
+<detail>Magnesium
+<detail_text>Magnesium: <insert_value> mmol/L
+<detail_inputbox><doub><L>
+
+<form>Laboratory
+<group>Erythrocyte sedimentation rate
+<group_text>ESR:<insert_text>
+<group_style>1
+<sub_notes>
+<separator><new_line>
+<new_paragraph>
+<results_viewer>
+<detail>ESR
+<detail_text>EST: <insert_value> mm/hr
+<detail_inputbox><inte><L>
+
+<form>Laboratory
+<group>Group Cross Match
+<group_text>GXM: <insert_text>
+<group_style>1
+<separator> 
+<new_paragraph>
+<results_viewer>
+<detail>Blood group
+<detail_text>Blood group:
+<detail_submenu>objective - blood group select
+<detail>Rhesus
+<detail_text>
+<detail_submenu>objective - blood rhesus
+
+<form>Laboratory
+<group>Urine pregnancy test
+<group_text>UPT: <insert_text>
+<group_style>1
+<new_paragraph>
+<results_viewer>
+<detail>Urine pregnancy test
+<detail_text>
+<detail_submenu>objective - UPT
+
+<form>Laboratory
+<group>Hormone/Tumour Markers
+<group_text>Hormone/Tumour Markers:<insert_text>
+<group_style>1
+<sub_notes>
+<separator><new_line>
+<new_paragraph>
+<results_viewer>
+<detail>AFP
+<detail_text>AFP: <insert_value> 
+<detail_inputbox><doub><L>
+<detail>bHCG
+<detail_text>bHCG: <insert_value> 
+<detail_inputbox><doub><L>
+<detail>CEA
+<detail_text>CEA: <insert_value> 
+<detail_inputbox><inte><L>
+<detail>Cortisol
+<detail_text>Cortisol: <insert_value> 
+<detail_inputbox><doub><L>
+<detail>CRP
+<detail_text>CRP: <insert_value> 
+<detail_inputbox><doub><L>
+<detail>Estradiol
+<detail_text>Estradiol: <insert_value> 
+<detail_inputbox><doub><L>
+<detail>Ferritin
+<detail_text>Ferritin: <insert_value>
+<detail_inputbox><doub><L>
+<detail>FSH
+<detail_text>FSH: <insert_value> 
+<detail_inputbox><doub><L>
+<detail>LH
+<detail_text>LH: <insert_value>
+<detail_inputbox><doub><L>
+<detail>Progesterone
+<detail_text>Progesterone: <insert_value>
+<detail_inputbox><doub><L>
+<detail>Prolactin
+<detail_text>Prolactin: <insert_value>
+<detail_inputbox><doub><L>
+<detail>PSA
+<detail_text>PSA: <insert_value>
+<detail_inputbox><doub><L>
+<detail>Transferrin
+<detail_text>Transferrin: <insert_value>
+<detail_inputbox><doub><L>
+
+<form>Laboratory
+<group>TDM/Toxicology
+<group_text>TDM/Toxicology:<insert_text>
+<group_style>1
+<sub_notes>
+<separator><new_line>
+<new_paragraph>
+<results_viewer>
+<detail>Acetaminophen
+<detail_text>Acetaminophen: <insert_value> 
+<detail_inputbox><doub><L>
+<detail>Amikacin
+<detail_text>Amikacin: <insert_value> 
+<detail_inputbox><doub><L>
+<detail>Benzodiazepine
+<detail_text>Benzodiazepine: <insert_value> 
+<detail_inputbox><inte><L>
+<detail>Carbamazepine
+<detail_text>Carbamazepine: <insert_value> 
+<detail_inputbox><doub><L>
+<detail>Digoxin
+<detail_text>Digoxin: <insert_value> 
+<detail_inputbox><doub><L>
+<detail>Gentamicin
+<detail_text>Gentamicin: <insert_value> 
+<detail_inputbox><doub><L>
+<detail>Lithium
+<detail_text>Lithium: <insert_value>
+<detail_inputbox><doub><L>
+<detail>Netilmicin
+<detail_text>Netilmicin: <insert_value> 
+<detail_inputbox><doub><L>
+<detail>Phenobarbital
+<detail_text>Phenobarbital: <insert_value>
+<detail_inputbox><doub><L>
+<detail>Phenytoin
+<detail_text>Phenytoin: <insert_value>
+<detail_inputbox><doub><L>
+<detail>Salicylate
+<detail_text>Salicylate: <insert_value>
+<detail_inputbox><doub><L>
+<detail>Theophylline
+<detail_text>Theophylline: <insert_value>
+<detail_inputbox><doub><L>
+<detail>Valproic acid
+<detail_text>Valproic acid: <insert_value>
+<detail_inputbox><doub><L>
+<detail>Vancomycin
+<detail_text>Vancomycin: <insert_value>
+<detail_inputbox><doub><L>
+

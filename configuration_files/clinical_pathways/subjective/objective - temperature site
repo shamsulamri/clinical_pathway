@@ -1,0 +1,8 @@
+<form>Temperature
+<group>Temperature
+<group_text>(<insert_text> temperature)
+<group_style>2
+<detail>Oral
+<detail>Rectal
+<detail>Axillary
+

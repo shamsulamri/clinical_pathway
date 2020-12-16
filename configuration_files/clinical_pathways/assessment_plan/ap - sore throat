@@ -1,0 +1,36 @@
+<form>Assessment & Plan
+<group>DDx
+<group_text>Diagnosis: <insert_text>
+<group_style>1
+<new_line>
+<separator><new_line>
+<detail>Upper Respiratory Infection
+<detail_text>URI
+<detail_submenu>AP - Probability
+<detail>Pharyngitis
+<detail_text>pharyngitis
+<detail_submenu>AP - Probability
+<detail>Strep throat
+<detail_text>strep throat
+<detail_submenu>AP - Probability
+<detail>Otitis media
+<detail_text>Otitis media
+<detail_submenu>AP - Probability
+<detail>Otitis externa
+<detail_text>Otitis externa
+<detail_submenu>AP - Probability
+<detail>Tonsillitis
+<detail_text>Tonsillitis
+<detail_submenu>AP - Probability
+<detail>Sinusitis
+<detail_text>Sinusitis
+<detail_submenu>AP - Probability
+<detail>Infectious mononucleosis
+<detail_text>Infectious mononucleosis
+<detail_submenu>AP - Probability
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<Load>AP - Assessment & Plan
+

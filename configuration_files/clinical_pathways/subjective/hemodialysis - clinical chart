@@ -1,0 +1,122 @@
+<form>Hemodialysis
+<group>Hemodialysis - clinical chart
+<group_text>Dialyser used:<insert_text>
+<group_style>1
+<sub_notes>
+<separator><new_line>
+<new_paragraph>
+<detail>Vit Terumo E
+<detail_text>Vit Terumo E: <insert_text>
+<detail_inputbox><inte><L>
+<detail>HF 80.S
+<detail_text>HF 80.S: <insert_text>
+<detail_inputbox><inte><L>
+<detail>HE 1400
+<detail_text>HE 1400: <insert_text>
+<detail_inputbox><inte><L>
+<detail>F6
+<detail_text>F6: <insert_text>
+<detail_inputbox><inte><L>
+
+<form>Hemodialysis
+<group>Hemodialysis - clinical chart
+<group_text>Details<insert_text>
+<group_style>1
+<separator><new_line>
+<new_paragraph>
+<sub_notes>
+<detail>Blood line
+<detail_text>Blood line established
+<detail>Number of hours (1-6 hrs)
+<detail_text>Number of hours: <insert_text>
+<detail_inputbox><inte><L>
+<detail>Starting time
+<detail_text>Starting time: <insert_text>
+<detail_inputbox><time><L>
+<detail>Ending time
+<detail_text>Ending time: <insert_text>
+<detail_inputbox><time><L>
+<detail>Temp pre-daily
+<detail_text>Temp pre-daily: <insert_text> (C)
+<detail_inputbox><doub><L>
+<detail>Temp post-daily
+<detail_text>Temp post-daily: <insert_text> (C)
+<detail_inputbox><text><L>
+
+<form>Hemodialysis
+<group>Hemodialysis - clinical chart
+<group_text><insert_text>
+<group_style>1
+<separator><new_line>
+<new_paragraph>
+<sub_notes>
+<detail>Type: Acetate
+<detail_text>Type: Acetate
+<detail>Type: Bicarbonate
+<detail_text>Type: Bicarbonate
+<detail>Blood flow (250-350ml/min)
+<detail_text>Blood flow: <insert_text>
+<detail_inputbox><text><L>
+
+<form>Hemodialysis
+<group>Hemodialysis - clinical chart
+<group_text>Heparin<insert_text>
+<group_style>1
+<separator><new_line>
+<new_paragraph>
+<sub_notes>
+<detail>Normal
+<detail_text>Normal
+<detail_submenu>hemodialysis - heparin
+<detail>Tight hep
+<detail_text>Tight hep
+<detail_submenu>hemodialysis - heparin
+<detail>Hep free
+<detail_text>Hep free
+<detail_submenu>hemodialysis - heparin
+
+<form>Hemodialysis
+<group>Hemodialysis - clinical chart
+<group_text><insert_text>
+<group_style>1
+<separator><new_line>
+<new_paragraph>
+<sub_notes>
+<detail>Venous pressure
+<detail_text>Venous pressure: <insert_text> mm/hg
+<detail_inputbox><text><L>
+<detail>Trans membrane pressure
+<detail_text>Trans membrane pressure: <insert_text> mm/hg
+<detail_inputbox><text><L>
+<detail>Pre-dial BP
+<detail_text>Pre-dialysis BP: <insert_text> mm/hg
+<detail_inputbox><bpre><L>
+<detail>Post-dialysis BP
+<detail_text>Post BP: <insert_text> mm/hg
+<detail_inputbox><bpre><L>
+
+<form>Hemodialysis
+<group>Hemodialysis - clinical chart
+<group_text><insert_text>
+<group_style>1
+<separator><new_line>
+<new_paragraph>
+<sub_notes>
+<detail>Pre-dial WT
+<detail_text>Pre-dialysis WT: <insert_text> kg
+<detail_inputbox><doub><L>
+<detail>Post-dialysis WT
+<detail_text>Post WT: <insert_text> kg
+<detail_inputbox><doub><L>
+<detail>Inter dialytic WT
+<detail_text>Inter dialytic wt: <insert_text> Kg
+<detail_inputbox><doub><L>
+<detail>Erythropoietin 90%
+<detail_text>Erythropoietin 90% - Yes
+<detail>RBS
+<detail_text>RBS: <insert_text> mmol/litre
+<detail_inputbox><doub><L>
+<detail>Remarks
+<detail_text>Remarks: <insert_text> 
+<detail_inputbox><text><L>
+

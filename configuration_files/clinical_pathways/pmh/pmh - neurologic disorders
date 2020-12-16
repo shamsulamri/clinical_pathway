@@ -1,0 +1,19 @@
+<form>Neurologic Disorders
+<group>Neurologic Disorders
+<group_text><insert_text>
+<group_style>1
+<detail>Stroke
+<detail_submenu>PMH - Date2
+<detail>Migraine
+<detail_submenu>PMH - Date2
+<detail>Seizure disorder
+<detail_submenu>PMH - Date2
+<detail>Multiple sclerosis
+<detail_submenu>PMH - Date2
+<detail>Meningitis
+<detail_submenu>PMH - Date2
+<detail>Parkinson's disease
+<detail_submenu>PMH - Date2
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

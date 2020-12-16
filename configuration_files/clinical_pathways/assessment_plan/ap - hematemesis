@@ -1,0 +1,36 @@
+<form>Assessment & Plan
+<group>DDx
+<group_text>Diagnosis: <insert_text>
+<group_style>1
+<new_line>
+<separator><new_line>
+<detail>Duodenal ulcer
+<detail_text>duodenal ulcer
+<detail_submenu>AP - Probability
+<detail>Gastric ulcer
+<detail_text>Gastric ulcer
+<detail_submenu>AP - Probability
+<detail>Stress ulcer
+<detail_text>Stress ulcer
+<detail_submenu>AP - Probability
+<detail>Gastritis
+<detail_text>Gastritis
+<detail_submenu>AP - Probability
+<detail>Varices
+<detail_text>Varices
+<detail_submenu>AP - Probability
+<detail>Esophagitis
+<detail_text>Esophagitis
+<detail_submenu>AP - Probability
+<detail>Caustic ingestion
+<detail_text>Caustic ingestion
+<detail_submenu>AP - Probability
+<detail>Mallory-Weiss syndrome
+<detail_text>Mallory-Weiss syndrome
+<detail_submenu>AP - Probability
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<Load>AP - Assessment & Plan
+

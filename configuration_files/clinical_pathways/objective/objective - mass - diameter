@@ -1,0 +1,11 @@
+<form>Diameter of mass
+<group>Diameter of mass
+<group_text><insert_text> in diameter
+<group_style>1
+<separator>;
+<detail>Inches
+<detail_text><insert_value> inches
+<detail_inputbox><text><L>
+<detail>mm
+<detail_text><insert_value> mm
+<detail_inputbox><text><L>

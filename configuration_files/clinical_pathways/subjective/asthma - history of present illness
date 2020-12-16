@@ -1,0 +1,199 @@
+<form>Presentation
+<group>Mode of Presentation
+<group_text>The patient presented with <insert_text>.
+<group_style>1
+<detail>Shortness of breath
+<detail>Wheezing
+<detail>Chest tightness
+<detail>Altered mental status
+<detail>Productive cough
+<detail>Dry cough
+<detail>Longstanding asthma
+<detail>Recent exacerbation
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<form>Presentation
+<group>Date of Onset
+<group_text>Symptoms were first noted <insert_text>.
+<group_style>2
+<reveal_date>
+<detail>Today
+<detail>Date:
+<detail_text>on the <insert_value>
+<detail_inputbox><date><R>
+<detail>Days ago
+<detail_text><insert_value> days ago
+<detail_inputbox><inte><L>
+<detail>Weeks ago
+<detail_text><insert_value> weeks ago
+<detail_inputbox><inte><L>
+<detail>Months ago
+<detail_text><insert_value> months ago
+<detail_inputbox><inte><L>
+<detail>Years ago
+<detail_text><insert_value> years ago
+<detail_inputbox><inte><L>
+
+<form>Presentation
+<group>Rate of Onset
+<group_text>Symptoms appeared <insert_text>
+<group_style>2
+<detail>Abruptly
+<detail>Over hours
+<detail_text>over a period of <insert_value> hours
+<detail_inputbox><inte><L>
+<detail>Over days
+<detail_text>over a period of <insert_value> days
+<detail_inputbox><inte><L>
+<detail>Over weeks
+<detail_text>over a period of <insert_value> weeks
+<detail_inputbox><inte><L>
+<detail>Over months
+<detail_text>over a period of <insert_value> months
+<detail_inputbox><inte><L>
+<detail>Over years
+<detail_text>over a period of <insert_value> years
+<detail_inputbox><inte><L>
+
+<form>Presentation
+<group>Duration of Symptom
+<group_text>and lasted <insert_text>.
+<group_style>1
+<detail>Minutes
+<detail_text><insert_value> minutes
+<detail_inputbox><inte><L>
+<detail>Hours
+<detail_text><insert_value> hours
+<detail_inputbox><inte><L>
+<detail>Days
+<detail_text><insert_value> days
+<detail_inputbox><inte><L>
+<detail>Weeks
+<detail_text><insert_value> weeks
+<detail_inputbox><inte><L>
+<detail>Months
+<detail_text><insert_value> months
+<detail_inputbox><inte><L>
+<detail>Years
+<detail_text><insert_value> years
+<detail_inputbox><inte><L>
+<detail>Still present
+
+<form>Presentation
+<group>Daily sputum production
+<group_text>Approximate dialy sputum production is <insert_text>
+<group_style>4
+<detail>No sputum production
+<detail_text>No sputum is produced.
+<detail>Mililiters
+<detail_text><insert_value> ml per day.
+<detail_inputbox><doub><L>
+<detail_submenu>sputum
+<detail>Teaspoons
+<detail_text><insert_value> teaspoons.
+<detail_inputbox><inte><L>
+<detail_submenu>sputum
+<detail>Tablespoons
+<detail_text><insert_value> tablespoons.
+<detail_inputbox><inte><L>
+<detail_submenu>sputum
+<detail>Cups
+<detail_text><insert_value> cups.
+<detail_inputbox><inte><L>
+<detail_submenu>sputum
+<detail>Unknown
+<detail_text>unknown.
+<detail_submenu>sputum
+
+<form>Presentation
+<group>Asthma interferes with
+<group_text>The problem interferes with <insert_text>.
+<group_style>1
+<detail>Household activities
+<detail>Work
+<detail>Social activities
+<detail>Sports
+<detail>Exercise
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<form>Presentation
+<group>Severity
+<group_text>The asthma is rated as <insert_text>.
+<group_style>1
+<detail>Mild
+<detail_text>mild in intensity
+<detail_submenu>subjective - severity
+<detail>Moderate
+<detail_text>moderate in intensity
+<detail_submenu>subjective - severity
+<detail>Severe
+<detail_text>severe in intensity
+<detail_submenu>subjective - severity
+<detail>Excruciating
+<detail_text>excruciating in intensity
+<detail_submenu>subjective - severity
+
+<form>Presentation
+<group>Symptom Worse
+<group_text>Symptoms are worst <insert_text>.
+<group_style>1
+<detail>Upon awakening
+<detail_text>upon awakening
+<detail>Morning
+<detail_text>in the morning
+<detail>Afternoon
+<detail_text>in the afternoon
+<detail>Evening
+<detail_text>in the evening
+<detail>Night
+<detail_text>in the night
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<form>Presentation
+<group>Precipitating factors
+<group_text>Symptoms are precipitated by <insert_text>.
+<group_style>4
+<detail>No precipitating factor
+<detail_text>There was no precipitating factor known.
+<detail>Exertion
+<detail>Exposure to
+<detail>URTI
+<detail_text>upper respiratory tract infection
+<detail>Cold weather
+<detail>Changing in weather
+<detail>Eating
+<detail>Smoking
+<detail>Stress
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<form>Presentation
+<group>Associated Symptoms
+<group_text><insert_text>
+<group_style>3
+<yes_text>Associated symptoms include 
+<no_text>but no 
+<detail>Pleuritic chest pain
+<detail>Chest tightness
+<detail>Cyanosis
+<detail>Shaking chills
+<detail>Fever
+<detail_submenu>Fever (deg F)
+<detail>Malaise
+<detail>Myalgia
+<detail>Throat clearing
+<detail>Headache
+<detail>Hoarseness
+<detail>URTI sympyoms
+<detail>Weight loss
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+

@@ -1,0 +1,23 @@
+<form>Alleviating Factors
+<group>Alleviating factors
+<group_text><insert_text>
+<group_style>3
+<yes_text>Alleviating factors include 
+<no_text>but not 
+<new_paragraph>
+<detail>Bowel movements
+<detail>Vomiting
+<detail>Antacids
+<detail>Analgesics
+<detail>Fasting
+<detail>Eating
+<detail>Drinking
+<detail_text>drinking
+<detail>Position
+<detail_text>
+<detail_submenu>subjective - position
+<detail>Rest
+<detail>Urination
+<detail>
+<detail_text><insert_text>
+<detail_inputbox><text><L>

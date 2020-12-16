@@ -1,0 +1,18 @@
+<form>Relevant Diagnoses
+<group>Cardiac disease
+<group_text><insert_text>
+<group_style>1
+<detail>Acute myocardial infaction
+<detail>Ischemia without infaction
+<detail>Congestive heart failure
+<detail>Congenital heart disease
+<detail>Valvular heart disease
+<detail>Infectious endocarditis
+<detail>Rheumatic fever
+<detail>Significant cardiac arrhythmias
+<detail>Aortic aneurysm
+<detail>Pericarditis
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+

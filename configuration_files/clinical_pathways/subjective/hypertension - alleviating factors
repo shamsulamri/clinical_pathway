@@ -1,0 +1,14 @@
+<form>Alleviating Factors
+<group>Alleviating factors
+<group_text><insert_text>
+<group_style>3
+<yes_text>Alleviating factors include 
+<no_text>but not 
+<new_paragraph>
+<detail>Rest
+<detail>Meditation
+<detail>Hypnosis
+<detail>Relaxation
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

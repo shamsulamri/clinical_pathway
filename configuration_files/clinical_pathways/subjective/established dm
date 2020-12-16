@@ -1,0 +1,15 @@
+<form>Established DM
+<group>Established DM
+<group_text><insert_text>
+<group_style>1
+<separator>.
+<detail>Type of diabetes
+<detail_text>
+<detail_submenu>Established DM - Type
+<detail>Initial discovery
+<detail_text>
+<detail_submenu>Established DM - discovery
+<detail>Date of diagnosis
+<detail_text>
+<detail_submenu>subjective - date of diagnosis
+

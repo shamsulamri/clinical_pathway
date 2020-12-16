@@ -1,0 +1,14 @@
+<form>Tremor
+<group>Tremor
+<group_text>Tremor - <insert_text>;
+<group_style>4
+<detail>Normal
+<detail_text>Tremor: normal
+<detail>Rest tremor
+<detail>Intention tremor
+<detail>Postural tremor
+<detail>Pill-rolling
+<detail>Cerebellar tremor
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

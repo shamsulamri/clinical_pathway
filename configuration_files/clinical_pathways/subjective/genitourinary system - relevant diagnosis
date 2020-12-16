@@ -1,0 +1,15 @@
+<form>Relevant Diagnoses
+<group>Relevant Medical History
+<group_text>Past medical history is notable for <insert_text>.
+<group_style>1
+<detail>Diabetes mellitus
+<detail>Nephrolithiasis
+<detail>Neuropathy
+<detail>Venereal disease
+<detail>AIDS
+<detail>Urethral stricture
+<detail>Congenital urogenital anomaly
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+

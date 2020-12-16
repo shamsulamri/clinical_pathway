@@ -1,0 +1,166 @@
+<form>Presentation
+<group>Date of Onset
+<group_text>The patient presented with sore throat that began <insert_text>.
+<group_style>2
+<reveal_date>
+<detail>Today
+<detail>Date:
+<detail_text>on the <insert_value>
+<detail_inputbox><date><R>
+<detail>Days ago
+<detail_text><insert_value> days ago
+<detail_inputbox><inte><L>
+<detail>Weeks ago
+<detail_text><insert_value> weeks ago
+<detail_inputbox><inte><L>
+<detail>Months ago
+<detail_text><insert_value> months ago
+<detail_inputbox><inte><L>
+<detail>Years ago
+<detail_text><insert_value> years ago
+<detail_inputbox><inte><L>
+
+<form>Presentation
+<group>Duration of Symptom
+<group_text>The symptom lasted <insert_text>.
+<group_style>1
+<detail>Hours
+<detail_text><insert_value> hours
+<detail_inputbox><inte><L>
+<detail>Days
+<detail_text><insert_value> days
+<detail_inputbox><inte><L>
+<detail>Weeks
+<detail_text><insert_value> weeks
+<detail_inputbox><inte><L>
+<detail>Months
+<detail_text><insert_value> months
+<detail_inputbox><inte><L>
+<detail>Years
+<detail_text><insert_value> years
+<detail_inputbox><inte><L>
+<detail>Still present
+
+<load>subjective - rate of onset
+
+<form>Presentation
+<group>Location of Soreness
+<group_text>The soreness is located in the <insert_text>
+<group_style>1
+<detail>Throat
+<detail_submenu>subjective - severity
+<detail>Soft palate
+<detail>Hard palate
+<detail>Tongue
+<detail>Mucous membrane
+<detail>Gingiva
+<detail>Teeth
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<form>Presentation
+<group>Radiation of Soreness
+<group_text>and radiates to <insert_text>.
+<group_style>4
+<detail>Does not radiate
+<detail_text>and does not radiate.
+<detail>Ear
+<detail>Neck
+<detail>Head
+<detail>Sinuses
+<detail>Teeth
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<form>Presentation
+<group>Severity
+<group_text>The sore throat is rated as <insert_text>.
+<group_style>2
+<detail>Mild
+<detail_text>mild in intensity
+<detail_submenu>subjective - severity
+<detail>Moderate
+<detail_text>moderate in intensity
+<detail_submenu>subjective - severity
+<detail>Severe
+<detail_text>severe in intensity
+<detail_submenu>subjective - severity
+<detail>Excruciating
+<detail_text>excruciating in intensity
+<detail_submenu>subjective - severity
+
+<form>Presentation
+<group>Sleep disturbance
+<group_text>The sore thoat <insert_text> awakens the patient from sleep.
+<group_style>2
+<detail>Never
+<detail>Rarely
+<detail>Occasionally
+<detail>Frequently
+
+<form>Presentation
+<group>Symptom Worse
+<group_text>Symptoms are worst <insert_text>.
+<group_style>1
+<detail>Upon wakening
+<detail_text>upon awakening
+<detail>Morning
+<detail_text>in the morning
+<detail>Afternoon
+<detail_text>in the afternoon
+<detail>Evening
+<detail_text>in the evening
+<detail>Night
+<detail_text>in the night
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<form>Presentation
+<group>Precipitating factors
+<group_text>The sore throat was precipitated by <insert_text>.
+<group_style>4
+<detail>No precipitating factor
+<detail_text>There was no precipitating factor.
+<detail>URI
+<detail_text>URI
+<detail>Allergy
+<detail>Excessive voice usage
+<detail>Excessive coughing
+<detail>Drinking hot liquids
+<detail>Oral candidiasis
+<detail>Smoking inhalation
+<detail>Chemical irritant
+<detail>Low humidity
+<detail>Trauma
+<detail>Broad spectrum antibiotics
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<form>Presentation
+<group>Associated Symptoms
+<group_text><insert_text>
+<group_style>3
+<yes_text>Associated symptoms include 
+<no_text>but no 
+<new_paragraph>
+<detail>Fever
+<detail_submenu>fever degree
+<detail>Malaise
+<detail>Dysphagia
+<detail>Nasal Congestion
+<detail>Post-nasal drip
+<detail>Cervical adenopathy
+<detail>Enanthem
+<detail>Cough
+<detail>Ear pain
+<detail>Dyspnea
+<detail>Stridor
+<detail>Wheezing
+<detail>Rash
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

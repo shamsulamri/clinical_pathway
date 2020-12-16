@@ -1,0 +1,8 @@
+<form>Diameter of nodes
+<group>Diameter of nodes
+<group_text><insert_text>
+<group_style>1
+<detail>mm
+<detail_text><insert_value> mm in diameter
+<detail_inputbox><text><L>
+

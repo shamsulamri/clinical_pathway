@@ -1,0 +1,13 @@
+<form>Presentation
+<group>Renal symptoms
+<group_text>(<insert_text>)
+<group_style>1
+<detail>Fluid retention
+<detail>Edema
+<detail>Oliguria
+<detail>Hematuria
+<detail>Nocturia
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+

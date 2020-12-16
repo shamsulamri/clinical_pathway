@@ -1,0 +1,12 @@
+<form>Congenital
+<group>Congenital abnormalities
+<group_text><insert_text>
+<group_style>1
+<detail>Cleft lip
+<detail>Cleft palate
+<detail_submenu>objective - oropharynx - congenital - cleft palate
+<detail>High-arched palate
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+

@@ -1,0 +1,14 @@
+<form>Abdominal X-ray
+<group>Abdominal X-ray
+<group_text><insert_text>
+<group_style>1
+<new_line>
+<detail>Abdomen: 1 view
+<detail_text>Abdomen: 1 view
+<detail_order>xr_abdomen_1
+<detail>Kidney Ureter Bladder
+<detail_text>KUB
+<detail_order>xr_kub
+
+
+

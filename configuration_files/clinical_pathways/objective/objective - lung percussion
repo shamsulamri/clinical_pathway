@@ -1,0 +1,17 @@
+<form>Lung Percussion
+<group>Lung Percussion
+<group_text><insert_text>
+<group_style>1
+<separator>;
+<detail>Clear
+<detail_text>clear to percussion
+<detail_submenu>objective - lung - location
+<detail>Dullness
+<detail_text>dull to percussion
+<detail_submenu>objective - lung - location
+<detail>Hyperresonance
+<detail_text>dull to percussion
+<detail_submenu>objective - lung - location
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

@@ -1,0 +1,22 @@
+<form>Past smoking
+<group>Past Smoking Per Day
+<group_text>The patient has smoked <insert_text>
+<group_style>4
+<detail>No history of smoking
+<detail_text>No history of smoking
+<detail>Cigarettes-packs
+<detail_text><insert_value> pack(s) of cigarettes per day
+<detail_submenu>PMH - substance abuse - tobacco - duration
+<detail_inputbox><inte><L>
+<detail>Pipes
+<detail_text><insert_value> pipe(s) per day
+<detail_submenu>PMH - substance abuse - tobacco - duration
+<detail_inputbox><inte><L>
+<detail>Cigars
+<detail_text><insert_value> cigar(s) per day
+<detail_submenu>PMH - substance abuse - tobacco - duration
+<detail_inputbox><inte><L>
+<detail>Chew tobacco-cans
+<detail_text><insert_value> can(s) of tobacco per day
+<detail_submenu>PMH - substance abuse - tobacco - duration
+<detail_inputbox><inte><L>

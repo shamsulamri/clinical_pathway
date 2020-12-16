@@ -1,0 +1,15 @@
+<form>Side effects
+<group>Side effects
+<group_text>such as <insert_text>
+<group_style>1
+<reveal_date>
+<detail>Rash
+<detail>Dizziness
+<detail>Nausea
+<detail>Upset stomach
+<detail>Diarrhea
+<detail>Fatigue
+<detail>
+<detail_text><insert_text>
+<detail_inputbox><text><L>
+

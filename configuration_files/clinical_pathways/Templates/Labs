@@ -1,0 +1,47 @@
+<form>Assessment & Plan
+<group>Labs
+<group_text>Labs: <insert_text>
+<group_style>1
+<new_line>
+<detail>Full blood count
+<detail_text>Full blood count
+<detail_order>
+<detail>Erythrocyte sedimentation rate
+<detail_text>Erythrocyte sedimentation rate
+<detail_order>
+<detail>Group cross match
+<detail_text>Group cross match
+<detail_order>
+<detail>Urinalysis
+<detail_text>Urinalysis
+<detail_order>
+<detail>Urine pregnancy test
+<detail_text>Urine pregnancy test
+<detail_order>
+<detail>Blood sugar
+<detail_text>Blood sugar
+<detail_order>
+<detail>Serum urea
+<detail_text>Serum urea
+<detail_order>
+<detail>Serum uric acid
+<detail_text>Serum uric acid
+<detail_order>
+<detail>Serum potassium
+<detail_text>Serum potassium
+<detail_order>
+<detail>Total cholesterol
+<detail_text>Total cholesterol
+<detail_order>
+<detail>Total bilirubin
+<detail_text>Total bilirubin
+<detail_order>
+<detail>Triglycerides
+<detail_text>Triglycerides
+<detail_order>
+<detail>Creatine
+<detail_text>Creatine
+<detail_order>
+<detail>
+<detail_text><insert_text>
+<detail_inputbox><text><L>

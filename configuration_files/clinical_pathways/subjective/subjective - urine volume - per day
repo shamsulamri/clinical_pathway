@@ -1,0 +1,8 @@
+<form>Volume
+<group>Urine per day
+<group_text><insert_text>
+<group_style>1
+<detail>ml per day
+<detail_text>to <insert_value> ml per day
+<detail_inputbox><text><L>
+

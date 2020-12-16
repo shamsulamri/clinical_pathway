@@ -1,0 +1,11 @@
+<form>Peripheral pulses
+<group>Peripheral pulses
+<group_text><insert_text>
+<group_style>1
+<detail>Right
+<detail_text>R: <insert_value>
+<detail_inputbox><text><L>
+<detail>Left
+<detail_text>L: <insert_value>
+<detail_inputbox><text><L>
+

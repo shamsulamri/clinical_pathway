@@ -1,0 +1,313 @@
+<form>Assessment & Plan
+<group>Status
+<group_text>Status: <insert_text>
+<group_style>2
+<new_line>
+<detail>Improved
+<detail>Worse
+<detail>Stable
+
+<form>Assessment & Plan
+<group>Laboratory
+<group_text>Labs: <insert_text>
+<group_style>1
+<new_line>
+<separator><new_line>
+<detail>Haematology
+<detail_text>
+<detail_submenu>AP - laboratory - haematology
+<detail>Endocrine
+<detail_text>
+<detail_submenu>AP - laboratory - endocrine
+<detail>Serum
+<detail_text>
+<detail_submenu>AP - laboratory - serum
+<detail>Culture && Sensitivity
+<detail_text>
+<detail_submenu>AP - laboratory - c&s
+<detail>Infectious
+<detail_text>
+<detail_submenu>AP - laboratory - infectious
+<detail>UFEME
+<detail_text>UFEME
+<detail_order>340
+<detail>Iron Studies
+<detail_text>Iron Studies
+<detail_order>iron_studies
+<detail>Renal Function Test
+<detail_text>Renal Function Test
+<detail_order>rft
+<detail>Liver Function Test
+<detail_text>Liver Function Test
+<detail_order>lft
+<detail>Thyroid Function Test
+<detail_text>Thyroid Function Test
+<detail_order>tft
+<detail>Lupus Serology
+<detail_text>Lupus Serology
+<detail_order>lupus_sero
+<detail>Neonatal Bilirubin
+<detail_text>Neonatal Bilirubin
+<detail_order>neo_bilirubin
+<detail>Semen Analysis
+<detail_text>Semen Analysis
+<detail_order>semen_ax
+<detail>Urine pregnancy test
+<detail_text>Urine pregnancy test
+<detail_order>341
+<detail>Pap Smear
+<detail_text>Pap smear
+<detail_order>354
+<detail>Sputum cytology
+<detail_text>Sputum cytology
+<detail_order>sputum_cyto
+<detail>Total cholesterol
+<detail_text>Total cholesterol
+<detail_order>346
+<detail>Lipid Profile
+<detail_text>Lipid Profile
+<detail_order>lipid_pro
+<detail>Total bilirubin
+<detail_text>Total bilirubin
+<detail_order>347
+<detail>Triglycerides
+<detail_text>Triglycerides
+<detail_order>348
+<detail>Creatinine
+<detail_text>Creatinine
+<detail_order>349
+<detail>Urine Morphine && Cannabinoids
+<detail_text>Urine Morphine & Cannabinoids
+<detail_order>urine_mor_can
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<form>Assessment & Plan
+<group>Procedures/Imaging
+<group_text>Procedures/Imaging: <insert_text>
+<group_style>1
+<new_line>
+<separator>;
+<detail>X-rays
+<detail_text>
+<detail_submenu>AP - Procedures & Imaging - x-rays
+<detail>Ultrasound
+<detail_text>
+<detail_submenu>AP - Procedures & Imaging - ultrasound
+<detail>ECG
+<detail_text>ECG
+<detail_order>350
+<detail_submenu>AP - Procedures & Imaging - instruction
+<detail>Dressing
+<detail_text>Dressing
+<detail_order>351
+<detail_submenu>AP - Procedures & Imaging - instruction
+<detail>Nebuliser
+<detail_text>Nebuliser
+<detail_order>352
+<detail_submenu>AP - Procedures & Imaging - instruction
+<detail>Vision test
+<detail_text>Vision test
+<detail_order>353
+<detail_submenu>AP - Procedures & Imaging - instruction
+<detail>Injection
+<detail_text>Injection
+<detail_order>355
+<detail_submenu>AP - Procedures & Imaging - instruction
+<detail>Ultrasound
+<detail_text>Ultrasound
+<detail_order>356
+<detail_submenu>AP - Procedures & Imaging - instruction
+<detail>Nasal suction
+<detail_text>Nasal suction
+<detail_order>357
+<detail_submenu>AP - Procedures & Imaging - instruction
+<detail>Weight/Height
+<detail_text>Weight/height
+<detail_order>358
+<detail_submenu>AP - Procedures & Imaging - instruction
+<detail>Incision and drainage
+<detail_text>Incision and drainage
+<detail_order>359
+<detail_submenu>AP - Procedures & Imaging - instruction
+<detail>BP reading
+<detail_text>BP reading
+<detail_order>360
+<detail_submenu>AP - Procedures & Imaging - instruction
+<detail>Ryles tube insertion
+<detail_text>Ryles tube insertion
+<detail_order>361
+<detail_submenu>AP - Procedures & Imaging - instruction
+<detail>Tepid sponging
+<detail_text>Tepid sponging
+<detail_order>362
+<detail_submenu>AP - Procedures & Imaging - instruction
+<detail>Removal of sutures
+<detail_text>Removal of sutures
+<detail_order>363
+<detail_submenu>AP - Procedures & Imaging - instruction
+<detail>Ear syringing
+<detail_text>Ear syringing
+<detail_order>364
+<detail_submenu>AP - Procedures & Imaging - instruction
+<detail>Eye irrigation
+<detail_text>Eye irrigation
+<detail_order>365
+<detail_submenu>AP - Procedures & Imaging - instruction
+<detail>Toilet and suture
+<detail_text>Toilet and suture
+<detail_order>366
+<detail_submenu>AP - Procedures & Imaging - instruction
+<detail>Vaginal examination
+<detail_text>Vaginal examination
+<detail_order>367
+<detail_submenu>AP - Procedures & Imaging - instruction
+<detail>CBD
+<detail_text>CBD
+<detail_order>368
+<detail_submenu>AP - Procedures & Imaging - instruction
+<detail>Antenatal examination
+<detail_text>Antenatal examination
+<detail_order>369
+<detail_submenu>AP - Procedures & Imaging - instruction
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<form>Assessment & Plan
+<group>Medications
+<group_text>Medications: <insert_text>
+<group_style>1
+<new_line>
+<detail>Prescribe medications
+<detail_text>
+
+<form>Assessment & Plan
+<group>Next Appointment
+<group_text>The patient will schedule a follow-up visit <insert_text>
+<group_style>2
+<new_line>
+<reveal_date>
+<detail>In days
+<detail_text>in <insert_value> days
+<detail_inputbox><inte><L>
+<detail>In weeks
+<detail_text>in <insert_value> weeks
+<detail_inputbox><inte><L>
+<detail>In months
+<detail_text>in <insert_value> months
+<detail_inputbox><inte><L>
+<detail>Date:
+<detail_text>on the <insert_value>
+<detail_inputbox><date><R>
+<detail>On a PRN basis
+<detail_text>on a PRN basis
+
+<form>Assessment & Plan
+<group>Schedule Consultation
+<group_text><insert_text>
+<group_style>1
+<new_paragraph>
+<separator><new_line>
+<detail>Orthotics and Prosthesis
+<detail_text>The patient was referred to Orthotics & Prosthesis: 
+<detail_submenu>AP - orthotics & prosthesis
+<detail>Physiotherapy
+<detail_text>The patient was referred to physiotherapy: 
+<detail_submenu>AP - physiotherapy - referral information
+<detail>Occupational Therapy
+<detail_text>The patient was referred to occupational therapy
+<detail_submenu>AP - occupational therapy
+<detail>Palliative care
+<detail_text>Palliative care
+<detail_submenu>AP - palliative care
+<detail>Hemodialysis
+<detail_text>The patient was referred to hemodialysis:
+<detail_submenu>AP - hemodialysis - referral information
+
+<form>Assessment & Plan
+<group>Activities
+<group_text>Patient has been advised to <insert_text>.
+<group_style>1
+<new_line>
+<detail>Exercise
+<detail_text>
+<detail_submenu>AP - exercise
+<detail>Limit activities
+<detail>Continue normal activities
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<form>Assessment & Plan
+<group>Diet
+<group_text>Patient has been advised to <insert_text>.
+<group_style>1
+<new_line>
+<detail>Eat regularly
+<detail>Lose weight
+<detail>Gain weight
+<detail>Folow a diet
+<detail>Increased calcium intake
+<detail>Advoid
+<detail>Fluid restriction
+<detail>Increase fluid intake
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<form>Assessment & Plan
+<group>Patient instructions
+<group_text>Patient was instructed to <insert_text>.
+<group_style>1
+<new_line>
+<detail>Call if
+<detail_submenu>AP - if
+<detail>Set up appointmnet if
+<detail_submenu>AP - if
+<detail>Go to ER if
+<detail_text>go to ER if
+<detail_submenu>AP - if
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<form>Assessment & Plan
+<group>Discharge Outcome
+<group_text>The patient was <insert_text>.
+<group_style>2
+<new_line>
+<detail>Home
+<detail_text>discharge home
+<detail>Admitted
+<detail>Transferred
+<detail_text>transferred to another hospital
+<detail>Absconded
+<detail>Left against medical advice
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<form>Assessment & Plan
+<group>Medical Certificate
+<group_text>Medical Certificate: <insert_text>
+<group_style>1
+<new_line>
+<separator>;
+<detail>Serial Number
+<detail_text>Serial Number: <insert_value>
+<detail_inputbox><text><L>
+<detail>Duration
+<detail_text>
+<detail_submenu>AP - Duration
+<detail_text>
+<detail>Date Issued
+<detail_text>Date Issued: <insert_value>
+<detail_inputbox><date><L>
+<detail>Date Begin
+<detail_text>Date Begin: <insert_value>
+<detail_inputbox><date><L>
+<detail>Date End
+<detail_text>Date End: <insert_value>
+<detail_inputbox><date><L>

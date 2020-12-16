@@ -1,0 +1,13 @@
+<form>Labs
+<group>Priority
+<group_text>priority: <insert_text>
+<group_style>2
+<detail>Routine
+<detail_text>routine
+<detail>ASAP
+<detail_text>ASAP
+<detail>Stat
+<detail_text>stat
+<detail>Preop
+<detail_text>preop
+

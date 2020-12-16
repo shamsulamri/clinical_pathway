@@ -1,0 +1,21 @@
+<form>Sales Occupation
+<group>Sales
+<group_text><insert_text>
+<group_style>1
+<detail>Retail
+<detail_text>in retail
+<detail>Department store
+<detail_text>in a department store
+<detail>Supermarket
+<detail_text>in a supermarket
+<detail>Salesman
+<detail_text>as a salesman
+<detail>Sales representative
+<detail_text>as a sales representative
+<detail>Realtor
+<detail_text>as a realtor
+<detail>Travel agent
+<detail_text>as a travel agent
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

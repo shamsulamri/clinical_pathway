@@ -1,0 +1,10 @@
+<form>Hemodialysis
+<group>Heparin
+<group_text><insert_text>
+<group_style>1
+<detail>Stat dose 3000units
+<detail_text>stat dose 3000units
+<detail>Maintain 1000/HR
+<detail_text>maintain 1000/HR
+
+

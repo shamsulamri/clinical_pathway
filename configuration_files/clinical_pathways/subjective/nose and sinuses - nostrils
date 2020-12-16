@@ -1,0 +1,11 @@
+<form>Nasal
+<group>On which side ?
+<group_text>in the <insert_text> nostril.
+<group_style>2
+<detail>Right
+<detail>Left
+<detail>Both
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+

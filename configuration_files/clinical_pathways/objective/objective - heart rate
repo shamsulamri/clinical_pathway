@@ -1,0 +1,14 @@
+<form>Heart Rate
+<group>Heart Rate
+<group_text>rate - <insert_text>
+<group_style>1
+<separator>,
+<detail>Normal
+<detail>Tachycardia
+<detail>Bradycardia
+<detail>Beats per minute
+<detail_text><insert_value> beats per minute
+<detail_inputbox><inte><L>
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

@@ -1,0 +1,13 @@
+<form>Stool
+<group>Stool
+<group_text><insert_text>
+<group_style>1
+<detail>Present
+<detail>Absent
+<detail>Diarrhea
+<detail>Fecal impaction
+<detail>Heme positive
+<detail>Heme negative
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

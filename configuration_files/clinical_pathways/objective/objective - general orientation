@@ -1,0 +1,13 @@
+<form>Orientation
+<group>Orientation
+<group_text>Oriented to <insert_text>
+<group_style>4
+<detail>Not oriented
+<detail_text>The patient was not oriented to time, place and person
+<detail>Time
+<detail>Place
+<detail>Person
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+

@@ -1,0 +1,16 @@
+<form>Current smoking
+<group>Current Smoking Per Day
+<group_text>The patient currently smokes <insert_text>
+<group_style>1
+<detail>Cigarettes-packs
+<detail_text><insert_text> pack(s) of cigarettes per day
+<detail_inputbox><text><L>
+<detail>Pipes
+<detail_text><insert_text> pipe(s) per day
+<detail_inputbox><text><L>
+<detail>Cigars
+<detail_text><insert_text> cigar(s) per day
+<detail_inputbox><text><L>
+<detail>Chew tobacco-cans
+<detail_text><insert_text> can(s) of tobacco per day
+<detail_inputbox><text><L>

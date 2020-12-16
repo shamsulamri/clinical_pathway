@@ -1,0 +1,24 @@
+<form>Drinking history
+<group>Drinking history
+<group_text>Current consumption of alcohol is approximately <insert_text> per week
+<group_style>4
+<detail>No alcohol intake
+<detail_text>The patient does not currently drink
+<detail>Cans of beer
+<detail_text><insert_value> can(s) of beer
+<detail_inputbox><inte><L>
+<detail>Six packs of beer
+<detail_text><insert_value> six packs of beer
+<detail_inputbox><inte><L>
+<detail>Glasses of wine
+<detail_text><insert_value> glass(es) of wine
+<detail_inputbox><inte><L>
+<detail>Bottles of wine
+<detail_text><insert_value> bottle(s) of wine
+<detail_inputbox><inte><L>
+<detail>Ounces of hard liquor
+<detail_text><insert_value> ounce(s) of hard liquor
+<detail_inputbox><inte><L>
+<detail>Bottles of hard liquor
+<detail_text><insert_value> bottle(s) of hard liquor
+<detail_inputbox><inte><L>

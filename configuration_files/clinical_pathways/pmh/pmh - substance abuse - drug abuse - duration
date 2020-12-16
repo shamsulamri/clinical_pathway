@@ -1,0 +1,13 @@
+<form>Duration of drug use
+<group>Duration of drug use
+<group_text><insert_text>
+<group_style>2
+<detail>Weeks
+<detail_text>for <insert_value> week(s)
+<detail_inputbox><text><L>
+<detail>Months
+<detail_text>for <insert_value> month(s)
+<detail_inputbox><text><L>
+<detail>Years
+<detail_text>for <insert_value> year(s)
+<detail_inputbox><text><L>

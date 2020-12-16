@@ -1,0 +1,14 @@
+<form>Relevant Diagnoses
+<group>Relevant Medical History
+<group_text>Past medical history is notable for <insert_text>.
+<group_style>1
+<detail>Adenoidal hyperthrophy
+<detail>Dental caries
+<detail>Diabetes mellitus
+<detail>AIDS
+<detail_text>AIDS
+<detail>Psoriasis
+<detail>
+<detail_text><insert_text>
+<detail_inputbox><text><L>
+

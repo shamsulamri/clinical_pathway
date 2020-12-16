@@ -1,0 +1,27 @@
+<form>Assessment & Plan
+<group>X-rays
+<group_text>X-ray: <insert_text>
+<group_style>1
+<new_line>
+<separator><new_line>
+<detail>Head
+<detail_text>
+<detail_submenu>AP - x-ray - head
+<detail>Chest
+<detail_text>
+<detail_submenu>AP - x-ray - chest
+<detail>Abdominal
+<detail_text>
+<detail_submenu>AP - x-ray - abdominal
+<detail>Upper Limb
+<detail_text>
+<detail_submenu>AP - x-ray - upper limb
+<detail>Lower Limb
+<detail_text>
+<detail_submenu>AP - x-ray - lower limb
+<detail>Pelvic
+<detail_text>
+<detail_submenu>AP - x-ray - pelvic
+<detail>Spines
+<detail_text>
+<detail_submenu>AP - x-ray - spines

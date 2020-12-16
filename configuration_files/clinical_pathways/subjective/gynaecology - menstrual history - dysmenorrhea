@@ -1,0 +1,13 @@
+<form>Dysmenorrhea
+<group>Frequency of dysmenorrhea
+<group_text>occurs <insert_text>
+<group_style>2
+<detail>Rarely
+<detail>Occasionally
+<detail>Frequently
+<detail>All the time
+<detail_text>all the time
+<detail>
+<detail_text><insert_text>
+<detail_inputbox><text><L>
+

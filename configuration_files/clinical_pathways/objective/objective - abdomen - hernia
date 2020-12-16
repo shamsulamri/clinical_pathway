@@ -1,0 +1,11 @@
+<form>Hernia
+<group>Hernia
+<group_text><insert_text> hernia
+<group_style>1
+<detail>Umbilical
+<detail>Right inguinal
+<detail>Left inguinal
+<detail>Bilateral inguinal
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

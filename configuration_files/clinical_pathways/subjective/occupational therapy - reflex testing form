@@ -1,0 +1,123 @@
+<form>Reflex testing
+<group>Innate primary reaction
+<group_text><insert_text>
+<group_style>1
+<separator><new_line>
+<detail>Automatic walking (birth - 1 month)
+<detail_text>Automatic walking (birth - 1 month): <insert_value>
+<detail_inputbox><text><L>
+<detail>Placing - upper extremity (birth - 6 month)
+<detail_text>Placing - upper extremity (birth - 6 month): <insert_value>
+<detail_inputbox><text><L>
+<detail>Moro (birth - 6 month)
+<detail_text>Moro (birth - 6 month): <insert_value>
+<detail_inputbox><text><L>
+<detail>Grasp (birth - 3@4 month)
+<detail_text>Grasp (birth - 3@4 month): <insert_value>
+<detail_inputbox><text><L>
+<detail>Sucking (birth - 3@4 month)
+<detail_text>Sucking (birth - 3@4 month): <insert_value>
+<detail_inputbox><text><L>
+<detail>Rooting (birth - 3@4 month)
+<detail_text>Rooting (birth - 3@4 month): <insert_value>
+<detail_inputbox><text><L>
+
+<form>Reflex testing
+<group>Spinal level reflexes
+<group_text><insert_text>
+<group_style>1
+<separator><new_line>
+<detail>Flexor withdrawal (birth - 2 month)
+<detail_text>Flexor withdrawal (birth - 2 month): <insert_value>
+<detail_inputbox><text><L>
+<detail>Extensor thrust (birth - 2 month)
+<detail_text>Extensor thrust (birth - 2 month): <insert_value>
+<detail_inputbox><text><L>
+<detail>Crossed extension (birth - 2 month)
+<detail_text>Crossed extension (birth - 2 month): <insert_value>
+<detail_inputbox><text><L>
+
+<form>Reflex testing
+<group>Brain stem level reflexes
+<group_text><insert_text>
+<group_style>1
+<separator><new_line>
+<detail>Asymmetrical tonic neck (birth - 4 month)
+<detail_text>Asymmetrical tonic neck (birth - 4 month): <insert_value>
+<detail_inputbox><text><L>
+<detail>Symmetrical tonic neck (birth - 4@5 month)
+<detail_text>Symmetrical tonic neck (birth - 4@5 month): <insert_value>
+<detail_inputbox><text><L>
+<detail>Tonic labyrinthine supine (birth - 4 month)
+<detail_text>Tonic labyrinthine supine (birth - 4 month): <insert_value>
+<detail_inputbox><text><L>
+<detail>Prone (birth - 4 month)
+<detail_text>Prone (birth - 4 month): <insert_value>
+<detail_inputbox><text><L>
+<detail>Positive supporting reaction (birth - 6 month)
+<detail_text>Positive supporting reaction (birth - 6 month): <insert_value>
+<detail_inputbox><text><L>
+<detail>Associated reaction (throughout life)
+<detail_text>Associated reaction (throughout life): <insert_value>
+<detail_inputbox><text><L>
+
+<form>Reflex testing
+<group>Midbrain reaction
+<group_text><insert_text>
+<group_style>1
+<separator><new_line>
+<detail>Neck righting (birth - 6 month)
+<detail_text>Neck righting (birth - 6 month): <insert_value>
+<detail_inputbox><text><L>
+<detail>Body righting acting on the body (6 month - 4@5 years)
+<detail_text>Body righting acting on the body (6 month - 4@5 years): <insert_value>
+<detail_inputbox><text><L>
+<detail>Labyrinthine righting acting on the head prone (2 month - throughout life)
+<detail_text>Labyrinthine righting acting on the head prone (2 month - throughout life): <insert_value>
+<detail_inputbox><text><L>
+<detail>Supine (6 month - throughout life)
+<detail_text>Supine (6 month - throughout life): <insert_value>
+<detail_inputbox><text><L>
+
+<form>Reflex testing
+<group>Automatic movement reactions
+<group_text><insert_text>
+<group_style>1
+<separator><new_line>
+<detail>Protective extensor thrust (6 month - throughout life)
+<detail_text>Protective extensor thrust (6 month - throughout life): <insert_value>
+<detail_inputbox><text><L>
+<detail>Equilibrium reactions prone (6 month - throughout life)
+<detail_text>Equilibrium reactions prone (6 month - throughout life): <insert_value>
+<detail_inputbox><text><L>
+<detail>Supine (8 month - throughout life)
+<detail_text>Supine (8 month - throughout life): <insert_value>
+<detail_inputbox><text><L>
+<detail>Quadruped (8 month - throughout life)
+<detail_text>Quadruped (8 month - throughout life): <insert_value>
+<detail_inputbox><text><L>
+<detail>Sitting (10/12 month - throughout life)
+<detail_text>Sitting (10/12 month - throughout life): <insert_value>
+<detail_inputbox><text><L>
+<detail>Kneel-standing (15 month - throughout life)
+<detail_text>Supine (15 month - throughout life): <insert_value>
+<detail_inputbox><text><L>
+<detail>Standing (15/18 month - throughout life)
+<detail_text>Standing (15/18 month - throughout life): <insert_value>
+<detail_inputbox><text><L>
+<detail>Hoping (15/18 month - throughout life)
+<detail_text>Hoping (15/18 month - throughout life): <insert_value>
+<detail_inputbox><text><L>
+<detail>Dorsiflexion (15/18 month - throughout life)
+<detail_text>Dorsiflexion (15/18 month - throughout life): <insert_value>
+<detail_inputbox><text><L>
+
+<form>Reflex testing
+<group>Cortical reflexes
+<group_text><insert_text>
+<group_style>1
+<separator><new_line>
+<detail>Optic righting (6 month - throughout life)
+<detail_text>Optic righting (6 month - throughout life): <insert_value>
+<detail_inputbox><text><L>
+

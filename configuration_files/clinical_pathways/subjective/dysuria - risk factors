@@ -1,0 +1,20 @@
+<form>Risk Factors
+<group>Risk factors
+<group_text><insert_text>
+<group_style>3
+<yes_text>Risk factors include 
+<no_text>but not 
+<new_paragraph>
+<detail>Hyperglycemia
+<detail>Diabetes mellitus
+<detail>Pregnancy
+<detail>Medications
+<detail>Hypercalcemia
+<detail>Hx of urianry tract infections
+<detail>Hx of urethral trauma
+<detail>Hx of sexual abuse
+<detail>Indwelling catheter
+<detail>Family history of diabetes
+<detail>
+<detail_text><insert_text>
+<detail_inputbox><text><L>

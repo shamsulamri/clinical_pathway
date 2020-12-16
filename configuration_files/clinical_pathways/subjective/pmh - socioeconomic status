@@ -1,0 +1,19 @@
+<form>Socioeconomic Status
+<group>Socioeconomic Status
+<group_text>socioeconomic status is <insert_text>
+<group_style>2
+<detail>Below poverty line
+<detail_text>below poverty line
+<detail>Lower class
+<detail_text>lower class
+<detail>Lower middle class
+<detail_text>lower middle class
+<detail>Middle class
+<detail_text>middle class
+<detail>Upper middle class
+<detail_text>upper middle class
+<detail>Upper class
+<detail_text>upper class
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

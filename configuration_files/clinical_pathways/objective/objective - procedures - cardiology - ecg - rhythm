@@ -1,0 +1,25 @@
+<form>ECG Rhythm
+<group>What type of rhythm ?
+<group_text><insert_text>
+<group_style>1
+<detail>Normal sinus rhythm
+<detail>Sinus tachycardia
+<detail>Sinus bradycardia
+<detail>Sick sinus syndrome
+<detail>Frequent APCs
+<detail_text>frequent APCs
+<detail>Atrial flutter
+<detail>Atrial fibrillation
+<detail>Supraventricular tachycardia
+<detail>Multifocal atrial tachycardia
+<detail>Frequent PVCs
+<detail_text>frequent PVCs
+<detail>Ventricular bigemy
+<detail>Ventricular trigemy
+<detail>Runs of ventricular tachycardia
+<detail>Asystoles
+<detail>Pacemaker rhythm
+<detail_submenu>objective - procedures - cardiology - ecg - pacemaker rhythm
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

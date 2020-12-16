@@ -1,0 +1,21 @@
+<form>Orthotics & Prosthesis
+<group>Orthosis
+<group_text>Orthosis: <insert_text>
+<group_style>1
+<new_paragraph>
+<detail>Upper limb 
+<detail_text>upper limb (shoulder, elbow, wrists, fingers)
+<detail_submenu>ap - orthotics & prosthesis - orthosis - type
+<detail>Lower limb
+<detail_text>lower limb (hip, knee, ankle, toes)
+<detail_submenu>ap - orthotics & prosthesis - orthosis - type
+<detail>Spine 
+<detail_text>spine (cervical, thoracic, lumbar, sacral)
+<detail_submenu>ap - orthotics & prosthesis - orthosis - type
+<detail>Trunk/ Arm / forearm / thigh / leg / foot
+<detail_submenu>ap - orthotics & prosthesis - orthosis - type
+<detail>Right / Left / Bilateral
+<detail_submenu>ap - orthotics & prosthesis - orthosis - type
+
+
+

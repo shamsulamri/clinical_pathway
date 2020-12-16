@@ -1,0 +1,38 @@
+<form>Risk Factors
+<group>Risk factors
+<group_text><insert_text>
+<group_style>3
+<yes_text>Risk factors include 
+<no_text>but not 
+<new_paragraph>
+<detail>Smoking
+<detail>Drug allergy
+<detail>Food sensitivity
+<detail>Hx of childhood asthma
+<detail>Hay fever
+<detail>Occupational exposure
+<detail>Animal exposure
+<detail>Exposure to gonorrhea
+<detail>
+<detail_text><insert_text>
+<detail_inputbox><text><L>
+
+<form>Presentation
+<group>Family history
+<group_text>Family history is positive for <insert_text>.
+<group_style>4
+<detail>Not significant
+<detail_text>Family history is not significant
+<detail>Asthma
+<detail_submenu>PMH - Family members
+<detail>Allergic rhinitis
+<detail_submenu>PMH - Family members
+<detail>Hay fever
+<detail_submenu>PMH - Family members
+<detail>Eczema
+<detail_submenu>PMH - Family members
+<detail>
+<detail_text><insert_text>
+<detail_inputbox><text><L>
+
+<load>subjective - rsik factors - smoking

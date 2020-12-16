@@ -1,0 +1,69 @@
+<form>Orthotics & Prosthesis
+<group>Details
+<group_text><insert_text>
+<group_style>1
+<separator><new_line>
+<detail>Tarikh ukuran
+<detail_text>Tarikh ukuran: <insert_text>
+<detail_inputbox><date><L>
+<detail>Ukuran oleh
+<detail_text>Ukuran oleh: <insert_text>
+<detail_inputbox><text><L>
+<detail>Tindakan oleh
+<detail_text>Tindakan oleh: <insert_text>
+<detail_inputbox><text><L>
+<detail>Tarikh 'fit and check out'
+<detail_text>Tarikh 'fit and checkout': <insert_text>
+<detail_inputbox><date><L>
+<detail>Tarikh serahan
+<detail_text>Tarikh serahan: <insert_text>
+<detail_inputbox><text><L>
+<detail>
+<detail_text>Catitan: <insert_text>
+<detail_inputbox><text><L>
+
+<form>Orthotics & Prosthesis
+<group>Upper limbs
+<group_text><insert_text>
+<group_style>1
+<separator><new_line>
+<detail>Over shoulder
+<detail_text>Over shoulder: <insert_text>
+<detail_inputbox><text><L>
+<detail>Arm at axilla
+<detail_text>Arm at axilla: <insert_text>
+<detail_inputbox><text><L>
+<detail>Over biceps
+<detail_text>Over biceps: <insert_text>
+<detail_inputbox><text><L>
+<detail>Above elbow
+<detail_text>Above elbow: <insert_text>
+<detail_inputbox><text><L>
+<detail>Elbow joint line
+<detail_text>Elbow joint line: <insert_text>
+<detail_inputbox><text><L>
+<detail>Below elbow (maximum circumference)
+<detail_text>Below elbow (maximum circumference): <insert_text>
+<detail_inputbox><text><L>
+<detail>Mid forearm
+<detail_text>Mid forearm: <insert_text>
+<detail_inputbox><text><L>
+<detail>Above wrist (minimum circumference)
+<detail_text>Above wrist (minimum circumference) <insert_text>
+<detail_inputbox><text><L>
+<detail>Wrist at styloid processes
+<detail_text>Wrist at styloid processes: <insert_text>
+<detail_inputbox><text><L>
+<detail>Hand at knuckles
+<detail_text>Hand at knuckles: <insert_text>
+<detail_inputbox><text><L>
+<detail>Tip of olecranon to axilla
+<detail_text>Tip of olecranon to axilla: <insert_text>
+<detail_inputbox><text><L>
+<detail>Tip of index finger to tip of olecranon
+<detail_text>Tip of index finger to tip of olecranon: <insert_text>
+<detail_inputbox><text><L>
+<detail>Jenis ortosis (nyatakan)
+<detail_text>
+<detail_submenu>orthotics & prosthesis - jenis orthosis
+

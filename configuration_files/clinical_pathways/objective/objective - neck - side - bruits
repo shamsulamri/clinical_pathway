@@ -1,0 +1,17 @@
+<form>Side
+<group>On which side ?
+<group_text><insert_text>
+<group_style>2
+<detail>Right
+<detail_text>on the right
+<detail>Left
+<detail_text>on the left
+<detail>Both, more on the right
+<detail_text>bilaterally (more on the right)
+<detail>Both, more on the left
+<detail_text>bilaterally (more on the left)
+<detail>Bilaterally
+<detail_text>bilaterally
+<detail>None
+
+

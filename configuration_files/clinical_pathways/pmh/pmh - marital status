@@ -1,0 +1,16 @@
+<form>Marital Status
+<group>Marital Status
+<group_text><insert_text>
+<group_style>2
+<reveal_date>
+<detail>Single
+<detail_text>single
+<detail>Married
+<detail_text>married
+<detail>Widowed
+<detail_text>widowed
+<detail>Divorced
+<detail_text>divorced
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

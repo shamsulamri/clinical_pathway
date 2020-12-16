@@ -1,0 +1,15 @@
+<form>Sputum
+<group>Colour of sputum
+<group_text>It has <insert_text> colour.
+<group_style>1
+<detail>Clear
+<detail>Pink
+<detail>Green
+<detail>White
+<detail>Brown
+<detail>Yellow
+<detail>Rusty
+<detail>Unknown
+<detail>
+<detail_text><insert_text>
+<detail_inputbox><text><L>

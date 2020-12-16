@@ -1,0 +1,167 @@
+<form>Presentation
+<group>Date of accident
+<group_text>The patient had a motor vehicle accident <insert_text>.
+<group_style>2
+<reveal_date>
+<detail>Today
+<detail>Date:
+<detail_text>on the <insert_value>
+<detail_inputbox><date><R>
+<detail>Minutes
+<detail_text><insert_value> minutes
+<detail_inputbox><text><L>
+<detail>Hours
+<detail_text><insert_value> hours
+<detail_inputbox><text><L>
+<detail>Days
+<detail_text><insert_value> days
+<detail_inputbox><text><L>
+<detail>Weeks
+<detail_text><insert_value> weeks
+<detail_inputbox><text><L>
+<detail>Months
+<detail_text><insert_value> months
+<detail_inputbox><text><L>
+<detail>Years
+<detail_text><insert_value> years
+<detail_inputbox><text><L>
+
+<form>Presentation
+<group>Location of injury
+<group_text>The patient suffers injury to the <insert_text>.
+<group_style>1
+<detail>Scalp
+<detail_text>scalp
+<detail>Face
+<detail_text>face
+<detail>Neck
+<detail_text>neck
+<detail>Chest
+<detail_text>chest
+<detail>Upper limb
+<detail_text>upper limb
+<detail_submenu>objective - side
+<detail>Abdomen
+<detail_text>Abdomen
+<detail_submenu>objective - abdomen - location
+<detail>Back
+<detail_text>Back
+<detail>Lower limb
+<detail_text>lower limp
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<form>Presentation
+<group>Loss of consciousness
+<group_text>The patient had loss of consciousness <insert_text>.
+<group_style>4
+<separator>
+<detail>None
+<detail_text>There was no complain of loss of consciousness.
+<detail>Daze
+<detail_text>, it was a slight daze
+<detail>< 1 min
+<detail_text>less than 1 minute
+<detail>1-5 min
+<detail_text>for about 1-5 minutes
+<detail>>5 min
+<detail_text>more than 5 minutes
+<detail>Unsure
+<detail_text>however was unsure of the duration
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<form>Presentation
+<group>Type of MVA
+<group_text>It was a <insert_text> collision.
+<group_style>1
+<detail>Rear end
+<detail>Side (driver)
+<detail>Side (passenger)
+<detail>Head on
+<detail>Unknown
+<detail_text>unknown reason
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<form>Presentation
+<group>Reason for crash
+<group_text>The accident occured <insert_text>.
+<group_style>1
+<detail>following too closely
+<detail_text>because the patient was following the vehicle too closely
+<detail>Loss control
+<detail_text>because the patient loss control of the vehicle
+<detail>Unknown
+<detail_text>due to unknown reason
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<form>Presentation
+<group>Location in vehicle
+<group_text>The patient was a <insert_text>.
+<group_style>1
+<detail>Driver
+<detail>Front seat passenger
+<detail>Rear seat passenger
+<detail_text>in the afternoon
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<form>Presentation
+<group>Other
+<group_text><insert_text>
+<group_style>3
+<yes_text>It was reported that
+<no_text>but no 
+<detail>Eject from vehicle
+<detail>Use of restraints
+<detail>Steering wheel intact
+<detail>Windshield intact
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<form>Presentation
+<group>Location of accident
+<group_text>The accident occured at <insert_text>.
+<group_style>1
+<detail>Home
+<detail>Work
+<detail>School
+<detail>Private property
+<detail>City-state property
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<form>Presentation
+<group>Review of system
+<group_text><insert_text>
+<group_style>3
+<yes_text>The patient reported of
+<no_text>but no 
+<detail>Eye pain
+<detail>Epistaxis
+<detail>Loose teeth
+<detail>Difficulty swallowing
+<detail>Chest pain
+<detail>Shortness of breath
+<detail>Abdominal pain
+<detail>Neck pain
+<detail>Back pain
+<detail>Visual changes
+<detail>Headache
+<detail>Dizziness
+<detail>Focal neuro symptoms
+<detail>Intoxication
+<detail>Immunocompromised
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+

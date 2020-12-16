@@ -1,0 +1,17 @@
+<form>Domestic Labor Occupation
+<group>Domestic labour
+<group_text><insert_text>
+<group_style>1
+<detail>Housecleaner
+<detail_text>as a housecleaner
+<detail>Child-care worker
+<detail_text>as a child-care worker
+<detail>Babysitter
+<detail_text>as a babysitter
+<detail>Cook
+<detail_text>as a cook
+<detail>Garderner
+<detail_text>as garderner
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

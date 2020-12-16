@@ -1,0 +1,17 @@
+<form>Degrees of Clubbing
+<group>Degrees of Clubbing
+<group_text>(<insert_text>)
+<group_style>2
+<detail>Trace
+<detail_text>trace
+<detail>1+
+<detail_text>1+
+<detail>2+
+<detail_text>2+
+<detail>3+
+<detail_text>3+
+<detail>4+
+<detail_text>4+
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

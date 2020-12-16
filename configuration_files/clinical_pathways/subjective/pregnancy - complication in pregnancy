@@ -1,0 +1,12 @@
+<form>Obstetric History
+<group>Complication in pregnancy
+<group_text><insert_text>
+<group_style>1
+<detail>Ectopic pregnancy
+<detail>Preeclampsia
+<detail>Eclampsia
+<detail>Hyperemesis gravidarum
+<detail>Abruptio placentae
+<detail>Placenta previa
+<detail>Gestational diabetes
+

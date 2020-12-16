@@ -1,0 +1,34 @@
+<form>Radiation of pain
+<group>Radiation of pain
+<group_text>radiates to <insert_text>.
+<group_style>1
+<detail>Head
+<detail_text>Head
+<detail>Neck
+<detail_text>neck
+<detail>Chest
+<detail_text>chest
+<detail_submenu>objective - lung - location
+<detail>Shoulder
+<detail_text>shoulder
+<detail_submenu>objective - side
+<detail>Upper limb
+<detail_text>upper limb
+<detail_submenu>objective - side
+<detail>Abdomen
+<detail_text>Abdomen
+<detail_submenu>objective - abdomen - location
+<detail>Back
+<detail_text>Back
+<detail_submenu>objective - side
+<detail>Hip
+<detail_text>hip
+<detail>Knee
+<detail_text>knee
+<detail_submenu>objective - side
+<detail>Ankle
+<detail_text>Ankle
+<detail_submenu>objective - side
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

@@ -1,0 +1,27 @@
+<form>Sensory
+<group>Sensory
+<group_text>Sensory function - <insert_text> 
+<group_style>1
+<detail>Normal
+<detail_submenu>objective - neuro sensory - location
+<detail>Pinprick
+<detail_submenu>objective - neuro sensory - plv
+<detail>Light touch
+<detail_submenu>objective - neuro sensory - plv
+<detail>Vibration
+<detail_submenu>objective - neuro sensory - plv
+<detail>RUE
+<detail_text>RUE sensation diminished
+<detail_submenu>objective - neuro sensory - UE
+<detail>LUE
+<detail_text>LUE sensation diminished
+<detail_submenu>objective - neuro sensory - UE
+<detail>RLE
+<detail_text>RLE sensation diminished
+<detail_submenu>objective - neuro sensory - LE
+<detail>LLE
+<detail_text>LLE sensation diminished
+<detail_submenu>objective - neuro sensory - LE
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

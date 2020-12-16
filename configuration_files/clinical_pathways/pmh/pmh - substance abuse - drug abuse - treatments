@@ -1,0 +1,17 @@
+<form>Drug abuse treatments
+<group>Drug abuse treatments
+<group_text>Treatments have included <insert_text>
+<group_style>1
+<detail>Abrupt withdrawal
+<detail_text>abrupt withdrawal
+<detail>Drug rehabilitation program
+<detail_text>drug rehabilitation program
+<detail>Methadone maintenance program
+<detail_text>methadone maintenance program
+<detail>Living in a halfway house
+<detail_text>living in a halfway house
+<detail>Self help group
+<detail_text>Self help group
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

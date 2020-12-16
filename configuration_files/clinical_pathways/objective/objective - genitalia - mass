@@ -1,0 +1,23 @@
+<form>Mass
+<group>Mass
+<group_text><insert_text>
+<group_style>1
+<detail>Right testicle
+<detail_submenu>objective - mass - diameter
+<detail>Left testicle
+<detail_submenu>objective - mass - diameter
+<detail>Right scrotum
+<detail_submenu>objective - mass - diameter
+<detail>Left scrotum
+<detail_submenu>objective - mass - diameter
+<detail>Right inguinal canal
+<detail_submenu>objective - mass - diameter
+<detail>Left inguinal canal
+<detail_submenu>objective - mass - diameter
+<detail>Glan penis
+<detail_submenu>objective - mass - diameter
+<detail>Corpora penis
+<detail_submenu>objective - mass - diameter
+<detail>
+<detail_text><insert_value> 
+<detail_inputbox><text><L>

@@ -1,0 +1,28 @@
+<form>Infectious
+<group>Infectious
+<group_text><insert_text>
+<group_style>1
+<new_line>
+<detail>VDRL/TPHA
+<detail_text>VDRL/TPHA
+<detail_order>vdrl_tpha
+<detail>Hepatitis Screening
+<detail_text>Hepatitis Screening
+<detail_order>hepatitis_scr
+<detail>HIV screening
+<detail_text>HIV screening
+<detail_order>hiv_scr
+<detail>Skin Scraping - Fungus
+<detail_text>Skin Scraping - Fungus
+<detail_order>skin_scraping
+<detail>Sputum AFB
+<detail_text>Sputum AFB
+<detail_order>sputum_afb
+<detail>Blood Film For Malaria Parasite
+<detail_text>BFMP
+<detail_order>bfmp
+<detail>Dengue Serology
+<detail_text>Dengue Serology
+<detail_order>dengue_sero
+
+

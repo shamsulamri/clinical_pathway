@@ -1,0 +1,12 @@
+<form>DM
+<group>Diabetes Mellitus
+<group_text>. <insert_text>
+<group_style>1
+<separator>.
+<detail>Initial discovery
+<detail_text>
+<detail_submenu>Established DM - discovery
+<detail>Date of diagnosis
+<detail_text>
+<detail_submenu>subjective - date of diagnosis
+

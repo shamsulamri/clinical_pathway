@@ -1,0 +1,324 @@
+<form>General condition
+<group>General condition
+<group_text>General condition: <insert_text>
+<group_style>4
+<new_line>
+<separator>;
+<detail>NPA
+<detail_text>General condition: NPA
+<detail>Weakness
+<detail>Fatigue
+<detail>Non verbal
+<detail>Alert
+<detail>Oriented
+
+<form>Psychosocial
+<group>Psychosocial
+<group_text>Psychosocial: <insert_text>
+<group_style>4
+<new_line>
+<separator>;
+<detail>NPA
+<detail_text>Psychosocial: NPA
+<detail>Anxious / nervous
+<detail>Insomnia
+<detail>Ineffective coping
+
+<form>Neuro
+<group>Neuro
+<group_text>Neuro: <insert_text>
+<group_style>4
+<new_line>
+<separator>;
+<detail>NPA
+<detail_text>Neuro: NPA
+<detail>Numbness / Tingling
+<detail>Disoriented
+<detail_submenu>nursing assessment - nurse progress chart - disoriented
+<detail>Vertigo/Dizziness
+<detail>Tremors
+
+<form>Motor
+<group>Motor
+<group_text>Motor: <insert_text>
+<group_style>4
+<new_line>
+<separator>;
+<detail>NPA
+<detail_text>Motor: NPA
+<detail>Bedbound
+<detail>Transfers with assist
+<detail>Ambulates with assist
+
+<form>Homebound status
+<group>Homebound status
+<group_text>Homebound status: <insert_text>
+<group_style>1
+<new_line>
+<separator>;
+<detail>Leaves home only
+<detail_text>leaves home only with supportive devices/assist of another person - cane / wheel chair
+<detail>Blind or mentally incapable
+<detail_text>Blind or mentally incapable of leaving home alone
+<detail>Activity limited by M.D
+<detail_text>Activity limited by M.D
+<detail>Patient has ASHD/SOB/CP
+<detail_text>Patient has ASHD/SOB/CP of such diversity that all stress and activity must be restricted
+
+<form>Cardiovascular
+<group>Cardiovascular
+<group_text>Cardiovascular: <insert_text>
+<group_style>4
+<new_line>
+<separator>;
+<detail>NPA
+<detail_text>Cardiovascular: NPA
+<detail>Irregular pulse
+<detail>Chest pain
+<detail>Pacemaker
+<detail>Distended neck veins
+<detail_text>Distended neck veins
+<detail>Edema
+<detail_text>edema
+<detail_submenu>objective - extremities - location
+<detail>Pitting
+<detail_text>Pitting
+<detail_submenu>objective - extremities - location
+
+<form>Circulatory
+<group>Circulatory
+<group_text>Circulatory: <insert_text>
+<group_style>4
+<new_line>
+<separator>;
+<detail>NPA
+<detail_text>Circulatory: NPA
+<detail>Blanching abnormal
+<detail>Peripheral pulses
+<detail_submenu>nursing assessment - nurse progress chart - peripheral pulses
+
+<form>Respiratory
+<group>Respiratory
+<group_text>Respiratory: <insert_text>
+<group_style>4
+<new_line>
+<separator>;
+<detail>NPA
+<detail_text>Motor: NPA
+<detail>Breath sound normal
+<detail>SOB / Dyspnea
+<detail>Shallow / Laboured
+<detail_text>Shallow / Laboured
+<detail>Decreased
+<detail_text>decreased breath sounds
+<detail_submenu>objective - lung - location
+<detail>Crackles / Rales
+<detail>Wheezed / Ronchi
+<detail>Cough
+<detail_submenu>nursing assessment - nurse progress chart - cough
+<detail>Sputum
+<detail_submenu>nursing assessment - nurse progress chart - sputum
+<detail>Oxygen
+<detail_submenu>nursing assessment - nurse progress chart - oxygen
+
+<form>GI
+<group>GI
+<group_text>GI: <insert_text>
+<group_style>4
+<new_line>
+<separator>;
+<detail>NPA
+<detail_text>GI: NPA
+<detail>Last B.M
+<detail_text>last B.M: <insert_value>
+<detail_inputbox><text><L>
+<detail>Incontinence
+<detail>Gastric tube
+<detail>Nausea
+<detail>Vomiting
+<detail>Appetite
+<detail_submenu>nursing assessment - nurse progress chart - appetite
+<detail>Incontinence
+<detail>Diarrhea
+<detail>Constipation
+<detail>Diversion
+<detail>Appliance
+
+<form>GU
+<group>GU
+<group_text>GU: <insert_text>
+<group_style>4
+<new_line>
+<separator>;
+<detail>NPA
+<detail_text>GU: NPA
+<detail>Incontinence
+<detail>Frequency
+<detail>Urgency
+<detail>Sediment
+<detail>Odor
+<detail>Burning
+<detail>Nocturia
+<detail>Urine color
+<detail_text>urine color: <insert_value>
+<detail_inputbox><text><L>
+<detail>Catheter size
+<detail_text>Catheter size: <insert_value>
+<detail_inputbox><text><L>
+<detail>Catheter changed
+<detail_text>Catheter changed: <insert_value>
+<detail_inputbox><text><L>
+<detail>Diversion / Appliance
+
+<form>Skin
+<group>Skin
+<group_text>Skin: <insert_text>
+<group_style>4
+<new_line>
+<separator>;
+<detail>NPA
+<detail_text>Skin: NPA
+<detail>Dryness
+<detail>Diaphoretic
+<detail>Urticaria
+<detail>Rash
+<detail>Turgor
+<detail_submenu>nursing assessment - nurse progress chart - turgor
+<detail>Pale
+<detail>Flushed
+<detail>Cyanotic
+<detail>Jaundice
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<form>Wound/Decubitus/Incision
+<group>Wound/Decubitus/Incision
+<group_text>Wound/Decubitus/Incision: <insert_text>
+<group_style>1
+<new_line>
+<separator>;
+<detail>See wound care treatment plan
+
+<form>Pain
+<group>Pain
+<group_text>Pain: <insert_text>
+<group_style>1
+<new_line>
+<separator>;
+<detail>Location
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+<detail>Continous
+<detail>Intermittent
+<detail>Radiating
+<detail>Dull
+<detail>Sharp
+<detail>Scale of 1 to 10
+<detail_text>.The pain is described as <insert_value> on a scale of 1 to 10 in severity
+<detail_inputbox><text><L>
+
+<form>Intravenous
+<group>Intravenous
+<group_text>Intravenous: <insert_text>
+<group_style>1
+<new_line>
+<separator>;
+<detail>Type of line
+<detail_text>type of line: <insert_value>
+<detail_inputbox><text><L>
+<detail>Site location
+<detail_text>Site location: <insert_value>
+<detail_inputbox><text><L>
+<detail>Site clear
+<detail_text>Site clear: <insert_value>
+<detail_inputbox><text><L>
+<detail>Type of pump
+<detail_text>type of pump: <insert_value>
+<detail_inputbox><text><L>
+<detail>Lock level
+<detail_text>Lock level: <insert_value>
+<detail_inputbox><text><L>
+<detail>Dressing change
+<detail_text>dressing change: <insert_value>
+<detail_inputbox><text><L>
+<detail>Site change
+<detail_text>site change: <insert_value>
+<detail_inputbox><text><L>
+<detail>Tubing change
+<detail_text>tubing change: <insert_value>
+<detail_inputbox><text><L>
+<detail_submenu>nursing assessment - nurse progress chart - tubing change
+
+<form>Medication
+<group>Medication
+<group_text>Medication: <insert_text>
+<group_style>1
+<new_line>
+<separator>;
+<detail>Medication
+<detail_text>medication: <insert_value>
+<detail_inputbox><text><L>
+<detail>Dose
+<detail_text>dose: <insert_value>
+<detail_inputbox><text><L>
+<detail>Diluent
+<detail_text>diluent: <insert_value>
+<detail_inputbox><text><L>
+<detail>Over
+<detail_text>over: <insert_value> min
+<detail_inputbox><text><L>
+<detail>Schedule
+<detail_text>schedule: <insert_value>
+<detail_inputbox><text><L>
+
+<form>Physical Examination
+<group>Vital Signs
+<group_text><insert_text>
+<group_style>1
+<separator>;
+<results_viewer> 
+<detail>Weight (Kg)
+<detail_text><insert_value> Kg
+<detail_inputbox><doub><L>
+<detail>Temperature (F)
+<detail_text>T: <insert_value> (F)
+<detail_inputbox><doub><L>
+<detail>Pulse rate
+<detail_text>PR: <insert_value>/min
+<detail_inputbox><inte><L>
+<detail>Breathing
+<detail_text>R:<insert_value>/min
+<detail_inputbox><inte><L>
+<detail>BP (lying)
+<detail_text>BP:<insert_value> mmHg (lying)
+<detail_inputbox><bpre><L>
+<detail>BP (sitting)
+<detail_text>BP:<insert_value> mmHg (sitting)
+<detail_inputbox><bpre><L>
+<detail>BP (standing)
+<detail_text>BP:<insert_value> mmHg (standing)
+<detail_inputbox><bpre><L>
+<detail>FBS
+<detail_text>FBS: <insert_value>
+<detail_inputbox><doub><L>
+<detail>RBS
+<detail_text>RBS: <insert_value> mmol/l
+<detail_inputbox><doub><L>
+<detail>Labs
+<detail_text>Labs: <insert_value>
+<detail_inputbox><text><L>
+
+<form>Others
+<group>Others
+<group_text><insert_text>
+<group_style>1
+<new_line>
+<separator>;
+<detail>Problems
+<detail_text>Problems: <insert_value>
+<detail_inputbox><text><L>
+<detail>Skilled internvention/outcome
+<detail_text>Skilled internvention/outcome: <insert_value>
+<detail_inputbox><text><L>
+

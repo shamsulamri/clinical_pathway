@@ -1,0 +1,17 @@
+<form>Cough
+<group>Cough
+<group_text> was <insert_text>.
+<group_style>1
+<separator>
+<detail>Productive 
+<detail_text>productive (<insert_text>)
+<detail_submenu>sputum
+<detail>Non-productive
+<detail>Occasional
+<detail>Frequent
+<detail>Continous
+
+
+
+
+

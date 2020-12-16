@@ -1,0 +1,18 @@
+<form>Relevant Diagnoses
+<group>Relevant Medical History
+<group_text>Past medical history is notable for <insert_text>.
+<group_style>1
+<detail>Prior abdominal surgery
+<detail>Diverticular disease
+<detail>Colorectal carcinoma
+<detail>Inflammatory bowel disease
+<detail>Cholelithiasis
+<detail>Pancreatitis
+<detail>Irritable bowel syndrome
+<detail>Diabetes mellitus
+<detail>Abdominal aortic aneurysm
+<detail>Pelvic inflammatory disease
+<detail>
+<detail_text><insert_text>
+<detail_inputbox><text><L>
+

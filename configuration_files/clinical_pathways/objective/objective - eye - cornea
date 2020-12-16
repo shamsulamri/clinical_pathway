@@ -1,0 +1,22 @@
+<form>Cornea
+<group>Cornea
+<group_text>Cornea - <insert_text>
+<group_style>1
+<detail>Arcus
+<detail_submenu>objective - oropharynx - side
+<detail>Abrasion
+<detail_submenu>objective - oropharynx - side
+<detail>Opacification
+<detail_submenu>objective - oropharynx - side
+<detail>Keratitis
+<detail_submenu>objective - oropharynx - side
+<detail>Foreign body
+<detail_submenu>objective - oropharynx - side
+<detail>Dryness
+<detail_submenu>objective - oropharynx - side
+<detail>Pterygium
+<detail_submenu>objective - oropharynx - side
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+

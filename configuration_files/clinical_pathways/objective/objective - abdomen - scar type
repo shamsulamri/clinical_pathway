@@ -1,0 +1,11 @@
+<form>Scar type
+<group>Scar type
+<group_text><insert_text> scar
+<group_style>1
+<detail>Recent
+<detail>Old
+<detail>Surgical
+<detail>Traumatic
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

@@ -1,0 +1,14 @@
+<form>Cornea
+<group>Lacrimal
+<group_text>Lacrimal - <insert_text>
+<group_style>1
+<detail>Epiphora
+<detail_submenu>objective - oropharynx - side
+<detail>Dacrocystits
+<detail_submenu>objective - oropharynx - side
+<detail>Absent tearing
+<detail_submenu>objective - oropharynx - side
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+

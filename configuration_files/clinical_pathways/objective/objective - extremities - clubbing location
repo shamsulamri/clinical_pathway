@@ -1,0 +1,11 @@
+<form>Clubbing
+<group>Clubbing
+<group_text>of the <insert_text>
+<group_style>1
+<detail>Fingers
+<detail_submenu>objective - extremities - degree of clubbing
+<detail>Toes
+<detail_submenu>objective - extremities - degree of clubbing
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

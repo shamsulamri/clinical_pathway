@@ -1,0 +1,12 @@
+<form>Drinking history
+<group>Drinking history
+<group_text>The patient has been a <insert_text>
+<group_style>4
+<detail>No prior history of alcohol intake
+<detail_text>No prior history of alcohol intake
+<detail>Light
+<detail_text>light drinker
+<detail>Moderate drinker
+<detail_text>moderate drinker
+<detail>Heavy drinker
+<detail_text>heavy drinker

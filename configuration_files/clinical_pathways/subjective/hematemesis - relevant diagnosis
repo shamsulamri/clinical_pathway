@@ -1,0 +1,17 @@
+<form>Relevant Diagnoses
+<group>Relevant Medical History
+<group_text>Past medical history is notable for <insert_text>.
+<group_style>1
+<detail>Peptic disease
+<detail>Gastric neoplasia
+<detail>Inflammatory bowel disease
+<detail>Cirrhosis
+<detail>Esophageal varices
+<detail>Blood dysccrasia
+<detail>Pancreatic disease
+<detail>Epistaxis
+<detail>Hemoptysis
+<detail>
+<detail_text><insert_text>
+<detail_inputbox><text><L>
+

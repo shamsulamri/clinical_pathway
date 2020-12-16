@@ -1,0 +1,13 @@
+<form>Hallucination
+<group>Hallucination
+<group_text>(<insert_text>)
+<group_style>1
+<detail>Auditory
+<detail>Visual
+<detail>Tactile
+<detail>Gustotory
+<detail>Olfactory
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+

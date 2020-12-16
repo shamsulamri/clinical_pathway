@@ -1,0 +1,132 @@
+<form>Additional Demographic Data
+<group>Additional Demographic Data
+<group_text>Demographic Data:<insert_text>
+<group_style>1
+<new_line>
+<separator>;
+<detail>Health Insurance
+<detail_text>
+<detail_submenu>Palliative Care - Health Insurance
+<detail>Living circumstances:
+<detail_text>
+<detail_submenu>PMH - Living circumstances
+<detail>Religion
+<detail_text>Religion: <insert_text>
+<detail_inputbox><text><R>
+<detail>Household Income
+<detail_text>Household Income: <insert_text>
+<detail_inputbox><text><R>
+
+<form>English Speaking Background
+<group>English Speaking Background
+<group_text>English Speaking Background: <insert_text>
+<group_style>2
+<new_line>
+<detail>Non English Speaking Background
+<detail>Poor English
+<detail>Moderate English
+<detail>Good English
+
+<form>Referral Details
+<group>Referral Details
+<group_text>Referral Details: <insert_text>
+<group_style>1
+<new_line>
+<separator>;
+<detail>Date referred
+<detail_text>date referred - <insert_text>
+<detail_inputbox><date><L>
+<detail>Date of Medical First Contact
+<detail_text>Date of Medical First Contact - <insert_text>
+<detail_inputbox><date><L>
+<detail>Referred by
+<detail_text>by - <insert_text>
+<detail_inputbox><text><L>
+<detail_submenu>Palliative care - referred by
+
+<form>Reason for referral
+<group>Reason for referral
+<group_text>Reason for referral: <insert_text>
+<group_style>1
+<new_line>
+<detail>Medical - Total management
+<detail>Medical - Pain control
+<detail>Medical - Other symptom control
+<detail>Medical - Terminal phase
+<detail>Link to community PCS
+<detail>Social - Lives alone
+<detail>Social - Care giver not coping
+<detail>Social - Respite
+<detail>Social - Major family problem
+<detail>Psychological/Psychiatric
+<detail>Radiotherapy
+<detail>Rehabilitation
+<detail>Ethical decision making
+<detail>
+<detail_text><insert_text>
+<detail_inputbox><text><L>
+
+<form>Location of first contact
+<group>Location of first contact
+<group_text>Location of first contact: <insert_text>
+<group_style>2
+<new_line>
+<detail>Hospital Ward
+<detail_text>Hospital Ward
+<detail>Accident and Emergency
+<detail_text>Accident and Emergency
+<detail>Private Hospital
+<detail>Hostel
+<detail>Nursing Home
+<detail>Telephone consult
+<detail>Private hospital
+<detail_text>Private hospital (<insert_text>)
+<detail_inputbox><text><L>
+<detail>
+<detail_text><insert_text>
+<detail_inputbox><text><L>
+
+<form>Probable known extent of disease
+<group>Probable known extent of disease
+<group_text><insert_text>
+<group_style>3
+<yes_text>Probable known extent of disease include
+<no_text>but no 
+<new_paragraph>
+<detail>Liver
+<detail>Lung
+<detail>Bone
+<detail>CNS
+<detail>Retroperitoneal
+<detail_text>Retroperitoneal
+<detail>Nodes
+<detail_text>
+<detail_submenu>objective - nodes
+<detail>
+<detail_text><insert_text>
+<detail_inputbox><text><L>
+
+<form>Past/Current Problem
+<group>Past/Current Problem
+<group_text>Past and current palliative care problem: <insert_text>
+<group_style>1
+<new_line>
+<detail>Hypercalcaemia
+<detail>Bowel obstruction
+<detail>Biliary obstruction
+<detail>Gastric outlet obstruction
+<detail>Difficult constipation problems
+<detail>Malignant ascites
+<detail>Difficult nausea/vomiting
+<detail>Spinal cord compression
+<detail>Carcinomatous meningitis
+<detail>Bone marrow involment
+<detail>Bleeding problems
+<detail>Anemia requiring transfusions
+<detail>Malignant pericardial effusions
+<detail>Malignant pleural effusions
+<detail>Carcinomatous lymphagitis
+<detail>Ureteric obstruction
+<detail>Pain control problems
+<detail>Ethical decision making
+

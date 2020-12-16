@@ -1,0 +1,10 @@
+<form>Indications
+<group>Indications
+<group_text><insert_text>
+<group_style>4
+<detail>None
+<detail_text>No indications
+<detail>
+<detail_text>Indications - <insert_value>
+<detail_inputbox><text><L>
+

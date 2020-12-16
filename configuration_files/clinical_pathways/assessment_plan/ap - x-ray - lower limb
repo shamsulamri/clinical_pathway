@@ -1,0 +1,31 @@
+<form>Lower Limb X-ray
+<group>Lower Limb X-ray
+<group_text><insert_text>
+<group_style>1
+<new_line>
+<detail>Ankle: AP && Lateral
+<detail_text>Ankle: AP & Lateral
+<detail_order>xr_ankle_ap_l
+<detail>Calcaneum: AP && Lateral
+<detail_text>Calcaneum : AP & Lateral
+<detail_order>xr_calcaneum_ap_l
+<detail>Foot: 1 view
+<detail_text>Foot: 1 view
+<detail_order>xr_foot_1
+<detail>Foot: AP && Oblique
+<detail_text>Foot: AP & Oblique
+<detail_order>xr_foot_ap_o
+<detail>Knee joint (Bilateral): AP && Lateral
+<detail_text>Knee joint (Bilateral): AP & Lateral
+<detail_order>xr_knee_bi_ap_l
+<detail>Knee joint: AP && Lateral
+<detail_text>Knee joint: AP & Lateral
+<detail_order>xr_knee_ap_l
+<detail>Lower leg: AP && Lateral (tibia && fibula)
+<detail_text>Lower leg: AP & Lateral (tibia & fibula)
+<detail_order>xr_leg_ap_l
+<detail>Thigh: AP && Lateral
+<detail_text>Thigh: AP & Lateral
+<detail_order>xr_thigh_ap_l
+
+

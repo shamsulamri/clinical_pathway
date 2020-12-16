@@ -1,0 +1,14 @@
+<form>BP's recorded over what period
+<group>BP's Recorded Over What Period
+<group_text>It was recorded over a period of <insert_text>
+<group_style>2
+<detail>Days
+<detail_text><insert_value> days
+<detail_inputbox><inte><L>
+<detail>Weeks
+<detail_text><insert_value> weeks
+<detail_inputbox><inte><L>
+<detail>Months
+<detail_text><insert_value> months
+<detail_inputbox><inte><L>
+

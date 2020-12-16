@@ -1,0 +1,23 @@
+<form>Complications
+<group>Complications
+<group_text>Complications have included <insert_text>.
+<group_style>1
+<detail>Cardiac problems
+<detail_submenu>subjective - complications - cardiac problems
+<detail>Renal problems
+<detail_submenu>subjective - complications - renal problems
+<detail>Ocular problems
+<detail_submenu>subjective - complications - ocular problems
+<detail>CVA
+<detail_text>CVA
+<detail>TIA
+<detail_text>TIA
+<detail>Hypertensive encephalopathy
+<detail>Cerebral edema
+<detail>Aortic aneurysm
+<detail>Atherosclerosis
+<detail>Peripheral vascular disease
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+

@@ -1,0 +1,12 @@
+<form>Special diet
+<group>Special diet
+<group_text><insert_text>
+<group_style>1
+<detail>Diabetic
+<detail>Bland
+<detail>Low salt
+<detail>Low residue
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+

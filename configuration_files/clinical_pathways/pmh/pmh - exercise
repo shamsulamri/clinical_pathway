@@ -1,0 +1,28 @@
+<form>Brief PMH
+<group>Exercise
+<group_text>The patient <insert_text>.
+<group_style>4
+<new_line>
+<detail>No exercise
+<detail_text>The patient does not exercise.
+<detail>Walking
+<detail_text>walks
+<detail_submenu>pmh - frequency of exercise
+<detail>Jogging
+<detail_text>jogs
+<detail_submenu>pmh - frequency of exercise
+<detail>Swimming
+<detail_text>swims
+<detail_submenu>pmh - frequency of exercise
+<detail>Exercise machine
+<detail_text>uses an exercise machine
+<detail_submenu>pmh - frequency of exercise
+<detail>Competitive sports
+<detail_text>plays competitive sports
+<detail_submenu>pmh - frequency of exercise
+<detail>Bicycling
+<detail_text>bicycles
+<detail_submenu>pmh - frequency of exercise
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

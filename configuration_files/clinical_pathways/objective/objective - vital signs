@@ -1,0 +1,30 @@
+<form>Physical Examination
+<group>Vital Signs
+<group_text><insert_text>
+<group_style>1
+<separator>;
+<results_viewer> 
+<detail>Weight (Kg)
+<detail_text><insert_value> Kg
+<detail_inputbox><text><L>
+<detail>Temperature (F)
+<detail_text>T: <insert_value> (F)
+<detail_inputbox><text><L>
+<detail>Pulse rate
+<detail_text>PR: <insert_value>/min
+<detail_inputbox><text><L>
+<detail>Breathing
+<detail_text>R:<insert_value>/min
+<detail_inputbox><text><L>
+<detail>Blood Pressure
+<detail_text>BP:
+<detail_submenu>objective - blood pressure
+
+<form>Physical Examination
+<group>Obstetric
+<group_text><insert_text>
+<group_style>1
+<results_viewer> 
+<detail>Fundal Height (CM)
+<detail_text>Fundal Height: <insert_value> CM
+<detail_inputbox><text><L>

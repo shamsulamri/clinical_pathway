@@ -1,0 +1,11 @@
+<form>Tubing change
+<group>Tubing change
+<group_text><insert_text>
+<group_style>1
+<detail>NS
+<detail_text>NS: <insert_value> cc
+<detail_inputbox><text><L>
+<detail>Heparin
+<detail_text>Heparin: <insert_value> u/cc
+<detail_inputbox><text><L>
+

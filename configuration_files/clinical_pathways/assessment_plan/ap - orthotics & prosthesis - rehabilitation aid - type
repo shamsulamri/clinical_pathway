@@ -1,0 +1,21 @@
+<form>Orthotics & Prosthesis
+<group>Type
+<group_text><insert_text>
+<group_style>1
+<detail>Cruthes
+<detail_text>
+<detail_submenu>AP - orthotics & prosthesis - rehabilitation aid - crutches
+<detail>Walking aids
+<detail_text>
+<detail_submenu>AP - orthotics & prosthesis - rehabilitation aid - walking aids
+<detail>Commode
+<detail>Hot/cold packs
+<detail>Sport braces
+<detail>Collars
+<detail>Corsets
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+
+

@@ -1,0 +1,29 @@
+<form>Assessment & Plan
+<group>DDx
+<group_text>Diagnosis: <insert_text>
+<group_style>1
+<new_line>
+<separator><new_line>
+<detail>UTI
+<detail_text>UTI
+<detail_submenu>AP - Probability
+<detail>Cystitis
+<detail_submenu>AP - Probability
+<detail>Nonspecific urethritis
+<detail_submenu>AP - Probability
+<detail>Chlamydia
+<detail_submenu>AP - Probability
+<detail>Gonorrhea
+<detail_submenu>AP - Probability
+<detail>Herpes
+<detail_submenu>AP - Probability
+<detail>Urethral stricture
+<detail_submenu>AP - Probability
+<detail>Stones
+<detail_submenu>AP - Probability
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<Load>AP - Assessment & Plan
+

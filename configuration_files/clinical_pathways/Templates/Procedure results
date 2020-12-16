@@ -1,0 +1,12 @@
+<form>Procedure Results
+<group>Procedure Results
+<group_text>The following procedures have been performed: <insert_text>
+<group_style>1
+<new_line>
+<detail>Audiometry
+<detail_text>
+<detail_submenu>objective - procedures - audiometry
+<detail>ECG
+<detail_text>
+<detail_submenu>objective - procedures - cardiology - ECG
+

@@ -1,0 +1,23 @@
+<form>Allergies
+<group>Other Allergens
+<group_text>(<insert_text>)
+<group_style>1
+<detail>Iodine
+<detail_submenu>PMH - Allergies - Manifestations
+<detail>Food
+<detail_submenu>PMH - Allergies - Manifestations
+<detail>Inorganic chemicals
+<detail_submenu>PMH - Allergies - Manifestations
+<detail>Organic chemicals
+<detail_submenu>PMH - Allergies - Manifestations
+<detail>Insects
+<detail_submenu>PMH - Allergies - Manifestations
+<detail>Poison ivy
+<detail_submenu>PMH - Allergies - Manifestations
+<detail>Pollen
+<detail_submenu>PMH - Allergies - Manifestations
+<detail>Ragween
+<detail_submenu>PMH - Allergies - Manifestations
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

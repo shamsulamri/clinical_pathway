@@ -1,0 +1,17 @@
+<form>Reflexes
+<group>Strength of reflex
+<group_text><insert_text>
+<group_style>2
+<detail>Absent
+<detail_text>absent
+<detail>Dimished
+<detail_text>dimished
+<detail>Normal
+<detail_text>normal
+<detail>Hyperactive
+<detail_text>hyperactive
+<detail>Abnormal
+<detail_text>abnormal
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

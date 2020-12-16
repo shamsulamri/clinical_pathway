@@ -1,0 +1,16 @@
+<form>Endocrine
+<group>Endocrine
+<group_text><insert_text>
+<group_style>1
+<new_line>
+<detail>HbA1C
+<detail_text>HbA1C
+<detail_order>hba1c
+<detail>Diabetic Screen (Glucose+HbA1C)
+<detail_text>Diabetic Screen (Glucose+HbA1C)
+<detail_order>diabetic_screen
+<detail>OGTT
+<detail_text>OGTT
+<detail_order>ogtt
+
+

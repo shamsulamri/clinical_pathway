@@ -1,0 +1,15 @@
+<form>Relevant Diagnoses
+<group>Endocrine disease
+<group_text>(<insert_text>)
+<group_style>1
+<detail>Diabetes mellitus
+<detail>Hyperthyroidism
+<detail>Hypothyroidism
+<detail>Cushings disease
+<detail>Pheochromocytoma
+<detail>Primary hyperaldosteronism
+<detail>Adrenogenital syndrome
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+

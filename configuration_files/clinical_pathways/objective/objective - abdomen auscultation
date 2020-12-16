@@ -1,0 +1,14 @@
+<form>Abdomen Auscultation
+<group>Abdomen Auscultation
+<group_text><insert_text>
+<group_style>1
+<separator>;
+<detail>Bowel sounds
+<detail_text><blank>
+<detail_submenu>objective - abdomen - bowel sounds
+<detail>Bruits
+<detail_text><blank>
+<detail_submenu>objective - abdomen - bruits
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

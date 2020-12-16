@@ -1,0 +1,16 @@
+<form>Risk Factors
+<group>Risk factors
+<group_text><insert_text>
+<group_style>3
+<yes_text>Risk factors include 
+<no_text>but not 
+<new_paragraph>
+<detail>Exposure to strep
+<detail>Exposure to viral pharyngitis
+<detail>Smoking
+<detail>Crowded living quarters
+<detail>Low socio-economic status
+<detail>Immunocompromised status
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

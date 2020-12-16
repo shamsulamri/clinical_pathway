@@ -1,0 +1,25 @@
+<form>Chest
+<group>Chest
+<group_text><insert_text>
+<group_style>1
+<new_line>
+<detail>Mandible: AP && Oblique - 1 side
+<detail_text>Mandible: AP & Oblique - 1 side
+<detail_order>xr_mandible_ap_o_1
+<detail>Mandible : AP && Oblique - 2 side
+<detail_text>Mandible: AP & Oblique - 2 side
+<detail_order>xr_mandible_ap_o_2
+<detail>Paranasal sinuses: O.M && Lateral
+<detail_text>Paranasal sinuses: O.M & Lateral
+<detail_order>xr_paranasal_om_l
+<detail>Nasal bone: AP && Lateral 
+<detail_text>Nasal bone : AP & Lateral 
+<detail_order>xr_nasal_ap_l
+<detail>Skull: PA && Lateral
+<detail_text>Skull: PA & Lateral
+<detail_order>xr_skull_pa_l
+<detail>TM joint: AP && Oblique - 2 side
+<detail_text>TM joint: AP & Oblique - 2 side
+<detail_order>xr_tm_ap_o_2
+
+

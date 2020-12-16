@@ -1,0 +1,16 @@
+<form>JVP
+<group>Jugular Venous Pressure
+<group_text><insert_text>
+<group_style>2
+<detail>No JVP
+<detail_text>no JVP
+<detail>While supine
+<detail_text>JVP noted while supine
+<detail>At 30 degrees
+<detail_text>JVP noted at 30 degrees
+<detail>At 45 degrees
+<detail_text>JVP noted at 45 degrees
+<detail>At 60 degrees
+<detail_text>JVP noted at 60 degrees
+<detail>At 90 degrees
+<detail_text>JVP noted at 90 degrees

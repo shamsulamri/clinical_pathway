@@ -1,0 +1,12 @@
+<form>Labs
+<group>Instructions
+<group_text><insert_text>
+<group_style>1
+<separator>.
+<detail>Order details
+<detail_text>
+<detail_submenu>AP - lab - instructions - order details
+<detail>Specimen collection
+<detail_text>
+<detail_submenu>AP - lab - instructions - specimen collection
+

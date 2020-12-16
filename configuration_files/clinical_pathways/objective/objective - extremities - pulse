@@ -1,0 +1,15 @@
+<form>Physical Examination
+<group>Peripheral pulse
+<group_text><insert_text>
+<group_style>3
+<yes_text><insert_text> pulse equal on both side
+<no_text>but no <insert_text> pulse
+<new_paragraph>
+<detail>Radial 
+<detail_text><insert_text>
+<detail_submenu>objective - pulse character
+<detail>Posterior tibial 
+<detail>Dorsal pedis 
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

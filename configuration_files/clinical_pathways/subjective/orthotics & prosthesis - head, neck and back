@@ -1,0 +1,57 @@
+<form>Orthotics & Prosthesis
+<group>Details
+<group_text><insert_text>
+<group_style>1
+<separator><new_line>
+<detail>Tarikh ukuran
+<detail_text>Tarikh ukuran: <insert_value>
+<detail_inputbox><date><L>
+<detail>Ukuran oleh
+<detail_text>Ukuran oleh: <insert_value>
+<detail_inputbox><text><L>
+<detail>Tindakan oleh
+<detail_text>Tindakan oleh: <insert_value>
+<detail_inputbox><text><L>
+<detail>Tarikh 'fit and check out'
+<detail_text>Tarikh 'fit and checkout': <insert_value>
+<detail_inputbox><date><L>
+<detail>Tarikh serahan
+<detail_text>Tarikh serahan: <insert_value>
+<detail_inputbox><text><L>
+<detail>
+<detail_text>Catitan: <insert_value>
+<detail_inputbox><text><L>
+
+<form>Orthotics & Prosthesis
+<group>Head, neck and back
+<group_text><insert_text>
+<group_style>1
+<separator><new_line>
+<detail>At greater trochanter
+<detail_text>At greater trochanter: <insert_value>
+<detail_inputbox><text><L>
+<detail>Between iliac crest and trochanter
+<detail_text>Between iliac crest and trochanter: <insert_value>
+<detail_inputbox><text><L>
+<detail>At iliac crest
+<detail_text>At iliac crest: <insert_value>
+<detail_inputbox><text><L>
+<detail>Site of measurement to be governed by height of back uprights
+<detail_text>Site of measurement to be governed by height of back uprights: <insert_value>
+<detail_inputbox><text><L>
+<detail>At axilla
+<detail_text>At axilla: <insert_value>
+<detail_inputbox><text><L>
+<detail>Neck
+<detail_text>Neck: <insert_value>
+<detail_inputbox><text><L>
+<detail>Head (occiput to chin)
+<detail_text>Head (occiput to chin): <insert_value>
+<detail_inputbox><text><L>
+<detail>Head at brow
+<detail_text>Head at brow: <insert_value>
+<detail_inputbox><text><L>
+<detail>Jenis ortosis (nyatakan)
+<detail_text>
+<detail_submenu>orthotics & prosthesis - jenis orthosis
+

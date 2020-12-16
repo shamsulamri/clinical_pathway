@@ -1,0 +1,147 @@
+<form>Presentation
+<group>Mode of Presentation
+<group_text>The patient presented with <insert_text>.
+<group_style>1
+<detail>Abdominal pain
+<detail_text>abdominal pain
+<detail_submenu>objective - abdomen - location
+<detail>Nause
+<detail>Vomiting
+<detail>Regurgitaion
+<detail>Heartburn
+<detail>Dysphagia
+<detail>Diarrhoea
+<detail>Constipation
+<detail>Fecal incontinence
+<detail>Haematemesis
+<detail>Melaena
+<detail>Rectal bleeding
+<detail>Jaundice
+<detail>Dark urine
+<detail>Pale stools
+<detail_text>pale stools
+<detail>Abdominal swelling
+<detail_text>abdominal swelling
+<detail_submenu>objective - abdomen - location
+<detail>Pruritus
+<detail>Fever
+<detail>Weight change
+<detail>Appetite change
+<detail>
+<detail_text><insert_text>
+<detail_inputbox><text><L>
+
+<load>subjective - date of onset
+
+<load>subjective - duration of symptom
+
+<load>subjective - rate of onset
+
+<load>subjective - intensity
+
+<form>Presentation
+<group>Description of Stools
+<group_text>The patient noted <insert_text> stool
+<group_style>1
+<detail>Loose
+<detail>Watery
+<detail>Soft
+<detail>Hard
+<detail>Mucoid
+<detail>Oily
+<detail>Purulent
+<detail>Bloody
+<detail>Foul-smelling
+<detail>Pale
+<detail>Yellow
+<detail>Green
+<detail>
+<detail_text><insert_text>
+<detail_inputbox><text><L>
+
+<form>Presentation
+<group>Last bowel movemnt
+<group_text>which last occurred <insert_text>.
+<group_style>2
+<detail>Minutes ago
+<detail_text><insert_text> minutes ago
+<detail_inputbox><inte><L>
+<detail>Hours ago
+<detail_text><insert_text> hours ago
+<detail_inputbox><inte><L>
+<detail>Days ago
+<detail_text><insert_text> days ago
+<detail_inputbox><inte><L>
+<detail>Weeks ago
+<detail_text><insert_text> weeks ago
+<detail_inputbox><inte><L>
+
+<form>Presentation
+<group>Sleep disturbance
+<group_text>The problem <insert_text> awakens the patient from sleep.
+<group_style>2
+<detail>Never
+<detail>Rarely
+<detail>Occasionally
+<detail>Frequently
+
+<form>Presentation
+<group>Symptom Worse
+<group_text>Symptoms are worst <insert_text>.
+<group_style>1
+<detail>Upon wakening
+<detail_text>upon awakening
+<detail>Morning
+<detail_text>in the morning
+<detail>Afternoon
+<detail_text>in the afternoon
+<detail>Evening
+<detail_text>in the evening
+<detail>Night
+<detail_text>in the night
+<detail>
+<detail_text><insert_text>
+<detail_inputbox><text><L>
+
+<form>Presentation
+<group>Precipitating factor
+<group_text>Precipitating factor include <insert_text>.
+<group_style>1
+<detail>Eating
+<detail>Fasting
+<detail>Drinking alcohol
+<detail>Aspirin intake
+<detail>NSAID intake
+<detail_text>NSAID intake
+<detail>Exercising
+<detail>Heavy lifting
+<detail>Walking
+<detail>Urinating
+<detail>Defecating
+<detail>
+<detail_text><insert_text>
+<detail_inputbox><text><L>
+
+<form>Presentation
+<group>Associated Symptoms
+<group_text><insert_text>
+<group_style>3
+<yes_text>Associated symptoms include 
+<no_text>but no 
+<new_paragraph>
+<detail>Nausea
+<detail>Vomiting
+<detail>Fever
+<detail>Weight loss
+<detail>Anorexia
+<detail>Diarrhea
+<detail>Bloody stools
+<detail>Heartburn
+<detail>Jaundice
+<detail>Melena
+<detail>Dysuria
+<detail>Malaise
+<detail>Cough
+<detail>
+<detail_text><insert_text>
+<detail_inputbox><text><L>

@@ -1,0 +1,11 @@
+<form>Allergies Group
+<group>Allergy to ?
+<group_text><insert_text>
+<group_style>1
+<detail>Drugs
+<detail_text>drugs
+<detail_submenu>PMH - Allergies - Drug
+<detail>Other Allergens
+<detail_text>non-drugs allergen
+<detail_submenu>Other Allergens:
+<detail_submenu>PMH - Allergies - Other Allergens

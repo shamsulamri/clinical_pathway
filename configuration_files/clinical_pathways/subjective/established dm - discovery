@@ -1,0 +1,21 @@
+<form>Initial discovery
+<group>Initial Discovery
+<group_text>It was initially discovered <insert_text>
+<group_style>1
+<detail>Routine checkup
+<detail_text>in a routing check up
+<detail>Employment evaluation
+<detail_Text>in an employment
+<detail>Presurgical screen
+<detail_text>in a presurgical screen
+<detail>Hospitalization
+<detail_text>while hospitalized for another illness
+<detail>Investigation of symptom
+<detail_text>
+<detail_submenu>established dm - discovery - investigation
+<detail>Complication
+<detail>During pregnancy
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+

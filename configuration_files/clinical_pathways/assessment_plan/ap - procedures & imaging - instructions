@@ -1,0 +1,17 @@
+<form>Procedures & Imaging
+<group>Instructions
+<group_text><insert_text>
+<group_style>1
+<separator>.
+<detail>Date of study
+<detail_text>
+<detail_submenu>AP - Procedures & Imaging - instructions - date of study
+<detail>Dye in study
+<detail_text>
+<detail_submenu>AP - Procedures & Imaging - instructions - dye in study
+<detail>Instruction before test
+<detail_text>
+<detail_submenu>AP - Procedures & Imaging - instructions - instructions before test
+<detail>Follow-up instruction
+<detail_text>
+<detail_submenu>AP - Procedures & Imaging - instructions - follow-up instructions

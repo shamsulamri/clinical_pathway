@@ -1,0 +1,20 @@
+<form>Abdomen Percussion
+<group>Abdomen Percussion
+<group_text><insert_text>
+<group_style>1
+<separator>;
+<detail>Tympanitic
+<detail_text>tympanitic to percussion
+<detail_submenu>objective - abdomen - location
+<detail>Dullness
+<detail_text>dull to percussion
+<detail_submenu>objective - abdomen - location
+<detail>Shifting dullness
+<detail_text>shifting dullness
+<detail_submenu>objective - abdomen - location
+<detail>Tender
+<detail_text>tender to percussion
+<detail_submenu>objective - abdomen - location
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

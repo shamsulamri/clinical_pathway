@@ -1,0 +1,11 @@
+<form>Oxygen
+<group>Oxygen
+<group_text><insert_text>
+<group_style>1
+<detail>LPM Via
+<detail_text>LPM Via: <insert_value>
+<detail_inputbox><text><L>
+<detail>PRN
+<detail_text>PRN
+<detail>Cont
+<detail_text>CONT

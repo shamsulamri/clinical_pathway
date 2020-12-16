@@ -1,0 +1,25 @@
+<form>Transport Occupation
+<group>Transport
+<group_text><insert_text>
+<group_style>1
+<detail>Truck driver
+<detail_text>as a truck driver
+<detail>Bus driver
+<detail_text>as a bus driver
+<detail>Taxi driver
+<detail_text>as a taxi driver
+<detail>Delivery person
+<detail_text>as a delivery person
+<detail>Courier
+<detail_text>as a courier
+<detail>Seaman
+<detail_text>as a seaman
+<detail>Railroad worker
+<detail_text>as a railroad worker
+<detail>Airline pilot
+<detail_text>as an airline pilot
+<detail>Flight crew
+<detail_text>as a flight crew
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

@@ -1,0 +1,11 @@
+<form>Cervix
+<group>Cervix position
+<group_text>position (<insert_text>)
+<group_style>2
+<detail>Posterior
+<detail_text>posterior
+<detail>Central
+<detail_text>central
+<detail>Anterior
+<detail_text>anterior
+

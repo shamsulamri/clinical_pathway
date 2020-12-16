@@ -1,0 +1,17 @@
+<form>Spines
+<group>spine
+<group_text><insert_text>
+<group_style>1
+<new_line>
+<detail>Cervical Spines: AP && Lateral
+<detail_text>Cervical Spines: AP & Lateral
+<detail_order>xr_cervical_ap_l
+<detail>Lumbosacral spine: AP, Lateral
+<detail_text>Lumbosacral spine: AP, Lateral
+<detail_order>xr_lumbo_ap_l_c
+<detail>Thoracic spine: AP && Lateral
+<detail_text>Thoracic spine: AP & Lateral
+<detail_order>xr_thoracic_ap_l
+
+
+

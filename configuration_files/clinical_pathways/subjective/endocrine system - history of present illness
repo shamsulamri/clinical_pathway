@@ -1,0 +1,90 @@
+<form>Presentation
+<group>Mode of Presentation
+<group_text>The patient presented with <insert_text>.
+<group_style>1
+<detail>Appetite change
+<detail>Weight change
+<detail>Sweating
+<detail>Hair distribution change
+<detail>Lethargy
+<detail>Skin changes
+<detail>Pigmentation
+<detail>Stature change
+<detail>Importance
+<detail>Menstruation change
+<detail>Polyuria
+<detail>Polydipsia
+<detail>Polyphagia
+<detail>Lump in neck
+<detail>
+<detail_text><insert_text>
+<detail_inputbox><text><L>
+
+<load>subjective - date of onset
+
+<load>subjective - duration of symptom
+
+<load>subjective - rate of onset
+
+<load>subjective - intensity
+
+<form>Presentation
+<group>Sleep disturbance
+<group_text>The problem <insert_text> awakens the patient from sleep.
+<group_style>2
+<detail>Never
+<detail>Rarely
+<detail>Occasionally
+<detail>Frequently
+
+<form>Presentation
+<group>Symptom Worse
+<group_text>Symptoms are worst <insert_text>.
+<group_style>1
+<detail>Upon wakening
+<detail_text>upon awakening
+<detail>Morning
+<detail_text>in the morning
+<detail>Afternoon
+<detail_text>in the afternoon
+<detail>Evening
+<detail_text>in the evening
+<detail>Night
+<detail_text>in the night
+<detail>
+<detail_text><insert_text>
+<detail_inputbox><text><L>
+
+<form>Presentation
+<group>Associated Symptoms
+<group_text><insert_text>
+<group_style>3
+<yes_text>It was associated with
+<no_text>but no 
+<detail>Heat intolerance
+<detail>Cold intolerance
+<detail>Weight loss
+<detail>Polyphagia
+<detail>Polyuria
+<detail>Polydipsia
+<detail>Palpitations
+<detail>Lethargy
+<detail>Increase sweating
+<detail>Nervousness
+<detail>Irritability
+<detail>Diarrhoea
+<detail>Amenorrhoea
+<detail>Muscle weakness
+<detail>Dyspnoea
+<detail>Hoarseness
+<detail>Constipation
+<detail>Coarse skin
+<detail>Blurred vision
+<detail>Skin rash
+<detail>Infection
+<detail_text>
+<detail_submenu>dyspnea
+<detail>
+<detail_text><insert_text>
+<detail_inputbox><text><L>
+

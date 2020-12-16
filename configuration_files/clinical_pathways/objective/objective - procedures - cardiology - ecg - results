@@ -1,0 +1,37 @@
+<form>ECG Results
+<group>ECG Results
+<group_text><insert_text>
+<group_style>4
+<detail>No abnormalities
+<detail_text>ECG revealed no abnormalities
+<detail>Interpretation
+<detail_text>interpretation
+<detail_submenu>objective - procedures - cardiology - ecg - interpretation
+<detail>Rhythm
+<detail_submenu>objective - procedures - cardiology - ecg - rhythm
+<detail>Heart Rate
+<detail_text>
+<detail_submenu>objective - procedures - cardiology - ecg - rate
+<detail>QRS axis
+<detail_text>QRS axis
+<detail_submenu>objective - procedures - cardiology - ecg - qrs axis
+<detail>Conduction abnormalities
+<detail_submenu>objective - procedures - cardiology - ecg - conduction abnormalities
+<detail>Chamber abnormality
+<detail_submenu>objective - procedures - cardiology - ecg - chamber abnormality
+<detail>Ischemic changes
+<detail_submenu>objective - procedures - cardiology - ecg - ischemic changes
+<detail>Infaction
+<detail_submenu>objective - procedures - cardiology - ecg - infaction
+<detail>T wave abnormalities
+<detail_submenu>objective - procedures - cardiology - ecg - T wave abnormalities
+<detail>ST segment elevation
+<detail_submenu>objective - procedures - cardiology - ecg - ST segment elevation
+<detail>ST segment depression
+<detail_submenu>objective - procedures - cardiology - ecg - ST segment depression
+<detail>Unchanged
+<detail_submenu>objective - procedures - cardiology - ecg - unchanged
+<detail>
+<detail_text>Indications - <insert_value>
+<detail_inputbox><text><L>
+

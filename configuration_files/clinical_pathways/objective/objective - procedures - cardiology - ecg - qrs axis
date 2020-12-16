@@ -1,0 +1,18 @@
+<form>QRS axis
+<group>QRS axis
+<group_text><insert_text>
+<group_style>2
+<detail>Normal axis
+<detail_submenu>objective - procedures - cardiology - ecg - degress of axis
+<detail>Left axis deviation
+<detail_submenu>objective - procedures - cardiology - ecg - degress of axis
+<detail>Rightward axis
+<detail_submenu>objective - procedures - cardiology - ecg - degress of axis
+<detail>Right axis deviation
+<detail_submenu>objective - procedures - cardiology - ecg - degress of axis
+<detail>Extreme right axis deviation
+<detail_submenu>objective - procedures - cardiology - ecg - degress of axis
+<detail>Inderterminate axis
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

@@ -1,0 +1,20 @@
+<form>Sensory Loss
+<group>Sensory Loss
+<group_text>in <insert_text> distribution
+<group_style>1
+<detail>Distally
+<detail>Peroneal n.
+<detail>Sural n.
+<detail>Saphenous n.
+<detail>Lat. fem. cutaneous n.
+<detail>L1-L2 distribution
+<detail_text>L1-L2 distribution
+<detail>L3-L4 distribution
+<detail_text>L3-L4 distribution
+<detail>L5 distribution
+<detail_text>L5 distribution
+<detail>S1 distribution
+<detail_text>S1 distribution
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

@@ -1,0 +1,21 @@
+<form>Patient lives with
+<group>Patient lives with
+<group_text>The patient lives <insert_text>
+<group_style>4
+<detail>Alone
+<detail_text>The patient lives alone
+<detail>Family
+<detail_text>family
+<detail>spouse
+<detail_text>spouse
+<detail>Parents
+<detail_text>parents
+<detail>Friends
+<detail_text>friends
+<detail>Roommates
+<detail_text>roommates
+<detail>Unrelated people
+<detail_text>unrelated people
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

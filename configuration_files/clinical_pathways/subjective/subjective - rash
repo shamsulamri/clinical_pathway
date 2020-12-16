@@ -1,0 +1,15 @@
+<form>Rash
+<group>Rash
+<group_text>over the <insert_text>.
+<group_style>1
+<detail>Facial
+<detail>Intertriginous
+<detail>Pudendal
+<detail>Groin
+<detail>Thighs
+<detail>Calves
+<detail>Feet
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+

@@ -1,0 +1,28 @@
+<form>Location
+<group>Location
+<group_text>over <insert_text>
+<group_style>1
+<detail>Right base
+<detail_text>the right base
+<detail>Left base
+<detail_text>the left base
+<detail>Lower 1/3
+<detail_text>the lower third of the back
+<detail_submenu>objective - lung - side
+<detail>Lower 1/2
+<detail_text>the lower half of the back
+<detail_submenu>objective - lung - side
+<detail>Mid back
+<detail_text>the mid back
+<detail_submenu>objective - lung - side
+<detail>Upper back
+<detail_text>the upper back
+<detail_submenu>objective - lung - side
+<detail>Anterior chest
+<detail_text>the anterior chest
+<detail_submenu>objective - lung - side
+<detail>Diffusely
+<detail_text>the lung fields diffusely
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

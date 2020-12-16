@@ -1,0 +1,25 @@
+<form>Managerial Occupation
+<group>Managerial
+<group_text><insert_text>
+<group_style>1
+<detail>Executive
+<detail_text>as an executive
+<detail>Manager
+<detail_text>as a manager
+<detail>Consultant
+<detail_text>as a consultant
+<detail>Manufacturing
+<detail_text>in manufacturing
+<detail>Retail
+<detail_text>in retail
+<detail>Banking
+<detail_text>in banking
+<detail>Marketing
+<detail_text>in marketing
+<detail>Small business
+<detail_text>in a small business
+<detail>goverment
+<detail_text>in goverment
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

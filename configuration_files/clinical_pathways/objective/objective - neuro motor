@@ -1,0 +1,28 @@
+<form>Motor
+<group>Muscle Strength
+<group_text>Motor function - <insert_text>
+<group_style>1
+<separator>;
+<detail>Normal
+<detail_submenu>objective - neuro motor - muscle strength - normal
+<detail>RUE
+<detail_text>Right upper extremity muscle strength:
+<detail_submenu>objective - neuro motor - muscle strength - UE
+<detail>LUE
+<detail_text>Left upper extremity muscle strength:
+<detail_submenu>objective - neuro motor - muscle strength - UE
+<detail>RLE
+<detail_text>Right lower extremity muscle strength:
+<detail_submenu>objective - neuro motor - muscle strength - LE
+<detail>LLE
+<detail_text>Left lower extremity muscle strength:
+<detail_submenu>objective - neuro motor - muscle strength - LE
+<detail>Hemiparesis
+<detail_text>hemiparesis
+<detail_submenu>objective - neuro motor - muscle strength - Hemiparesis
+<detail>Paraparesis
+<detail_text>
+<detail_submenu>objective - neuro motor - muscle strength - Paraparesis
+<detail>Quadriparesis
+<detail_text>
+<detail_submenu>objective - neuro motor - muscle strength - Quadriparesis

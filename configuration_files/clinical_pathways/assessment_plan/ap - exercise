@@ -1,0 +1,28 @@
+<form>Assessment & Plan
+<group>Exercise
+<group_text><insert_text>
+<group_style>4
+<new_line>
+<detail>No exercise
+<detail_text>avoid exercise
+<detail>Walking
+<detail_text>walks
+<detail_submenu>PMH - Frequency of exercise
+<detail>Jogging
+<detail_text>jogs
+<detail_submenu>PMH - Frequency of exercise
+<detail>Swimming
+<detail_text>swims
+<detail_submenu>PMH - Frequency of exercise
+<detail>Exercise machine
+<detail_text>uses an exercise machine
+<detail_submenu>PMH - Frequency of exercise
+<detail>Competitive sports
+<detail_text>plays competitive sports
+<detail_submenu>PMH - Frequency of exercise
+<detail>Bicycling
+<detail_text>bicycles
+<detail_submenu>PMH - Frequency of exercise
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

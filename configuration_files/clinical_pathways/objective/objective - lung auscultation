@@ -1,0 +1,31 @@
+<form>Lung Auscultation
+<group>Lung Auscultation
+<group_text><insert_text>
+<group_style>1
+<separator>;
+<detail>Clear
+<detail_text>clear to auscultation
+<detail_submenu>objective - lung - location
+<detail>Stridor
+<detail_text>stridor
+<detail>Inspiratory wheezing
+<detail_text>inspiratory wheezing
+<detail_submenu>objective - lung - location
+<detail>Expiratory wheezing
+<detail_text>expiratory wheezing
+<detail_submenu>objective - lung - location
+<detail>Ronchi
+<detail_text>ronchi
+<detail_submenu>objective - lung - location
+<detail>Rales
+<detail_text>rales
+<detail_submenu>objective - lung - location
+<detail>Decreased BS
+<detail_text>decreased breath sounds
+<detail_submenu>objective - lung - location
+<detail>Coarse BS
+<detail_text>coarse breath sound
+<detail_submenu>objective - lung - location
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

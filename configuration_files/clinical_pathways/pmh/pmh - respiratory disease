@@ -1,0 +1,17 @@
+<form>Respiratory Disease
+<group>Respiratory Disease
+<group_text><insert_text>
+<group_style>1
+<detail>Asthma
+<detail_submenu>PMH - Date2
+<detail>COPD
+<detail_submenu>PMH - Date2
+<detail>Emphysema
+<detail_submenu>PMH - Date2
+<detail>Chronic bronchitis
+<detail_submenu>PMH - Date2
+<detail>Sinusitis
+<detail_submenu>PMH - Date2
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

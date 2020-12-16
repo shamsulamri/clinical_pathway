@@ -1,0 +1,218 @@
+<form>Presentation
+<group>General Condition
+<group_text>Patient complained of <insert_text>.
+<group_style>1
+<new_line>
+<detail>Pain
+<detail_text>pain<insert_text>
+<detail_submenu>pain
+<detail>Fever
+<detail_text>fever (<insert_text>)
+<detail_submenu>nursing care - fever
+<detail>Fatigue
+<detail>Weakness
+<detail>Difficulty in sleeping
+<detail>
+<detail_text><insert_text>
+<detail_inputbox><text><L>
+
+<form>Presentation
+<group>Homebound status
+<group_text>Patient <insert_text>.
+<group_style>1
+<detail>Leaves home only
+<detail>Blind or mentally incapable
+<detail>Limited activity
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<form>EENT
+<group>EENT
+<group_text><strong>EENT</strong>: <insert_text>
+<group_style>4
+<new_line>
+<separator>; 
+<detail>No abnormality detected
+<detail_text><strong>EENT</strong>: no abnormality detected
+<detail>Dysphagia
+<detail>Nasal congestion
+<detail>Post-nasal drip
+<detail>Sore throat
+<detail>Hoarseness
+<detail>Ear pain
+<detail_submenu>objective - side
+<detail>Hearing difficulty
+<detail_submenu>subjective - hearing
+<detail>Vision difficulty
+<detail_submenu>subjective - vision
+<detail>
+<detail_text><insert_text>
+<detail_inputbox><text><L>
+
+<form>Skin
+<group>Skin
+<group_text><strong>Skin</strong>: <insert_text>
+<group_style>4
+<new_line>
+<separator>; 
+<detail>No abnormality detected
+<detail_text><strong>Skin</strong>: no abnormality detected
+<detail>Dryness
+<detail>Diaphoretic
+<detail>Urticaria
+<detail>Rash
+<detail>Turgor
+<detail_submenu>nursing care - nurse progress chart - turgor
+<detail>Pale
+<detail>Flushed
+<detail>Cyanotic
+<detail>Yellow discoloration
+<detail>
+<detail_text><insert_text>
+<detail_inputbox><text><L>
+
+<form>Presentation
+<group>Cardiovascular
+<group_text><strong>Cardiovascular</strong>: <insert_text>
+<group_style>4
+<new_line>
+<separator>; 
+<detail>No abnormality detected
+<detail_text><strong>Cardiovascular</strong>: no abnormality detected
+<detail>Chest pain
+<detail>Dyspnoea
+<detail_text>
+<detail_submenu>dyspnea
+<detail>Ankle swelling
+<detail_text>ankle swelling
+<detail_submenu>objective - side
+<detail>Palpitations
+<detail>Syncope
+<detail>Internmittent claudication
+<detail>Fatigue
+<detail>Distended neck veins
+<detail_text>Distended neck veins
+<detail>
+<detail_text><insert_text>
+<detail_inputbox><text><L>
+
+<form>Presentation
+<group>Respiratory
+<group_text><strong>Respiratory</strong>: <insert_text>
+<group_style>4
+<new_line>
+<separator>; 
+<detail>No abnormality detected
+<detail_text><strong>Respiratory</strong>: no abnormality detected
+<detail>Cough
+<detail_text>cough <insert_text>
+<detail_submenu>cough
+<detail>Haemoptysis
+<detail_text>hemoptysis
+<detail>Dyspnoea
+<detail_text>
+<detail_submenu>dyspnea
+<detail>Wheeze
+<detail>Nigh sweats
+<detail>
+<detail_text><insert_text>
+<detail_inputbox><text><L>
+
+<form>Presentation
+<group>Gastrointestinal 
+<group_text><strong>GIT</strong>: <insert_text>
+<group_style>4
+<new_line>
+<separator>; 
+<detail>No abnormality detected
+<detail_text><strong>GIT</strong>: no abnormality detected
+<detail>Abdominal Pain
+<detail_text>abominal pain (<insert_text>)
+<detail_submenu>nursing care - abdominal pain
+<detail>Nausea
+<detail>Vomiting
+<detail>Appetite
+<detail_submenu>home care - nurse progress chart - appetite
+<detail>Diarrhea
+<detail>Constipation
+<detail>Incontinence
+<detail_text>bowel incontinence
+<detail>Ileo/colostomy 
+<detail>Bowel Movement
+<detail_text><blank>
+<detail_submenu>subjective - bowel movement
+<detail>
+<detail_text><insert_text>
+<detail_inputbox><text><L>
+
+<form>Presentation
+<group>Genitourinary
+<group_text><strong>Genitourinary</strong>: <insert_text>.
+<group_style>4
+<separator>; 
+<new_line>
+<detail>No abnormality detected
+<detail_text><strong>Genitourinary</strong>: no abnormality detected
+<detail>Incontinence
+<detail_text>bladder incontinence
+<detail>Frequency
+<detail_submenu>subjective - urine volume
+<detail>Dysuria
+<detail_submenu>subjective - dysuria
+<detail>Urgency
+<detail>Hesitancy
+<detail>Sediment
+<detail>Odor
+<detail_text><blank>
+<detail_submenu>subjective - urine odor
+<detail>Change in color
+<detail_text><blank>
+<detail_submenu>subjective - urine colour change 
+<detail>Nocturia
+<detail>
+<detail_text><insert_text>
+<detail_inputbox><text><L>
+
+<form>Presentation
+<group>Musculoskeletal
+<group_text><strong>Musculoskeletal</strong>: <insert_text>.
+<group_style>4
+<separator>; 
+<new_line>
+<detail>No abnormality detected
+<detail_text><strong>Musculoskeletal</strong>: no abnormality detected
+<detail>Contracture
+<detail>Paralysis
+<detail>Fall Risk
+<detail_text>risk of fall
+<detail>Joint Pain
+<detail_text>joint pain (<insert_text>)
+<detail_submenu>subjective - complain
+<detail>Ambulation
+<detail_submenu>subjective - ambulation
+<detail>Mobility
+<detail_submenu>subjective - mobility
+<detail>
+<detail_text><insert_text>
+<detail_inputbox><text><L>
+
+<form>Central Nervous System
+<group>Central Nervous System
+<group_text><strong>CNS</strong>: <insert_text>
+<group_style>4
+<new_line>
+<separator>; 
+<detail>No abnormality detected
+<detail_text><strong>CNS</strong>: no abnormality detected
+<detail>Seizure
+<detail_text>seizure (<insert_text>)
+<detail_submenu>subjective - complain
+<detail>Numbness / Tingling
+<detail>Disoriented
+<detail_submenu>nursing care - nurse progress chart - disoriented
+<detail>Vertigo/Dizziness
+<detail>Tremors
+<detail>
+<detail_text><insert_text>
+<detail_inputbox><text><L>

@@ -1,0 +1,43 @@
+<form>Occupational Therapy
+<group>Occupational Therapy
+<group_text><insert_text>
+<group_style>1
+<separator><new_line>
+<sub_notes>
+<detail>ADL
+<detail_text>Latihan skill kefungsian aktiviti harian (ADL)
+<detail_order>
+<detail>Aktiviti remedial
+<detail_text>Aktiviti remedial untuk meningkatkan/mengekalkan fungsi fizikal
+<detail_order>
+<detail>Peralatan bantuan 
+<detail_text>Peralatan bantuan dan pengubahsuaian
+<detail_order>
+<detail>Penilaian/latihan kerusi
+<detail_text>Penilaian/latihan kerusi roda dan peralatan mobiliti
+<detail_order>
+<detail>Penilaian pra-sekolah
+<detail_text>Penilaian pra-sekolah
+<detail_order>
+<detail>Stress management
+<detail_text>Stress management
+<detail_order>
+<detail>Splint
+<detail_text>Splint
+<detail_order>
+<detail>Pressure garment
+<detail_text>Pressure garment
+<detail_order>
+<detail>Work hardening
+<detail_text>Work hardening
+<detail_order>
+<detail>Modifikasi tingkahlaku
+<detail_text>Modifikasi tingkahlaku
+<detail_order>
+<detail>Lawatan
+<detail_text>Lawatan - rumah/sekolah/kerja
+<detail_order>
+<detail>Foot tech/tubigrip/sling
+<detail_text>Foot tech/tubigrip/sling
+<detail_order>
+

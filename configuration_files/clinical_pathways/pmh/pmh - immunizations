@@ -1,0 +1,12 @@
+<form>Immunizations
+<group>Immunizations
+<group_text><insert_text>
+<group_style>4
+<detail>No previous immunizations
+<detail_text>No previous immunizations
+<detail>Tetanus
+<detail_text>Tetanus
+<detail_submenu>PMH - immunizations - tetanus
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

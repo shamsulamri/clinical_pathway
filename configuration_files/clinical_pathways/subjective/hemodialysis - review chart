@@ -1,0 +1,108 @@
+<form>Hemodialysis
+<group>Hemodialysis - review chart
+<group_text>Details<insert_text>
+<group_style>1
+<separator><new_line>
+<sub_notes>
+<detail>HD treatment
+<detail_text>HD treatment: <insert_text> hrs
+<detail_inputbox><inte><L>
+<detail>Dry weight
+<detail_text>Dry weight: <insert_text> kg
+<detail_inputbox><doub><L>
+<detail>Inter-dial wt gain
+<detail_text>Inter-dial wt gain: <insert_text> kg
+<detail_inputbox><doub><L>
+<detail>Blood flow
+<detail_text>Blood flow: <insert_text> ml/hr
+<detail_inputbox><inte><L>
+<detail>Venous pressure
+<detail_text>Venous pressure: <insert_text> mmHg
+<detail_inputbox><inte><L>
+<detail>KTV
+<detail_text>KTV: <insert_text>
+<detail_inputbox><text><L>
+
+<form>Hemodialysis
+<group>Hemodialysis - review chart
+<group_text><insert_text>
+<group_style>1
+<separator><new_line>
+<sub_notes>
+<detail>HB
+<detail_text>HB: <insert_text> gm/litre
+<detail_inputbox><text><L>
+<detail>Serum iron
+<detail_text>Serum iron: <insert_text>
+<detail_inputbox><text><L>
+<detail>Serum ferritin
+<detail_text>Serum ferritin: <insert_text>
+<detail_inputbox><text><L>
+<detail>Calsium
+<detail_text>Calsium: <insert_text>
+<detail_inputbox><text><L>
+<detail>Erythropoietin
+<detail_text>Erythropoietin: <insert_text>
+<detail_inputbox><text><L>
+<detail>RBS
+<detail_text>RBS: <insert_text>
+<detail_inputbox><text><L>
+
+<form>Hemodialysis
+<group>Hemodialysis - review chart
+<group_text><insert_text>
+<group_style>1
+<separator><new_line>
+<sub_notes>
+<detail>BP
+<detail_text>BP: <insert_text> mm/hg
+<detail_inputbox><bpre><L>
+<detail>I/PTH
+<detail_text>I/PTH: <insert_text>
+<detail_inputbox><text><L>
+<detail>HBSAG
+<detail_text>HBSAG: <insert_text>
+<detail_inputbox><text><L>
+<detail>Anti-HBS
+<detail_text>Anti-HBS: <insert_text>
+<detail_inputbox><text><L>
+<detail>HCV-AB
+<detail_text>HCV-AB: <insert_text>
+<detail_inputbox><text><L>
+<detail>HIV 1/11
+<detail_text>HIV 1/11: <insert_text>
+<detail_inputbox><text><L>
+
+<form>Hemodialysis
+<group>Hemodialysis - review chart
+<group_text><insert_text>
+<group_style>1
+<separator><new_line>
+<sub_notes>
+<detail>Beta microglobin
+<detail_text>Beta microglobin: <insert_text>
+<detail_inputbox><text><L>
+<detail>Specific profile
+<detail_text>Specific profile: <insert_text>
+<detail_inputbox><text><L>
+<detail>Remarks
+<detail_text>Remarks: <insert_text>
+<detail_inputbox><text><L>
+
+<form>Assessment & Plan
+<group>Next Appointment
+<group_text>The patient will schedule a follow-up visit <insert_text>
+<group_style>1
+<new_paragraph>
+<reveal_date>
+<detail>In days
+<detail_text>in <insert_text> days
+<detail_inputbox><text><L>
+<detail>In weeks
+<detail_text>in <insert_text> weeks
+<detail_inputbox><text><L>
+<detail>In months
+<detail_text>in <insert_text> months
+<detail_inputbox><text><L>
+<detail>On a PRN basis
+<detail_text>on a PRN basis

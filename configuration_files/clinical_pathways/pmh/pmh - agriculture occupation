@@ -1,0 +1,15 @@
+<form>Agriculture Occupation
+<group>Agriculture
+<group_text><insert_text>
+<group_style>1
+<detail>Independent farmer
+<detail_text>as a independent farmer
+<detail>Farm workder
+<detail_text>as a farm worker
+<detail>Itinerant farm workder
+<detail_text>as a itinerant farm workder
+<detail>Ranch hand
+<detail_text>as a ranch hand
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

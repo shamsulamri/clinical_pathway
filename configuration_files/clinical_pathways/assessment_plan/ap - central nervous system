@@ -1,0 +1,22 @@
+<form>Assessment & Plan
+<group>DDx
+<group_text>Diagnosis: <insert_text>
+<group_style>1
+<new_line>
+<separator><new_line>
+<detail>Transient ischemic attack
+<detail_submenu>AP - Probability
+<detail>Hemorrhagic stroke
+<detail_submenu>AP - Probability
+<detail>Subarachnoid hemorrhage
+<detail_submenu>AP - Probability
+<detail>Migraine
+<detail_submenu>AP - Probability
+<detail>Tension headache
+<detail_submenu>AP - Probability
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<Load>AP - Assessment & Plan
+

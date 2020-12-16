@@ -1,0 +1,19 @@
+<form>Drug abuse complications
+<group>Drug abuse complications
+<group_text>Complications of substance abuse have included <insert_text>
+<group_style>1
+<detail>Physical addiction
+<detail_text>physical addiction
+<detail>Loss of job
+<detail_text>loss of job
+<detail>Marital problems
+<detail_text>marital problems
+<detail>Criminal arrest
+<detail_text>criminal arrest
+<detail>Auto accidents
+<detail_text>auto accidents
+<detail>Hospitalization for withdrawal
+<detail_text>hospitalization for withdrawal
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

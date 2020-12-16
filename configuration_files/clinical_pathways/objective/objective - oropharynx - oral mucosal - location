@@ -1,0 +1,16 @@
+<form>Oral Mucosal
+<group>Oral Mucosal
+<group_text>of the <insert_text>
+<group_style>1
+<detail>Lips
+<detail>Gum
+<detail>Tongue
+<detail>Buccal mucosal
+<detail>Anterior palate
+<detail>Posterior palate
+<detail>Pharynx
+<detail>Uvula
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+

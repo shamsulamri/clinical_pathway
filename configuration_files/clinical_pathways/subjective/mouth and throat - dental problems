@@ -1,0 +1,19 @@
+<form>Dental problems
+<group>Dental problems
+<group_text> - <insert_text>
+<group_style>1
+<detail>Delayed eruption teeth
+<detail>Toothache
+<detail>Caries
+<detail_submenu>mouth and throat - location
+<detail>Dentures
+<detail_submenu>mouth and throat - location
+<detail>Missing teeth
+<detail_submenu>mouth and throat - location
+<detail>Bleeding gums
+<detail_submenu>mouth and throat - location
+<detail>Pain in gums
+<detail_submenu>mouth and throat - location
+<detail>
+<detail_text><insert_text>
+<detail_inputbox><text><L>

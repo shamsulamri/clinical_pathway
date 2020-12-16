@@ -1,0 +1,24 @@
+<form>Lab Results
+<group>Blood
+<group_text><insert_text>
+<group_style>1
+<detail>Hemoglobin
+<detail_text>Hemoglobin - <insert_value> g/dl
+<detail_inputbox><text><L>
+
+<form>Lab Results
+<group>Urine
+<group_text>Urine: <insert_text>
+<group_style>1
+<separator>;
+<new_line>
+<detail>Volume (ml)
+<detail_text>volume (<insert_value> ml)
+<detail_inputbox><text><L>
+<detail>Albumin
+<detail_submenu>objective - urine - findings
+<detail>Sugar
+<detail_submenu>objective - urine - findings
+<detail>Acetone
+<detail_submenu>objective - urine - findings
+

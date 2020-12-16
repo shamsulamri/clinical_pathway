@@ -1,0 +1,25 @@
+<form>Location
+<group>Location
+<group_text>over the <insert_text>
+<group_style>4
+<detail>Diffusely
+<detail_text>diffusely
+<detail>Head
+<detail_text>head
+<detail>Chest
+<detail_text>chest
+<detail>Back
+<detail_text>back
+<detail>Buttocks
+<detail_text>buttocks
+<detail>Abdomen
+<detail_text>abdomen
+<detail>Perineum
+<detail_text>perineum
+<detail>Upper extremities
+<detail_text>upper extremities
+<detail>lower extremities
+<detail_text>lower extremities
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

@@ -1,0 +1,25 @@
+<form>Allergies
+<group>Drug
+<group_text>(<insert_text>)
+<group_style>1
+<detail>Penicillin
+<detail_submenu>PMH - Allergies - Manifestations
+<detail>Ampicillin
+<detail_submenu>PMH - Allergies - Manifestations
+<detail>Sulfa
+<detail_submenu>PMH - Allergies - Manifestations
+<detail>Cephalosporins
+<detail_submenu>PMH - Allergies - Manifestations
+<detail>Erythromycin
+<detail_submenu>PMH - Allergies - Manifestations
+<detail>Tetracycline
+<detail_submenu>PMH - Allergies - Manifestations
+<detail>Salicylates
+<detail_submenu>PMH - Allergies - Manifestations
+<detail>Codeine
+<detail_submenu>PMH - Allergies - Manifestations
+<detail>Phenytoin
+<detail_submenu>PMH - Allergies - Manifestations
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

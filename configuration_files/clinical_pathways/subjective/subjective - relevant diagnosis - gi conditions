@@ -1,0 +1,13 @@
+<form>Relevant Diagnoses
+<group>GI conditions
+<group_text>(<insert_text>)
+<group_style>1
+<detail>Peptic ulcer disease
+<detail>Gastritis
+<detail>Hiatal hernia
+<detail>Gallbladder disease
+<detail>Pancreatitis
+<detail>
+<detail_text><insert_text>
+<detail_inputbox><text><L>
+

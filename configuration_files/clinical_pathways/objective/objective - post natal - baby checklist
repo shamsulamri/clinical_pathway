@@ -1,0 +1,264 @@
+<form>Physical Examination
+<group>Vital Signs
+<group_text><insert_text>
+<group_style>1
+<separator>;
+<results_viewer> 
+<detail>Weight (Kg)
+<detail_text><insert_value> Kg
+<detail_inputbox><text><L>
+<detail>Temperature (F)
+<detail_text>T: <insert_value> (F)
+<detail_inputbox><text><L>
+<detail>Pulse rate
+<detail_text>PR: <insert_value>/min
+<detail_inputbox><text><L>
+<detail>Breathing
+<detail_text>R:<insert_value>/min
+<detail_inputbox><text><L>
+<detail>Blood Pressure
+<detail_text>BP:
+<detail_submenu>objective - blood pressure
+<detail>Blood Group
+<detail_text>Blood group:
+<detail_submenu>objective - blood group
+
+<form>Physical Examination
+<group>General
+<group_text>General appearance: <insert_text>
+<group_style>1
+<new_line>
+<detail>Cyanosis
+<detail_submenu>objective - cyanosis
+<detail>Icterus
+<detail_text>icterus
+<detail>Plathers
+<detail_text>plathers
+
+<form>Physical Examination
+<group>Head
+<group_text>Head: <insert_text>
+<group_style>4
+<separator>;
+<diagram>Head and Neck
+<new_line>
+<detail>No abnormality detected
+<detail_text>Head: no abnormality detected
+<detail>Fontanelle
+<detail_text>
+<detail_submenu>objective - fontanelle
+<detail>Fundus
+<detail_text>
+<detail_submenu>objective - fundus
+<detail>Ear
+<detail_text>
+<detail_submenu>objective - ear
+<detail>Nose
+<detail_text>
+<detail_submenu>objective - nose
+<detail>Oropharynx
+<detail_text>
+<detail_submenu>objective - oropharynx
+
+<form>Physical Examination
+<group>Neck
+<group_text>Neck: <insert_text>
+<group_style>4
+<separator>;
+<new_line>
+<diagram>Head and Neck
+<detail>No abnormality detected
+<detail_text>Neck: no abnormality detected
+<detail>Neck supple
+<detail>Neck rigidity
+<detail>Bruits
+<detail_text>Bruits
+<detail_text>Carotid bruits
+<detail_submenu>objective - neck - side - bruits
+<detail>JVP
+<detail_text>
+<detail_submenu>objective - neck - JVP
+<detail>Mass
+<detail_text>
+<detail_submenu>objective - neck - mass
+
+<form>Physical Examination
+<group>Nodes
+<group_text>Nodes: <insert_text>
+<group_style>4
+<separator>;
+<new_line>
+<diagram>Head and Neck
+<detail>No abnormality detected
+<detail_text>Nodes: no abnormality detected
+<detail>Enlarged
+<detail_text>enlarged
+<detail_submenu>objective - nodes
+<detail>Tender
+<detail_text>tender
+<detail_submenu>objective - nodes
+<detail>Erythema
+<detail_text>erythema
+<detail_submenu>objective - nodes
+
+<form>Physical Examination
+<group>Skin
+<group_text>Skin: <insert_text>
+<group_style>4
+<new_line>
+<diagram>Neuro
+<detail>No abnormality detected
+<detail_text>Skin: no abnormality detected
+<detail>Colour
+<detail_text>
+<detail_submenu>objective - skin - colour
+<detail>Temperature
+<detail_text>
+<detail_submenu>objective - skin - temperature
+<detail>Moisture
+<detail_text>
+<detail_submenu>objective - skin - moisture
+<detail>Turgor
+<detail_text>
+<detail_submenu>objective - skin - turgor
+<detail>Rash
+<detail_text>
+<detail_submenu>objective - skin - rash
+
+<form>Physical Examination
+<group>Extremities
+<group_text>Extremities: <insert_text>
+<group_style>4
+<new_line>
+<diagram>Neuro
+<detail_text>Extremities: no abnormality detected
+<detail>No abnormality detected
+<detail>Edema
+<detail_text>edema
+<detail_submenu>objective - extremities - location
+<detail>Tender
+<detail_text>tender
+<detail_submenu>objective - extremities - location
+<detail>Clubbing
+<detail_text>Clubbing
+<detail_submenu>objective - extremities - clubbing location
+<detail>Decrease perfusion
+<detail_text>
+<detail_submenu>objective - extremities - decrease perfusion type
+<detail>Veins
+<detail_text>
+<detail_submenu>objective - extremities - veins
+
+<form>Physical Examination
+<group>Chest
+<group_text>Chest: <insert_text>
+<group_style>4
+<separator>;
+<diagram>Lung
+<new_line>
+<detail>No abnormality detected
+<detail_text>Chest: no abnormality detected
+<detail>A-P diameter
+<detail_text>
+<detail_submenu>objective - chest - A-P diameter
+<detail>Pectus excavatum
+<detail_text>Pectus excavatum
+<detail>Asymmetric motion
+<detail_text>Asymmetric motion
+<detail>Tenderness
+<detail_text>tenderness
+<detail_submenu>objective - chest - tenderness
+
+<form>Physical Examination
+<group>Lungs
+<group_text>Lungs: <insert_text>
+<group_style>4
+<new_line>
+<diagram>Lung
+<detail>No abnormality detected
+<detail_text>Lungs: no abnormality detected
+<detail>Breathing
+<detail_text>
+<detail_submenu>objective - lung breathing
+<detail>Percussion
+<detail_text>
+<detail_submenu>objective - lung percussion
+<detail>Auscultation
+<detail_text>
+<detail_submenu>objective - lung auscultation
+
+<form>Physical Examination
+<group>Heart
+<group_text>Heart: <insert_text>
+<group_style>4
+<new_line>
+<diagram>Heart
+<detail>No abnormality detected
+<detail_text>Heart: no abnormality detected
+<detail>PMI
+<detail_text>
+<detail_submenu>objective - heart pmi
+<detail>Rate
+<detail_text>
+<detail_submenu>objective - heart rate
+<detail>Rhythm
+<detail_text>
+<detail_submenu>objective - heart rhythm
+<detail>S1-S4
+<detail_text>
+<detail_submenu>objective - heart sounds
+<detail>Murmur
+<detail_text>
+<detail_submenu>objective - heart murmurs
+
+<form>Physical Examination
+<group>Abdomen
+<group_text>Abdomen: <insert_text>
+<group_style>4
+<separator>;
+<new_line>
+<diagram>Abdomen
+<detail>No abnormality detected
+<detail_text>Abdomen: no abnormality detected
+<detail>Inspection
+<detail_text>
+<detail_submenu>objective - abdomen inspection
+<detail>Palpation
+<detail_text>
+<detail_submenu>objective - abdomen palpation
+<detail>Percussion
+<detail_text>
+<detail_submenu>objective - abdomen percussion
+<detail>Auscultation
+<detail_text>
+<detail_submenu>objective - abdomen auscultation
+<detail>Hernia
+<detail_text>
+<detail_submenu>objective - abdomen - hernia
+<detail>Rectal
+<detail_text>
+<detail_submenu>objective - abdomen - hernia
+
+<form>Physical Examination
+<group>Neuro
+<group_text>Neurologic: <insert_text>
+<group_style>4
+<new_line>
+<diagram>Neuro
+<detail>No abnormality detected
+<detail_text>Neuro: no abnormality detected
+<detail>Motor
+<detail_text>
+<detail_submenu>objective - neuro motor
+<detail>Sensory
+<detail_text>
+<detail_submenu>objective - neuro sensory
+<detail>Reflexes
+<detail_text>
+<detail_submenu>objective - neuro reflexes
+<detail>Tremor
+<detail_text>
+<detail_submenu>objective - neuro tremor
+<detail>Gait
+<detail_text>Gait -
+<detail_submenu>objective - neuro gait

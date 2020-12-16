@@ -1,0 +1,14 @@
+<form>Breathing
+<group>Breathing
+<group_text>Breathing - <insert_text>
+<group_style>1
+<detail>Normal
+<detail>Tachypnea
+<detail>Retractions
+<detail_submenu>objective - lung breathing - retractions
+<detail>Hyperventilation
+<detail>Hypoventilation
+<detail>Dyspnea
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

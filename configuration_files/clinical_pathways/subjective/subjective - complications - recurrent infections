@@ -1,0 +1,12 @@
+<form>Recurrent infections
+<group>Recurrent infections
+<group_text>(<insert_text>)
+<group_style>1
+<detail>Recurrent cellulitis
+<detail>Recurrent candidiasis
+<detail>Recurrent UTI
+<detail_text>recurrent UTI
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+

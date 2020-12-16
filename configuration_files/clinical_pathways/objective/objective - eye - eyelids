@@ -1,0 +1,28 @@
+<form>Eyelids
+<group>Eyelids
+<group_text>Eyelids - <insert_text>
+<group_style>1
+<detail>Erythema
+<detail_submenu>objective - oropharynx - side
+<detail>Swelling
+<detail_submenu>objective - oropharynx - side
+<detail>Chalazion
+<detail_submenu>objective - oropharynx - side
+<detail>Hordeolum
+<detail_submenu>objective - oropharynx - side
+<detail>Blepharitis
+<detail_submenu>objective - oropharynx - side
+<detail>Ptosis
+<detail_submenu>objective - oropharynx - side
+<detail>Ectropion
+<detail_submenu>objective - oropharynx - side
+<detail>Entropion
+<detail_submenu>objective - oropharynx - side
+<detail>Hematoma
+<detail_submenu>objective - oropharynx - side
+<detail>Allergic shiners
+<detail_submenu>objective - oropharynx - side
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+

@@ -1,0 +1,34 @@
+<form>Housing
+<group>Housing
+<group_text><insert_text>
+<group_style>2
+<detail>Rented apartment
+<detail_text>rented apartment
+<detail_submenu>PMH - Locale of Residence
+<detail>Condominium
+<detail_text>condominium
+<detail_submenu>PMH - Locale of Residence
+<detail>Co-op apartment
+<detail_text>co-op apartment
+<detail_submenu>PMH - Locale of Residence
+<detail>Private home
+<detail_text>private home
+<detail_submenu>PMH - Locale of Residence
+<detail>Dormitory
+<detail_text>Dormitory
+<detail_submenu>PMH - Locale of Residence
+<detail>Halfway house
+<detail_text>halfway house
+<detail_submenu>PMH - Locale of Residence
+<detail>Shelter
+<detail_text>shelter
+<detail_submenu>PMH - Locale of Residence
+<detail>Long-term health facility
+<detail_text>long-term health facility
+<detail_submenu>PMH - Locale of Residence
+<detail>Homeless
+<detail_text>homeless
+<detail_submenu>PMH - Locale of Residence
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

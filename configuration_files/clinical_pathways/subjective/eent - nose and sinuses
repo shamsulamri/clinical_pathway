@@ -1,0 +1,51 @@
+<form>Presentation
+<group>Mode of Presentation
+<group_text>The patient presented with <insert_text>.
+<group_style>1
+<detail>Frequent colds
+<detail>Nasal discharge
+<detail_submenu>nose and sinuses - nasal discharge
+<detail>Nasal stuffiness
+<detail_submenu>nose and sinuses - nostrils
+<detail>Nose bleeds
+<detail_submenu>nose and sinuses - nostrils
+<detail>Allergic rhinitis
+<detail>Vasomotor rhinitis
+<detail>Trauma
+<detail>Sinusitis
+<detail_submenu>nose and sinuses - sinusitis
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<load>subjective - rate of onset
+
+<load>subjective - intensity
+
+<form>Presentation
+<group>Associated Symptoms
+<group_text><insert_text>
+<group_style>3
+<yes_text>Associated symptoms include 
+<no_text>but no 
+<detail>URTI
+<detail>Cough
+<detail>Hearing loss
+<detail_submenu>objective - side
+<detail>Headache
+<detail>Fever
+<detail_submenu>Fever (deg F)
+<detail>Dizziness
+<detail>Tinnitus
+<detail_submenu>objective - side
+<detail>Ear inflammation
+<detail_submenu>objective - side
+<detail>Otorrhea
+<detail_submenu>objective - side
+<detail>Cervical nodes
+<detail>Mastoiditis
+<detail_submenu>objective - side
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+

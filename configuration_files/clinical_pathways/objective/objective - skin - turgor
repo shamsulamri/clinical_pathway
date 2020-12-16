@@ -1,0 +1,9 @@
+<form>Skin
+<group>Skin turgor
+<group_text>turgor <insert_text>
+<group_style>2
+<detail>Normal
+<detail>Decreased
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

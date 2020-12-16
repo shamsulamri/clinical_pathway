@@ -1,0 +1,10 @@
+<form>Retraction
+<group>Lung Retraction
+<group_text>(<insert_text>)
+<group_style>1
+<detail>Suprasternal
+<detail>Intercostal
+<detail>Supraclavicular
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

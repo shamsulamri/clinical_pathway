@@ -1,0 +1,40 @@
+<form>Assessment & Plan
+<group>DDx
+<group_text>Diagnosis: <insert_text>
+<group_style>1
+<new_line>
+<separator><new_line>
+<detail>Diabetes Mellitus
+<detail_submenu>AP - Probability
+<detail>IDDM
+<detail_submenu>AP - Probability
+<detail>NIDDM
+<detail_submenu>AP - Probability
+<detail>Gestational DM
+<detail_submenu>AP - Probability
+<detail>Obesity
+<detail_submenu>AP - Probability
+<detail>Steroid use
+<detail_submenu>AP - Probability
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<form>Assessment & Plan
+<group>ICD10
+<group_text>ICD10 Diagnosis: <insert_text>
+<group_style>1
+<new_line>
+<separator><new_line>
+<detail>Infectious and Parasitic
+<detail_text>
+<detail>Neoplasm
+<detail_text>
+<detail>Disease of the blood
+<detail_text>
+<detail>Disease of endocrine
+<detail_text>
+<detail_submenu>ICD10 - Disease of endocrine
+
+<Load>AP - Assessment & Plan
+

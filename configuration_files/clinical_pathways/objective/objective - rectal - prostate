@@ -1,0 +1,17 @@
+<form>Prostate
+<group>Prostate
+<group_text><insert_text>
+<group_style>1
+<detail>Normal
+<detail>Enlarged
+<detail>Boggy
+<detail>Tender
+<detail>Hard nodule on right
+<detail>Hard nodule on left
+<detail>Hard nodule in middle
+<detail>cm diameter
+<detail_text><insert_value> cm in diameter
+<detail_inputbox><text><L>
+<detail>
+<detail_text><insert_value> 
+<detail_inputbox><text><L>

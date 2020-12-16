@@ -1,0 +1,16 @@
+<form>Node
+<group>Node charateristics
+<group_text><insert_text>
+<group_style>1
+<detail>Enlarged
+<detail_submenu>objective - nodes - size
+<detail>Tender
+<detail>Hard
+<detail>Soft
+<detail>Ruberry
+<detail>Fixed
+<detail>Erythema
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+

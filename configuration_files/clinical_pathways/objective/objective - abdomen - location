@@ -1,0 +1,23 @@
+<form>Location
+<group>Location
+<group_text>over the <insert_text>
+<group_style>4
+<detail>Diffusely
+<detail_text>diffusely
+<detail>RUQ
+<detail_text>RUQ
+<detail>LUQ
+<detail_text>LUQ
+<detail>RLQ
+<detail_text>RLQ
+<detail>LLQ
+<detail_text>LLQ
+<detail>Epigastric
+<detail_text>epigastric
+<detail>Periumbilical
+<detail_text>periumbilical
+<detail>Suprapubic
+<detail_text>suprapubic
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

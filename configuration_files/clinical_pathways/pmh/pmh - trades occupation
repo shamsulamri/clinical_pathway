@@ -1,0 +1,31 @@
+<form>Trades Occupation
+<group>Trades
+<group_text><insert_text>
+<group_style>1
+<detail>Machinist
+<detail_text>as a machinist
+<detail>Mechanic
+<detail_text>as a mechanic
+<detail>Factory workder
+<detail_text>as a factory worker
+<detail>Appliance installation
+<detail_text>in appliance installation
+<detail>Appliance repair
+<detail_text>in appliance repair
+<detail>Carpenter
+<detail_text>as a carpenter
+<detail>Painter
+<detail_text>as a painter
+<detail>Electrician
+<detail_text>as an electrician
+<detail>Plumber
+<detail_text>as a plumber
+<detail>Roofer
+<detail_text>as a roofer
+<detail>Welder
+<detail_text>as a welder
+<detail>Foundry workder
+<detail_text>as a foundry worker
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

@@ -1,0 +1,48 @@
+<form>Labour Onset
+<group>Labour Onset
+<group_text>Labour onset: <insert_text>
+<group_style>1
+<detail>Spontaneous
+<detail_text>spontaneous
+<detail>Induced
+<detail_text>induced
+<detail>Augmented
+<detail_text>augmented
+<detail>Oxytocin
+<detail_text>oxytocin
+<detail>Prostaglandins
+<detail_text>prostaglandins
+<detail>Spont. rupture of membrane
+<detail_text>spontaneous rupture of membrane
+<detail>Arti. rupture of membrane
+<detail_text>artificial rupture of membrane
+
+<form>Labour Onset
+<group>Foetus
+<group_text>Fetal: <insert_text>
+<group_style>1
+<new_line>
+<separator>;
+<detail>Single
+<detail_text>single
+<detail>Multiple
+<detail_text>multiple
+<detail>Lie
+<detail_text>
+<detail_submenu>objective - labour onset - lie
+<detail>Presentation
+<detail_text>
+<detail_submenu>objective - labour onset - presentation
+<detail>Cord Prolapse
+
+<form>Labour Onset
+<group>Others
+<group_text><insert_text>
+<group_style>3
+<yes_text>
+<no_text>but no 
+<new_paragraph>
+<detail>CTG
+<detail_text>CTG done
+<detail>Foetal Distress
+

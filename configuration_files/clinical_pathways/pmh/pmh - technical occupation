@@ -1,0 +1,21 @@
+<form>Technical Occupation
+<group>Technical
+<group_text>(<insert_text>)
+<group_style>1
+<detail>Electronics
+<detail_text>electronics
+<detail>Computers
+<detail_text>computers
+<detail>Graphics
+<detail_text>graphics
+<detail>Communications
+<detail_text>communications
+<detail>Advertising
+<detail_text>advertising
+<detail>Publishing
+<detail_text>publishing
+<detail>Media
+<detail_text>media
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

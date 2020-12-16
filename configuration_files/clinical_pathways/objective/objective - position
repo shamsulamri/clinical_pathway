@@ -1,0 +1,7 @@
+<form>Physical Examination
+<group>Position
+<group_text>(<insert_text>)
+<group_style>2
+<detail>Lying
+<detail>Sitting
+<detail>Standing

@@ -1,0 +1,12 @@
+<form>Increased
+<group>Frequency of urination is
+<group_text><insert_text>
+<group_style>2
+<reveal_date>
+<detail>Times per hour
+<detail_text>to <insert_value> time(s) per hour
+<detail_inputbox><inte><L>
+<detail>Times per day
+<detail_text>to <insert_value> time(s) per day
+<detail_inputbox><inte><L>
+

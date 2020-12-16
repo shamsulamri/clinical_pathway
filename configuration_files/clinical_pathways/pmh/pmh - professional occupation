@@ -1,0 +1,29 @@
+<form>Professional Occupation
+<group>Professional Occupation
+<group_text>as <insert_text>
+<group_style>1
+<detail>Physician
+<detail_text>a physician
+<detail>Dentist
+<detail_text>a dentist
+<detail>Psychologist
+<detail_text>a psychologist
+<detail>Lawyer
+<detail_text>a lawyer
+<detail>Accountant
+<detail_text>an accountant
+<detail>Teacher
+<detail_text>a teacher
+<detail>Academic
+<detail_text>an academic
+<detail>Architect
+<detail_text>an architect
+<detail>Engineer
+<detail_text>an engineer
+<detail>Scientist
+<detail_text>a scientist
+<detail>Clergyman
+<detail_text>a clergyman
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

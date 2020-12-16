@@ -1,0 +1,24 @@
+<form>Occupation
+<group>Occupation
+<group_text><insert_text>
+<group_style>1
+<detail>Currently works
+<detail_text>currently works
+<detail_submenu>PMH - Current occupation
+<detail>Quit working
+<detail_text>quit working
+<detail_submenu>PMH - Date
+<detail>Laid off
+<detail_text>was laid off
+<detail_submenu>PMH - Date
+<detail>Retired
+<detail_text>retired
+<detail_submenu>PMH - Date
+<detail>Student
+<detail_text>is a student
+<detail>Past occupation
+<detail_text>In the past has worked
+<detail_submenu>PMH - Current occupation
+<detail>Occupational exposure
+<detail_text>. The patient report occupational exposure to
+<detail_submenu>PMH - Occupational Exposure

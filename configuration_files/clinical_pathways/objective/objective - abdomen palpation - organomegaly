@@ -1,0 +1,26 @@
+<form>Organomegaly
+<group>Organomegaly
+<group_text>organomegaly - <insert_text>
+<group_style>1
+<separator>,
+<detail>Hepatomegaly
+<detail>Liver - cm below costal margin
+<detail_text>Liver <insert_value> cm below costal margin
+<detail_inputbox><text><L>
+<detail>Liver breadth percussed - cm
+<detail_text>liver breadth percussed at <insert_value> cm
+<detail_inputbox><text><L>
+<detail>Spleenomegaly
+<detail>Spleen - cm below costal margin
+<detail_text>Spleen <insert_value> cm below costal margin
+<detail_inputbox><text><L>
+<detail>Bladder - cm above pubis
+<detail_text>bladder <insert_value> cm above pubis
+<detail_inputbox><text><L>
+<detail>Right kidney
+<detail_text>right kidney enlarged
+<detail>Left kidney
+<detail_text>left kidney enlarged
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

@@ -1,0 +1,78 @@
+<form>Past smoking
+<group>Past Smoking Per Day
+<group_text>The patient has smoked <insert_text>
+<group_style>4
+<detail>No history of smoking
+<detail_text>No history of smoking.
+<detail>Cigarettes-packs
+<detail_text><insert_text> pack(s) of cigarettes per day
+<detail_submenu>PMH - substance abuse - tobacco - duration
+<detail_inputbox><inte><L>
+<detail>Pipes
+<detail_text><insert_text> pipe(s) per day
+<detail_submenu>PMH - substance abuse - tobacco - duration
+<detail_inputbox><inte><L>
+<detail>Cigars
+<detail_text><insert_text> cigar(s) per day
+<detail_submenu>PMH - substance abuse - tobacco - duration
+<detail_inputbox><inte><L>
+<detail>Chew tobacco-cans
+<detail_text><insert_text> can(s) of tobacco per day
+<detail_submenu>PMH - substance abuse - tobacco - duration
+<detail_inputbox><inte><L>
+
+<form>Current smoking
+<group>Current Smoking Per Day
+<group_text>The patient currently smokes <insert_text>.
+<group_style>1
+<detail>Cigarettes-packs
+<detail_text><insert_text> pack(s) of cigarettes per day
+<detail_inputbox><inte><L>
+<detail>Pipes
+<detail_text><insert_text> pipe(s) per day
+<detail_inputbox><inte><L>
+<detail>Cigars
+<detail_text><insert_text> cigar(s) per day
+<detail_inputbox><inte><L>
+<detail>Chew tobacco-cans
+<detail_text><insert_text> can(s) of tobacco per day
+<detail_inputbox><inte><L>
+
+<form>Date of quitting
+<group>Date of Quitting
+<group_text>The patient <insert_text>.
+<group_style>2
+<reveal_date>
+<detail>Has tried to quit
+<detail_text>has tried to quit
+<detail>Still smoking
+<detail_text>is still smoking
+<detail>Date:
+<detail_text>on the <insert_text>
+<detail_inputbox><date><R>
+<detail>Days ago
+<detail_text>quit tobacco use <insert_text> days ago
+<detail_inputbox><inte><L>
+<detail>Weeks ago
+<detail_text>quit tobacco use <insert_text> weeks ago
+<detail_inputbox><inte><L>
+<detail>Months ago
+<detail_text>quit tobacco use <insert_text> months ago
+<detail_inputbox><inte><L>
+<detail>Years ago
+<detail_text>quit tobacco use <insert_text> years ago
+<detail_inputbox><inte><L>
+
+<form>Second hand smoke
+<group>Second Hand Smoke
+<group_text>There is history of <insert_text> 
+<group_style>4
+<detail>No exposure
+<detail_text>The patient denied exposure to second hand smoke.
+<detail>Heavy exposure
+<detail_text>heavy exposure to second hand smoke
+<detail_submenu>PMH - substance abuse - tobacco - exposure
+<detail>Mild exposure
+<detail_text>mild exposure to second hand smoke
+<detail_submenu>PMH - substance abuse - tobacco - exposure
+

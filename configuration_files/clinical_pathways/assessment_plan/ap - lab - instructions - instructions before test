@@ -1,0 +1,13 @@
+<form>Labs
+<group>Instructions before test
+<group_text>Advice patient to <insert_text>
+<group_style>1
+<detail>Fast prior to the procedure
+<detail_text>fast prior to the procedure
+<detail>Eat prior to the procedure
+<detail_text>eat prior to the procedure
+<detail>Call for special instruction
+<detail_text>call for special instructions regarding it
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>

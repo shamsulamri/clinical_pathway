@@ -1,0 +1,8 @@
+<form>Referee address
+<group>Referee address
+<group_text>at <insert_text>
+<group_style>0
+<detail>
+<detail_text><insert_value> 
+<detail_inputbox><text><L>
+

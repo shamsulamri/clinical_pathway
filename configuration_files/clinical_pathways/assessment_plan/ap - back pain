@@ -1,0 +1,24 @@
+<form>Assessment & Plan
+<group>DDx
+<group_text>Diagnosis: <insert_text>
+<group_style>1
+<new_line>
+<separator><new_line>
+<detail>Prolapse intervertebral disc
+<detail_submenu>AP - Probability
+<detail>Spinal stenosis
+<detail_submenu>AP - Probability
+<detail>Spondylolisthesis
+<detail_submenu>AP - Probability
+<detail>Osteoarthritis
+<detail_submenu>AP - Probability
+<detail>Scoliosis
+<detail_submenu>AP - Probability
+<detail>Kyphosis
+<detail_submenu>AP - Probability
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+
+<Load>AP - Assessment & Plan
+

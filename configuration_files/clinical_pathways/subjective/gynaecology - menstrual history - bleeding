@@ -1,0 +1,14 @@
+<form>Extent of bleeding
+<group>Extent of bleeding
+<group_text><insert_text>
+<group_style>2
+<detail>Light
+<detail_text>light
+<detail>Normal
+<detail_text>normal
+<detail>Heavy
+<detail_text>heavy
+<detail>
+<detail_text><insert_value>
+<detail_inputbox><text><L>
+

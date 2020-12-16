@@ -1,0 +1,16 @@
+<form>Orthotics & Prosthesis
+<group>Prosthesis
+<group_text>Prosthesis: <insert_text>
+<group_style>1
+<new_paragraph>
+<detail>Upper limb 
+<detail_text>upper limb (amputation / disarticulation )
+<detail_submenu>ap - orthotics & prosthesis - prosthesis - type
+<detail>Lower limb
+<detail_text>lower limb (amputation / disarticulation )
+<detail_submenu>ap - orthotics & prosthesis - prosthesis - type
+<detail>Right / Left / Bilateral
+<detail_submenu>ap - orthotics & prosthesis - prosthesis - type
+
+
+

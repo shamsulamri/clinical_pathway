@@ -1,0 +1,31 @@
+<form>Location
+<group>Location
+<group_text>Over the <insert_text>.
+<group_style>4
+<detail>Diffusely
+<detail_text>Diffusely over the abdomen.
+<detail>RUQ
+<detail_text>RUQ
+<detail>LUQ
+<detail_text>LUQ
+<detail>RLQ
+<detail_text>RLQ
+<detail>LLQ
+<detail_text>LLQ
+<detail>Epigastric
+<detail_text>epigastric
+<detail>Periumbilical
+<detail_text>periumbilical
+<detail>Suprapubic
+<detail_text>suprapubic
+<detail>
+<detail_text><insert_text>
+<detail_inputbox><text><L>
+
+<load>subjective - date of onset
+
+<load>subjective - duration of symptom
+
+<load>subjective - rate of onset
+
+<load>subjective - intensity
