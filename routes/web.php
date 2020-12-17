@@ -19,8 +19,8 @@ Route::get('/', function () {
 });
 
 
-Route::get('/cp/{id}', [EditorController::class, 'problem']);
-Route::get('/cp/{id}/{soap}/{problem}/{section?}', [CPController::class, 'generate']);
+Route::get('/cp/{patient_id}/{consultation_id}', [EditorController::class, 'problem']);
+Route::get('/cp/{patient_id}/{consultation_id}/{soap}/{problem}/{section?}', [CPController::class, 'generate']);
 Route::post('/cp/create', [CPController::class, 'create'])->name('cp.create');
 Route::post('/cp/remove', [CPController::class, 'remove'])->name('cp.remove');
 
@@ -29,7 +29,7 @@ Route::post('/consultation/search{id?}', 'ConsultationController@search');
 Route::get('/consultation/search/{id?}', 'ConsultationController@search');
 Route::get('/consultation/delete/{id}', 'ConsultationController@delete');
 
-Route::get('/editor/{id}/{problem?}', [EditorController::class, 'generate']);
+Route::get('/editor/{patient_id}/{id}/{problem?}', [EditorController::class, 'generate']);
 Route::post('/editor/add', [EditorController::class, 'add'])->name('editor.add');
 
 Route::resource('histories', 'HistoryController');

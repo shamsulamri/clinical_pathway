@@ -13,12 +13,12 @@ $insert_here = "..";
 $current_section = "";
 ?>
 
-<a class='btn btn-warning' href="/cp/{{ $consultation_id }}/subjective/{{ $problem }}"><i class="fa fa-chevron-left" aria-hidden="true"></i> Back</a>
-<a class="btn @if($isEdit) btn-primary @else btn-secondary @endif" href="/editor/{{ $consultation_id }}/{{ $problem }}?soap={{ $soap }}&edit={{ !$isEdit }}">Toggle Edit</a>
+<a class='btn btn-warning' href="/cp/{{ $patient_id }}/{{ $consultation_id }}/subjective/{{ $problem }}"><i class="fa fa-chevron-left" aria-hidden="true"></i> Back</a>
+<a class="btn @if($isEdit) btn-primary @else btn-secondary @endif" href="/editor/{{ $patient_id }}/{{ $consultation_id }}/{{ $problem }}?soap={{ $soap }}&edit={{ !$isEdit }}">Toggle Edit</a>
 
 <br>
-<a href="/editor/{{ $consultation_id }}/{{ $problem }}?soap=cc">Complain</a>
-<a href="/editor/{{ $consultation_id }}/{{ $problem }}?soap=pmh">PMH</a>
+<a href="/editor/{{ $patient_id }}/{{ $consultation_id }}/{{ $problem }}?soap=cc">Complain</a>
+<a href="/editor/{{ $patient_id }}/{{ $consultation_id }}/{{ $problem }}?soap=pmh">PMH</a>
 <br>
 <br>
 @if ($isEdit)
@@ -40,7 +40,7 @@ $current_section = "";
 			<?php
 			foreach($problems as $index=>$problem) {
 					$problem = str_replace("_", " ", $problem);
-					$note = $helper->getNote($soap_key, $problem);
+					$note = $helper->getNote($patient_id, $consultation_id, $soap_key, $problem);
 					?>
 					@if ($index>0)
 					<br>
@@ -74,9 +74,9 @@ $current_section = "";
 													if ($helper->stringStartsWith($path, "<group>")) {
 															$group = $helper->removeFromString("<group>", $path);
 															$group_id = $helper->toId($group);
-															$text = $helper->compileText($consultation_id, $soap_key, $problem, $section, $group_id);
-															$section_note = $helper->getNote($soap_key, $problem, $section);
-															$note = $helper->getNote($soap_key, $problem, $section, $group);
+															$text = $helper->compileText($patient_id, $consultation_id, $soap_key, $problem, $section, $group_id);
+															$section_note = $helper->getNote($patient_id, $consultation_id, $soap_key, $problem, $section);
+															$note = $helper->getNote($patient_id, $consultation_id, $soap_key, $problem, $section, $group);
 															if ($text) {
 																	if ($current_section != $section) {
 ?>
@@ -179,7 +179,7 @@ $(document).ready(function(){
 		});
 
 		function addNote(id, value) {
-				var dataString = "soap={{ $soap }}&consultation_id={{ $consultation_id }}&id="+id+"&value="+value;
+				var dataString = "soap={{ $soap }}&patient_id={{ $patient_id }}&consultation_id={{ $consultation_id }}&id="+id+"&value="+value;
 				dataString = parse(dataString);
 				console.log(dataString);
 				$.ajax({

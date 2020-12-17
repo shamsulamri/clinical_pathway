@@ -5,25 +5,25 @@
 <main role="main" class="container">
  <!-- Side navigation -->
 <div class="sidenav">
-		<a href="/editor/{{ $consultation_id }}/{{ $target_problem }}">Editor</a>
-		<a href="/cp/{{ $consultation_id }}">Problems List</a>
+		<a href="/editor/{{ $patient_id }}/{{ $consultation_id }}/{{ $target_problem }}">Editor</a>
+		<a href="/cp/{{ $patient_id }}/{{ $consultation_id }}">Problems List</a>
 		<hr>
 		<strong>
-		<a href="/cp/{{ $consultation_id }}/subjective/{{ $problem }}?target_problem={{ $target_problem }}">Subjective</a>
-		<a href="/cp/{{ $consultation_id }}/objective/{{ $problem }}?target_problem={{ $target_problem }}">Objective</a>  
-		<a href="/cp/{{ $consultation_id }}/assessment_plan/{{ $problem }}?target_problem={{ $target_problem }}">Assesstment and Plan</a>
+		<a href="/cp/{{ $patient_id }}/{{ $consultation_id }}/pmh/{{ $problem }}?target_problem={{ $target_problem }}">Patient History</a>
 		<hr>
-		<a href="/cp/{{ $consultation_id }}/pmh/{{ $problem }}?target_problem={{ $target_problem }}">Patient History</a>
+		<a href="/cp/{{ $patient_id }}/{{ $consultation_id }}/subjective/{{ $problem }}?target_problem={{ $target_problem }}">Subjective</a>
+		<a href="/cp/{{ $patient_id }}/{{ $consultation_id }}/objective/{{ $problem }}?target_problem={{ $target_problem }}">Objective</a>  
+		<a href="/cp/{{ $patient_id }}/{{ $consultation_id }}/assessment_plan/{{ $problem }}?target_problem={{ $target_problem }}">Assesstment and Plan</a>
 		</strong>
 		<hr>
 		@if($problem_list)
 				@foreach($problem_list as $index=>$p)
-					<a href="/cp/{{ $consultation_id }}/{{ $soap }}/{{ $problem }}/{{ strtolower($p) }}"><strong>{{ $p }}</strong></a>
+					<a href="/cp/{{ $patient_id }}/{{ $consultation_id }}/{{ $soap }}/{{ $problem }}/{{ strtolower($p) }}"><strong>{{ $p }}</strong></a>
 					@if ($helper->toId($section)==$helper->toId($p))
 						@if (count($groups)>1)
 								@foreach($groups as $link)
 									@if ($parent)
-										 <a href="/cp/{{ $consultation_id }}/{{ $soap }}/{{ $problem }}/{{ $section }}#{{ $helper->toId($link) }}">&nbsp;&nbsp;&nbsp;{{ $link }}</a>
+										 <a href="/cp/{{ $patient_id }}/{{ $consultation_id }}/{{ $soap }}/{{ $problem }}/{{ $section }}#{{ $helper->toId($link) }}">&nbsp;&nbsp;&nbsp;{{ $link }}</a>
 									@else
 										 <a href="#{{ $helper->toId($link) }}">&nbsp;&nbsp;&nbsp;{{ $link }}</a>
 									@endif
@@ -36,8 +36,10 @@
 
 <!-- Page content -->
 <div class="pathway">
+<!--
 {{ $filename }}<br>
 {{ $target_problem }}
+-->
 
 @if ($soap == 'pmh')
 		<h3>Patient History</h3>
@@ -401,7 +403,7 @@ $(document).ready(function(){
 								value = $("a[id="+id+"]").text();
 						}
 
-						var dataString = "consultation_id={{ $consultation_id }}&key="+id+"&value="+value+"&soap={{ $soap }}&filename={{ $filename }}";
+						var dataString = "patient_id={{ $patient_id }}&consultation_id={{ $consultation_id }}&key="+id+"&value="+value+"&soap={{ $soap }}&filename={{ $filename }}";
 						$.ajax({
 						type: "POST",
 								headers: {'X-CSRF-TOKEN': $('meta[name=csrf-token]').attr('content')},
@@ -613,7 +615,7 @@ $(document).ready(function(){
 });
 
 function createData(key, value, description) {
-		var dataString = "consultation_id={{ $consultation_id }}&key="+key+"&value="+value+"&soap={{ $soap }}&filename={{ $filename }}";
+		var dataString = "patient_id={{ $patient_id }}&consultation_id={{ $consultation_id }}&key="+key+"&value="+value+"&soap={{ $soap }}&filename={{ $filename }}";
 		if (description) {
 			dataString = dataString+"&description="+description;
 		}
@@ -630,7 +632,7 @@ function createData(key, value, description) {
 }
 
 function removeData(key) {
-		var dataString = "consultation_id={{ $consultation_id }}&ids="+key+"&soap={{ $soap }}";
+		var dataString = "patient_id={{ $patient_id }}&consultation_id={{ $consultation_id }}&ids="+key+"&soap={{ $soap }}";
 		console.log(dataString);
 		$.ajax({
 		type: "POST",

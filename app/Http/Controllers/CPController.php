@@ -11,9 +11,7 @@ use App\History;
 
 class CPController extends Controller
 {
-		public $patient_id = 1;
-
-		public function generate(Request $request, $consultation_id, $soap, $problem, $section=null)
+		public function generate(Request $request, $patient_id,  $consultation_id, $soap, $problem, $section=null)
 		{
 				if ($soap=='pmh') {
 						$problem = 'pmh';
@@ -47,7 +45,7 @@ class CPController extends Controller
 
 				$kvs = [];
 				if ($soap=='pmh') {
-						$history = History::where('patient_id', $this->patient_id)->first();
+						$history = History::where('patient_id', $request->patient_id)->first();
 						$kvs = $history->history_pathway??null;
 				} else {
 						$consultation = Consultation::where('consultation_id', $consultation_id)->first();
@@ -88,6 +86,7 @@ class CPController extends Controller
 					'groups'=>$groups??null,
 					'parent_details'=>$parent_details??null,
 					'consultation_id'=>$consultation_id,
+					'patient_id'=>$request->patient_id,
 					'target_problem'=>$target_problem??$problem,
 				]);
 		}
@@ -161,12 +160,12 @@ class CPController extends Controller
 				$history = new History();
 
 				if ($soap=='pmh') {
-						$history = History::find($this->patient_id);
+						$history = History::find($request->patient_id);
 						if ($history) {
 								$kvs = $history->history_pathway;
 						} else {
 								$history = new History();
-								$history->patient_id = $this->patient_id;
+								$history->patient_id = $request->patient_id;
 						}
 				} else {
 						$consultation = Consultation::where('consultation_id', $consultation_id)->first();
@@ -392,7 +391,7 @@ class CPController extends Controller
 				$kvs = [];
 
 				if ($soap == 'pmh') {
-						$history = History::find($this->patient_id);
+						$history = History::find($request->patient_id);
 						$kvs = $history->history_pathway;
 				} else {
 						$consultation = Consultation::where('consultation_id', $consultation_id)->first();
@@ -549,7 +548,7 @@ class CPController extends Controller
 				$history = null;
 
 				if ($soap=='pmh') {
-						$history = History::find($this->patient_id);
+						$history = History::find($request->patient_id);
 						$kvs = $history->history_pathway??null;
 				} else {
 						$consultation = Consultation::where('consultation_id', $consultation_id)->first();

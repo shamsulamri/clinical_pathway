@@ -11,9 +11,7 @@ use App\History;
 
 class EditorController extends Controller
 {
-	public $patient_id = 1;
-
-	public function generate(Request $request, $consultation_id, $soap="subjective", $problem=null)
+	public function generate(Request $request, $patient_id, $consultation_id, $soap="subjective", $problem=null)
 	{
 			$helper = new CPHelper();
 
@@ -25,7 +23,7 @@ class EditorController extends Controller
 
 			if ($soap=='pmh') {
 					$soaps = array("pmh"=>"pmh");
-					$history = History::find(1);
+					$history = History::find($patient_id);
 					if (empty($history)) {
 							return "No other history";
 					}
@@ -42,7 +40,7 @@ class EditorController extends Controller
 			}
 
 			$problems = [];
-			foreach($soaps as $soap_key=>$soap) {
+			foreach($soaps as $soap_key=>$s) {
 					if (!empty($kvs[$soap_key])) {
 							foreach($kvs[$soap_key] as $key=>$problem) {
 								if (!in_array($helper->toId($key), $problems)) {
@@ -83,7 +81,7 @@ class EditorController extends Controller
 
 			*/
 
-			Log::info($problems);
+			Log::info($soap);
 
 			return view('editor.editor', [
 					'helper'=>$helper,
@@ -92,7 +90,7 @@ class EditorController extends Controller
 					'editor_note'=>$editor_note,
 					'soaps'=>$soaps,
 					'kvs'=>$kvs,
-					'consultation_id'=>$consultation_id,
+					'patient_id'=>$patient_id,
 					'isEdit'=>$request->edit??false,
 					'problem'=>$request->problem,
 					'consultation_id'=>$consultation_id,
@@ -109,11 +107,11 @@ class EditorController extends Controller
 
 			$consultation = null;
 			if ($soap=='pmh') {
-					$history = History::where('patient_id', $this->patient_id)->first();
+					$history = History::where('patient_id', $request->patient_id)->first();
 					$kvs = $history->history_pathway??null;
 					if (empty($history)) {
 							$history = new History();
-							$history->patient_id = $this->patient_id;
+							$history->patient_id = $request->patient_id;
 					}
 			} else {
 					$consultation_id = $request->consultation_id;
@@ -163,7 +161,7 @@ class EditorController extends Controller
 			return "Note added...";
 	}
 
-	public function problem($consultation_id)
+	public function problem($patient_id, $consultation_id)
 	{
 			$problems = ['nursing care', 
 					'home care',
@@ -198,6 +196,7 @@ class EditorController extends Controller
 			];
 			return view('editor.problem', [
 				'problems'=>$problems,
+				'patient_id'=>$patient_id,
 				'consultation_id'=>$consultation_id,
 			]);
 	}

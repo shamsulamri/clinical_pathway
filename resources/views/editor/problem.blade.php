@@ -14,7 +14,7 @@ body {
 @foreach($problems as $problem)
 
 <h5>
-<a href="/cp/{{ $consultation_id }}/subjective/{{ $problem }}">{{ ucwords($problem) }}</a>
+<a href="/cp/{{ $patient_id }}/{{ $consultation_id }}/subjective/{{ $problem }}">{{ ucwords($problem) }}</a>
 <br>
 </h5>
 @endforeach

@@ -10,4 +10,9 @@ The source is still in early development but operational.
 2. Move the clinical_pathways folder in the configuration files folder to storage/app
 3. Run the cp.sql statement to restore the database.
 
+### License
+
+This is an open-sourced software licensed under the GNU General Public License v3.0
+
 Have fun, stay safe.
+

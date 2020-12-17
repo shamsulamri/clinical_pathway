@@ -321,7 +321,7 @@ class CPHelper
 				return [$problem, $section, $group, $detail];
 		}
 
-		public function compileText($consultation_id, $soap, $problem, $section, $group)
+		public function compileText($patient_id, $consultation_id, $soap, $problem, $section, $group)
 		{
 				$problem = $this->toId($problem);
 				$section = $this->toId($section);
@@ -333,7 +333,7 @@ class CPHelper
 				$kvs = null;
 
 				if ($soap=='pmh') {
-						$history = History::find(1);
+						$history = History::find($patient_id);
 						if ($history) {
 								$kvs = $history->history_pathway;
 						}
@@ -380,9 +380,13 @@ class CPHelper
 				$group_index = $group['group_index'];
 				$group_filename = null;
 				$group_name = $group['group'];
+				if (!empty($group['note'])) {
+					$group_note = $group['note'];
+				}
 				unset($group['group_text']);
 				unset($group['group_index']);
 				unset($group['group']);
+				unset($group['note']);
 
 				if (!empty($group['filename'])) {
 						$group_filename = $group['filename'];
@@ -398,6 +402,7 @@ class CPHelper
 				usort($group, function($a, $b){
 						return $a['index'] <=> $b['index'];
 				});
+
 
 				foreach($group as $detail) {
 						$child_str="";
@@ -788,12 +793,12 @@ class CPHelper
 				return $str;
 		}
 
-		public function getNote($soap, $problem, $section=null, $group=null) 
+		public function getNote($patient_id, $consultation_id, $soap, $problem, $section=null, $group=null) 
 		{
 				if ($soap=='pmh') $problem='pmh';
 
-				$consultation_id = 99;
-				$patient_id = 1;
+				//$consultation_id = 99;
+				//$patient_id = 1;
 
 				$soap = $this->toId($soap);
 				$problem = $this->toId($problem);
@@ -824,6 +829,7 @@ class CPHelper
 
 
 				if ($consultation) {
+						Log::info("======================>>>>");
 						$kvs = $consultation->consultation_pathway;
 						if ($group) {
 							$note = $kvs[$soap][$problem][$section][$group]['note']??null;
